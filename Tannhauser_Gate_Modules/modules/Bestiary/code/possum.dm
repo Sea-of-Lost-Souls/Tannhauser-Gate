@@ -1,7 +1,7 @@
 /mob/living/simple_animal/opossum
 	name = "opossum"
 	desc = "It's an opossum, a small scavenging marsupial."
-	icon = 'Tannhauser-Gate_Modules/modules/Bestiary/art/mob/possum.dmi'
+	icon = 'Tannhauser_Gate_Modules/modules/Bestiary/art/mob/possum.dmi'
 	icon_state = "possum"
 	icon_living = "possum"
 	icon_dead = "possum_dead"
