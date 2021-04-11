@@ -314,7 +314,7 @@
 	desc = "This sign doesn't seem to be on."
 	rename_area = FALSE
 
-// Rogue Station Bar Signs
+// Tannhauser Gate Station Bar Signs
 
 /datum/barsign/orcacomand
 	name = "Orca Dive Bar"
