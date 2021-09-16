@@ -1,4 +1,3 @@
-import { right } from '@popperjs/core';
 import { useBackend } from '../backend';
 import { Button, LabeledList, NoticeBox, Flex, Section } from '../components';
 import { Window } from '../layouts';
