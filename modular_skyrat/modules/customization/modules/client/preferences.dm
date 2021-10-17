@@ -1,3 +1,4 @@
+/*
 GLOBAL_LIST_EMPTY(preferences_datums)
 
 // i shall taint your pretty preferences file with bobcode
@@ -2153,42 +2154,42 @@ GLOBAL_LIST_INIT(food, list(
 				if("flavor_text")
 					var/msg = input(usr, "Set the flavor text in your 'examine' verb. This is for describing what people can tell by looking at your character.", "Flavor Text", features["flavor_text"]) as message|null //Skyrat edit, removed stripped_multiline_input()
 					if(!isnull(msg))
-						features["flavor_text"] = strip_html_simple(msg, MAX_FLAVOR_LEN, TRUE)
+						features["flavor_text"] = STRIP_HTML_SIMPLE(msg, MAX_FLAVOR_LEN)
 
 				if("silicon_flavor_text")
 					var/msg = input(usr, "Set the flavor text in your 'examine' verb. This is for describing what people can tell by looking at your character.", "Silicon Flavor Text", features["silicon_flavor_text"]) as message|null
 					if(!isnull(msg))
-						features["silicon_flavor_text"] = strip_html_simple(msg, MAX_FLAVOR_LEN, TRUE)
+						features["silicon_flavor_text"] = STRIP_HTML_SIMPLE(msg, MAX_FLAVOR_LEN)
 
 				if("ooc_prefs")
 					var/msg = input(usr, "Set your OOC preferences.", "OOC Prefs", ooc_prefs) as message|null
 					if(!isnull(msg))
-						ooc_prefs = strip_html_simple(msg, MAX_FLAVOR_LEN, TRUE)
+						ooc_prefs = STRIP_HTML_SIMPLE(msg, MAX_FLAVOR_LEN)
 
 				if("general_record")
 					var/msg = input(usr, "Set your general record. This is more or less public information, available from security, medical and command consoles", "General Record", general_record) as message|null
 					if(!isnull(msg))
-						general_record = strip_html_simple(msg, MAX_FLAVOR_LEN, TRUE)
+						general_record = STRIP_HTML_SIMPLE(msg, MAX_FLAVOR_LEN)
 
 				if("medical_record")
 					var/msg = input(usr, "Set your medical record. ", "Medical Record", medical_record) as message|null
 					if(!isnull(msg))
-						medical_record = strip_html_simple(msg, MAX_FLAVOR_LEN, TRUE)
+						medical_record = STRIP_HTML_SIMPLE(msg, MAX_FLAVOR_LEN)
 
 				if("security_record")
 					var/msg = input(usr, "Set your security record. ", "Medical Record", security_record) as message|null
 					if(!isnull(msg))
-						security_record = strip_html_simple(msg, MAX_FLAVOR_LEN, TRUE)
+						security_record = STRIP_HTML_SIMPLE(msg, MAX_FLAVOR_LEN)
 
 				if("background_info")
 					var/msg = input(usr, "Set your background information. (Where you come from, which culture were you raised in and why you are working here etc.)", "Background Info", background_info) as message|null
 					if(!isnull(msg))
-						background_info = strip_html_simple(msg, MAX_FLAVOR_LEN, TRUE)
+						background_info = STRIP_HTML_SIMPLE(msg, MAX_FLAVOR_LEN)
 
 				if("exploitable_info")
 					var/msg = input(usr, "Set your exploitable information. This is sensitive informations that antagonists may get to see, recommended for better roleplay experience", "Exploitable Info", exploitable_info) as message|null
 					if(!isnull(msg))
-						exploitable_info = strip_html_simple(msg, MAX_FLAVOR_LEN, TRUE)
+						exploitable_info = STRIP_HTML_SIMPLE(msg, MAX_FLAVOR_LEN)
 
 				if("uses_skintones")
 					needs_update = TRUE
@@ -2657,7 +2658,7 @@ GLOBAL_LIST_INIT(food, list(
 							friendlyname += " (disabled)"
 						maplist[friendlyname] = VM.map_name
 					maplist[default] = null
-					var/pickedmap = input(user, "Choose your preferred map. This will be used to help weight random map selection.", "Character Preference")  as null|anything in sortList(maplist)
+					var/pickedmap = input(user, "Choose your preferred map. This will be used to help weight random map selection.", "Character Preference")  as null|anything in sort_list(maplist)
 					if (pickedmap)
 						preferred_map = maplist[pickedmap]
 
@@ -2667,7 +2668,7 @@ GLOBAL_LIST_INIT(food, list(
 						clientfps = sanitize_integer(desiredfps, -1, 1000, clientfps)
 						parent.fps = (clientfps < 0) ? RECOMMENDED_FPS : clientfps
 				if("ui")
-					var/pickedui = input(user, "Choose your UI style.", "Character Preference", UI_style)  as null|anything in sortList(GLOB.available_ui_styles)
+					var/pickedui = input(user, "Choose your UI style.", "Character Preference", UI_style)  as null|anything in sort_list(GLOB.available_ui_styles)
 					if(pickedui)
 						UI_style = pickedui
 						if (parent && parent.mob && parent.mob.hud_used)
@@ -2797,7 +2798,7 @@ GLOBAL_LIST_INIT(food, list(
 						if(!length(key_bindings[old_key]))
 							key_bindings -= old_key
 					key_bindings[full_key] += list(kb_name)
-					key_bindings[full_key] = sortList(key_bindings[full_key])
+					key_bindings[full_key] = sort_list(key_bindings[full_key])
 
 					user << browse(null, "window=capturekeypress")
 					user.client.set_macros()
@@ -3036,10 +3037,6 @@ GLOBAL_LIST_INIT(food, list(
 						save_character()
 					else
 						needs_update = TRUE
-
-					if(istype(parent.mob, /mob/dead/new_player)) //is this shitcode? probably - I DONT CAREEE~
-						var/mob/dead/new_player/NP = parent.mob
-						NP.show_titlescreen()
 
 				if("tab")
 					if (href_list["tab"])
@@ -3569,3 +3566,4 @@ GLOBAL_LIST_INIT(food, list(
 	popup.set_window_options("can_close=0")
 	popup.set_content(dat.Join())
 	popup.open(FALSE)
+*/
