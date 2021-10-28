@@ -1323,8 +1323,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/external{
-	name = "Cargo Escape Airlock";
-	safety_mode = 1
+	name = "Cargo Escape Airlock"
 	},
 /turf/open/floor/plating,
 /area/hallway/secondary/exit/departure_lounge)
@@ -4341,8 +4340,7 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/external{
-	name = "Escape Airlock";
-	safety_mode = 1
+	name = "Escape Airlock"
 	},
 /turf/open/floor/plating,
 /area/hallway/secondary/exit/departure_lounge)
@@ -9014,7 +9012,7 @@
 /area/science/robotics/lab)
 "wm" = (
 /obj/item/paper/pamphlet/centcom/visitor_info{
-	info = "<b> NTSS RAVEN</b><br>Greetings Chief Engineer, to , to  the former NTSS [Shipname_Here]! As you may know, this station was once used as Nanotrasen's war ships, organizing and coordinating company projects across the vastness of space. <br>Since the completion of the much more efficient NTSS FALCON class and is no longer needed for such operations but has been refit to continue to play a very important role its corporate affairs; serving as a exploration, research, and repair station, as well as being host any other duties Nanotrasen may appoint.<br><br><br>PS:<br>Please note that Atmospherics and Engineering were combined as a cost saving measure. Sadly in that regard your O2 reserves were not fully topped off before your deployment.  The former NTSS RAVEN still has its original SM plants installed so you will not have to worry too much about that. We hope... Please be aware that the decommisioning from warship has resulted in the warranty becoming void. Have a nice shift ";
+	info = "<b> NTSS RAVEN</b><br>Greetings Chief Engineer, to , to  the former NTSS #Shipname_Here!# As you may know, this station was once used as Nanotrasen's war ships, organizing and coordinating company projects across the vastness of space. <br>Since the completion of the much more efficient NTSS FALCON class and is no longer needed for such operations but has been refit to continue to play a very important role its corporate affairs; serving as a exploration, research, and repair station, as well as being host any other duties Nanotrasen may appoint.<br><br><br>PS:<br>Please note that Atmospherics and Engineering were combined as a cost saving measure. Sadly in that regard your O2 reserves were not fully topped off before your deployment.  The former NTSS RAVEN still has its original SM plants installed so you will not have to worry too much about that. We hope... Please be aware that the decommisioning from warship has resulted in the warranty becoming void. Have a nice shift";
 	name = "Centcom CE Notice"
 	},
 /turf/open/floor/glass/reinforced,
@@ -11267,8 +11265,7 @@
 /area/engineering/main/upper)
 "BM" = (
 /obj/machinery/door/airlock/external{
-	name = "Arrival Airlock";
-	safety_mode = 1
+	name = "Arrival Airlock"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -12435,8 +12432,7 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/external{
-	name = "Cargo Escape Airlock";
-	safety_mode = 1
+	name = "Cargo Escape Airlock"
 	},
 /turf/open/floor/plating,
 /area/hallway/secondary/exit/departure_lounge)
@@ -16937,8 +16933,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/external{
-	name = "Escape Airlock";
-	safety_mode = 1
+	name = "Escape Airlock"
 	},
 /turf/open/floor/plating,
 /area/hallway/secondary/exit/departure_lounge)
@@ -18420,8 +18415,7 @@
 /area/science/xenobiology)
 "Sg" = (
 /obj/machinery/door/airlock/external{
-	name = "Arrival Airlock";
-	safety_mode = 1
+	name = "Arrival Airlock"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
