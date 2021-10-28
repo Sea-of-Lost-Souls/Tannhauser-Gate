@@ -543,8 +543,7 @@
 	pixel_x = 24
 	},
 /obj/machinery/atmospherics/components/binary/pump{
-	dir = 4;
-	layer = 2.4
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/port)
@@ -2208,8 +2207,7 @@
 	},
 /obj/machinery/camera/autoname,
 /obj/machinery/atmospherics/components/binary/pump{
-	dir = 4;
-	layer = 2.4
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/engineering/supermatter/port)
@@ -2466,8 +2464,7 @@
 /area/ai_monitored/turret_protected/ai)
 "po" = (
 /obj/machinery/atmospherics/components/binary/pump{
-	dir = 4;
-	layer = 2.4
+	dir = 4
 	},
 /turf/open/floor/iron,
 /area/engineering/main/lower)
@@ -4221,8 +4218,7 @@
 /area/engineering/atmos)
 "zT" = (
 /obj/machinery/atmospherics/components/binary/pump{
-	dir = 4;
-	layer = 2.4
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/starboard)
@@ -5847,8 +5843,7 @@
 "JE" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/atmospherics/components/binary/pump{
-	dir = 4;
-	layer = 2.4
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/engineering/supermatter/port)

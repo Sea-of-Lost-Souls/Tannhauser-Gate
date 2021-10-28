@@ -3768,9 +3768,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/security{
-	name = "Security Office";
-	req_access_txt = null;
-	req_one_access_txt = "1;4"
+	name = "Security Office"
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/airlock/unres{
@@ -4580,9 +4578,7 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/security{
-	name = "Security Office";
-	req_access_txt = null;
-	req_one_access_txt = "1;4"
+	name = "Security Office"
 	},
 /obj/effect/mapping_helpers/airlock/unres{
 	dir = 4
@@ -6248,9 +6244,7 @@
 	},
 /obj/effect/turf_decal/tile/red,
 /obj/machinery/door/airlock/security{
-	name = "Security Office";
-	req_access_txt = null;
-	req_one_access_txt = "1;4"
+	name = "Security Office"
 	},
 /obj/effect/mapping_helpers/airlock/unres{
 	dir = 4
@@ -13179,7 +13173,6 @@
 	},
 /obj/structure/fluff/drake_statue{
 	desc = "A towering basalt sculpture of a proud and regal Zest in his true form after trying to fix a small car. Its eyes are six glowing gemstones.";
-	level = null;
 	name = "zest statue"
 	},
 /obj/machinery/light/floor{
@@ -14658,9 +14651,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/security{
-	name = "Security Office";
-	req_access_txt = null;
-	req_one_access_txt = "1;4"
+	name = "Security Office"
 	},
 /turf/open/floor/iron/grimy,
 /area/security/detectives_office)
@@ -17279,8 +17270,7 @@
 /obj/effect/turf_decal/tile/red,
 /obj/machinery/door/airlock/security{
 	name = "Security Office";
-	req_access_txt = null;
-	req_one_access_txt = "1;4"
+	
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/airlock/unres{
