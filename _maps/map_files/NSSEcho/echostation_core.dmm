@@ -1687,19 +1687,6 @@
 	},
 /turf/open/floor/iron,
 /area/medical/medbay/lobby)
-"en" = (
-/obj/docking_port/stationary{
-	dir = 8;
-	dwidth = 3;
-	height = 15;
-	id = "elevator";
-	name = "elevator mid";
-	roundstart_template = /datum/map_template/shuttle/beta_elevator;
-	width = 7
-	},
-/obj/structure/holosign/barrier/engineering,
-/turf/open/floor/plating,
-/area/hallway/primary/fore)
 "eo" = (
 /obj/structure/disposalpipe/junction,
 /turf/closed/wall,
@@ -51619,7 +51606,7 @@ tQ
 tQ
 UG
 DV
-en
+fs
 fs
 Kj
 Kj
