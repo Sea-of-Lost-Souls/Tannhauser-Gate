@@ -473,18 +473,6 @@
 	},
 /turf/open/floor/iron,
 /area/medical/medbay/zone2)
-"bq" = (
-/obj/docking_port/stationary{
-	dir = 8;
-	dwidth = 3;
-	height = 15;
-	id = "elevator";
-	name = "elevator";
-	roundstart_template = /datum/map_template/shuttle/beta_elevator;
-	width = 7
-	},
-/turf/open/space/basic,
-/area/space)
 "br" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden,
 /obj/effect/turf_decal/tile/yellow{
@@ -9037,7 +9025,8 @@
 /area/cargo/qm)
 "wo" = (
 /obj/machinery/camera{
-	c_tag = "Gravity Generator Foyer"
+	c_tag = "Gravity Generator Foyer";
+	
 	},
 /obj/item/radio/intercom{
 	name = "Station Intercom (General)";
@@ -46201,7 +46190,7 @@ bb
 bb
 bb
 bb
-bq
+bb
 bb
 bb
 bb

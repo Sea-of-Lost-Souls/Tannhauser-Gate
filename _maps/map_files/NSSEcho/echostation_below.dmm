@@ -6935,7 +6935,7 @@
 /obj/machinery/atmospherics/components/trinary/mixer/flipped{
 	dir = 8;
 	node1_concentration = 0.4;
-	node2_concentration = .6
+	node2_concentration = 0.6
 	},
 /turf/open/floor/engine,
 /area/maintenance/fore/secondary)
