@@ -22,6 +22,7 @@
 		#include "map_files\Blueshift\Blueshift.dmm" //SKYRAT EDIT ADDITION
 		#include "map_files\PubbyStation\PubbyStation.dmm"
 		#include "map_files\ManaForge\manaforge.dmm"
+		#include "map_files\NSSEcho\echostation_core.dmm"
 
 		#ifdef CIBUILDING
 			#include "templates.dm"
