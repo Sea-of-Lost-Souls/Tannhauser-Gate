@@ -252,7 +252,6 @@
 /turf/open/floor/iron/white,
 /area/ai_monitored/turret_protected/ai)
 "bE" = (
-/obj/machinery/power/energy_accumulator/rad_collector/anchored,
 /obj/structure/window/reinforced/plasma,
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/starboard)
@@ -1034,7 +1033,7 @@
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/emmitter)
 "ge" = (
-/obj/machinery/power/apc/auto_name/south,
+/obj/machinery/power/apc/auto_name/directional/south,
 /turf/open/floor/iron/dark,
 /area/maintenance/solars/starboard/aft)
 "gf" = (
@@ -1298,7 +1297,6 @@
 /turf/open/floor/iron,
 /area/construction/mining/aux_base)
 "hO" = (
-/obj/machinery/power/energy_accumulator/rad_collector/anchored,
 /obj/structure/window/reinforced/plasma,
 /obj/machinery/atmospherics/pipe/smart/simple/general/visible{
 	dir = 9
@@ -1355,7 +1353,6 @@
 /turf/open/floor/iron,
 /area/science/xenobiology)
 "in" = (
-/obj/machinery/power/energy_accumulator/rad_collector/anchored,
 /obj/structure/window/reinforced/plasma,
 /obj/machinery/atmospherics/pipe/smart/manifold/general/visible,
 /turf/open/floor/engine,
@@ -1842,7 +1839,7 @@
 /area/engineering/engine_smes/starboard)
 "lf" = (
 /obj/structure/table,
-/obj/machinery/power/apc/auto_name/north,
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/effect/spawner/random/medical/firstaid,
 /turf/open/floor/iron,
 /area/medical/medbay/zone2)
@@ -3129,7 +3126,7 @@
 /turf/open/floor/iron,
 /area/science/xenobiology)
 "sD" = (
-/obj/machinery/power/apc/auto_name/north,
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/machinery/camera/autoname{
 	dir = 8
 	},
@@ -3429,7 +3426,7 @@
 /turf/closed/wall/r_wall,
 /area/engineering/supermatter/room/emmitter)
 "uI" = (
-/obj/machinery/power/apc/auto_name/west,
+/obj/machinery/power/apc/auto_name/directional/west,
 /turf/open/floor/iron/dark/side{
 	dir = 8
 	},
@@ -4230,7 +4227,7 @@
 /turf/open/floor/engine,
 /area/engineering/gas_mix/port)
 "zX" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/engine_waste{
+/obj/machinery/atmospherics/components/unary/passive_vent{
 	dir = 1
 	},
 /obj/structure/lattice,
@@ -4754,7 +4751,7 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/obj/machinery/power/apc/auto_name/east,
+/obj/machinery/power/apc/auto_name/directional/east,
 /turf/open/floor/iron/dark,
 /area/engineering/engine_smes/starboard)
 "Dj" = (
@@ -4930,7 +4927,6 @@
 /turf/open/space,
 /area/ai_monitored/turret_protected/aisat)
 "Eq" = (
-/obj/machinery/power/energy_accumulator/rad_collector/anchored,
 /obj/machinery/atmospherics/pipe/smart/manifold/general/visible,
 /obj/structure/window/reinforced/plasma,
 /turf/open/floor/engine,
@@ -5420,7 +5416,7 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
-/obj/machinery/power/apc/auto_name/east,
+/obj/machinery/power/apc/auto_name/directional/east,
 /turf/open/floor/iron,
 /area/science/xenobiology)
 "Hc" = (
@@ -5536,7 +5532,7 @@
 /turf/open/floor/iron,
 /area/science/xenobiology)
 "HQ" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/engine_waste{
+/obj/machinery/atmospherics/components/unary/passive_vent{
 	dir = 1
 	},
 /obj/structure/lattice,
@@ -6395,7 +6391,7 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/obj/machinery/power/apc/auto_name/east,
+/obj/machinery/power/apc/auto_name/directional/east,
 /turf/open/floor/iron/dark,
 /area/engineering/engine_smes/port)
 "MJ" = (
@@ -6419,7 +6415,6 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "MT" = (
-/obj/machinery/power/energy_accumulator/rad_collector/anchored,
 /obj/structure/window/reinforced/plasma,
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/port)
@@ -7363,7 +7358,6 @@
 "SF" = (
 /obj/structure/window/reinforced/plasma,
 /obj/machinery/atmospherics/pipe/smart/manifold/general/visible,
-/obj/machinery/power/energy_accumulator/rad_collector/anchored,
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/starboard)
 "SI" = (
@@ -7889,7 +7883,7 @@
 /area/science/xenobiology)
 "Wb" = (
 /obj/item/clothing/suit/apron/surgical,
-/obj/machinery/power/apc/auto_name/north,
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
@@ -8495,7 +8489,7 @@
 /turf/open/floor/iron,
 /area/engineering/supermatter/room/emmitter)
 "Zh" = (
-/obj/machinery/power/apc/auto_name/south,
+/obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/maintenance/fore/secondary)

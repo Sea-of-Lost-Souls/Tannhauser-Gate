@@ -98,7 +98,7 @@
 /area/hallway/primary/aft)
 "as" = (
 /obj/machinery/food_cart,
-/obj/machinery/power/apc/auto_name/north,
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/iron/cafeteria,
 /area/service/kitchen)
@@ -370,7 +370,7 @@
 /area/hallway/primary/fore)
 "bh" = (
 /obj/structure/disposalpipe/segment,
-/obj/machinery/power/apc/auto_name/west,
+/obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
@@ -517,7 +517,7 @@
 /area/service/chapel)
 "by" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
-/obj/machinery/power/apc/auto_name/west,
+/obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
@@ -722,7 +722,7 @@
 /turf/open/floor/iron,
 /area/hallway/primary/fore)
 "cb" = (
-/obj/machinery/power/apc/auto_name/south,
+/obj/machinery/power/apc/auto_name/directional/south,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
@@ -926,7 +926,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
-/obj/machinery/power/apc/auto_name/north,
+/obj/machinery/power/apc/auto_name/directional/north,
 /turf/open/floor/iron/dark,
 /area/security/execution/transfer)
 "cG" = (
@@ -1143,7 +1143,7 @@
 /turf/open/floor/iron,
 /area/hallway/primary/central)
 "dj" = (
-/obj/machinery/power/apc/auto_name/south,
+/obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/yellow,
 /turf/open/floor/iron,
@@ -2607,7 +2607,7 @@
 /turf/open/floor/iron,
 /area/security/brig)
 "hr" = (
-/turf/open/floor/mech_bay_recharge_floor,
+/turf/open/floor/iron/recharge_floor,
 /area/security/office)
 "hs" = (
 /turf/open/floor/carpet,
@@ -3466,7 +3466,7 @@
 "jY" = (
 /obj/structure/table/wood,
 /obj/item/plate/ceramic,
-/obj/machinery/power/apc/auto_name/south,
+/obj/machinery/power/apc/auto_name/directional/south,
 /obj/effect/spawner/random/food_or_drink/three_course_meal,
 /turf/open/floor/iron/grimy,
 /area/command/heads_quarters/captain/private)
@@ -3591,7 +3591,7 @@
 /turf/open/floor/carpet,
 /area/security/detectives_office)
 "ks" = (
-/obj/machinery/power/apc/auto_name/east,
+/obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/courtroom)
@@ -4549,7 +4549,7 @@
 /obj/machinery/camera/autoname{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/west,
+/obj/machinery/power/apc/auto_name/directional/west,
 /turf/open/floor/iron,
 /area/security)
 "nn" = (
@@ -4894,7 +4894,7 @@
 /area/security/processing)
 "oq" = (
 /obj/structure/cable,
-/obj/machinery/power/apc/auto_name/south,
+/obj/machinery/power/apc/auto_name/directional/south,
 /obj/effect/turf_decal/tile/yellow,
 /turf/open/floor/iron,
 /area/hallway/primary/fore)
@@ -5752,7 +5752,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/north,
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/machinery/airalarm/unlocked{
 	pixel_y = 34
@@ -5914,7 +5914,7 @@
 /area/hallway/primary/aft)
 "rL" = (
 /obj/structure/flora/ausbushes/ywflowers,
-/obj/machinery/power/apc/auto_name/east,
+/obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable,
 /turf/open/floor/grass,
 /area/service/hydroponics/garden)
@@ -6476,7 +6476,7 @@
 	dir = 8
 	},
 /obj/machinery/light,
-/turf/open/floor/mech_bay_recharge_floor,
+/turf/open/floor/iron/recharge_floor,
 /area/security/office)
 "tp" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -7468,7 +7468,7 @@
 	pixel_y = 32
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
-/obj/machinery/power/apc/auto_name/west,
+/obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
 /turf/open/floor/iron/freezer,
 /area/commons/toilet)
@@ -9528,7 +9528,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/obj/machinery/power/apc/auto_name/east,
+/obj/machinery/power/apc/auto_name/directional/east,
 /turf/open/floor/iron/dark,
 /area/security/execution/education)
 "Db" = (
@@ -10180,7 +10180,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/obj/machinery/power/apc/auto_name/north,
+/obj/machinery/power/apc/auto_name/directional/north,
 /turf/open/floor/iron,
 /area/security/processing)
 "EY" = (
@@ -10557,7 +10557,7 @@
 /turf/open/floor/iron,
 /area/medical)
 "Gl" = (
-/obj/machinery/power/apc/auto_name/south,
+/obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
 /turf/open/floor/iron{
 	dir = 8;
@@ -10823,7 +10823,7 @@
 /turf/open/floor/iron/dark,
 /area/security)
 "GW" = (
-/obj/machinery/power/apc/auto_name/east,
+/obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable,
 /turf/open/floor/wood,
 /area/service/lawoffice)
@@ -10854,11 +10854,11 @@
 /turf/open/floor/iron,
 /area/hallway/primary/central)
 "Ha" = (
-/obj/machinery/power/apc/auto_name/east,
+/obj/machinery/power/apc/auto_name/directional/east,
 /turf/open/floor/wood,
 /area/commons/vacant_room)
 "Hb" = (
-/obj/machinery/power/apc/auto_name/north,
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
@@ -12260,7 +12260,7 @@
 /turf/open/floor/grass,
 /area/service/hydroponics/garden)
 "Ld" = (
-/obj/machinery/power/apc/auto_name/west,
+/obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/commons/fitness/recreation)
@@ -12875,7 +12875,7 @@
 /area/service/hydroponics)
 "MZ" = (
 /obj/structure/cable,
-/obj/machinery/power/apc/auto_name/west,
+/obj/machinery/power/apc/auto_name/directional/west,
 /turf/open/floor/plating,
 /area/maintenance/department/bridge)
 "Na" = (
@@ -14254,7 +14254,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/east,
+/obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable,
 /turf/open/floor/iron{
 	heat_capacity = 1e+006
@@ -14336,7 +14336,7 @@
 "Rn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden,
 /obj/machinery/light,
-/obj/machinery/power/apc/auto_name/south,
+/obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/commons/dorms)
@@ -15997,7 +15997,7 @@
 "Wa" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/power/apc/auto_name/south,
+/obj/machinery/power/apc/auto_name/directional/south,
 /turf/open/floor/iron/dark,
 /area/command/heads_quarters/captain)
 "Wb" = (
@@ -16943,7 +16943,7 @@
 /turf/open/floor/iron,
 /area/medical)
 "Yz" = (
-/obj/machinery/power/apc/auto_name/west,
+/obj/machinery/power/apc/auto_name/directional/west,
 /turf/open/floor/iron/dark,
 /area/security)
 "YA" = (
@@ -17269,8 +17269,7 @@
 	},
 /obj/effect/turf_decal/tile/red,
 /obj/machinery/door/airlock/security{
-	name = "Security Office";
-	
+	name = "Security Office"
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/airlock/unres{
