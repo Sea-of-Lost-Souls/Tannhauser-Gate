@@ -63,7 +63,7 @@
 	var/gunlight_state = "flight"
 
 	var/can_bayonet = FALSE //if a bayonet can be added or removed if it already has one.
-	var/obj/item/kitchen/knife/bayonet
+	var/obj/item/knife/bayonet
 	var/knife_x_offset = 0
 	var/knife_y_offset = 0
 
@@ -95,7 +95,7 @@
 
 /datum/action/item_action/toggle_safety
 	name = "Toggle Safety"
-	icon_icon = 'modular_skyrat/modules/gunsafety/icons/hud/actions.dmi'
+	icon_icon = 'modular_skyrat/modules/gunsafety/icons/actions.dmi'
 	button_icon_state = "safety_on"
 
 /obj/item/gun/ui_action_click(mob/user, actiontype)
@@ -549,8 +549,8 @@
 			alight = new(src)
 			if(loc == user)
 				alight.Grant(user)
-	else if(istype(I, /obj/item/kitchen/knife))
-		var/obj/item/kitchen/knife/K = I
+	else if(istype(I, /obj/item/knife))
+		var/obj/item/knife/K = I
 		if(!can_bayonet || !K.bayonet || bayonet) //ensure the gun has an attachment point available, and that the knife is compatible with it.
 			return ..()
 		if(!user.transferItemToLoc(I, src))
