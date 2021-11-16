@@ -252,7 +252,9 @@
 /turf/open/floor/iron/white,
 /area/ai_monitored/turret_protected/ai)
 "bE" = (
-/obj/structure/window/reinforced/plasma,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 1
+	},
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/starboard)
 "bF" = (
@@ -419,13 +421,14 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "cv" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 1;
-	name = "air scrubber beta"
-	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold{
 	dir = 1
 	},
+/turf/open/floor/engine,
+/area/engineering/supermatter/room/starboard)
+"cw" = (
+/obj/structure/cable/layer1,
+/obj/structure/window/reinforced/plasma,
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/starboard)
 "cz" = (
@@ -886,8 +889,9 @@
 /turf/open/floor/engine,
 /area/engineering/gas_mix/starboard)
 "fo" = (
-/obj/item/tank/internals/plasma/full,
 /obj/structure/cable/layer1,
+/obj/structure/window/reinforced/plasma/spawner/north,
+/obj/machinery/power/energy_accumulator/tesla_coil/anchored,
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/port)
 "fq" = (
@@ -1297,9 +1301,8 @@
 /turf/open/floor/iron,
 /area/construction/mining/aux_base)
 "hO" = (
-/obj/structure/window/reinforced/plasma,
-/obj/machinery/atmospherics/pipe/smart/simple/general/visible{
-	dir = 9
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
 	},
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/port)
@@ -1352,11 +1355,6 @@
 /mob/living/carbon/human/species/monkey,
 /turf/open/floor/iron,
 /area/science/xenobiology)
-"in" = (
-/obj/structure/window/reinforced/plasma,
-/obj/machinery/atmospherics/pipe/smart/manifold/general/visible,
-/turf/open/floor/engine,
-/area/engineering/supermatter/room/port)
 "iq" = (
 /obj/machinery/power/shieldwallgen/xenobiologyaccess,
 /turf/open/floor/plating,
@@ -1367,6 +1365,12 @@
 	},
 /turf/open/floor/iron,
 /area/engineering/atmos)
+"ix" = (
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/on{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/engineering/supermatter/room/starboard)
 "iA" = (
 /obj/structure/rack,
 /obj/item/clothing/mask/gas,
@@ -1565,6 +1569,12 @@
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /turf/open/floor/iron,
 /area/engineering/atmos)
+"jw" = (
+/obj/structure/cable/layer1,
+/obj/structure/window/reinforced/plasma,
+/obj/machinery/power/energy_accumulator/tesla_coil/anchored,
+/turf/open/floor/engine,
+/area/engineering/supermatter/room/starboard)
 "jx" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
@@ -1638,9 +1648,6 @@
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/emmitter)
 "kb" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	name = "air vent alpha"
-	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold,
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/port)
@@ -1814,6 +1821,11 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/science/xenobiology)
+"kW" = (
+/obj/structure/cable/layer1,
+/obj/structure/window/reinforced/plasma/spawner/north,
+/turf/open/floor/engine,
+/area/engineering/supermatter/room/port)
 "kX" = (
 /obj/structure/cable,
 /turf/open/floor/engine,
@@ -2469,9 +2481,6 @@
 /turf/open/floor/engine/o2,
 /area/engineering/atmos)
 "pt" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	name = "air vent alpha"
-	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 5
 	},
@@ -2495,10 +2504,6 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "pB" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 1;
-	name = "air scrubber beta"
-	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 6
 	},
@@ -3232,9 +3237,6 @@
 /turf/open/floor/engine,
 /area/maintenance/fore/secondary)
 "ti" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	name = "air vent beta"
-	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold,
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/starboard)
@@ -3901,10 +3903,6 @@
 /turf/open/floor/iron,
 /area/science/xenobiology)
 "ya" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 1;
-	name = "air scrubber beta"
-	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 10
 	},
@@ -4185,6 +4183,11 @@
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /turf/open/floor/engine,
 /area/engineering/gas_mix/port)
+"zH" = (
+/obj/structure/cable/layer1,
+/obj/structure/window/reinforced/plasma/spawner/north,
+/turf/open/floor/engine,
+/area/engineering/supermatter/room/starboard)
 "zJ" = (
 /turf/closed/wall/r_wall/rust,
 /area/space/nearstation)
@@ -4249,9 +4252,6 @@
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "Ai" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	name = "air vent beta"
-	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 9
 	},
@@ -4761,6 +4761,8 @@
 /area/maintenance/port/fore)
 "Dk" = (
 /obj/structure/cable/layer1,
+/obj/structure/window/reinforced/plasma/spawner/north,
+/obj/machinery/power/energy_accumulator/tesla_coil/anchored,
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/starboard)
 "Dl" = (
@@ -4927,8 +4929,9 @@
 /turf/open/space,
 /area/ai_monitored/turret_protected/aisat)
 "Eq" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/general/visible,
-/obj/structure/window/reinforced/plasma,
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/on{
+	dir = 4
+	},
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/port)
 "Es" = (
@@ -5049,10 +5052,6 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "Fa" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 1;
-	name = "air scrubber alpha"
-	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 6
 	},
@@ -5395,10 +5394,6 @@
 /turf/open/floor/plating,
 /area/ai_monitored/turret_protected/aisat_interior)
 "GY" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 1;
-	name = "air scrubber alpha"
-	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 10
 	},
@@ -5754,10 +5749,6 @@
 /turf/open/floor/iron,
 /area/science/xenobiology)
 "Jb" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 1;
-	name = "air scrubber alpha"
-	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold{
 	dir = 1
 	},
@@ -6145,9 +6136,6 @@
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/aft)
 "LA" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	name = "air vent alpha"
-	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 9
 	},
@@ -6415,7 +6403,9 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "MT" = (
-/obj/structure/window/reinforced/plasma,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 1
+	},
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/port)
 "MV" = (
@@ -7356,8 +7346,9 @@
 /turf/open/floor/engine,
 /area/engineering/gas_mix/port)
 "SF" = (
-/obj/structure/window/reinforced/plasma,
-/obj/machinery/atmospherics/pipe/smart/manifold/general/visible,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/starboard)
 "SI" = (
@@ -7452,9 +7443,6 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "Tr" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	name = "air vent beta"
-	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 5
 	},
@@ -7859,6 +7847,12 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /turf/open/floor/iron,
 /area/engineering/atmos)
+"VS" = (
+/obj/structure/cable/layer1,
+/obj/structure/window/reinforced/plasma/spawner,
+/obj/machinery/power/energy_accumulator/tesla_coil/anchored,
+/turf/open/floor/engine,
+/area/engineering/supermatter/room/port)
 "VV" = (
 /turf/open/floor/plating,
 /area/medical/medbay/zone2)
@@ -8616,6 +8610,11 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
+"ZQ" = (
+/obj/structure/cable/layer1,
+/obj/structure/window/reinforced/plasma/spawner,
+/turf/open/floor/engine,
+/area/engineering/supermatter/room/port)
 "ZR" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
@@ -39661,7 +39660,7 @@ Gy
 ri
 Ej
 dn
-fo
+VS
 MT
 Fa
 ER
@@ -39918,13 +39917,13 @@ Gy
 ri
 Ej
 dn
-fo
+ZQ
 MT
 Jb
 yC
 kb
-in
-fo
+Eq
+kW
 dn
 ri
 kC
@@ -40175,7 +40174,7 @@ Jd
 ri
 Ej
 dn
-fo
+VS
 MT
 GY
 NM
@@ -44801,7 +44800,7 @@ VC
 tL
 XU
 KA
-Dk
+jw
 bE
 pB
 Dd
@@ -45058,13 +45057,13 @@ JA
 DG
 XU
 KA
-Dk
+cw
 bE
 cv
 iN
 ti
-SF
-Dk
+ix
+zH
 KA
 XU
 Gn
@@ -45315,12 +45314,12 @@ JA
 DG
 XU
 KA
-Dk
+jw
 bE
 ya
 Co
 Ai
-SF
+ix
 Dk
 KA
 XU
