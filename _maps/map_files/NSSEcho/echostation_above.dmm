@@ -680,13 +680,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/command/bridge)
-"bV" = (
-/obj/machinery/door/airlock/external{
-	name = "Arrival Airlock";
-	safety_mode = 1
-	},
-/turf/open/floor/plating,
-/area/space)
 "bW" = (
 /obj/machinery/mass_driver{
 	dir = 8;
@@ -1389,10 +1382,6 @@
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/hidden,
 /turf/open/floor/iron,
 /area/security)
-"ea" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
-/area/space)
 "ec" = (
 /obj/structure/chair/office{
 	dir = 8
@@ -2018,7 +2007,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
-/obj/structure/reagent_dispensers/peppertank{
+/obj/structure/reagent_dispensers/wall/peppertank{
 	pixel_x = 32
 	},
 /obj/structure/table/wood,
@@ -12940,18 +12929,6 @@
 /obj/machinery/atmospherics/pipe/smart/simple/general/hidden,
 /turf/open/floor/iron,
 /area/security/courtroom)
-"Nn" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/structure/reagent_dispensers/peppertank{
-	pixel_x = -32
-	},
-/turf/open/floor/iron,
-/area/security/office)
 "Np" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
 /obj/effect/turf_decal/tile/red,
@@ -13322,9 +13299,6 @@
 "Oy" = (
 /obj/structure/table,
 /obj/item/flashlight/lamp,
-/obj/structure/reagent_dispensers/peppertank{
-	pixel_x = -29
-	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/dark,
 /area/security/execution/education)
@@ -14489,7 +14463,7 @@
 	},
 /obj/structure/table/wood,
 /obj/item/storage/photo_album/cmo,
-/obj/item/hypospray/mkii/CMO,
+/obj/item/hypospray/mkii/cmo,
 /obj/item/valentine,
 /turf/open/floor/carpet/royalblue,
 /area/command/heads_quarters/cmo)
@@ -44268,9 +44242,9 @@ Lk
 Lk
 Lk
 Lk
-ea
-bV
-ea
+wU
+og
+wU
 Lk
 Lk
 Lk
@@ -55589,7 +55563,7 @@ xB
 AG
 xB
 Sk
-Nn
+xB
 Vp
 bC
 bC

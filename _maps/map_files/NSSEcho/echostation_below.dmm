@@ -1116,7 +1116,7 @@
 /area/engineering/supermatter/room/emmitter)
 "gI" = (
 /obj/machinery/atmospherics/components/unary/portables_connector,
-/obj/machinery/portable_atmospherics/canister/stimulum,
+/obj/machinery/portable_atmospherics/canister/halon,
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "gP" = (

@@ -6144,7 +6144,7 @@
 	departmentType = 5;
 	pixel_y = 30
 	},
-/obj/structure/reagent_dispensers/peppertank{
+/obj/structure/reagent_dispensers/wall/peppertank{
 	pixel_x = -32
 	},
 /obj/effect/turf_decal/tile/red{
@@ -11637,7 +11637,7 @@
 /area/engineering/main/upper)
 "CI" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 4
+	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /turf/open/floor/iron/dark/corner{
@@ -13073,9 +13073,6 @@
 	departmentType = 5;
 	pixel_x = -32
 	},
-/obj/structure/reagent_dispensers/peppertank{
-	pixel_y = 30
-	},
 /obj/machinery/computer/security,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -13166,7 +13163,7 @@
 /area/ai_monitored/command/storage/eva)
 "Gw" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 1
+	dir = 4
 	},
 /turf/open/floor/iron/dark/corner{
 	dir = 4
@@ -15855,9 +15852,6 @@
 /turf/open/floor/iron/white,
 /area/science/robotics/lab)
 "MJ" = (
-/obj/structure/reagent_dispensers/peppertank{
-	pixel_x = 32
-	},
 /obj/structure/closet/secure_closet/security/engine,
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -20235,7 +20229,7 @@
 /area/command/heads_quarters/ce)
 "WL" = (
 /obj/structure/table/glass,
-/obj/structure/reagent_dispensers/virusfood{
+/obj/structure/reagent_dispensers/wall/virusfood{
 	pixel_x = 32
 	},
 /obj/item/clothing/gloves/color/latex,
@@ -21567,7 +21561,7 @@
 /area/medical/surgery)
 "ZW" = (
 /obj/effect/turf_decal/stripes/corner{
-	dir = 8
+	dir = 1
 	},
 /turf/open/floor/iron/dark/corner{
 	dir = 1
