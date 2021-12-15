@@ -21383,7 +21383,6 @@
 /area/medical/surgery)
 "ZQ" = (
 /mob/living/simple_animal/bot/cleanbot{
-	auto_patrol = 1;
 	icon_state = "cleanbot1";
 	name = "Mopficcer Sweepsky"
 	},
