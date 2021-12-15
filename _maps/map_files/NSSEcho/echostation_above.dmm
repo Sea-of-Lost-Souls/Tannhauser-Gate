@@ -4134,7 +4134,6 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
-/obj/structure/cable,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -4323,7 +4322,6 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
-/obj/structure/cable,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -4601,6 +4599,15 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /turf/open/floor/plating,
 /area/medical/patients_rooms/room_a)
+"nv" = (
+/obj/machinery/atmospherics/pipe/smart/simple/general/hidden,
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/security/office)
 "nw" = (
 /mob/living/simple_animal/bot/secbot,
 /turf/open/floor/cult,
@@ -5122,6 +5129,7 @@
 "pr" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/grille,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/range)
 "ps" = (
@@ -6555,6 +6563,7 @@
 "tI" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/grille,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/security)
 "tJ" = (
@@ -9122,8 +9131,6 @@
 /area/security/processing)
 "BP" = (
 /obj/structure/closet/secure_closet/armory2,
-/obj/effect/spawner/armory_spawn/rifles,
-/obj/effect/spawner/armory_spawn/shotguns,
 /turf/open/floor/iron/dark,
 /area/security)
 "BS" = (
@@ -10769,6 +10776,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/security)
 "GS" = (
@@ -11679,7 +11687,6 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
-/obj/structure/cable,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -12399,14 +12406,6 @@
 	dir = 1
 	},
 /area/service/chapel)
-"LA" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/structure/cable,
-/obj/effect/turf_decal/tile/red,
-/turf/open/floor/iron,
-/area/security/office)
 "LB" = (
 /obj/structure/table/wood/fancy,
 /obj/item/storage/box/matches{
@@ -14679,6 +14678,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/security)
 "Sh" = (
@@ -15976,19 +15976,11 @@
 /area/command/heads_quarters/captain)
 "Wb" = (
 /obj/structure/rack,
-/obj/item/gun/energy/e_gun{
-	pixel_x = -3;
-	pixel_y = 3
-	},
-/obj/item/gun/energy/e_gun,
-/obj/item/gun/energy/e_gun{
-	pixel_x = 3;
-	pixel_y = -3
-	},
 /obj/machinery/firealarm{
 	dir = 4;
 	pixel_x = -27
 	},
+/obj/effect/spawner/armory_spawn/microfusion,
 /turf/open/floor/iron/dark,
 /area/security)
 "Wc" = (
@@ -16310,6 +16302,7 @@
 /area/medical)
 "WV" = (
 /obj/structure/closet/secure_closet/armory3,
+/obj/effect/spawner/armory_spawn/microfusion,
 /turf/open/floor/iron/dark,
 /area/security)
 "WW" = (
@@ -16835,15 +16828,7 @@
 /area/security/processing)
 "Yn" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/shotgun/riot{
-	pixel_x = -3;
-	pixel_y = 3
-	},
-/obj/item/gun/ballistic/shotgun/riot,
-/obj/item/gun/ballistic/shotgun/riot{
-	pixel_x = 3;
-	pixel_y = -3
-	},
+/obj/effect/spawner/armory_spawn/shotguns,
 /turf/open/floor/iron/dark,
 /area/security)
 "Yo" = (
@@ -57360,8 +57345,8 @@ Wv
 px
 Db
 DQ
-LA
-px
+Kh
+nv
 Pf
 EM
 Kh

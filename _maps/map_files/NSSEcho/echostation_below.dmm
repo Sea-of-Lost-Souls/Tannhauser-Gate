@@ -346,6 +346,7 @@
 	pixel_y = -29
 	},
 /obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/pipe/smart/simple/general/hidden,
 /turf/open/floor/iron,
 /area/science/xenobiology)
 "cg" = (
@@ -860,6 +861,9 @@
 	},
 /obj/machinery/atmospherics/pipe/heat_exchanging/junction{
 	dir = 8
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/starboard)
@@ -3451,6 +3455,9 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
+/obj/machinery/atmospherics/pipe/smart/manifold/general/visible{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/science/xenobiology)
 "uU" = (
@@ -4297,6 +4304,15 @@
 /obj/machinery/atmospherics/pipe/smart/manifold/violet/visible,
 /turf/open/floor/iron,
 /area/engineering/atmos)
+"Ay" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "Xenolab";
+	name = "test chamber blast door"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/atmospherics/pipe/smart/simple/general/hidden,
+/turf/open/floor/plating,
+/area/science/xenobiology)
 "Az" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 10
@@ -6367,6 +6383,10 @@
 	},
 /turf/open/floor/iron,
 /area/science/xenobiology)
+"MF" = (
+/obj/machinery/atmospherics/pipe/smart/simple/general/hidden,
+/turf/open/floor/engine,
+/area/science/xenobiology)
 "MH" = (
 /obj/machinery/light{
 	dir = 4
@@ -7291,6 +7311,7 @@
 	dir = 6
 	},
 /obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/simple/general/hidden,
 /turf/open/floor/iron,
 /area/science/xenobiology)
 "Sj" = (
@@ -8018,6 +8039,9 @@
 	req_access_txt = "10"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/visible,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/starboard)
 "WN" = (
@@ -48122,9 +48146,9 @@ uu
 uR
 cf
 Si
-vR
-Ob
-Ob
+Ay
+MF
+MF
 cM
 Ob
 nX

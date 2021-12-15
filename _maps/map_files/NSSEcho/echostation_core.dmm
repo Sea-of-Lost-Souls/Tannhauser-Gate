@@ -13431,10 +13431,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
-"Hg" = (
-/obj/machinery/computer/nanite_cloud_controller,
-/turf/open/floor/engine,
-/area/science/lab)
 "Hh" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 1
@@ -56941,7 +56937,7 @@ nF
 dx
 HJ
 gA
-Hg
+gA
 gA
 Qx
 cy
