@@ -178,11 +178,12 @@
 			H.icon_render_key = "" //Just in case
 			H.update_body()
 		if("DNA Specifics")
-			var/dna_alteration = input(H, "Select what part of your DNA you'd like to alter", "DNA Alteration", "cancel") in list("Penis Size","Penis Girth", "Penis Sheath", "Penis Taur Mode", "Balls Size", "Breasts Size", "Breasts Lactation", "Body Size", "Cancel")
+			var/dna_alteration = input(H, "Select what part of your DNA you'd like to alter", "DNA Alteration", "cancel") in list("Body Size", "Cancel") // "Penis Size","Penis Girth", "Penis Sheath", "Penis Taur Mode", "Balls Size", "Breasts Size", "Breasts Lactation",  removed
 			if(!dna_alteration || dna_alteration == "Cancel")
 				return
 			switch(dna_alteration)
-				if("Breasts Size")
+			// Tannhauser-Gate Removal Begin
+/* 				if("Breasts Size")
 					var/new_size = input(H, "Choose your character's breasts size:", "DNA Alteration") as null|anything in GLOB.preference_breast_sizes
 					if(new_size)
 						DNA.features["breasts_size"] = breasts_cup_to_size(new_size)
@@ -233,6 +234,8 @@
 						var/obj/item/organ/genital/testicles/avocados = H.getorganslot(ORGAN_SLOT_TESTICLES)
 						if(avocados)
 							avocados.set_size(DNA.features["balls_size"])
+Tannhauser-Gate Removal End
+ */
 				if("Body Size")
 					var/new_body_size = input(H, "Choose your desired sprite size:\n([BODY_SIZE_MIN*100]%-[BODY_SIZE_MAX*100]%), Warning: May make your character look distorted", "Character Preference", DNA.features["body_size"]*100) as num|null
 					if(new_body_size)

@@ -35,6 +35,8 @@
 		#include "map_files\Mining\Rockplanet.dmm"
 		#include "map_files\Mining\TidalLock.dmm"
 		// SKYRAT EDIT END
+		#include "map_files\PubbyStation\PubbyStation.dmm"
+		#include "map_files\ManaForge\manaforge.dmm"
 
 		#ifdef CIBUILDING
 			#include "templates.dm"

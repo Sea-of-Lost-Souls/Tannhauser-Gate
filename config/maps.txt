@@ -15,46 +15,81 @@ endmap
 
 map metastation
 	#default
-	minplayers 25
+	minplayers 0
+	maxplayers 0
 	#voteweight 0.5
 	votable
 endmap
 
 map deltastation
-	minplayers 50
+	minplayers 0
+	maxplayers 300
 	votable
 endmap
 
 map kilostation
+	minplayers 0
+	maxplayers 300
 	votable
 endmap
 
 map icebox
-	minplayers 25
+	minplayers 0
+	maxplayers 300
 	votable
 endmap
 
 map tramstation
-	minplayers 35
-
-map waterkilostation
+	minplayers 0
+	maxplayers 300
 	votable
 endmap
 
 map runtimestation
+	disabled
 endmap
 
 map multiz_debug
+	disabled
 endmap
 
 ##SKYRAT MAPS##
 
 map nssjourney
-	minplayers 25
+#	minplayers 25
+	disabled
 	votable
 endmap
 
 map blueshift
-	minplayers 50
+	minplayers 0
+	maxplayers 300
 	votable
+endmap
+
+map waterkilostation
+	disabled
+	votable
+endmap
+
+##Tannhauser-Gate Maps##
+map manaforge
+	minplayers 0
+	maxplayers 300
+	votable
+endmap
+
+#map betastation
+#	votable
+#	default
+#	disabled
+#endmap
+
+map PubbyStation
+	votable
+	minplayers 0
+	maxplayers 300
+	default
+	#disabled
+	#voteweight 0.5
 endmap
