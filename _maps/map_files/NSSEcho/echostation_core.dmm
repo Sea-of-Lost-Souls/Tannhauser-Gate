@@ -12292,7 +12292,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/item/clothing/suit/space/hardsuit/clown,
+/obj/item/mod/control/pre_equipped/responsory/clown,
 /obj/item/tank/internals/emergency_oxygen,
 /obj/machinery/camera/motion/directional/east{
 	network = list("clown")

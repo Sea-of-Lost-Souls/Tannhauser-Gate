@@ -6403,12 +6403,6 @@
 	},
 /turf/open/floor/carpet,
 /area/service/chapel/monastery)
-"tk" = (
-/obj/machinery/light/broken,
-/obj/structure/spider/stickyweb/genetic,
-/obj/effect/mob_spawn/human/skeleton/alive,
-/turf/open/floor/wood,
-/area/commons/vacant_room)
 "tl" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /obj/effect/turf_decal/tile/yellow{
@@ -53394,7 +53388,7 @@ Sy
 mz
 yZ
 yZ
-tk
+Zw
 Wg
 nK
 PZ
