@@ -150,6 +150,7 @@
 		apply_status_effect(/datum/status_effect/body_fluid_regen)
 
 ///////////-----Verbs------///////////
+/*
 /mob/living/carbon/human/verb/arousal_panel()
 	set name = "Climax"
 	set category = "IC"
@@ -163,7 +164,7 @@
 				climax(TRUE)
 	else
 		to_chat(src, span_warning("You can't cum right now!"))
-
+ */
 ////////////
 ///FLUIDS///
 ////////////
@@ -792,10 +793,12 @@
 	qdel(bigcumface)
 	return ..()
 
+/*
 /datum/emote/living/cum
 	key = "cum"
 	key_third_person = "cums"
 	cooldown = 30 SECONDS
+*/
 
 /datum/emote/living/cum/check_config()
 	return !CONFIG_GET(flag/disable_erp_preferences)
