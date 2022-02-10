@@ -70,11 +70,11 @@
 #define BELOW_OBJ_LAYER 2.9
 #define LOW_ITEM_LAYER 2.95
 //#define OBJ_LAYER 3 //For easy recordkeeping; this is a byond define
-#define CLOSED_BLASTDOOR_LAYER 3.05
 #define CLOSED_DOOR_LAYER 3.1
 #define CLOSED_FIREDOOR_LAYER 3.11
-#define SHUTTER_LAYER 3.12 // HERE BE DRAGONS
 #define ABOVE_OBJ_LAYER 3.2
+#define CLOSED_BLASTDOOR_LAYER 3.3 // ABOVE WINDOWS AND DOORS
+#define SHUTTER_LAYER 3.3 // HERE BE DRAGONS
 #define ABOVE_WINDOW_LAYER 3.3
 #define SIGN_LAYER 3.4
 #define CORGI_ASS_PIN_LAYER 3.41
@@ -183,9 +183,12 @@
 
 #define ADMIN_POPUP_LAYER 1
 
-
-///Plane of the "splash" icon used that shows on the lobby screen. Nothing should ever be above this.
-#define SPLASHSCREEN_PLANE 9999
+//SKYRAT EDIT: Lobby Cam
+///Plane of the "splash" icon used that shows on the lobby screen. Nothing should ever be above this. (Except the logo)
+#define BLACK_FADE 9997
+#define SPLASHSCREEN_PLANE 9998 //Previous value: 9999
+#define SKYRAT_LOGO 9999
+//SKYRAT EDIT: Lobby Cam
 
 #define LOBBY_BACKGROUND_LAYER 3
 #define LOBBY_BUTTON_LAYER 4

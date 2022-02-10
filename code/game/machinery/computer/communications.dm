@@ -139,7 +139,7 @@ GLOBAL_VAR_INIT(cops_arrived, FALSE)
 			return
 		battlecruiser_called = TRUE
 		caller_card.use_charge(user)
-		addtimer(CALLBACK(GLOBAL_PROC, /proc/summon_battlecruiser), rand(3 MINUTES, 5 MINUTES)) //skyrat edit: original values (20 SECONDS, 1 MINUTES)
+		addtimer(CALLBACK(GLOBAL_PROC, /proc/summon_battlecruiser, caller_card.team), rand(3 MINUTES, 5 MINUTES)) //skyrat edit: original values (20 SECONDS, 1 MINUTES)
 		playsound(src, 'sound/machines/terminal_alert.ogg', 50, FALSE)
 		priority_announce("Attention crew: deep-space sensors detect a Syndicate battlecruiser-class signature subspace rift forming near your station. Estimated time until arrival: three to five minutes.", "[command_name()] High-Priority Update") //skyrat add: announcement on battlecruiser call
 		return
@@ -842,6 +842,7 @@ GLOBAL_VAR_INIT(cops_arrived, FALSE)
 
 	var/picked_option = pick(hack_options)
 	message_admins("[ADMIN_LOOKUPFLW(hacker)] hacked a [name] located at [ADMIN_VERBOSEJMP(src)], resulting in: [picked_option]!")
+	hacker.log_message("hacked a communications console, resulting in: [picked_option].", LOG_GAME, log_globally = TRUE)
 	switch(picked_option)
 		if(HACK_PIRATE) // Triggers pirates, which the crew may be able to pay off to prevent
 			priority_announce(

@@ -413,3 +413,12 @@
 /datum/sprite_accessory/tails/mammal/wagging/snakestripealt
 	name = "Snake stripe (alt)"
 	icon_state = "snakestripealt"
+
+/datum/sprite_accessory/tails/mammal/wagging/threecat
+	name = "Cat, Triple"
+	icon_state = "threecat"
+
+/datum/sprite_accessory/tails/mammal/wagging/tiger2
+	name = "Servelyn Tails"
+	icon_state = "tiger2"
+	general_type = "feline"

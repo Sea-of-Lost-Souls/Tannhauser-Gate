@@ -293,6 +293,7 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	new/datum/stack_recipe("baseball bat", /obj/item/melee/baseball_bat, 5, time = 15),\
 	new/datum/stack_recipe("loom", /obj/structure/loom, 10, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("water basin", /obj/structure/reagent_water_basin, 5, time = 20, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("forging work bench", /obj/structure/reagent_crafting_bench, 5, time = 20, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("mortar", /obj/item/reagent_containers/glass/mortar, 3), \
 	new/datum/stack_recipe("firebrand", /obj/item/match/firebrand, 2, time = 100), \
 	new/datum/stack_recipe("bonfire", /obj/structure/bonfire, 10, time = 60, one_per_turf = TRUE, on_floor = TRUE), \
@@ -407,6 +408,7 @@ GLOBAL_LIST_INIT(cloth_recipes, list ( \
 	null, \
 	new/datum/stack_recipe("blindfold", /obj/item/clothing/glasses/blindfold, 2), \
 	new/datum/stack_recipe("eyepatch wrap", /obj/item/clothing/glasses/eyepatch/wrap, 2), /*SKYRAT EDIT ADDITION*/ \
+	new/datum/stack_recipe("eyepatch", /obj/item/clothing/glasses/eyepatch, 2), /*SKYRAT EDIT ADDITION*/ \
 	null, \
 	new/datum/stack_recipe("19x19 canvas", /obj/item/canvas/nineteen_nineteen, 3), \
 	new/datum/stack_recipe("23x19 canvas", /obj/item/canvas/twentythree_nineteen, 4), \

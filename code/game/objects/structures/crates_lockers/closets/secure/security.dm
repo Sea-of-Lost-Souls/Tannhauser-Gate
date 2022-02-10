@@ -101,7 +101,7 @@
 
 /obj/structure/closet/secure_closet/security/PopulateContents()
 	..()
-	//new /obj/item/clothing/suit/armor/vest(src) SKYRAT EDIT REMOVAL
+	new /obj/item/clothing/suit/armor/vest/security(src) //SKYRAT EDIT CHANGE
 	new /obj/item/clothing/head/security_cap(src) //SKYRAT EDIT CHANGE
 	new /obj/item/clothing/head/beret/sec(src) //SKYRAT EDIT ADDITION
 	new /obj/item/clothing/head/helmet/sec(src) //SKYRAT EDIT ADDITION
@@ -348,6 +348,8 @@
 		new /obj/item/gun/energy/e_gun(src)
 	for(var/i in 1 to 3)
 		new /obj/item/gun/energy/laser(src)
+	for(var/i in 1 to 3)
+		new /obj/item/gun/energy/laser/thermal(src)
 
 /obj/structure/closet/secure_closet/tac
 	name = "armory tac locker"
