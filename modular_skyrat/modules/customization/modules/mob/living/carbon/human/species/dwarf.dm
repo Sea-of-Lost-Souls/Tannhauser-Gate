@@ -15,11 +15,11 @@
 	inherent_traits = list(
 		TRAIT_DWARF,TRAIT_SNOB,
 		TRAIT_ADVANCEDTOOLUSER,
-		TRAIT_CAN_STRIP
+		TRAIT_CAN_STRIP,
+		TRAIT_CAN_USE_FLIGHT_POTION,
 	)
 	use_skintones = 1
 	skinned_type = /obj/item/stack/sheet/animalhide/human
-	disliked_food = GROSS | RAW
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
 	payday_modifier = 0.75
 	liked_food = ALCOHOL | MEAT | DAIRY //Dwarves like alcohol, meat, and dairy products.

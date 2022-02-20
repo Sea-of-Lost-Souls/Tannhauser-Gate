@@ -83,6 +83,21 @@
 		/obj/item/polepack = 1)
 	generate_items_inside(items_inside,src)
 
+//Shibari stand
+/obj/item/storage/box/shibari_stand
+	name = "DIY Shibari stand kit"
+	desc = "Contains everything you need to build your own shibari stand!"
+
+/obj/item/storage/box/shibari_stand/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/shibari_stand_kit = 1,
+		/obj/item/paper/shibari_kit_instructions = 1)
+	generate_items_inside(items_inside,src)
+
+//Paper instructions for shibari kit
+
+/obj/item/paper/shibari_kit_instructions
+	info = "Hello! Congratulations on your purchase of the shibari kit by LustWish! Some newbies may get confused by our ropes, so we prepared a small instructions for you! First of all, you have to have a wrench to construct the stand itself. Secondly, you can use screwdrivers to change the color of your shibari stand. Just replace the plastic fittings! Thirdly, if you want to tie somebody to a bondage stand you need to fully tie their body, on both groin and chest!. To do that you need to use rope on body and then on groin of character, then you can just buckle them to the stand like any chair. Don't forget to have some ropes on your hand to actually tie them to the stand, as there's no ropes included with it! And that's it!"
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////This code is supposed to be placed in "code/modules/mob/living/carbon/human/inventory.dm"/////////////
 //If you are nice person you can transfer this part of code to it, but i didn't for modularisation reasons//
@@ -926,7 +941,7 @@
 ////////////////////////////////////
 // STRIPPING ERP SYSTEM EXTENTION //
 ////////////////////////////////////
-
+/* Removed by Tannhauser-Gate
 // Extend stripping menus with ERP slots
 /datum/strippable_item/mob_item_slot/vagina
 	key = STRIPPABLE_ITEM_VAGINA
@@ -998,6 +1013,7 @@ GLOBAL_LIST_INIT(strippable_human_erp_items, create_erp_strippable_list(list(
 		strippable_items[strippable_item.key] = strippable_item
 	GLOB.strippable_human_items += strippable_items
 	return strippable_items
+*/
 
 ////////////////////////////////////////////////////////////////////
 // EXTENTIONS FOR SPRITE_ACCESSORY IS_HIDDEN CHECKS FOR ERP STUFF //

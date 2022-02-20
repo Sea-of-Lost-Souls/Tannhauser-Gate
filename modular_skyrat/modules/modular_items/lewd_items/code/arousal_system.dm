@@ -10,9 +10,10 @@
 
 #define TRAIT_MASOCHISM		"masochism"
 #define TRAIT_SADISM		"sadism"
-#define TRAIT_BIMBO 		"bimbo"
 #define TRAIT_NEVERBONER	"neverboner"
-#define TRAIT_SOBSESSED		"sexual obsession"
+#define TRAIT_RIGGER		"rigger"
+#define TRAIT_ROPEBUNNY		"rope bunny"
+
 #define APHRO_TRAIT			"aphro"				///traits gained by brain traumas, can be removed if the brain trauma is gone
 #define LEWDQUIRK_TRAIT		"lewdquirks"		///traits gained by quirks, cannot be removed unless the quirk itself is gone
 #define LEWDCHEM_TRAIT		"lewdchem"			///traits gained by chemicals, you get the idea
@@ -57,11 +58,12 @@
 	reagent_state = LIQUID
 	shot_glass_icon_state = "shotglasswhite"
 
-/datum/reagent/consumable/milk/breast_milk
+/datum/reagent/consumable/breast_milk
 	name = "breast milk"
 	description = "This looks familiar... Wait, it's milk!"
 	taste_description = "warm and creamy"
 	color = "#ffffffff"
+	glass_icon_state = "glass_white"
 	glass_name = "glass of breast milk"
 	glass_desc = "almost like normal milk."
 	reagent_state = LIQUID
@@ -87,10 +89,8 @@
 	..()
 
 /datum/reagent/drug/dopamine/overdose_start(mob/living/carbon/human/M)
-	if(!HAS_TRAIT(M, TRAIT_BIMBO))
-		to_chat(M, span_userdanger("You don't want to cum anymore!"))
-		SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/overgasm, name)
-	return
+	to_chat(M, span_userdanger("You don't want to cum anymore!"))
+	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/overgasm, name)
 
 /datum/reagent/drug/dopamine/overdose_process(mob/living/carbon/human/M)
 	M.adjustArousal(0.5)
@@ -150,6 +150,7 @@
 		apply_status_effect(/datum/status_effect/body_fluid_regen)
 
 ///////////-----Verbs------///////////
+/*
 /mob/living/carbon/human/verb/arousal_panel()
 	set name = "Climax"
 	set category = "IC"
@@ -163,7 +164,7 @@
 				climax(TRUE)
 	else
 		to_chat(src, span_warning("You can't cum right now!"))
-
+ */
 ////////////
 ///FLUIDS///
 ////////////
@@ -192,7 +193,7 @@
 				var/regen = ((owner.nutrition / (NUTRITION_LEVEL_WELL_FED/100))/100) * (breasts.internal_fluids.maximum_volume/11000) * interval
 				if(!breasts.internal_fluids.holder_full())
 					owner.adjust_nutrition(-regen / 2)
-					breasts.internal_fluids.add_reagent(/datum/reagent/consumable/milk/breast_milk, regen)
+					breasts.internal_fluids.add_reagent(/datum/reagent/consumable/breast_milk, regen)
 
 		if(vagina)
 			if(H.arousal >= AROUS_SYS_LITTLE)
@@ -592,6 +593,26 @@
 /datum/mood_event/subspace
 	description = span_purple("Everything is so woozy... Pain feels so... Awesome.\n")
 
+/datum/status_effect/ropebunny
+	id = "ropebunny"
+	tick_interval = 10
+	duration = INFINITE
+	alert_type = null
+
+/datum/status_effect/ropebunny/on_apply()
+	. = ..()
+	var/mob/living/carbon/human/target = owner
+	SEND_SIGNAL(target, COMSIG_ADD_MOOD_EVENT, "ropebunny", /datum/mood_event/ropebunny)
+
+/datum/status_effect/ropebunny/on_remove()
+	. = ..()
+	var/mob/living/carbon/human/target = owner
+	SEND_SIGNAL(target, COMSIG_CLEAR_MOOD_EVENT, "ropebunny", /datum/mood_event/ropebunny)
+
+/datum/mood_event/ropebunny
+	description = span_purple("I'm tied! Cannot move! These ropes... Ah!~")
+	mood_change = 0 //I don't want to doom the station to sonic-speed perverts, but still want to keep this as mood modifier.
+
 ///////////////////////
 ///AROUSAL INDICATOR///
 ///////////////////////
@@ -792,10 +813,12 @@
 	qdel(bigcumface)
 	return ..()
 
+/*
 /datum/emote/living/cum
 	key = "cum"
 	key_third_person = "cums"
 	cooldown = 30 SECONDS
+*/
 
 /datum/emote/living/cum/check_config()
 	return !CONFIG_GET(flag/disable_erp_preferences)

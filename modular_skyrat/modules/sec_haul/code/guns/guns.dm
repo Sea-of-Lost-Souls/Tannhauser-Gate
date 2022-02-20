@@ -99,6 +99,25 @@
 	ammo_type = /obj/item/ammo_casing/b9mm/rubber
 	round_type = AMMO_TYPE_RUBBER
 
+/obj/item/gun/ballistic/automatic/pistol/g17/mesa
+	name = "\improper Glock-17"
+	desc = "A weapon from bygone times, and this is the exact 21st century version. In fact, even more reliable. Chambered in 9mm."
+	icon = 'modular_skyrat/modules/sec_haul/icons/guns/glock.dmi'
+	icon_state = "glock_mesa"
+	w_class = WEIGHT_CLASS_NORMAL
+	mag_type = /obj/item/ammo_box/magazine/multi_sprite/g17
+	can_suppress = FALSE
+	fire_sound = 'sound/weapons/gun/pistol/shot_alt.ogg'
+	rack_sound = 'sound/weapons/gun/pistol/rack.ogg'
+	lock_back_sound = 'sound/weapons/gun/pistol/slide_lock.ogg'
+	bolt_drop_sound = 'sound/weapons/gun/pistol/slide_drop.ogg'
+	realistic = TRUE
+	can_flashlight = TRUE
+	dirt_modifier = 0.2
+	emp_damageable = FALSE
+	armadyne = FALSE
+	fire_delay = 0.9
+
 ////////////////PDH 40x32
 /obj/item/gun/ballistic/automatic/pistol/pdh
 	name = "\improper PDH-6H 'Osprey'"
@@ -693,7 +712,7 @@
 
 /obj/item/gun/ballistic/shotgun/m23
 	name = "\improper Model 23-37"
-	desc = "A common outdated police shotgun sporting a six-round tube."
+	desc = "An outdated police shotgun sporting an eight-round tube."
 	icon_state = "riotshotgun"
 	inhand_icon_state = "shotgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/m23
@@ -704,11 +723,11 @@
 	name = "m23 shotgun internal magazine"
 	caliber = CALIBER_SHOTGUN
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
-	max_ammo = 6
+	max_ammo = 8
 
 /obj/item/gun/ballistic/shotgun/automatic/as2
 	name = "\improper M2 Auto-Shotgun"
-	desc = "An automatic shotgun with a four round internal tube."
+	desc = "A semi-automatic shotgun with a four-round internal tube."
 	icon = 'modular_skyrat/modules/aesthetics/guns/icons/guns.dmi'
 	icon_state = "as2"
 	worn_icon = 'modular_skyrat/modules/aesthetics/guns/icons/guns_back.dmi'
@@ -730,12 +749,12 @@
 /obj/item/ammo_box/magazine/internal/shot/as2
 	name = "shotgun internal magazine"
 	caliber = CALIBER_SHOTGUN
-	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
+	ammo_type = /obj/item/ammo_casing/shotgun
 	max_ammo = 4
 
 /obj/item/gun/ballistic/shotgun/sas14
 	name = "\improper SAS-14"
-	desc = "A pump action shotgun with a five round box magazine."
+	desc = "A semi-automatic shotgun with a five-round box magazine."
 	icon =  'modular_skyrat/modules/sec_haul/icons/guns/sas14.dmi'
 	icon_state = "sas14"
 	inhand_icon_state = "shotgun"
@@ -752,7 +771,7 @@
 	weapon_weight = WEAPON_MEDIUM
 	burst_size = 1
 	fire_select_modes = list(SELECT_SEMI_AUTOMATIC)
-	semi_auto = FALSE
+	semi_auto = TRUE
 	internal_magazine = FALSE
 	armadyne = TRUE
 
@@ -764,3 +783,20 @@
 	caliber = CALIBER_14GAUGE
 	ammo_type = /obj/item/ammo_casing/s14gauge
 	max_ammo = 5
+
+//New SAS14 mags beyond here
+
+/obj/item/ammo_box/magazine/sas14/empty
+	start_empty = TRUE
+
+/obj/item/ammo_box/magazine/sas14/beanbag
+	ammo_type = /obj/item/ammo_casing/s14gauge/beanbag
+
+/obj/item/ammo_box/magazine/sas14/buckshot
+	ammo_type = /obj/item/ammo_casing/s14gauge/buckshot
+
+/obj/item/ammo_box/magazine/sas14/rubbershot
+	ammo_type = /obj/item/ammo_casing/s14gauge/rubbershot
+
+/obj/item/ammo_box/magazine/sas14/stunslug
+	ammo_type = /obj/item/ammo_casing/s14gauge/stunslug

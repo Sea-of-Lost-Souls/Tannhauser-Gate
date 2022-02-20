@@ -191,12 +191,6 @@
 //////////////////////////////////////////////////////////
 // Override block to change the standard chair behavior //
 //////////////////////////////////////////////////////////
-// Object cannot rotate
-/obj/structure/chair/milking_machine/can_be_rotated(mob/user)
-	return FALSE
-// User cannot rotate the object
-/obj/structure/chair/milking_machine/can_user_rotate(mob/user)
-	return FALSE
 // Another plug to disable rotation
 /obj/structure/chair/milking_machine/attack_tk(mob/user)
 	return FALSE
@@ -860,6 +854,8 @@
 	// 	ui.open()
 	// ///////////////////////////////////////////////////////////
 
+	/*
+
 	//Block the interface if we are in the machine. Use in production
 	if(LAZYLEN(buckled_mobs))
 		if(user != src.buckled_mobs[1])
@@ -874,7 +870,15 @@
 		ui = new(user, src, "MilkingMachine", name)
 		ui.open()
 		return
+	*/
+
 	///////////////////////////////////////
+
+	// // Tannhauser Gate behavior.
+	if(!ui)
+		ui = new(user, src, "MilkingMachine", name)
+		ui.close()
+	// ///////////////////////////////////////////////////////////
 
 // Interface data filling handler
 /obj/structure/chair/milking_machine/ui_data(mob/user)

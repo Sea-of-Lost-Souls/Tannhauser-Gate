@@ -94,7 +94,7 @@
 			if(SHEATH_NORMAL)
 				returned_string = "You see a sheath."
 			if(SHEATH_SLIT)
-				returned_string = "You see genital slit."
+				returned_string = "You see a slit." ///Typo fix.
 		if(aroused == AROUSAL_PARTIAL)
 			returned_string += " There's a [pname]penis poking out of it."
 	else
@@ -352,6 +352,7 @@
 			return text2num(key)
 	return 0
 
+/*  Tannhauser-Gate Removal
 /mob/living/carbon/human/verb/toggle_genitals()
 	set category = "IC"
 	set name = "Expose/Hide genitals"
@@ -410,3 +411,4 @@
 			picked_organ.update_sprite_suffix()
 			update_body()
 	return
+ */ //Tannhauser-Gate Removal End

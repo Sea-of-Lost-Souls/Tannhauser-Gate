@@ -6,6 +6,7 @@ $include comms.txt
 $include resources.txt
 $include skyrat/skyrat_config.txt
 $include interviews.txt
+$include Tannhauser-Gate/config.txt
 
 # You can use the @ character at the beginning of a config option to lock it from being edited in-game
 # Example usage:
@@ -173,6 +174,9 @@ LOG_CLONING
 ## log shuttle actions
 LOG_SHUTTLE
 
+## log tool interactions [/atom/proc/tool_act]
+LOG_TOOLS
+
 ## Log all timers on timer auto reset
 # LOG_TIMERS_ON_BUCKET_RESET
 
@@ -304,7 +308,7 @@ LOAD_JOBS_FROM_TXT
 
 ## Uncomment to give admins the ability to send a maptext popup to players.
 ## Only fires when an admin requests it, not every ahelp.
-POPUP_ADMIN_PM
+#POPUP_ADMIN_PM
 
 ## Uncomment to allow special 'Easter-egg' events on special holidays such as seasonal holidays and stuff like 'Talk Like a Pirate Day' :3 YAARRR
 ALLOW_HOLIDAYS
@@ -588,6 +592,11 @@ URGENT_AHELP_COOLDOWN 300
 ## The message that the player receives whenever prompted whether they want to send an urgent ahelp or not.
 #URGENT_AHELP_USER_PROMPT This'll ping the admins!
 
+## The link that the title of a ticket can link to.
+## If not set, it will link nowhere
+## use $RID for the round ID and $TID for the ticket ID
+#ADMINHELP_AHELP_LINK
+
 ## The URL for the pfp of the webhook
 #ADMINHELP_WEBHOOK_PFP
 
@@ -611,3 +620,13 @@ CACHE_ASSETS 0
 ## You should only enable this if you can guarantee a station name doesn't break BYOND's TOS.
 ## BYOND staff have gotten upset at us in the past for inappropriate station names.
 #STATION_NAME_IN_HUB_ENTRY
+
+## The number of PR announcements allowed for the same pull request per round
+## This makes sure that somebody can only spam a few reopens and closes before being ignored
+PR_ANNOUNCEMENTS_PER_ROUND 5
+
+## Uncomment to block all attempts to profile, for performance reasons
+#FORBID_ALL_PROFILING
+
+## Uncomment to block granting profiling privileges to users with R_DEBUG, for performance purposes
+#FORBID_ADMIN_PROFILING
