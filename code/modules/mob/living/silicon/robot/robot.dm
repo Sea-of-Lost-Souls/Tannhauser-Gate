@@ -188,6 +188,10 @@
 		to_chat(src,span_userdanger("ERROR: Model installer reply timeout. Please check internal connections."))
 		return
 
+	if(lockcharge == TRUE)
+		to_chat(src,span_userdanger("ERROR: Lockdown is engaged. Please disengage lockdown to pick module."))
+		return
+
 	// SKYRAT EDIT START - Making the cyborg model list static to reduce how many times it's generated.
 	if(!length(GLOB.cyborg_model_list))
 		GLOB.cyborg_model_list = list(
@@ -439,9 +443,9 @@
 	if(wires?.is_cut(WIRE_LOCKDOWN))
 		state = TRUE
 	if(state)
-		throw_alert("locked", /atom/movable/screen/alert/locked)
+		throw_alert(ALERT_HACKED, /atom/movable/screen/alert/locked)
 	else
-		clear_alert("locked")
+		clear_alert(ALERT_HACKED)
 	set_lockcharge(state)
 
 
@@ -464,9 +468,9 @@
 	model.rebuild_modules()
 	update_icons()
 	if(emagged)
-		throw_alert("hacked", /atom/movable/screen/alert/hacked)
+		throw_alert(ALERT_HACKED, /atom/movable/screen/alert/hacked)
 	else
-		clear_alert("hacked")
+		clear_alert(ALERT_HACKED)
 	set_modularInterface_theme()
 
 /// Special handling for getting hit with a light eater

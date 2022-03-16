@@ -18,7 +18,7 @@
 		/obj/item/melee/baton/security/loaded,\
 		/obj/item/gun/energy/cell_loaded/medigun/upgraded,\
 		/obj/item/storage/box/medicells,\
-		/obj/item/storage/firstaid/tactical/ntrauma,\
+		/obj/item/storage/medkit/tactical/ntrauma,\
 		)
 	//Chosen cells are based off the worst things to deal with: TraumaTeam is built for worst-case scenarios, so they get a temperature cell and a better toxin cell
 
@@ -28,7 +28,7 @@
 		/obj/item/melee/baton/security/loaded ,\
 		/obj/item/reagent_containers/hypospray/combat,\
 		/obj/item/gun/medbeam,\
-		/obj/item/storage/firstaid/tactical/ntrauma,\
+		/obj/item/storage/medkit/tactical/ntrauma,\
 		/obj/item/roller,\
 		)
 
@@ -50,8 +50,14 @@
 	new /obj/item/weaponcell/medical/utility/temperature(src)
 	new /obj/item/weaponcell/medical/utility/bed(src)
 
+/datum/id_trim/centcom/ert/medical/ntrauma
+	assignment = "Trauma Team Specialist"
+	trim_state = "trim_highcleric"	//This is the CMO trim for the RPG Titles; considering its 'angelic' sprite, its fitting for these guardian angels
+	sechud_icon_state = SECHUD_SCRAMBLED
+
 /obj/item/card/id/advanced/centcom/ert/medical/ntrauma
 	registered_name = "Trauma Team Specialist"
+	trim = /datum/id_trim/centcom/ert/medical/ntrauma
 	icon_state = "battlecruisercaller"	//Read desc
 	desc = "A semi-standard black Identification card rigged with what appears to be a small transmitter wired to a small disk - presumably filled with access tokens. Not NT standard, sure, but effectively the same card as their ERTs."
 
@@ -71,11 +77,11 @@
 	new /obj/item/healthanalyzer/advanced(src)
 	new	/obj/item/reagent_containers/hypospray/combat(src)
 
-/obj/item/storage/firstaid/tactical/ntrauma
+/obj/item/storage/medkit/tactical/ntrauma
 	name = "trauma medical kit"
 	desc = "I hope you've got insurance, because the Trauma Team's premiums are HIGH."
 
-/obj/item/storage/firstaid/tactical/ntrauma/PopulateContents()
+/obj/item/storage/medkit/tactical/ntrauma/PopulateContents()
 	new /obj/item/stack/medical/gauze(src)
 	new /obj/item/stack/medical/splint(src)
 	new /obj/item/defibrillator/compact/combat/loaded/nanotrasen(src)

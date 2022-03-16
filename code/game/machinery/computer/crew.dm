@@ -108,10 +108,9 @@ GLOBAL_DATUM_INIT(crewmonitor, /datum/crewmonitor, new)
 		JOB_SECURITY_OFFICER_SCIENCE = 15,
 		JOB_SECURITY_OFFICER_SUPPLY = 16,
 		*/
-		JOB_SECURITY_SERGEANT = 13, // SKYRAT EDIT ADDITION
-		JOB_SECURITY_MEDIC = 14, // SKYRAT EDIT ADDITION
-		JOB_CORRECTIONS_OFFICER = 15, // SKYRAT EDIT ADDITION
-		JOB_DETECTIVE = 17,
+		JOB_SECURITY_MEDIC = 13, // SKYRAT EDIT ADDITION
+		JOB_CORRECTIONS_OFFICER = 14, // SKYRAT EDIT ADDITION
+		JOB_DETECTIVE = 15,
 		// 20-29: Medbay
 		JOB_CHIEF_MEDICAL_OFFICER = 20,
 		JOB_CHEMIST = 21,
@@ -219,7 +218,7 @@ GLOBAL_DATUM_INIT(crewmonitor, /datum/crewmonitor, new)
 			continue
 
 		// Machinery and the target should be on the same level or different levels of the same station
-		if(pos.z != z && (!is_station_level(pos.z) || !is_station_level(z)))
+		if(pos.z != z && (!is_station_level(pos.z) || !is_station_level(z)) && !HAS_TRAIT(tracked_living_mob, TRAIT_MULTIZ_SUIT_SENSORS))
 			continue
 
 		var/mob/living/carbon/human/tracked_human = tracked_living_mob
