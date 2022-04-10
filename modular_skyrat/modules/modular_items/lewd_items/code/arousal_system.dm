@@ -11,9 +11,9 @@
 #define TRAIT_MASOCHISM		"masochism"
 #define TRAIT_SADISM		"sadism"
 #define TRAIT_NEVERBONER	"neverboner"
+#define TRAIT_BIMBO "bimbo"
 #define TRAIT_RIGGER		"rigger"
 #define TRAIT_ROPEBUNNY		"rope bunny"
-
 #define APHRO_TRAIT			"aphro"				///traits gained by brain traumas, can be removed if the brain trauma is gone
 #define LEWDQUIRK_TRAIT		"lewdquirks"		///traits gained by quirks, cannot be removed unless the quirk itself is gone
 #define LEWDCHEM_TRAIT		"lewdchem"			///traits gained by chemicals, you get the idea
@@ -88,9 +88,11 @@
 		M.emote(pick("shaking","moan"))
 	..()
 
-/datum/reagent/drug/dopamine/overdose_start(mob/living/carbon/human/M)
-	to_chat(M, span_userdanger("You don't want to cum anymore!"))
-	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/overgasm, name)
+/datum/reagent/drug/dopamine/overdose_start(mob/living/carbon/human/human_mob)
+	if(HAS_TRAIT(human_mob, TRAIT_BIMBO))
+		return
+	to_chat(human_mob, span_userdanger("You don't want to cum anymore!"))
+	SEND_SIGNAL(human_mob, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/overgasm, name)
 
 /datum/reagent/drug/dopamine/overdose_process(mob/living/carbon/human/M)
 	M.adjustArousal(0.5)
@@ -836,7 +838,7 @@
 		return
 
 
-	var/obj/item/coomer = new /obj/item/coom(user)
+	var/obj/item/coomer = new /obj/item/hand_item/coom(user)
 	var/mob/living/carbon/human/H = user
 	var/obj/item/held = user.get_active_held_item()
 	var/obj/item/unheld = user.get_inactive_held_item()
@@ -852,17 +854,14 @@
 		qdel(coomer)
 		to_chat(user, span_warning("You're incapable of masturbating."))
 
-/obj/item/coom
+/obj/item/hand_item/coom
 	name = "cum"
 	desc = "C-can I watch...?"
 	icon = 'icons/obj/hydroponics/harvest.dmi'
 	icon_state = "eggplant"
 	inhand_icon_state = "nothing"
-	force = 0
-	throwforce = 0
-	item_flags = DROPDEL | ABSTRACT | HAND_ITEM
 
-/obj/item/coom/attack(mob/living/M, mob/user, proximity)
+/obj/item/hand_item/coom/attack(mob/living/M, mob/user, proximity)
 	if (CONFIG_GET(flag/disable_erp_preferences))
 		return
 	if(!proximity)
@@ -907,7 +906,7 @@
 		qdel(src)
 
 //jerk off into bottles
-/obj/item/coom/afterattack(obj/target, mob/user, proximity)
+/obj/item/hand_item/coom/afterattack(obj/target, mob/user, proximity)
 	. = ..()
 	if (CONFIG_GET(flag/disable_erp_preferences))
 		return
@@ -937,7 +936,7 @@
 		user.visible_message(span_warning("[user] starts masturbating into [target]!"), span_danger("You start masturbating into [target]!"))
 		if(do_after(user,60))
 			user.visible_message(span_warning("[user] cums into [target]!"), span_danger("You cum into [target]!"))
-			playsound(target, "desecration", 50, TRUE, ignore_walls = FALSE)
+			playsound(target, SFX_DESECRATION, 50, TRUE, ignore_walls = FALSE)
 			R.trans_to(target, cum_volume)
 			if(prob(40))
 				user.emote("moan")
@@ -947,7 +946,7 @@
 		if(do_after(user,60))
 			var/turf/T = get_turf(target)
 			user.visible_message(span_warning("[user] cums on [target]!"), span_danger("You cum on [target]!"))
-			playsound(target, "desecration", 50, TRUE, ignore_walls = FALSE)
+			playsound(target, SFX_DESECRATION, 50, TRUE, ignore_walls = FALSE)
 			new/obj/effect/decal/cleanable/cum(T)
 			if(prob(40))
 				user.emote("moan")

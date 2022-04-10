@@ -70,11 +70,7 @@
 	if(give_objectives)
 		forge_traitor_objectives()
 
-	var/faction = prob(75) ? FACTION_SYNDICATE : FACTION_NANOTRASEN
-
-	pick_employer(faction)
-
-	traitor_flavor = strings(TRAITOR_FLAVOR_FILE, employer)
+	pick_employer()
 
 	owner.current.playsound_local(get_turf(owner.current), 'sound/ambience/antag/tatoralert.ogg', 100, FALSE, pressure_affected = FALSE, use_reverb = FALSE)
 
@@ -137,8 +133,10 @@
 	owner.special_role = null
 	return ..()
 
-/datum/antagonist/traitor/proc/pick_employer(faction)
+/datum/antagonist/traitor/proc/pick_employer()
+	var/faction = prob(75) ? FACTION_SYNDICATE : FACTION_NANOTRASEN
 	var/list/possible_employers = list()
+
 	possible_employers.Add(GLOB.syndicate_employers, GLOB.nanotrasen_employers)
 
 	switch(faction)
@@ -147,6 +145,7 @@
 		if(FACTION_NANOTRASEN)
 			possible_employers -= GLOB.syndicate_employers
 	employer = pick(possible_employers)
+	traitor_flavor = strings(TRAITOR_FLAVOR_FILE, employer)
 
 /datum/objective/traitor_progression
 	name = "traitor progression"
@@ -205,6 +204,8 @@
 /datum/antagonist/traitor/proc/forge_traitor_objectives()
 	objectives.Cut()
 
+	//SKYRAT EDIT START - OBJECTIVE REMOVAL
+	/*
 	var/datum/objective/traitor_progression/final_objective = new /datum/objective/traitor_progression()
 	final_objective.owner = owner
 	objectives += final_objective
@@ -212,7 +213,8 @@
 	var/datum/objective/traitor_objectives/objective_completion = new /datum/objective/traitor_objectives()
 	objective_completion.owner = owner
 	objectives += objective_completion
-
+	*/
+	//SKYRAT EDIT END
 
 /datum/antagonist/traitor/apply_innate_effects(mob/living/mob_override)
 	. = ..()

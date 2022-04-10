@@ -228,7 +228,7 @@
 			"suit" = create_silhouette_of(/obj/item/clothing/suit/space/eva),
 			"helmet" = create_silhouette_of(/obj/item/clothing/head/helmet/space/eva),
 			"mask" = create_silhouette_of(/obj/item/clothing/mask/breath),
-			"mod" = create_silhouette_of(/obj/item/mod),
+			"mod" = create_silhouette_of(/obj/item/mod/control),
 			"storage" = create_silhouette_of(/obj/item/tank/internals/oxygen),
 		)
 
@@ -441,8 +441,10 @@
 		cell = mod.get_cell()
 	if(!cell)
 		return
-	use_power(charge_rate * delta_time)
-	cell.give(charge_rate * delta_time)
+
+	var/cell_charged = cell.give(charge_rate * delta_time)
+	if(cell_charged)
+		use_power(cell_charged)
 
 /obj/machinery/suit_storage_unit/proc/shock(mob/user, prb)
 	if(!prob(prb))
