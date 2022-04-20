@@ -177,7 +177,7 @@
 	dir = 8
 	},
 /obj/structure/table/wood,
-/obj/item/cartridge/curator,
+/obj/item/cartridge,
 /turf/open/floor/cult,
 /area/service/library)
 "aG" = (
@@ -2223,7 +2223,7 @@
 /obj/machinery/airalarm/directional/north{
 	pixel_y = 22
 	},
-/obj/item/storage/firstaid/regular,
+/obj/item/storage/medkit/regular,
 /turf/open/floor/iron,
 /area/service/chapel)
 "gk" = (
@@ -3022,7 +3022,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/obj/machinery/computer/atmos_control/tank/oxygen_tank{
+/obj/machinery/computer/atmos_control/oxygen_tank{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -8690,10 +8690,6 @@
 	},
 /turf/closed/wall,
 /area/maintenance/aft)
-"Ax" = (
-/obj/machinery/computer/atmos_control/tank/oxygen_tank,
-/turf/open/floor/iron/dark,
-/area/command/bridge)
 "Ay" = (
 /turf/closed/wall/rust,
 /area/maintenance/department/security/brig)
@@ -10726,10 +10722,6 @@
 	},
 /obj/effect/turf_decal/tile/green{
 	dir = 8
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_x = 3;
-	pixel_y = 3
 	},
 /turf/open/floor/iron/dark,
 /area/command/bridge)
@@ -15477,7 +15469,7 @@
 	pixel_y = 2
 	},
 /obj/item/storage/box/deputy,
-/obj/machinery/newscaster/security_unit{
+/obj/machinery/newscaster{
 	pixel_y = 32
 	},
 /turf/open/floor/iron/dark,
@@ -15898,7 +15890,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/obj/machinery/computer/atmos_control/tank/nitrogen_tank{
+/obj/machinery/computer/atmos_control/nitrogen_tank{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -16297,7 +16289,7 @@
 	pixel_x = 5
 	},
 /obj/item/storage/box/evidence,
-/obj/machinery/newscaster/security_unit{
+/obj/machinery/newscaster{
 	pixel_x = -30
 	},
 /turf/open/floor/iron/grimy,
@@ -16525,7 +16517,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/obj/machinery/computer/atmos_control/tank/air_tank{
+/obj/machinery/computer/atmos_control/air_tank{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -16611,7 +16603,7 @@
 /area/security/office)
 "XZ" = (
 /obj/structure/cable,
-/obj/effect/spawner/random/medical/firstaid,
+/obj/effect/spawner/random/medical/medkit,
 /turf/open/floor/plating,
 /area/maintenance/department/security/brig)
 "Ya" = (
@@ -52311,7 +52303,7 @@ Cm
 sH
 oy
 Ez
-Ax
+sl
 Qd
 CZ
 Ki

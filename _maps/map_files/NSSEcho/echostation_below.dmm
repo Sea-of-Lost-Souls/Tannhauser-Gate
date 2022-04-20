@@ -18,7 +18,7 @@
 /turf/open/floor/plating,
 /area/comms)
 "am" = (
-/obj/machinery/air_sensor/atmos/oxygen_tank,
+/obj/machinery/air_sensor/oxygen_tank,
 /turf/open/floor/engine/o2,
 /area/engineering/atmos)
 "an" = (
@@ -108,7 +108,7 @@
 /turf/open/floor/iron/solarpanel/airless,
 /area/solars/starboard/aft)
 "aP" = (
-/obj/machinery/computer/atmos_control/tank/air_tank{
+/obj/machinery/computer/atmos_control/oxygen_tank{
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -182,7 +182,7 @@
 "bl" = (
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "bm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden,
 /obj/effect/turf_decal/stripes/line{
@@ -309,14 +309,14 @@
 /area/engineering/main/lower)
 "bX" = (
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "bY" = (
 /obj/machinery/limbgrower,
 /obj/machinery/light{
 	dir = 1
 	},
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "cd" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
@@ -383,7 +383,7 @@
 "ck" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/general/visible,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "cn" = (
 /obj/structure/cable/layer1,
 /turf/open/floor/engine,
@@ -406,7 +406,7 @@
 "cr" = (
 /obj/item/chair/wood,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "cs" = (
 /turf/closed/wall/rust,
 /area/maintenance/port/fore)
@@ -481,7 +481,7 @@
 "cQ" = (
 /obj/item/organ/tail,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "cS" = (
 /obj/structure/disposalpipe/trunk/multiz{
 	dir = 4
@@ -579,7 +579,7 @@
 /turf/open/space,
 /area/space/nearstation)
 "dC" = (
-/obj/effect/spawner/random/medical/firstaid,
+/obj/effect/spawner/random/medical/medkit,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "dE" = (
@@ -651,7 +651,7 @@
 "dZ" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
 /turf/closed/wall/r_wall/rust,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "ed" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/co2{
 	dir = 4
@@ -659,7 +659,7 @@
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "eg" = (
-/obj/machinery/air_sensor/atmos/carbon_tank,
+/obj/machinery/air_sensor/carbon_tank,
 /turf/open/floor/engine/co2,
 /area/engineering/atmos)
 "eh" = (
@@ -668,7 +668,7 @@
 /obj/effect/turf_decal/bot,
 /obj/machinery/nuclearbomb/beer,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "ep" = (
 /obj/machinery/computer/camera_advanced/xenobio,
 /obj/effect/turf_decal/stripes/line{
@@ -1049,7 +1049,7 @@
 "gg" = (
 /obj/structure/stairs/west,
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "gh" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible/layer1{
 	dir = 4
@@ -1347,7 +1347,7 @@
 	},
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "ij" = (
 /mob/living/carbon/human/species/monkey,
 /turf/open/floor/iron,
@@ -1557,7 +1557,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "jv" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
@@ -1647,7 +1647,7 @@
 /area/engineering/supermatter/room/port)
 "kc" = (
 /turf/closed/wall,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "kd" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -1729,7 +1729,7 @@
 	allow_living = 1
 	},
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "kC" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/spawner/structure/window/reinforced/plasma,
@@ -1833,7 +1833,7 @@
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "le" = (
 /obj/machinery/power/terminal{
 	dir = 1
@@ -1846,9 +1846,9 @@
 "lf" = (
 /obj/structure/table,
 /obj/machinery/power/apc/auto_name/directional/north,
-/obj/effect/spawner/random/medical/firstaid,
+/obj/effect/spawner/random/medical/medkit,
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "lh" = (
 /obj/machinery/door/airlock/maintenance_hatch,
 /turf/open/floor/plating,
@@ -2033,9 +2033,9 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/poddoor/shutters,
 /turf/open/floor/plating,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "mn" = (
-/obj/machinery/air_sensor/atmos/nitrogen_tank,
+/obj/machinery/air_sensor/nitrogen_tank,
 /turf/open/floor/engine/n2,
 /area/engineering/atmos)
 "mr" = (
@@ -2068,7 +2068,7 @@
 	id = "medical"
 	},
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "mA" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -2143,7 +2143,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "mW" = (
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/aisat/atmos)
@@ -2222,7 +2222,7 @@
 	dir = 9
 	},
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "nC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
 /turf/open/floor/iron,
@@ -2261,9 +2261,9 @@
 	dir = 4
 	},
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "nP" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/oxygen_input{
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/oxygen_input{
 	dir = 1
 	},
 /turf/open/floor/engine/o2,
@@ -2299,7 +2299,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plating,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "ob" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
@@ -2416,7 +2416,7 @@
 /turf/open/space,
 /area/space/nearstation)
 "oS" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/nitrogen_input{
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/nitrogen_input{
 	dir = 1
 	},
 /turf/open/floor/engine/n2,
@@ -2528,7 +2528,7 @@
 "pM" = (
 /obj/structure/cable,
 /turf/closed/wall/r_wall/rust,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "pS" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -2750,7 +2750,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "qP" = (
 /obj/machinery/atmospherics/components/trinary/filter{
 	dir = 4
@@ -2836,11 +2836,8 @@
 	anchored = 1;
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos{
-	dir = 8
-	},
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "ro" = (
 /turf/open/floor/engine/airless,
 /area/engineering/atmos)
@@ -2898,7 +2895,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /obj/machinery/implantchair/genepurge,
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "rC" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /turf/open/floor/plating,
@@ -2957,7 +2954,7 @@
 	},
 /area/engineering/atmos)
 "rO" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/nitrogen_output{
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/nitrogen_output{
 	dir = 1
 	},
 /turf/open/floor/engine/n2,
@@ -3049,9 +3046,9 @@
 	id = "medical"
 	},
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "si" = (
-/obj/machinery/computer/atmos_control/tank/mix_tank{
+/obj/machinery/computer/atmos_control/mix_tank{
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -3062,7 +3059,7 @@
 "sm" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /turf/closed/wall,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "sn" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -3129,7 +3126,7 @@
 /obj/item/coin/twoheaded,
 /obj/structure/closet/body_bag/environmental,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "sF" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/hidden,
@@ -3217,7 +3214,7 @@
 "tf" = (
 /obj/structure/fans,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "ti" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold,
 /turf/open/floor/engine,
@@ -3305,7 +3302,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "tY" = (
 /obj/machinery/processor/slime,
 /obj/effect/turf_decal/stripes/corner,
@@ -3314,7 +3311,7 @@
 "tZ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "ua" = (
 /obj/effect/landmark/start/station_engineer,
 /turf/open/floor/iron/dark,
@@ -3461,7 +3458,7 @@
 	name = "disposal conveyor"
 	},
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "vi" = (
 /turf/open/floor/iron/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
@@ -3469,7 +3466,7 @@
 /turf/open/floor/iron/dark,
 /area/ai_monitored/turret_protected/aisat)
 "vm" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/carbon_output{
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/carbon_output{
 	dir = 1
 	},
 /turf/open/floor/engine/co2,
@@ -3489,7 +3486,7 @@
 /turf/open/floor/engine,
 /area/engineering/supermatter/port)
 "vs" = (
-/obj/machinery/computer/atmos_control/tank/nitrous_tank{
+/obj/machinery/computer/atmos_control/nitrous_tank{
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -3689,7 +3686,7 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "wW" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/vault,
@@ -3826,7 +3823,7 @@
 	nightshift_light_color = "#ff0000"
 	},
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "xK" = (
 /obj/structure/frame/computer{
 	anchored = 1
@@ -3835,7 +3832,7 @@
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "xR" = (
 /obj/machinery/atmospherics/pipe/smart/simple/dark/visible/layer1{
 	dir = 10
@@ -3991,7 +3988,7 @@
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/aisat/service)
 "yy" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/carbon_input{
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/carbon_input{
 	dir = 1
 	},
 /turf/open/floor/engine/co2,
@@ -4018,7 +4015,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/computer/atmos_control/tank/nitrogen_tank{
+/obj/machinery/computer/atmos_control/nitrogen_tank{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -4044,7 +4041,7 @@
 	},
 /area/commons/storage/emergency/port)
 "yM" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/oxygen_output{
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/oxygen_output{
 	dir = 1
 	},
 /turf/open/floor/engine/o2,
@@ -4060,7 +4057,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
 /obj/structure/table,
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "yS" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/engine,
@@ -4323,7 +4320,7 @@
 	},
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "AN" = (
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /turf/open/floor/engine,
@@ -4443,11 +4440,11 @@
 /area/ai_monitored/turret_protected/aisat/foyer)
 "BA" = (
 /obj/structure/table,
-/obj/effect/spawner/random/medical/firstaid,
+/obj/effect/spawner/random/medical/medkit,
 /obj/machinery/camera/autoname/directional/south,
 /obj/machinery/light,
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "BB" = (
 /obj/machinery/camera/directional/east{
 	c_tag = "Supermatter Waste Line";
@@ -4478,7 +4475,7 @@
 	icon_state = "cobweb2"
 	},
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "BK" = (
 /obj/machinery/computer/camera_advanced/xenobio,
 /obj/effect/turf_decal/stripes/line{
@@ -4513,7 +4510,7 @@
 "BT" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "BW" = (
 /obj/effect/spawner/random/trash/grille_or_waste,
 /turf/open/floor/plating,
@@ -4599,7 +4596,7 @@
 /turf/open/floor/vault,
 /area/ai_monitored/turret_protected/ai)
 "Cr" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/mix_input{
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/mix_input{
 	dir = 1
 	},
 /turf/open/floor/engine/airless,
@@ -4771,7 +4768,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/computer/atmos_control/tank/oxygen_tank{
+/obj/machinery/computer/atmos_control/oxygen_tank{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -4950,7 +4947,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "EG" = (
 /obj/structure/lattice,
 /turf/closed/wall,
@@ -5083,7 +5080,7 @@
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
 "Fm" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/nitrous_output{
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/nitrous_output{
 	dir = 1
 	},
 /turf/open/floor/engine/n2o,
@@ -5212,7 +5209,7 @@
 /turf/open/floor/iron/dark,
 /area/engineering/engine_smes/port)
 "FX" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/siphon/atmos/air_output{
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/siphon/monitored/air_output{
 	dir = 1
 	},
 /turf/open/floor/engine/air,
@@ -5324,7 +5321,7 @@
 "GL" = (
 /obj/structure/cable,
 /turf/closed/wall,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "GN" = (
 /obj/structure/lattice,
 /obj/structure/grille,
@@ -5396,9 +5393,9 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "Hh" = (
-/obj/machinery/air_sensor/atmos/mix_tank,
+/obj/machinery/air_sensor/mix_tank,
 /turf/open/floor/engine/airless,
 /area/engineering/atmos)
 "Hj" = (
@@ -5535,7 +5532,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/machinery/portable_atmospherics/canister/plasma,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "HW" = (
 /turf/open/floor/engine,
 /area/engineering/gas_mix/port)
@@ -5548,13 +5545,13 @@
 	pixel_y = 9
 	},
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "Ia" = (
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "Ic" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/plasma_output{
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/plasma_output{
 	dir = 1
 	},
 /turf/open/floor/engine/plasma,
@@ -5779,7 +5776,7 @@
 	},
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "JA" = (
 /turf/closed/wall/r_wall,
 /area/engineering/supermatter/starboard)
@@ -6058,7 +6055,7 @@
 "Lk" = (
 /obj/machinery/door/poddoor/shutters,
 /turf/open/floor/plating,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "Lm" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 4
@@ -6223,7 +6220,7 @@
 	dir = 8
 	},
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "Mf" = (
 /obj/machinery/door/poddoor/preopen{
 	id = "xenobio6";
@@ -6282,7 +6279,7 @@
 	dir = 6
 	},
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "Mt" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -6293,7 +6290,7 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "Mu" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -6404,7 +6401,7 @@
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
 "Nf" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/plasma_input{
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/plasma_input{
 	dir = 1
 	},
 /turf/open/floor/engine/plasma,
@@ -6471,7 +6468,7 @@
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
 "NI" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/air_input{
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/air_input{
 	dir = 1
 	},
 /turf/open/floor/engine/air,
@@ -6605,13 +6602,13 @@
 /obj/effect/turf_decal/bot,
 /obj/machinery/nuclearbomb/beer,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "Or" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/science/xenobiology)
 "Ot" = (
-/obj/machinery/computer/atmos_control/tank/plasma_tank{
+/obj/machinery/computer/atmos_control/plasma_tank{
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -6647,7 +6644,7 @@
 	},
 /obj/structure/disposalpipe/trunk,
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "OB" = (
 /obj/machinery/power/port_gen/pacman,
 /turf/open/floor/iron,
@@ -6735,7 +6732,7 @@
 /obj/structure/table,
 /obj/effect/spawner/random/food_or_drink/three_course_meal,
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "OZ" = (
 /obj/machinery/shower{
 	name = "emergency shower";
@@ -6817,7 +6814,7 @@
 /turf/open/floor/plating,
 /area/ai_monitored/turret_protected/aisat)
 "PA" = (
-/obj/machinery/air_sensor/atmos/air_tank,
+/obj/machinery/air_sensor/air_tank,
 /turf/open/floor/engine/air,
 /area/engineering/atmos)
 "PD" = (
@@ -6884,7 +6881,7 @@
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "Qc" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/mix_output{
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/mix_output{
 	dir = 1
 	},
 /turf/open/floor/engine/airless,
@@ -6896,7 +6893,7 @@
 	node2_concentration = 0.6
 	},
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "Qf" = (
 /obj/machinery/light,
 /obj/machinery/camera/directional/south{
@@ -6988,7 +6985,7 @@
 /turf/open/floor/engine{
 	appearance_flags = 1
 	},
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "QF" = (
 /obj/machinery/door/window/left/directional/north{
 	base_state = "right";
@@ -7034,12 +7031,9 @@
 	anchored = 1;
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos{
-	dir = 8
-	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "Ra" = (
 /obj/structure/sign/warning/radiation,
 /obj/structure/cable,
@@ -7079,7 +7073,7 @@
 	pixel_x = 27;
 	pixel_y = -9
 	},
-/obj/machinery/newscaster/security_unit{
+/obj/machinery/newscaster{
 	pixel_x = -28;
 	pixel_y = -28
 	},
@@ -7276,10 +7270,10 @@
 /area/engineering/supermatter/room/emmitter)
 "Sm" = (
 /turf/closed/wall/r_wall,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "Sn" = (
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "St" = (
 /obj/machinery/sparker{
 	id = "Xenobio";
@@ -7401,7 +7395,7 @@
 "Tm" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
 /turf/closed/wall,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "Tn" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -7529,7 +7523,7 @@
 /area/maintenance/port/fore)
 "TX" = (
 /turf/closed/wall/rust,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "TY" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
 	dir = 4
@@ -7588,7 +7582,7 @@
 /turf/open/floor/engine,
 /area/engineering/gas_mix/port)
 "Uw" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/nitrous_input{
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/nitrous_input{
 	dir = 1
 	},
 /turf/open/floor/engine/n2o,
@@ -7697,7 +7691,7 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "Vl" = (
-/obj/machinery/computer/atmos_control/tank/carbon_tank{
+/obj/machinery/computer/atmos_control/carbon_tank{
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -7707,9 +7701,9 @@
 /area/engineering/atmos)
 "Vm" = (
 /obj/structure/table,
-/obj/effect/spawner/random/medical/firstaid,
+/obj/effect/spawner/random/medical/medkit,
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "Vo" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -7746,7 +7740,7 @@
 /turf/open/floor/iron,
 /area/science/xenobiology)
 "Vz" = (
-/obj/machinery/air_sensor/atmos/nitrous_tank,
+/obj/machinery/air_sensor/nitrous_tank,
 /turf/open/floor/engine/n2o,
 /area/engineering/atmos)
 "VC" = (
@@ -7824,7 +7818,7 @@
 /area/engineering/supermatter/room/port)
 "VV" = (
 /turf/open/floor/plating,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "VX" = (
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/visible/layer1,
 /obj/machinery/atmospherics/pipe/smart/simple/violet/visible,
@@ -8012,7 +8006,7 @@
 	icon_state = "cobweb2"
 	},
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "WS" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/visible{
 	dir = 4
@@ -8070,7 +8064,7 @@
 /obj/effect/turf_decal/bot,
 /obj/machinery/nuclearbomb/beer,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "Xl" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -8296,7 +8290,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /obj/machinery/smoke_machine,
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "Ys" = (
 /obj/structure/lattice,
 /obj/machinery/porta_turret/ai{
@@ -8325,7 +8319,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/machinery/portable_atmospherics/canister/plasma,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "YB" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -8453,7 +8447,7 @@
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
 /turf/open/floor/engine,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "Zi" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/holopad,
@@ -8461,12 +8455,12 @@
 /turf/open/floor/iron,
 /area/science/xenobiology)
 "Zj" = (
-/obj/machinery/air_sensor/atmos/plasma_tank,
+/obj/machinery/air_sensor/plasma_tank,
 /turf/open/floor/engine/plasma,
 /area/engineering/atmos)
 "Zk" = (
 /turf/closed/wall/r_wall/rust,
-/area/maintenance/fore/secondary)
+/area/maintenance/fore)
 "Zl" = (
 /obj/machinery/light/small/broken,
 /turf/open/floor/plating,
@@ -8498,7 +8492,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "ZA" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -8592,7 +8586,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron,
-/area/medical/medbay/zone2)
+/area/medical/medbay)
 "ZW" = (
 /obj/machinery/atmospherics/components/unary/portables_connector{
 	dir = 8
