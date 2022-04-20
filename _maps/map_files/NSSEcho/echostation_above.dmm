@@ -677,7 +677,7 @@
 	dir = 8;
 	id = "chapelgun"
 	},
-/obj/machinery/door/window/eastleft{
+/obj/machinery/door/window/left/directional/east{
 	dir = 2;
 	name = "Mass Driver"
 	},
@@ -942,7 +942,7 @@
 	freq = 1400;
 	location = "Hydroponics"
 	},
-/obj/machinery/door/window/southleft{
+/obj/machinery/door/window/left/directional/south{
 	name = "Bar Delivery";
 	req_access_txt = "25"
 	},
@@ -1570,7 +1570,7 @@
 	dir = 8;
 	id = "chapelgun"
 	},
-/obj/machinery/door/window/eastleft{
+/obj/machinery/door/window/left/directional/east{
 	dir = 1;
 	name = "Mass Driver"
 	},
@@ -6000,7 +6000,7 @@
 /turf/open/floor/iron/dark,
 /area/security)
 "se" = (
-/obj/machinery/door/window/westleft{
+/obj/machinery/door/window/left/directional/west{
 	dir = 4;
 	name = "Bridge Deliveries";
 	req_access_txt = "19"
@@ -8410,7 +8410,7 @@
 /area/service/chapel)
 "zA" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/southleft{
+/obj/machinery/door/window/left/directional/south{
 	base_state = "right";
 	icon_state = "right";
 	name = "Armory";
@@ -9163,7 +9163,7 @@
 /turf/open/floor/iron,
 /area/security/brig)
 "Cb" = (
-/obj/machinery/door/window/westleft{
+/obj/machinery/door/window/left/directional/west{
 	base_state = "right";
 	dir = 1;
 	icon_state = "right";
@@ -9315,7 +9315,7 @@
 /turf/open/floor/iron,
 /area/security/courtroom)
 "Cx" = (
-/obj/machinery/door/window/westleft{
+/obj/machinery/door/window/left/directional/west{
 	base_state = "right";
 	dir = 1;
 	icon_state = "right";
@@ -10692,7 +10692,7 @@
 /area/service/chapel/monastery)
 "GR" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/southleft{
+/obj/machinery/door/window/left/directional/south{
 	base_state = "right";
 	icon_state = "right";
 	name = "Armory";
@@ -12262,7 +12262,7 @@
 /area/command/heads_quarters/captain/private)
 "Lt" = (
 /obj/machinery/meter,
-/obj/machinery/door/window/westleft{
+/obj/machinery/door/window/left/directional/west{
 	dir = 1;
 	name = "gas ports"
 	},
@@ -12557,7 +12557,7 @@
 "Mp" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/westright{
+/obj/machinery/door/window/right/directional/west{
 	dir = 1;
 	name = "Hydroponics Desk";
 	req_access_txt = "35"
@@ -13813,7 +13813,7 @@
 /turf/open/floor/carpet,
 /area/security/detectives_office)
 "Qj" = (
-/obj/machinery/door/window/westleft{
+/obj/machinery/door/window/left/directional/west{
 	base_state = "right";
 	icon_state = "right";
 	name = "Shooting Range"
@@ -14147,7 +14147,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/machinery/door/window/southleft{
+/obj/machinery/door/window/left/directional/south{
 	dir = 1;
 	name = "Court Cell";
 	req_access_txt = "2"
@@ -14394,7 +14394,7 @@
 	freq = 1400;
 	location = "Kitchen"
 	},
-/obj/machinery/door/window/southleft{
+/obj/machinery/door/window/left/directional/south{
 	name = "Bar Delivery";
 	req_access_txt = "25"
 	},
@@ -14558,7 +14558,7 @@
 /area/medical)
 "Sg" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/southleft{
+/obj/machinery/door/window/left/directional/south{
 	base_state = "right";
 	icon_state = "right";
 	name = "Armory";

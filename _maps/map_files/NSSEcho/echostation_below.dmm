@@ -58,7 +58,7 @@
 /turf/open/floor/iron/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
 "az" = (
-/obj/machinery/door/window/northleft{
+/obj/machinery/door/window/left/directional/north{
 	dir = 4;
 	name = "Containment Pen #3";
 	req_access_txt = "55"
@@ -1141,7 +1141,7 @@
 /turf/open/floor/vault,
 /area/ai_monitored/turret_protected/ai)
 "gU" = (
-/obj/machinery/door/window/northleft{
+/obj/machinery/door/window/left/directional/north{
 	base_state = "right";
 	dir = 8;
 	icon_state = "right";
@@ -1789,7 +1789,7 @@
 /turf/open/floor/engine/n2,
 /area/engineering/atmos)
 "kS" = (
-/obj/machinery/door/window/northleft{
+/obj/machinery/door/window/left/directional/north{
 	dir = 4;
 	name = "Containment Pen #5";
 	req_access_txt = "55"
@@ -2240,7 +2240,7 @@
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "nM" = (
-/obj/machinery/door/window/northleft{
+/obj/machinery/door/window/left/directional/north{
 	base_state = "right";
 	dir = 8;
 	icon_state = "right";
@@ -3083,7 +3083,7 @@
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "sr" = (
-/obj/machinery/door/window/northleft{
+/obj/machinery/door/window/left/directional/north{
 	dir = 4;
 	name = "Containment Pen #2";
 	req_access_txt = "55"
@@ -3746,7 +3746,7 @@
 /turf/open/floor/engine,
 /area/engineering/supermatter/port)
 "xf" = (
-/obj/machinery/door/window/northleft{
+/obj/machinery/door/window/left/directional/north{
 	dir = 4;
 	name = "Containment Pen #6";
 	req_access_txt = "55"
@@ -4390,7 +4390,7 @@
 /turf/open/floor/plating,
 /area/construction/mining/aux_base)
 "Bk" = (
-/obj/machinery/door/window/northleft{
+/obj/machinery/door/window/left/directional/north{
 	base_state = "right";
 	dir = 2;
 	icon_state = "right";
@@ -4851,7 +4851,7 @@
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "Eb" = (
-/obj/machinery/door/window/southleft{
+/obj/machinery/door/window/left/directional/south{
 	name = "Maximum Security Test Chamber";
 	req_access_txt = "55"
 	},
@@ -5147,7 +5147,7 @@
 /turf/open/floor/plating,
 /area/maintenance/department/science/xenobiology)
 "FE" = (
-/obj/machinery/door/window/southleft{
+/obj/machinery/door/window/left/directional/south{
 	dir = 1;
 	name = "Maximum Security Test Chamber";
 	req_access_txt = "55"
@@ -5679,7 +5679,7 @@
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/emmitter)
 "IR" = (
-/obj/machinery/door/window/northleft{
+/obj/machinery/door/window/left/directional/north{
 	base_state = "right";
 	dir = 8;
 	icon_state = "right";
@@ -6204,7 +6204,7 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "LX" = (
-/obj/machinery/door/window/northleft{
+/obj/machinery/door/window/left/directional/north{
 	dir = 4;
 	name = "Containment Pen #1";
 	req_access_txt = "55"
@@ -6481,7 +6481,7 @@
 /turf/open/floor/iron,
 /area/engineering/main/lower)
 "NL" = (
-/obj/machinery/door/window/northleft{
+/obj/machinery/door/window/left/directional/north{
 	base_state = "right";
 	dir = 8;
 	icon_state = "right";
@@ -6578,7 +6578,7 @@
 /turf/open/floor/vault,
 /area/ai_monitored/turret_protected/ai)
 "Oj" = (
-/obj/machinery/door/window/northleft{
+/obj/machinery/door/window/left/directional/north{
 	dir = 4;
 	name = "Containment Pen #4";
 	req_access_txt = "55"
@@ -6860,7 +6860,7 @@
 /turf/open/floor/engine,
 /area/engineering/supermatter/starboard)
 "PV" = (
-/obj/machinery/door/window/northleft{
+/obj/machinery/door/window/left/directional/north{
 	base_state = "right";
 	dir = 8;
 	icon_state = "right";
@@ -6990,7 +6990,7 @@
 	},
 /area/maintenance/fore/secondary)
 "QF" = (
-/obj/machinery/door/window/northleft{
+/obj/machinery/door/window/left/directional/north{
 	base_state = "right";
 	dir = 8;
 	icon_state = "right";

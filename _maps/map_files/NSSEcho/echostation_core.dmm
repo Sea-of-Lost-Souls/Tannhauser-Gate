@@ -282,7 +282,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/machinery/door/window/southleft{
+/obj/machinery/door/window/left/directional/south{
 	name = "Mass Driver Door";
 	req_access_txt = "7"
 	},
@@ -3011,7 +3011,7 @@
 /turf/open/floor/iron,
 /area/engineering/main/upper)
 "hu" = (
-/obj/machinery/door/window/eastright{
+/obj/machinery/door/window/right/directional/east{
 	dir = 2;
 	name = "Janitor Delivery";
 	req_access_txt = "26"
@@ -3713,7 +3713,7 @@
 /obj/machinery/door/firedoor,
 /obj/item/reagent_containers/food/drinks/britcup,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/door/window/southright,
+/obj/machinery/door/window/right/directional/south,
 /turf/open/floor/iron,
 /area/medical/medbay/zone2)
 "jg" = (
@@ -5061,7 +5061,7 @@
 "mz" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/westleft{
+/obj/machinery/door/window/left/directional/west{
 	dir = 2;
 	name = "Cargo Desk";
 	req_access_txt = "50"
@@ -5152,7 +5152,7 @@
 /obj/item/folder/white,
 /obj/item/reagent_containers/hypospray/medipen,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/door/window/southright,
+/obj/machinery/door/window/right/directional/south,
 /turf/open/floor/iron,
 /area/medical/medbay/zone2)
 "mO" = (
@@ -5201,7 +5201,7 @@
 	pixel_x = -3;
 	pixel_y = -3
 	},
-/obj/machinery/door/window/southright{
+/obj/machinery/door/window/right/directional/south{
 	name = "First-Aid Supplies";
 	req_access_txt = "5"
 	},
@@ -5310,7 +5310,7 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
-/obj/machinery/door/window/westright{
+/obj/machinery/door/window/right/directional/west{
 	name = "Cargo Delivery";
 	req_one_access_txt = "31;48"
 	},
@@ -7073,7 +7073,7 @@
 "rF" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/window/westleft{
+/obj/machinery/door/window/left/directional/west{
 	dir = 2;
 	name = "Cargo Desk";
 	req_access_txt = "50"
@@ -7161,7 +7161,7 @@
 /turf/open/floor/iron,
 /area/science)
 "rT" = (
-/obj/machinery/door/window/eastleft{
+/obj/machinery/door/window/left/directional/east{
 	dir = 1;
 	name = "Monkey Pen";
 	req_one_access_txt = "9"
@@ -7260,7 +7260,7 @@
 /obj/item/paper/crumpled/bloody/docsdeathnote{
 	info = "We are sorry to say the old recycler is going to have to stay in place, the darn thing has already 'Eat' three assistants already. But to ensure things are by the book, the new recycler is stashed away somewhere on this ship, Good luck finding it, with don't want command to know about this."
 	},
-/obj/machinery/door/window/southright,
+/obj/machinery/door/window/right/directional/south,
 /turf/open/floor/plating,
 /area/maintenance/disposal)
 "sh" = (
@@ -8661,7 +8661,7 @@
 /area/tcommsat/computer)
 "vG" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/eastright{
+/obj/machinery/door/window/right/directional/east{
 	base_state = "left";
 	dir = 8;
 	icon_state = "left";
@@ -9847,7 +9847,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
 /obj/machinery/door/firedoor,
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/westleft{
+/obj/machinery/door/window/left/directional/west{
 	dir = 1;
 	name = "Delivery Desk";
 	req_access_txt = "50"
@@ -10071,7 +10071,7 @@
 /area/maintenance/disposal)
 "zo" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/eastright{
+/obj/machinery/door/window/right/directional/east{
 	dir = 8;
 	name = "Chemistry Desk";
 	req_access_txt = "5"
@@ -11140,7 +11140,7 @@
 /obj/item/reagent_containers/glass/bottle/epinephrine,
 /obj/item/reagent_containers/syringe,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/door/window/southright,
+/obj/machinery/door/window/right/directional/south,
 /turf/open/floor/iron,
 /area/medical/medbay/zone2)
 "BI" = (
@@ -12123,7 +12123,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/machinery/door/window/southright{
+/obj/machinery/door/window/right/directional/south{
 	name = "Crate Disposal Chute"
 	},
 /obj/effect/turf_decal/delivery,
@@ -13486,7 +13486,7 @@
 /area/science/genetics)
 "Hv" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/eastright{
+/obj/machinery/door/window/right/directional/east{
 	base_state = "left";
 	dir = 1;
 	icon_state = "left";
@@ -16117,7 +16117,7 @@
 /turf/open/floor/engine,
 /area/science/explab)
 "Ny" = (
-/obj/machinery/door/window/southleft{
+/obj/machinery/door/window/left/directional/south{
 	dir = 4;
 	name = "Engineering Delivery";
 	req_access_txt = "10"
@@ -16143,7 +16143,7 @@
 /area/engineering/main/upper)
 "NC" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/southleft{
+/obj/machinery/door/window/left/directional/south{
 	dir = 1;
 	name = "Chemistry Desk";
 	req_access_txt = "5"
@@ -17345,7 +17345,7 @@
 "Qe" = (
 /obj/machinery/door/firedoor,
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/westright{
+/obj/machinery/door/window/right/directional/west{
 	dir = 2;
 	name = "Security Checkpoint";
 	req_access_txt = "1"
@@ -18023,7 +18023,7 @@
 /turf/open/floor/iron,
 /area/security/checkpoint/engineering)
 "RG" = (
-/obj/machinery/door/window/eastleft{
+/obj/machinery/door/window/left/directional/east{
 	dir = 2;
 	name = "Monkey Pen";
 	req_one_access_txt = "39"
@@ -18801,7 +18801,7 @@
 	pixel_x = -3;
 	pixel_y = -3
 	},
-/obj/machinery/door/window/southleft{
+/obj/machinery/door/window/left/directional/south{
 	name = "First-Aid Supplies";
 	req_access_txt = "5"
 	},
@@ -20479,7 +20479,7 @@
 /area/maintenance/disposal)
 "XG" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/northleft{
+/obj/machinery/door/window/left/directional/north{
 	dir = 8;
 	name = "Reception Window"
 	},
@@ -20538,7 +20538,7 @@
 "XM" = (
 /obj/machinery/door/firedoor,
 /obj/structure/table/reinforced,
-/obj/machinery/door/window/westleft{
+/obj/machinery/door/window/left/directional/west{
 	dir = 1;
 	name = "Delivery Desk";
 	req_access_txt = "50"
