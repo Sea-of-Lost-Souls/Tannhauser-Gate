@@ -606,12 +606,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/machinery/power/apc{
-	areastring = "/area/ai_monitored/turret_protected/AIsatextAP";
-	dir = 8;
-	name = "MiniSat Port Maintenance APC";
-	pixel_x = -25
-	},
+/obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/turret_protected/aisat/atmos)
@@ -1736,12 +1731,7 @@
 /turf/open/floor/iron,
 /area/science/xenobiology)
 "kO" = (
-/obj/machinery/power/apc{
-	areastring = "/area/ai_monitored/turret_protected/ai";
-	dir = 1;
-	name = "AI Chamber APC";
-	pixel_y = 23
-	},
+/obj/machinery/power/apc/auto_name/directional/north,
 /obj/effect/landmark/start/ai/secondary,
 /obj/item/radio/intercom{
 	freerange = 1;
@@ -2559,12 +2549,7 @@
 /area/maintenance/port/fore)
 "pZ" = (
 /obj/structure/reagent_dispensers/fueltank,
-/obj/machinery/power/apc{
-	areastring = "/area/ai_monitored/turret_protected/AIsatextAS";
-	dir = 4;
-	name = "MiniSat Starboard Maintenance APC";
-	pixel_x = 24
-	},
+/obj/machinery/power/apc/auto_name/directional/east,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/ai_monitored/turret_protected/aisat)
@@ -4214,12 +4199,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/power/apc{
-	areastring = "/area/construction/mining/aux_base";
-	dir = 8;
-	name = "Auxillary Base Construction APC";
-	pixel_x = -25
-	},
+/obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/construction/mining/aux_base)
@@ -6473,12 +6453,7 @@
 "Og" = (
 /obj/structure/table,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/machinery/power/apc{
-	areastring = "/area/ai_monitored/turret_protected/aisat_interior";
-	dir = 8;
-	name = "MiniSat Antechamber APC";
-	pixel_x = -25
-	},
+/obj/machinery/power/apc/auto_name/directional/west,
 /obj/machinery/recharger,
 /turf/open/floor/iron/grimy,
 /area/ai_monitored/turret_protected/aisat_interior)
