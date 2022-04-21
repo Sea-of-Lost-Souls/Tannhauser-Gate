@@ -194,7 +194,6 @@
 	name = "Gateway Access Shutters"
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
 /turf/open/floor/iron,
 /area/command/gateway)
 "aC" = (
@@ -3351,7 +3350,6 @@
 	name = "Server Room";
 	req_access_txt = "30"
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
@@ -6224,11 +6222,6 @@
 "pp" = (
 /turf/closed/wall/r_wall,
 /area/medical/medbay/lobby)
-"pq" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/turf/closed/wall/r_wall,
-/area/engineering/gravity_generator)
 "pr" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -9720,7 +9713,6 @@
 	req_one_access_txt = "10;24"
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /obj/machinery/door/firedoor/heavy,
 /turf/open/floor/iron,
 /area/engineering/main/upper)
@@ -10610,7 +10602,6 @@
 	name = "Quartermaster";
 	req_access_txt = "41"
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
@@ -18875,9 +18866,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /turf/open/floor/iron,
 /area/engineering/gravity_generator)
@@ -55800,7 +55788,7 @@ KA
 cU
 Hp
 HL
-pq
+wM
 TL
 qx
 wM

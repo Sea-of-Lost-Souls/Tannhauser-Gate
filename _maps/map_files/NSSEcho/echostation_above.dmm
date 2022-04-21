@@ -331,7 +331,6 @@
 /area/service/library)
 "bc" = (
 /obj/machinery/atmospherics/pipe/smart/simple/general/hidden,
-/obj/machinery/atmospherics/pipe/smart/simple/general/hidden,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -5513,7 +5512,6 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
@@ -7867,7 +7865,6 @@
 	info = "<b> NTSS RAVEN</b><br>Greetings Captain, to , to  THE NTSS RAVEN! As you may know, this ship was once used as Nanotrasen's war ships, organizing and coordinating company projects across the vastness of space. <br>Since the completion of the much more efficient NTSS FALCON on March 8, 2553, NTSS RAVEN no longer needed for such operations but has been refit to continue to play a very important role its corporate affairs; serving as a exploration, reseach, and repair ship, as well as being host any other duties Nanorasen may apoint.<br> We hope you enjoy your new command Captian!<br><br><br>PS:<br>Please note that Atmospherics and Engineering were combinded as a cost saving messure. Saddly in that reguard your O2 reserves were not fully topped off before your deployment. NTSS RAVEN still has its orginal SM plants installed so you will not have to worry too much about that.";
 	name = "Centcom Notice"
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /turf/open/floor/carpet,
 /area/command/heads_quarters/captain)
@@ -11465,17 +11462,6 @@
 	},
 /turf/open/floor/iron,
 /area/hallway/primary/aft)
-"Jm" = (
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/turf/open/floor/iron,
-/area/medical)
 "Jn" = (
 /obj/machinery/power/apc{
 	areastring = "/area/security/detectives_office";
@@ -13343,11 +13329,6 @@
 	},
 /turf/open/floor/iron,
 /area/service/hydroponics)
-"OS" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/turf/open/floor/cult,
-/area/service/bar)
 "OT" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -45396,7 +45377,7 @@ lC
 rf
 mr
 bG
-Jm
+Wk
 ra
 Wk
 VG
@@ -52120,7 +52101,7 @@ KP
 KP
 KP
 KP
-OS
+KP
 bB
 so
 qP
