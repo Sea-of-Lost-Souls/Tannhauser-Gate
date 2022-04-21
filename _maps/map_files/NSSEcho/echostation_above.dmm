@@ -10065,7 +10065,7 @@
 	areastring = "/area/ai_monitored/turret_protected/ai_upload";
 	dir = 1;
 	name = "Upload APC";
-	pixel_y = 23
+	pixel_y = 25
 	},
 /turf/open/floor/vault,
 /area/ai_monitored/turret_protected/ai_upload)
