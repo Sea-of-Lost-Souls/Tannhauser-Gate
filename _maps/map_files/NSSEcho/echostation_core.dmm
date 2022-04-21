@@ -6334,11 +6334,6 @@
 /obj/structure/table/glass,
 /turf/open/floor/iron,
 /area/medical/medbay/central)
-"pF" = (
-/obj/structure/lattice,
-/obj/structure/lattice,
-/turf/open/openspace/airless/planetary,
-/area/space/nearstation)
 "pG" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
@@ -10890,10 +10885,6 @@
 /obj/machinery/door/airlock/public/glass,
 /turf/open/floor/iron,
 /area/hallway/primary/starboard)
-"Bd" = (
-/obj/structure/lattice,
-/turf/closed/wall,
-/area/maintenance/department/cargo)
 "Be" = (
 /obj/effect/turf_decal/loading_area,
 /obj/effect/turf_decal/tile/blue{
@@ -19120,10 +19111,6 @@
 	},
 /turf/open/floor/iron/white/corner,
 /area/hallway/secondary/exit/departure_lounge)
-"Us" = (
-/obj/structure/lattice,
-/turf/closed/wall,
-/area/maintenance/department/medical)
 "Ut" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/effect/decal/cleanable/blood/gibs/limb,
@@ -20444,11 +20431,6 @@
 	},
 /turf/open/floor/plating,
 /area/engineering/lobby)
-"XF" = (
-/obj/structure/lattice,
-/obj/structure/disposalpipe/segment,
-/turf/closed/wall,
-/area/maintenance/disposal)
 "XG" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/left/directional/north{
@@ -45765,7 +45747,7 @@ xY
 xY
 xY
 tQ
-Us
+tQ
 Tv
 mH
 Fa
@@ -52118,7 +52100,6 @@ bb
 bb
 bb
 qh
-pF
 Tv
 Tv
 Tv
@@ -52130,7 +52111,8 @@ Tv
 Tv
 Tv
 Tv
-pF
+Tv
+Tv
 Tv
 Tv
 Tv
@@ -52375,7 +52357,7 @@ bb
 bb
 bb
 qh
-pF
+Tv
 Ov
 bb
 Un
@@ -53915,7 +53897,7 @@ bb
 bb
 bb
 qh
-pF
+Tv
 Tv
 Tv
 Tv
@@ -56234,7 +56216,7 @@ bb
 Tv
 Tv
 Tv
-pF
+Tv
 bb
 sp
 BM
@@ -56485,7 +56467,7 @@ bb
 bb
 bb
 qh
-pF
+Tv
 Tv
 Tv
 Tv
@@ -58289,7 +58271,7 @@ qh
 Tv
 Tv
 Tv
-pF
+Tv
 Tv
 Tv
 Tv
@@ -59414,7 +59396,7 @@ Pw
 cf
 cq
 VU
-Bd
+Da
 pu
 jH
 Ev
@@ -59928,7 +59910,7 @@ xf
 PV
 af
 RK
-XF
+sU
 qM
 sU
 uW

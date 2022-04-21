@@ -8881,10 +8881,6 @@
 "Be" = (
 /turf/open/floor/iron,
 /area/commons/fitness/recreation)
-"Bi" = (
-/obj/structure/lattice,
-/turf/closed/wall,
-/area/maintenance/department/bridge)
 "Bk" = (
 /turf/open/floor/iron{
 	dir = 8;
@@ -15724,7 +15720,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -47164,7 +47159,7 @@ Lk
 Lk
 Cm
 Cm
-Bi
+oC
 pK
 pK
 pK

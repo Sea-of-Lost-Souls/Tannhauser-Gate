@@ -464,10 +464,6 @@
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /turf/open/floor/iron,
 /area/engineering/atmos)
-"cJ" = (
-/obj/structure/lattice,
-/turf/closed/wall,
-/area/commons/storage/emergency/port)
 "cM" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
 	dir = 1
@@ -1173,10 +1169,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/turret_protected/aisat/atmos)
-"hb" = (
-/obj/structure/lattice,
-/turf/closed/wall/r_wall,
-/area/maintenance/department/engine/atmos)
 "hf" = (
 /obj/machinery/recharge_station,
 /turf/open/floor/iron/dark,
@@ -2129,7 +2121,6 @@
 	},
 /area/commons/storage/emergency/port)
 "mS" = (
-/obj/structure/lattice,
 /obj/structure/lattice,
 /obj/structure/grille/broken,
 /turf/open/space/basic,
@@ -3983,10 +3974,6 @@
 	},
 /turf/open/floor/engine,
 /area/engineering/supermatter/port)
-"yx" = (
-/obj/structure/lattice,
-/turf/closed/wall/r_wall,
-/area/ai_monitored/turret_protected/aisat/service)
 "yy" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/monitored/carbon_input{
 	dir = 1
@@ -4169,10 +4156,6 @@
 "zJ" = (
 /turf/closed/wall/r_wall/rust,
 /area/space/nearstation)
-"zK" = (
-/obj/structure/lattice,
-/turf/closed/wall/r_wall/rust,
-/area/maintenance/port/fore)
 "zP" = (
 /obj/machinery/power/smes/engineering,
 /obj/machinery/camera/directional/north{
@@ -4415,10 +4398,6 @@
 	},
 /turf/open/floor/plating,
 /area/engineering/main/lower)
-"Bt" = (
-/obj/structure/lattice,
-/turf/closed/wall/r_wall,
-/area/maintenance/port/fore)
 "Bw" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/heat_exchanging/junction{
@@ -4558,7 +4537,6 @@
 /area/engineering/engine_smes/port)
 "Cj" = (
 /obj/effect/turf_decal/delivery,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /obj/structure/reflector/box/anchored{
 	dir = 8
@@ -4735,11 +4713,6 @@
 /obj/machinery/power/apc/auto_name/directional/east,
 /turf/open/floor/iron/dark,
 /area/engineering/engine_smes/starboard)
-"Dj" = (
-/obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
-/turf/closed/wall/r_wall,
-/area/maintenance/port/fore)
 "Dk" = (
 /obj/structure/cable/layer1,
 /obj/structure/window/reinforced/plasma/spawner/north,
@@ -4948,10 +4921,6 @@
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /turf/open/floor/engine,
 /area/maintenance/fore)
-"EG" = (
-/obj/structure/lattice,
-/turf/closed/wall,
-/area/maintenance/port/fore)
 "EH" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -6437,7 +6406,6 @@
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "NA" = (
-/obj/structure/lattice,
 /turf/closed/wall/rust,
 /area/space/nearstation)
 "NB" = (
@@ -6927,12 +6895,6 @@
 	dir = 4
 	},
 /area/engineering/atmos)
-"Qr" = (
-/obj/structure/lattice,
-/obj/structure/lattice,
-/obj/structure/cable,
-/turf/open/space/basic,
-/area/space/nearstation)
 "Qs" = (
 /obj/effect/decal/cleanable/cobweb{
 	icon_state = "cobweb2"
@@ -7224,10 +7186,6 @@
 	},
 /turf/open/floor/engine,
 /area/engineering/supermatter/starboard)
-"Sd" = (
-/obj/structure/lattice,
-/turf/closed/wall/r_wall/syndicate,
-/area/engineering/atmos)
 "Se" = (
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/visible/layer1,
 /obj/machinery/atmospherics/pipe/smart/simple/violet/visible,
@@ -7511,12 +7469,6 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/engineering/gas_mix/starboard)
-"TT" = (
-/obj/structure/lattice,
-/obj/structure/lattice,
-/obj/structure/cable,
-/turf/open/space/basic,
-/area/space)
 "TV" = (
 /obj/item/storage/box/stockparts/basic,
 /turf/open/floor/plating,
@@ -7682,14 +7634,6 @@
 	},
 /turf/open/floor/iron,
 /area/science/xenobiology)
-"Vh" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/pipe/heat_exchanging/manifold{
-	dir = 4
-	},
-/turf/open/space/basic,
-/area/space/nearstation)
 "Vl" = (
 /obj/machinery/computer/atmos_control/carbon_tank{
 	dir = 1
@@ -34980,7 +34924,7 @@ Fe
 we
 wA
 wA
-cJ
+Kz
 Kz
 Yk
 GE
@@ -35742,7 +35686,7 @@ kc
 kc
 kc
 Zl
-EG
+eW
 Fe
 Wt
 Fe
@@ -36013,7 +35957,7 @@ uP
 we
 we
 we
-Bt
+we
 ib
 ib
 ib
@@ -36270,7 +36214,7 @@ uP
 uP
 uP
 je
-Bt
+we
 ib
 ib
 ib
@@ -36527,7 +36471,7 @@ uP
 eW
 uP
 uP
-Bt
+we
 ib
 ib
 ib
@@ -36784,7 +36728,7 @@ uP
 uP
 uP
 uP
-zK
+Es
 ib
 ib
 ib
@@ -37041,7 +36985,7 @@ uP
 uP
 TV
 uP
-Bt
+we
 ib
 ib
 ib
@@ -37298,7 +37242,7 @@ uP
 eW
 eW
 Ua
-Bt
+we
 Nu
 Nu
 IY
@@ -37555,7 +37499,7 @@ Fi
 Fi
 Fi
 vM
-Bt
+we
 Nc
 Nc
 Nc
@@ -38069,7 +38013,7 @@ we
 we
 we
 UZ
-Dj
+UZ
 tv
 tv
 tv
@@ -38566,10 +38510,10 @@ eA
 eA
 eA
 eA
-TT
 eA
 eA
-Qr
+eA
+Tp
 eA
 eA
 eA
@@ -40345,7 +40289,7 @@ GN
 GN
 Ad
 NX
-yx
+NX
 NX
 NX
 NX
@@ -44457,7 +44401,7 @@ GN
 GN
 Ad
 NX
-yx
+NX
 NX
 NX
 NX
@@ -46279,7 +46223,7 @@ eA
 eA
 eA
 eA
-Qr
+Tp
 eA
 eA
 eA
@@ -46588,7 +46532,7 @@ kh
 af
 nN
 Cm
-Sd
+nN
 ul
 ul
 ul
@@ -46807,7 +46751,7 @@ GZ
 GZ
 GZ
 GZ
-hb
+jK
 jK
 jK
 jK
@@ -47321,7 +47265,7 @@ pS
 Sj
 EV
 kz
-hb
+jK
 lI
 lI
 lI
@@ -49646,7 +49590,7 @@ wA
 wl
 kn
 kn
-Vh
+kn
 kn
 kn
 OS
@@ -50140,7 +50084,7 @@ GZ
 GZ
 GZ
 Fe
-EG
+eW
 bx
 bx
 NA
