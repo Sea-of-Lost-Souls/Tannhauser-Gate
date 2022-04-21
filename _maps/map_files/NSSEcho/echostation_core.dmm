@@ -10226,11 +10226,6 @@
 /turf/open/floor/iron,
 /area/service/janitor)
 "zH" = (
-/obj/machinery/power/apc{
-	areastring = "/area/storage/tech";
-	name = "Tech Storage APC";
-	pixel_x = -33
-	},
 /obj/structure/closet/crate/solarpanel_small,
 /obj/effect/turf_decal/tile/green{
 	dir = 1
@@ -12512,12 +12507,7 @@
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
-/obj/machinery/power/apc{
-	areastring = "/area/security/checkpoint/engineering";
-	dir = 8;
-	name = "Engineering Security APC";
-	pixel_x = -25
-	},
+/obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -15397,9 +15387,6 @@
 /area/medical/medbay/central)
 "LZ" = (
 /obj/structure/table,
-/obj/item/cartridge/signal/ordnance,
-/obj/item/cartridge/signal/ordnance,
-/obj/item/cartridge/signal/ordnance,
 /obj/machinery/camera/directional/south{
 	c_tag = "Research Director's Office";
 	network = list("ss13","rd")
@@ -16897,19 +16884,7 @@
 /turf/open/floor/engine,
 /area/science)
 "Pi" = (
-/obj/item/cartridge/engineering{
-	pixel_x = 4;
-	pixel_y = 5
-	},
-/obj/item/cartridge/engineering{
-	pixel_x = -3;
-	pixel_y = 2
-	},
-/obj/item/cartridge/engineering{
-	pixel_x = 3
-	},
 /obj/structure/table/reinforced,
-/obj/item/cartridge/atmos,
 /obj/machinery/requests_console{
 	announcementConsole = 1;
 	department = "Chief Engineer's Desk";
@@ -19840,18 +19815,10 @@
 /turf/open/floor/iron/white,
 /area/science/genetics)
 "Wh" = (
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "Gravity Generator APC";
-	pixel_x = -25;
-	pixel_y = 1
-	},
+/obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/table,
 /obj/item/paper/guides/jobs/engi/gravity_gen,
 /obj/item/pen/blue,
-/obj/machinery/power/terminal{
-	dir = 8
-	},
 /obj/machinery/light,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -20055,15 +20022,6 @@
 /obj/machinery/light,
 /obj/machinery/light_switch{
 	pixel_y = -24
-	},
-/obj/item/cartridge/quartermaster{
-	pixel_x = 6;
-	pixel_y = 5
-	},
-/obj/item/cartridge/quartermaster,
-/obj/item/cartridge/quartermaster{
-	pixel_x = -4;
-	pixel_y = 7
 	},
 /obj/item/coin/silver,
 /obj/item/stamp/qm,
@@ -59080,11 +59038,11 @@ Mc
 It
 Zv
 Zv
-Dz
+Zv
 Zv
 Dz
 Zv
-Dz
+Zv
 Zv
 Sq
 cx

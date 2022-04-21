@@ -169,17 +169,6 @@
 /obj/structure/railing,
 /turf/open/floor/iron/dark,
 /area/service/chapel/monastery)
-"aF" = (
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/structure/table/wood,
-/obj/item/cartridge,
-/turf/open/floor/cult,
-/area/service/library)
 "aG" = (
 /obj/structure/disposalpipe/trunk/multiz/down,
 /obj/structure/cable,
@@ -2226,18 +2215,6 @@
 /turf/open/floor/iron,
 /area/service/chapel)
 "gk" = (
-/obj/item/cartridge/medical{
-	pixel_x = -2;
-	pixel_y = 6
-	},
-/obj/item/cartridge/medical{
-	pixel_x = 6;
-	pixel_y = 3
-	},
-/obj/item/cartridge/medical,
-/obj/item/cartridge/chemistry{
-	pixel_y = 2
-	},
 /obj/structure/table,
 /obj/machinery/light,
 /obj/item/wrench/medical,
@@ -2460,7 +2437,6 @@
 "gR" = (
 /obj/structure/table/wood,
 /obj/item/taperecorder,
-/obj/item/cartridge/lawyer,
 /turf/open/floor/wood,
 /area/service/lawoffice)
 "gS" = (
@@ -47670,7 +47646,7 @@ qr
 gq
 Cj
 LH
-aF
+Cf
 iW
 Cf
 Yu

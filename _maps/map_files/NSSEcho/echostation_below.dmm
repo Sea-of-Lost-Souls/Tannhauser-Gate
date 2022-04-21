@@ -8088,7 +8088,6 @@
 	dir = 1
 	},
 /obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer4,
 /turf/open/space/basic,
 /area/space/nearstation)
 "XU" = (
