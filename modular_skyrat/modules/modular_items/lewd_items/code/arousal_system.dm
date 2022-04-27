@@ -152,7 +152,6 @@
 		apply_status_effect(/datum/status_effect/body_fluid_regen)
 
 ///////////-----Verbs------///////////
-/*
 /mob/living/carbon/human/verb/arousal_panel()
 	set name = "Climax"
 	set category = "IC"
@@ -166,7 +165,13 @@
 				climax(TRUE)
 	else
 		to_chat(src, span_warning("You can't cum right now!"))
- */
+
+//Removing ERP IC verb depending on config
+/mob/living/carbon/human/Initialize()
+	. = ..()
+	if(CONFIG_GET(flag/disable_erp_preferences))
+		verbs -= /mob/living/carbon/human/verb/arousal_panel
+
 ////////////
 ///FLUIDS///
 ////////////
