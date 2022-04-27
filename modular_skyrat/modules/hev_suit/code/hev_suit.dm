@@ -11,7 +11,7 @@
 #define HEV_ARMOR_POWEROFF list(20, 20, 20, 20, 30, 40, 40, 40, 40, 10)
 #define PCV_ARMOR_POWEROFF list(30, 30, 30, 30, 30, 30, 20, 20, 20, 10)
 
-#define HEV_ARMOR_POWERON list(60, 60, 60, 60, 90, 100, 100, 100, 100, 30)
+#define HEV_ARMOR_POWERON list(50, 50, 50, 50, 90, 100, 100, 100, 100, 30)
 #define PCV_ARMOR_POWERON list(40, 40, 40, 40, 60, 75, 50, 50, 50, 40)
 
 #define HEV_POWERUSE_AIRTANK 2
@@ -49,8 +49,9 @@
 	resistance_flags = LAVA_PROOF|FIRE_PROOF|UNACIDABLE|ACID_PROOF|INDESTRUCTIBLE|FREEZE_PROOF
 	clothing_flags = STOPSPRESSUREDAMAGE|THICKMATERIAL|SNUG_FIT|LAVAPROTECT|BLOCK_GAS_SMOKE_EFFECT
 	clothing_traits = list(TRAIT_REAGENT_SCANNER)
-	visor_flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEFACIALHAIR|HIDESNOUT
+	visor_flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEFACIALHAIR
 	visor_flags = STOPSPRESSUREDAMAGE
+	dog_fashion = null
 	slowdown = 0
 
 /obj/item/clothing/suit/space/hev_suit
@@ -315,11 +316,13 @@
 		send_message("ERROR - POWER SYSTEMS FAILURE - [failure_reason]", HEV_COLOR_RED)
 		return FALSE
 
-	if(!current_user.head && !istype(current_user.head, /obj/item/clothing/head/helmet/space/hev_suit))
-		send_message("ERROR - SUIT HELMET NOT ENGAGED", HEV_COLOR_RED)
+	var/obj/item/clothing/head/helmet/space/hev_suit/helmet = current_user.head
+
+	if(!helmet || !istype(helmet))
+		send_message("ERROR - SUIT HELMET NOT PRESENT", HEV_COLOR_RED)
 		return FALSE
 
-	current_helmet = current_user.head
+	current_helmet = helmet
 
 	ADD_TRAIT(current_helmet, TRAIT_NODROP, "hev_trait")
 
@@ -484,12 +487,13 @@
 		health_dropping_alarm = FALSE
 
 /obj/item/clothing/suit/space/hev_suit/proc/atmospherics()
-	if(!current_user.get_item_by_slot(ITEM_SLOT_SUITSTORE) && !istype(current_user.get_item_by_slot(ITEM_SLOT_SUITSTORE), /obj/item/tank/internals))
+	var/obj/item/tank/internals/tank = current_user.get_item_by_slot(ITEM_SLOT_SUITSTORE)
+	if(!tank || !istype(tank))
 		send_message("...FAILURE, NO TANK DETECTED", HEV_COLOR_RED)
 		send_message("CALIBRATING VITALSIGN MONITORING SYSTEMS...")
 		timer_id = addtimer(CALLBACK(src, .proc/vitalsigns), 4 SECONDS, TIMER_STOPPABLE)
 		return
-	current_internals_tank = current_user.get_item_by_slot(ITEM_SLOT_SUITSTORE)
+	current_internals_tank = tank
 	ADD_TRAIT(current_internals_tank, TRAIT_NODROP, "hev_trait")
 	to_chat(current_user, span_notice("You hear a click as [current_internals_tank] is secured to your suit."))
 	playsound(src, atmospherics_sound, 50)
@@ -765,7 +769,7 @@
 	armor = list(MELEE = 30, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 30, BIO = 20, FIRE = 20, ACID = 20, WOUND = 10)
 	flags_inv = HIDEHAIR
 	obj_flags = NO_MAT_REDEMPTION
-	mutant_variants = NONE
+	supports_variations_flags = NONE
 	resistance_flags = FIRE_PROOF|ACID_PROOF|FREEZE_PROOF
 	clothing_flags = SNUG_FIT
 	clothing_traits = null

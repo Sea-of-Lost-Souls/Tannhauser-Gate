@@ -53,7 +53,7 @@
 
 //G-17
 /obj/item/storage/box/gunset/glock17
-	name = "glock-17 supply box"
+	name = "GK-17 supply box"
 
 /obj/item/gun/ballistic/automatic/pistol/g17/nomag
 	spawnwithmagazine = FALSE
@@ -248,9 +248,10 @@
 
 //HOS
 /obj/item/storage/box/gunset/glock18_hos
-	name = "glock-18 supply box"
-	desc = "Ideally contains a fast-firing 9x19mm Pistol made out of cheap plastic."
+	name = "GK-18 supply box"
+	desc = "Ideally contains a fast-firing 9x19mm pistol made out of cheap plastic."
 	w_class = WEIGHT_CLASS_NORMAL
+
 /obj/item/gun/ballistic/automatic/pistol/g18/nomag
 	spawnwithmagazine = FALSE
 
@@ -260,7 +261,7 @@
 	new /obj/item/ammo_box/magazine/multi_sprite/g18(src)
 	new /obj/item/ammo_box/magazine/multi_sprite/g18(src)
 	new /obj/item/ammo_box/magazine/multi_sprite/g18(src)
-	new /obj/item/ammo_box/magazine/multi_sprite/g18(src)
+	new /obj/item/ammo_box/magazine/multi_sprite/g18/ihdf(src)
 
 //HOP
 /obj/item/storage/box/gunset/pdh
@@ -309,14 +310,14 @@
 	new /obj/item/ammo_box/magazine/multi_sprite/g11(src)
 
 //SECURITY MEDIC
-/obj/item/storage/box/gunset/security_medic
+/obj/item/storage/box/gunset/firefly
 	name = "9x19mm special pistol supply box"
 	desc = "Ideally contains a special 9x19mm Pistol."
 	w_class = WEIGHT_CLASS_NORMAL
 /obj/item/gun/ballistic/automatic/pistol/firefly/nomag
 	spawnwithmagazine = FALSE
 
-/obj/item/storage/box/gunset/security_medic/PopulateContents()
+/obj/item/storage/box/gunset/firefly/PopulateContents()
 	. = ..()
 	new /obj/item/gun/ballistic/automatic/pistol/firefly/nomag(src)
 	new /obj/item/ammo_box/magazine/multi_sprite/firefly(src)

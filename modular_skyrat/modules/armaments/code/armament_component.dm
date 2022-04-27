@@ -23,9 +23,6 @@
 		stack_trace("No products specified for armament")
 		return COMPONENT_INCOMPATIBLE
 
-	if(!isatom(parent))
-		return COMPONENT_INCOMPATIBLE
-
 	parent_atom = parent
 
 	products = required_products
@@ -50,7 +47,7 @@
 	if(!user.can_interact_with(parent_atom))
 		return
 
-	if(!istype(item, /obj/item/armament_points_card))
+	if(!istype(item, /obj/item/armament_points_card) || inserted_card)
 		return
 
 	item.forceMove(parent_atom)
