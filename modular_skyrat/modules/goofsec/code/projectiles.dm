@@ -38,16 +38,18 @@
 	worn_icon_state = "norwind_worn"
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_OCLOTHING
-	inhand_icon_state = "vintorez"
+	inhand_icon_state = "vintorez_worn"
 	burst_size = 2
 	fire_delay = 4
-	zoomable = TRUE
-	zoom_amt = 7
-	zoom_out_amt = 5
 	fire_sound = null
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/hardlight_bullet/vintorez)
 	shaded_charge = TRUE
 	cell_type = /obj/item/stock_parts/cell/super
+	company_flag = COMPANY_OLDARMS
+
+/obj/item/gun/energy/vintorez/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/scope, range_modifier = 1.5)
 
 /obj/item/ammo_casing/energy/laser/hardlight_bullet/vintorez
 	name = "hardlight bullet vintorez casing"
@@ -69,14 +71,11 @@
 	icon_state = "norwind"
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_OCLOTHING
-	inhand_icon_state = "norwind"
+	inhand_icon_state = "norwind_worn"
 	worn_icon = 'modular_skyrat/modules/sec_haul/icons/guns/norwind.dmi'
 	worn_icon_state = "norwind_worn"
 	can_bayonet = TRUE
 	can_flashlight = TRUE
-	zoomable = TRUE
-	zoom_amt = 7
-	zoom_out_amt = 5
 	fire_sound = null
 	fire_select_modes = list(SELECT_SEMI_AUTOMATIC)
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/hardlight_bullet/norwind)
@@ -84,6 +83,11 @@
 	fire_delay = 10
 	shaded_charge = TRUE
 	cell_type = /obj/item/stock_parts/cell/super
+	company_flag = COMPANY_ARMADYNE
+
+/obj/item/gun/energy/norwind/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/scope, range_modifier = 1.75)
 
 /obj/item/ammo_casing/energy/laser/hardlight_bullet/norwind
 	name = "hardlight bullet norwind casing"
@@ -101,7 +105,7 @@
 	righthand_file = 'modular_skyrat/modules/sec_haul/icons/guns/inhands/righthand.dmi'
 	lefthand_file = 'modular_skyrat/modules/sec_haul/icons/guns/inhands/lefthand.dmi'
 	inhand_icon_state = "ostwind"
-	icon_state = "ostwind"
+	icon_state = "ostwind_worn"
 	worn_icon = 'modular_skyrat/modules/sec_haul/icons/guns/ostwind.dmi'
 	worn_icon_state = "ostwind_worn"
 	w_class = WEIGHT_CLASS_BULKY
@@ -112,6 +116,8 @@
 	can_bayonet = TRUE
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/hardlight_bullet/ostwind)
 	cell_type = /obj/item/stock_parts/cell/super
+	company_flag = COMPANY_ARMADYNE
+
 /obj/item/ammo_casing/energy/laser/hardlight_bullet/ostwind
 	name = "hardlight bullet norostwindwind casing"
 	projectile_type = /obj/projectile/beam/laser/hardlight_bullet/ostwind
@@ -142,6 +148,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/hardlight_bullet/pitbull)
 	shaded_charge = TRUE
 	cell_type = /obj/item/stock_parts/cell/super
+	company_flag = COMPANY_BOLT
 
 /obj/item/ammo_casing/energy/laser/hardlight_bullet/pitbull
 	name = "hardlight bullet pitbull casing"
@@ -170,6 +177,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/hardlight_bullet/pcr)
 	shaded_charge = TRUE
 	cell_type = /obj/item/stock_parts/cell/super
+	company_flag = COMPANY_BOLT
 
 /obj/item/ammo_casing/energy/laser/hardlight_bullet/pcr
 	name = "hardlight bullet pcr casing"
