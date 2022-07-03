@@ -304,13 +304,6 @@ structure_check() searches for nearby cultist structures required for the invoca
 		return FALSE
 
 	var/big_sac = FALSE
-	//SKYRAT ADDITION BEGIN -- SOULSTONE_cHANGES
-	if(HAS_TRAIT(sacrificial, TRAIT_SACRIFICED))
-		for(var/M in invokers)
-			to_chat(M, span_cultitalic("This one has already been sacrificed! Find another!"))
-		log_game("Offer rune failed - tried sacrificing already sacrificed target.")
-		return FALSE
-	//SKYRAT ADDITION END
 	if((((ishuman(sacrificial) || iscyborg(sacrificial)) && sacrificial.stat != DEAD) || C.cult_team.is_sacrifice_target(sacrificial.mind)) && length(invokers) < 3)
 		for(var/M in invokers)
 			to_chat(M, span_cultitalic("[sacrificial] is too greatly linked to the world! You need three acolytes!"))
@@ -349,22 +342,10 @@ structure_check() searches for nearby cultist structures required for the invoca
 		return TRUE
 	var/obj/item/soulstone/stone = new /obj/item/soulstone(get_turf(src))
 	if(sacrificial.mind && !sacrificial.suiciding)
-		stone.invisibility = INVISIBILITY_MAXIMUM //so it's not picked up during transfer_soul()
 		stone.capture_soul(sacrificial, first_invoker, TRUE)
-		stone.invisibility = 0
-	//SKYRAT EDIT BEGIN -- SOULSTONE_CHANGES
-	if(sacrificial)
-		playsound(sacrificial, 'sound/magic/disintegrate.ogg', 100, TRUE)
 
-		if(iscarbon(sacrificial))
-			var/mob/living/carbon/victim = sacrificial
-			var/obj/item/bodypart/chest/victim_chest = victim.get_bodypart(BODY_ZONE_CHEST)
-			victim_chest.dismember()
-			victim.adjustFireLoss(300)
-			ADD_TRAIT(victim, TRAIT_SACRIFICED, "sacrificed")
-		else
-			sacrificial.gib(TRUE)
-	//SKYRAT EDIT END
+	if(sacrificial)
+		sacrificial.gib(TRUE)
 	return TRUE
 
 /obj/effect/rune/empower
@@ -403,6 +384,10 @@ structure_check() searches for nearby cultist structures required for the invoca
 
 /obj/effect/rune/teleport/Destroy()
 	LAZYREMOVE(GLOB.teleport_runes, src)
+	if(inner_portal)
+		QDEL_NULL(inner_portal)
+	if(outer_portal)
+		QDEL_NULL(outer_portal)
 	return ..()
 
 /obj/effect/rune/teleport/invoke(list/invokers)
@@ -501,8 +486,8 @@ structure_check() searches for nearby cultist structures required for the invoca
 	addtimer(CALLBACK(src, .proc/close_portal), 600, TIMER_UNIQUE)
 
 /obj/effect/rune/teleport/proc/close_portal()
-	qdel(inner_portal)
-	qdel(outer_portal)
+	QDEL_NULL(inner_portal)
+	QDEL_NULL(outer_portal)
 	desc = initial(desc)
 	set_light_range(0)
 	update_light()
@@ -921,7 +906,7 @@ structure_check() searches for nearby cultist structures required for the invoca
 
 /mob/living/carbon/human/cult_ghost/getorganszone(zone, subzones = 0)
 	. = ..()
-	for(var/obj/item/organ/brain/B in .) //they're not that smart, really
+	for(var/obj/item/organ/internal/brain/B in .) //they're not that smart, really
 		. -= B
 
 
@@ -941,6 +926,7 @@ structure_check() searches for nearby cultist structures required for the invoca
 	if(rune_in_use)
 		return
 	. = ..()
+
 	var/area/place = get_area(src)
 	var/mob/living/user = invokers[1]
 	var/datum/antagonist/cult/user_antag = user.mind.has_antag_datum(/datum/antagonist/cult,TRUE)
@@ -951,8 +937,10 @@ structure_check() searches for nearby cultist structures required for the invoca
 	if(!(place in summon_objective.summon_spots))
 		to_chat(user, span_cultlarge("The Apocalypse rune will remove a ritual site, where Nar'Sie can be summoned, it can only be scribed in [english_list(summon_objective.summon_spots)]!"))
 		return
+
 	summon_objective.summon_spots -= place
 	rune_in_use = TRUE
+
 	var/turf/T = get_turf(src)
 	new /obj/effect/temp_visual/dir_setting/curse/grasp_portal/fading(T)
 	var/intensity = 0
@@ -961,20 +949,23 @@ structure_check() searches for nearby cultist structures required for the invoca
 			intensity++
 	intensity = max(60, 360 - (360*(intensity/length(GLOB.player_list) + 0.3)**2)) //significantly lower intensity for "winning" cults
 	var/duration = intensity*10
+
 	playsound(T, 'sound/magic/enter_blood.ogg', 100, TRUE)
 	visible_message(span_warning("A colossal shockwave of energy bursts from the rune, disintegrating it in the process!"))
+
 	for(var/mob/living/target in range(src, 3))
 		target.Paralyze(30)
 	empulse(T, 0.42*(intensity), 1)
+
 	var/list/images = list()
 	var/zmatch = T.z
-	var/datum/atom_hud/AH = GLOB.huds[DATA_HUD_SECURITY_ADVANCED]
+	var/datum/atom_hud/sec_hud = GLOB.huds[DATA_HUD_SECURITY_ADVANCED]
 	for(var/mob/living/M in GLOB.alive_mob_list)
 		if(M.z != zmatch)
 			continue
 		if(ishuman(M))
 			if(!IS_CULTIST(M))
-				AH.remove_hud_from(M)
+				sec_hud.hide_from(M)
 				addtimer(CALLBACK(GLOBAL_PROC, .proc/hudFix, M), duration)
 			var/image/A = image('icons/mob/cult.dmi',M,"cultist", ABOVE_MOB_LAYER)
 			A.override = 1
@@ -1066,5 +1057,5 @@ structure_check() searches for nearby cultist structures required for the invoca
 		return
 	var/obj/O = target.get_item_by_slot(ITEM_SLOT_EYES)
 	if(istype(O, /obj/item/clothing/glasses/hud/security))
-		var/datum/atom_hud/AH = GLOB.huds[DATA_HUD_SECURITY_ADVANCED]
-		AH.add_hud_to(target)
+		var/datum/atom_hud/sec_hud = GLOB.huds[DATA_HUD_SECURITY_ADVANCED]
+		sec_hud.show_to(target)

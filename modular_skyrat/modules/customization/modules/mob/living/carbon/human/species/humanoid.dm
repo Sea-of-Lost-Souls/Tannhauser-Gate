@@ -1,7 +1,6 @@
 /datum/species/humanoid
 	name = "Humanoid"
 	id = SPECIES_HUMANOID
-	default_color = "#4B4B4B"
 	species_traits = list(MUTCOLORS,
 		EYECOLOR,
 		LIPS,
@@ -14,10 +13,10 @@
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CAN_STRIP,
 		TRAIT_CAN_USE_FLIGHT_POTION,
+		TRAIT_LITERATE,
 	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	mutant_bodyparts = list()
-	digitigrade_customization = DIGITIGRADE_OPTIONAL
 	default_mutant_bodyparts = list(
 		"tail" = "None",
 		"snout" = "None",

@@ -1,7 +1,6 @@
 /datum/species/unathi
 	name = "Unathi"
 	id = SPECIES_UNATHI
-	default_color = "#4B4B4B"
 	species_traits = list(
 		MUTCOLORS,
 		EYECOLOR,
@@ -14,6 +13,7 @@
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CAN_STRIP,
 		TRAIT_CAN_USE_FLIGHT_POTION,
+		TRAIT_LITERATE,
 	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	mutant_bodyparts = list()

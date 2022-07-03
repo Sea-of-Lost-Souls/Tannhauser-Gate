@@ -1,7 +1,6 @@
 /datum/species/akula
 	name = "Akula"
 	id = SPECIES_AKULA
-	default_color = "#4B4B4B"
 	species_traits = list(
 		MUTCOLORS,
 		EYECOLOR,
@@ -14,6 +13,7 @@
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CAN_STRIP,
 		TRAIT_CAN_USE_FLIGHT_POTION,
+		TRAIT_LITERATE,
 	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	mutant_bodyparts = list()
@@ -32,7 +32,6 @@
 	disliked_food = CLOTH | DAIRY
 	toxic_food = TOXIC
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
-	digitigrade_customization = DIGITIGRADE_OPTIONAL
 	bodypart_overrides = list(
 		BODY_ZONE_HEAD = /obj/item/bodypart/head/mutant/akula,
 		BODY_ZONE_CHEST = /obj/item/bodypart/chest/mutant/akula,

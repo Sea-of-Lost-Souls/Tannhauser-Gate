@@ -9,7 +9,6 @@
 /datum/species/teshari
 	name = "Teshari"
 	id = SPECIES_TESHARI
-	default_color = "6060FF"
 	eyes_icon = 'modular_skyrat/master_files/icons/mob/species/teshari_eyes.dmi'
 	species_traits = list(MUTCOLORS,
 		EYECOLOR,
@@ -20,7 +19,8 @@
 		)
 	inherent_traits = list(
 		TRAIT_ADVANCEDTOOLUSER,
-		TRAIT_CAN_STRIP
+		TRAIT_CAN_STRIP,
+		TRAIT_LITERATE,
 	)
 	default_mutant_bodyparts = list(
 		"tail" = ACC_RANDOM,
@@ -70,3 +70,14 @@
 		BODY_ZONE_L_LEG = /obj/item/bodypart/l_leg/mutant/teshari,
 		BODY_ZONE_R_LEG = /obj/item/bodypart/r_leg/mutant/teshari,
 	)
+
+/datum/species/teshari/random_name(gender, unique, lastname)
+	if(unique)
+		return random_unique_teshari_name()
+
+	var/randname = teshari_name()
+
+	if(lastname)
+		randname += " [lastname]"
+
+	return randname

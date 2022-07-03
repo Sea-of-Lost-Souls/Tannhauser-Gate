@@ -40,12 +40,6 @@
 	veteran_only = TRUE
 	job_flags = JOB_ANNOUNCE_ARRIVAL | JOB_CREW_MANIFEST | JOB_EQUIP_RANK | JOB_CREW_MEMBER | JOB_NEW_PLAYER_JOINABLE | JOB_BOLD_SELECT_TEXT | JOB_REOPEN_ON_ROUNDSTART_LOSS | JOB_ASSIGN_QUIRKS
 
-/datum/job/nanotrasen_consultant/after_spawn(mob/living/H, mob/M, latejoin)
-	. = ..()
-	to_chat(H, span_boldannounce("As the Nanotrasen Consultant, you are required to follow the following placeholder policy and SOP: https://paradisestation.org/wiki/index.php/Nanotrasen_Representative"))
-	//REMOVE THIS AFTER FAX MACHINES ARE ADDED!!!!
-	to_chat(H, span_boldannounce("If you require IC admin intervention, send an admin help until the fax machine is added."))
-
 /datum/outfit/job/nanotrasen_consultant
 	name = "Nanotrasen Consultant"
 	jobtype = /datum/job/nanotrasen_consultant
@@ -113,12 +107,12 @@
 
 /obj/item/modular_computer/tablet/pda/nanotrasen_consultant
 	name = "nanotrasen consultant's PDA"
-	default_disk = /obj/item/computer_hardware/hard_drive/role/captain
+	loaded_cartridge = /obj/item/computer_hardware/hard_drive/portable/command/captain
 	inserted_item = /obj/item/pen/fountain/captain
 	greyscale_colors = "#017941#0060b8"
 
 /obj/item/storage/box/gunset/nanotrasen_consultant
-	name = "M45A5 Gunset"
+	name = "M45A5 gunset"
 	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/gun/ballistic/automatic/pistol/m45a5/nomag
@@ -147,7 +141,7 @@
 	new /obj/item/pet_carrier(src)
 	new /obj/item/clothing/shoes/sneakers/brown(src)
 	new /obj/item/clothing/suit/armor/vest(src)
-	new /obj/item/computer_hardware/hard_drive/role/captain(src)
+	new /obj/item/computer_hardware/hard_drive/portable/command/captain(src)
 	new /obj/item/radio/headset/heads/nanotrasen_consultant/alt(src)
 	new /obj/item/radio/headset/heads/nanotrasen_consultant(src)
 	new /obj/item/clothing/glasses/sunglasses/gar/giga(src)

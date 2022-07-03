@@ -103,6 +103,10 @@
 	name = "Colourable Clown Mask (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/clown_mask/clown_mask_worn.json'
 
+// VAPE
+/datum/greyscale_config/vape/worn/digi
+	name = "Worn Vape - Digitigrade"
+	icon_file = 'modular_skyrat/master_files/icons/mob/clothing/mask.dmi'
 
 /*
 *	NECK
@@ -375,6 +379,23 @@
 	name = "Cloth Wraps (Worn)"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/wraps/wraps_worn.json'
 
+/datum/greyscale_config/wraps/worn/digi
+	name = "Cloth Wraps (Worn Digi)"
+
+// MISC SHOES
+
+/datum/greyscale_config/heels
+	name = "High Heels"
+	icon_file = 'modular_skyrat/modules/GAGS/icons/heels.dmi'
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/heels/heels.json'
+
+/datum/greyscale_config/heels/worn
+	name = "High Heels (Worn)"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/heels/heels_worn.json'
+
+/datum/greyscale_config/heels/worn/digi
+	name = "High Heels (Worn Digi)"
+
 // TESHARI FALLBACKS.
 
 /datum/greyscale_config/teshari
@@ -410,6 +431,10 @@
 	name = "Teshari Armor"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/teshari_fallbacks/armor.json'
 
+/datum/greyscale_config/teshari/backpack
+	name = "Teshari Backpack"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/teshari_fallbacks/backpack.json'
+
 /datum/greyscale_config/teshari/spacesuit
 	name = "Teshari Spacesuit"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/teshari_fallbacks/spacesuit.json'
@@ -425,6 +450,10 @@
 /datum/greyscale_config/teshari/scarf
 	name = "Teshari Scarf"
 	json_config = 'modular_skyrat/modules/GAGS/json_configs/teshari_fallbacks/scarf.json'
+
+/datum/greyscale_config/teshari/modcontrol
+	name = "Teshari Modsuit"
+	json_config = 'modular_skyrat/modules/GAGS/json_configs/teshari_fallbacks/modcontrol.json'
 
 /datum/greyscale_config/teshari/hardsuit
 	name = "Teshari Hardsuit"

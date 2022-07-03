@@ -7,7 +7,7 @@
 
 /obj/item/mod/control
 	name = "MOD control unit"
-	desc = "The control unit of a Modular Outerwear Device, a powered, back-mounted suit that protects against various environments."
+	desc = "The control unit of a Modular Outerwear Device, a powered suit that protects against various environments."
 	icon_state = "control"
 	inhand_icon_state = "mod_control"
 	w_class = WEIGHT_CLASS_BULKY
@@ -27,7 +27,6 @@
 	resistance_flags = NONE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_TEMP_PROTECT
 	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
-	permeability_coefficient = 0.01
 	siemens_coefficient = 0.5
 	alternate_worn_layer = HANDS_LAYER+0.1 //we want it to go above generally everything, but not hands
 	/// The MOD's theme, decides on some stuff like armor and statistics.
@@ -100,6 +99,7 @@
 	if(new_theme)
 		theme = new_theme
 	theme = GLOB.mod_themes[theme]
+	slot_flags = theme.slot_flags
 	extended_desc = theme.extended_desc
 	slowdown_inactive = theme.slowdown_inactive
 	slowdown_active = theme.slowdown_active
@@ -131,7 +131,6 @@
 		part.cold_protection = NONE
 		part.max_heat_protection_temperature = theme.max_heat_protection_temperature
 		part.min_cold_protection_temperature = theme.min_cold_protection_temperature
-		part.permeability_coefficient = theme.permeability_coefficient
 		part.siemens_coefficient = theme.siemens_coefficient
 	for(var/obj/item/part as anything in mod_parts)
 		RegisterSignal(part, COMSIG_ATOM_DESTRUCTION, .proc/on_part_destruction)
@@ -198,7 +197,8 @@
 		. += span_notice("Charge: [core ? "[get_charge_percent()]%" : "No core"].")
 		. += span_notice("Selected module: [selected_module || "None"].")
 	if(!open && !active)
-		. += span_notice("You could put it on your <b>back</b> to turn it on.")
+		if(!wearer)
+			. += span_notice("You could equip it to turn it on.")
 		. += span_notice("You could open the cover with a <b>screwdriver</b>.")
 	else if(open)
 		. += span_notice("You could close the cover with a <b>screwdriver</b>.")
@@ -210,8 +210,13 @@
 			. += span_notice("You could remove [core] with a <b>wrench</b>.")
 		else
 			. += span_notice("You could use a <b>MOD core</b> on it to install one.")
-		if(!mod_pai)
+		if(!mod_pai) // SKYRAT EDIT BEGIN - PAI in Modsuits
 			. += span_notice("You could install a pAI with a <b>pAI card</b>.")
+/* 		if(ai)
+			. += span_notice("You could remove [ai] with an <b>intellicard</b>.")
+		else
+			. += span_notice("You could install an AI with an <b>intellicard</b>.") SKYRAT EDIT END */
+	. += span_notice("<i>You could examine it more thoroughly...</i>")
 
 /obj/item/mod/control/examine_more(mob/user)
 	. = ..()
@@ -235,7 +240,7 @@
 
 /obj/item/mod/control/equipped(mob/user, slot)
 	..()
-	if(slot == ITEM_SLOT_BACK)
+	if(slot == slot_flags)
 		set_wearer(user)
 	else if(wearer)
 		unset_wearer()
@@ -246,7 +251,7 @@
 		unset_wearer()
 
 /obj/item/mod/control/item_action_slot_check(slot)
-	if(slot == ITEM_SLOT_BACK)
+	if(slot == slot_flags)
 		return TRUE
 
 /obj/item/mod/control/Moved(atom/old_loc, movement_dir, forced = FALSE, list/old_locs)
@@ -429,7 +434,7 @@
 	if(. & EMP_PROTECT_CONTENTS)
 		return
 	selected_module?.on_deactivation(display_message = TRUE)
-	wearer.apply_damage(10 / severity, BURN, spread_damage=TRUE)
+	wearer.apply_damage(5 / severity, BURN, spread_damage=TRUE)
 	to_chat(wearer, span_danger("You feel [src] heat up from the EMP, burning you slightly."))
 	if(wearer.stat < UNCONSCIOUS && prob(10))
 		wearer.emote("scream")
@@ -514,7 +519,7 @@
 		return
 	var/module_reference = display_names[pick]
 	var/obj/item/mod/module/picked_module = locate(module_reference) in modules
-	if(!istype(picked_module) || user.incapacitated())
+	if(!istype(picked_module))
 		return
 	picked_module.on_select()
 
@@ -551,9 +556,6 @@
 	new_module.on_install()
 	if(wearer)
 		new_module.on_equip()
-		var/datum/action/item_action/mod/pinned_module/action = new_module.pinned_to[REF(wearer)]
-		if(action)
-			action.Grant(wearer)
 	// SKYRAT EDIT START - pAIs in MODsuits
 	if(mod_pai)
 		var/datum/action/item_action/mod/pinned_module/action = new_module.pinned_to[ref(mod_pai)]
@@ -572,7 +574,7 @@
 		if(old_module.active)
 			old_module.on_deactivation(display_message = !deleting, deleting = deleting)
 	old_module.on_uninstall(deleting = deleting)
-	QDEL_LIST(old_module.pinned_to)
+	QDEL_LIST_ASSOC_VAL(old_module.pinned_to)
 	old_module.mod = null
 
 /obj/item/mod/control/proc/update_access(mob/user, obj/item/card/id/card)
@@ -600,6 +602,9 @@
 
 /obj/item/mod/control/proc/subtract_charge(amount)
 	return core?.subtract_charge(amount) || FALSE
+
+/obj/item/mod/control/proc/check_charge(amount)
+	return core?.check_charge(amount) || FALSE
 
 /obj/item/mod/control/proc/update_charge_alert()
 	if(!wearer)
@@ -631,13 +636,12 @@
 		CRASH("[src] tried to set skin while active!")
 	skin = new_skin
 	var/list/used_skin = theme.skins[new_skin]
-	alternate_worn_layer = used_skin[CONTROL_LAYER]
+	if(used_skin[CONTROL_LAYER])
+		alternate_worn_layer = used_skin[CONTROL_LAYER]
 	var/list/skin_updating = mod_parts + src
 	for(var/obj/item/part as anything in skin_updating)
-		if(used_skin[MOD_ICON_OVERRIDE])
-			part.icon = used_skin[MOD_ICON_OVERRIDE]
-		if(used_skin[MOD_WORN_ICON_OVERRIDE])
-			part.worn_icon = used_skin[MOD_WORN_ICON_OVERRIDE]
+		part.icon = used_skin[MOD_ICON_OVERRIDE] || 'icons/obj/clothing/modsuit/mod_clothing.dmi'
+		part.worn_icon = used_skin[MOD_WORN_ICON_OVERRIDE] || 'icons/mob/clothing/modsuit/mod_clothing.dmi'
 		part.icon_state = "[skin]-[initial(part.icon_state)]"
 	for(var/obj/item/clothing/part as anything in mod_parts)
 		var/used_category
@@ -684,10 +688,12 @@
 		uninstall(part)
 		return
 	if(part in mod_parts)
+		if(!wearer)
+			part.forceMove(src)
+			return
 		retract(wearer, part)
 		if(active)
 			INVOKE_ASYNC(src, .proc/toggle_activate, wearer, TRUE)
-		return
 
 /obj/item/mod/control/proc/on_part_destruction(obj/item/part, damage_flag)
 	SIGNAL_HANDLER

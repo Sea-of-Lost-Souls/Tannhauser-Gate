@@ -39,6 +39,18 @@
 	name = "high heels"
 	desc = "A fancy pair of high heels. Won't compensate for your below average height that much."
 	icon_state = "heels"
+	greyscale_config = /datum/greyscale_config/heels
+	greyscale_config_worn = /datum/greyscale_config/heels/worn
+	greyscale_config_worn_digi = /datum/greyscale_config/heels/worn/digi
+	greyscale_colors = "#FFFFFF"
+	flags_1 = IS_PLAYER_COLORABLE_1
+
+/obj/item/clothing/shoes/black_heels
+	name = "black heels"
+	desc = "A pair of black high heels that are much smaller on your feet"
+	icon_state = "highheels"
+	icon = 'modular_skyrat/master_files/icons/obj/clothing/shoes.dmi'
+	worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/feet.dmi'
 
 /obj/item/clothing/shoes/discoshoes
 	name = "green snakeskin shoes"
@@ -67,7 +79,6 @@
 	strip_delay = 30
 	equip_delay_other = 50
 	resistance_flags = NONE
-	permeability_coefficient = 0.05 //Thick soles, and covers the ankle
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
 	can_be_tied = TRUE //SKYRAT EDIT
 
@@ -84,6 +95,7 @@
 	icon_state = "clothwrap"
 	greyscale_config = /datum/greyscale_config/wraps
 	greyscale_config_worn = /datum/greyscale_config/wraps/worn
+	greyscale_config_worn_digi = /datum/greyscale_config/wraps/worn/digi
 	greyscale_colors = "#FFFFFF"
 	body_parts_covered = FALSE
 	flags_1 = IS_PLAYER_COLORABLE_1
@@ -94,13 +106,6 @@
 	icon = 'modular_skyrat/master_files/icons/obj/clothing/shoes.dmi'
 	worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/feet.dmi'
 	icon_state = "sportshoe"
-
-/obj/item/clothing/shoes/jackboots/thigh
-	name = "thigh boots"
-	desc = "Black leather boots that go up to the thigh."
-	icon = 'modular_skyrat/master_files/icons/obj/clothing/shoes.dmi'
-	worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/feet.dmi'
-	icon_state = "thighboots"
 
 /obj/item/clothing/shoes/jackboots/knee
 	name = "knee boots"

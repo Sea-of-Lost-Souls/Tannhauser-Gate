@@ -380,9 +380,10 @@
 	random_sensor = FALSE
 	resistance_flags = NONE
 	can_adjust = FALSE
+	armor = list(MELEE = 10, BULLET = 10, LASER = 10, ENERGY = 0, BOMB = 0, BIO = 10, FIRE = 50, ACID = 50)
+
 	special_desc_requirement = EXAMINE_CHECK_SYNDICATE // SKYRAT EDIT
 	special_desc = "A chameleon jumpsuit employed by the Syndicate in infiltration operations." // SKYRAT EDIT
-	armor = list(MELEE = 10, BULLET = 10, LASER = 10, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 50, ACID = 50)
 
 	var/datum/action/item_action/chameleon/change/chameleon_action
 
@@ -393,6 +394,7 @@
 	chameleon_action.chameleon_name = "Jumpsuit"
 	chameleon_action.chameleon_blacklist = typecacheof(list(/obj/item/clothing/under, /obj/item/clothing/under/color, /obj/item/clothing/under/rank, /obj/item/clothing/under/changeling), only_root_path = TRUE)
 	chameleon_action.initialize_disguises()
+	add_item_action(chameleon_action)
 
 /obj/item/clothing/under/chameleon/emp_act(severity)
 	. = ..()
@@ -424,6 +426,7 @@
 	chameleon_action.chameleon_name = "Suit"
 	chameleon_action.chameleon_blacklist = typecacheof(list(/obj/item/clothing/suit/armor/abductor, /obj/item/clothing/suit/changeling), only_root_path = TRUE)
 	chameleon_action.initialize_disguises()
+	add_item_action(chameleon_action)
 
 /obj/item/clothing/suit/chameleon/emp_act(severity)
 	. = ..()
@@ -454,6 +457,7 @@
 	chameleon_action.chameleon_name = "Glasses"
 	chameleon_action.chameleon_blacklist = typecacheof(/obj/item/clothing/glasses/changeling, only_root_path = TRUE)
 	chameleon_action.initialize_disguises()
+	add_item_action(chameleon_action)
 
 /obj/item/clothing/glasses/chameleon/emp_act(severity)
 	. = ..()
@@ -485,6 +489,7 @@
 	chameleon_action.chameleon_name = "Gloves"
 	chameleon_action.chameleon_blacklist = typecacheof(list(/obj/item/clothing/gloves, /obj/item/clothing/gloves/color, /obj/item/clothing/gloves/changeling), only_root_path = TRUE)
 	chameleon_action.initialize_disguises()
+	add_item_action(chameleon_action)
 
 /obj/item/clothing/gloves/chameleon/emp_act(severity)
 	. = ..()
@@ -515,6 +520,7 @@
 	chameleon_action.chameleon_name = "Hat"
 	chameleon_action.chameleon_blacklist = typecacheof(/obj/item/clothing/head/changeling, only_root_path = TRUE)
 	chameleon_action.initialize_disguises()
+	add_item_action(chameleon_action)
 
 /obj/item/clothing/head/chameleon/emp_act(severity)
 	. = ..()
@@ -547,10 +553,9 @@
 	icon_state = "gas_alt"
 	inhand_icon_state = "gas_alt"
 	resistance_flags = NONE
-	armor = list(MELEE = 5, BULLET = 5, LASER = 5, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 50, ACID = 50)
+	armor = list(MELEE = 5, BULLET = 5, LASER = 5, ENERGY = 0, BOMB = 0, BIO = 100, FIRE = 50, ACID = 50)
 	clothing_flags = BLOCK_GAS_SMOKE_EFFECT | MASKINTERNALS
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEFACIALHAIR|HIDESNOUT
-	permeability_coefficient = 0.01
 	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
 	w_class = WEIGHT_CLASS_SMALL
 	special_desc_requirement = EXAMINE_CHECK_SYNDICATE // Skyrat edit
@@ -567,6 +572,7 @@
 	chameleon_action.chameleon_name = "Mask"
 	chameleon_action.chameleon_blacklist = typecacheof(/obj/item/clothing/mask/changeling, only_root_path = TRUE)
 	chameleon_action.initialize_disguises()
+	add_item_action(chameleon_action)
 
 /obj/item/clothing/mask/chameleon/emp_act(severity)
 	. = ..()
@@ -608,9 +614,8 @@
 	greyscale_config = /datum/greyscale_config/sneakers
 	greyscale_config_worn = /datum/greyscale_config/sneakers_worn
 	desc = "A pair of black shoes."
-	permeability_coefficient = 0.05
 	resistance_flags = NONE
-	armor = list(MELEE = 10, BULLET = 10, LASER = 10, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 50, ACID = 50)
+	armor = list(MELEE = 10, BULLET = 10, LASER = 10, ENERGY = 0, BOMB = 0, BIO = 90, FIRE = 50, ACID = 50)
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
 	special_desc_requirement = EXAMINE_CHECK_SYNDICATE // Skyrat edit
 	special_desc = "A pair of chameleon shoes employed by the Syndicate in infiltration operations." // Skyrat edit
@@ -625,6 +630,7 @@
 	chameleon_action.chameleon_name = "Shoes"
 	chameleon_action.chameleon_blacklist = typecacheof(/obj/item/clothing/shoes/changeling, only_root_path = TRUE)
 	chameleon_action.initialize_disguises()
+	add_item_action(chameleon_action)
 
 /obj/item/clothing/shoes/chameleon/emp_act(severity)
 	. = ..()
@@ -656,6 +662,7 @@
 	chameleon_action.chameleon_type = /obj/item/storage/backpack
 	chameleon_action.chameleon_name = "Backpack"
 	chameleon_action.initialize_disguises()
+	add_item_action(chameleon_action)
 
 /obj/item/storage/backpack/chameleon/emp_act(severity)
 	. = ..()
@@ -682,6 +689,7 @@
 	chameleon_action.chameleon_type = /obj/item/storage/belt
 	chameleon_action.chameleon_name = "Belt"
 	chameleon_action.initialize_disguises()
+	add_item_action(chameleon_action)
 
 /obj/item/storage/belt/chameleon/ComponentInitialize()
 	. = ..()
@@ -711,6 +719,7 @@
 	chameleon_action.chameleon_type = /obj/item/radio/headset
 	chameleon_action.chameleon_name = "Headset"
 	chameleon_action.initialize_disguises()
+	add_item_action(chameleon_action)
 
 /obj/item/radio/headset/chameleon/emp_act(severity)
 	. = ..()
@@ -733,6 +742,7 @@
 	chameleon_action.chameleon_name = "tablet"
 	chameleon_action.chameleon_blacklist = typecacheof(list(/obj/item/modular_computer/tablet/pda/heads), only_root_path = TRUE)
 	chameleon_action.initialize_disguises()
+	add_item_action(chameleon_action)
 
 /obj/item/modular_computer/tablet/pda/chameleon/emp_act(severity)
 	. = ..()
@@ -753,6 +763,7 @@
 	chameleon_action.chameleon_type = /obj/item/stamp
 	chameleon_action.chameleon_name = "Stamp"
 	chameleon_action.initialize_disguises()
+	add_item_action(chameleon_action)
 
 /obj/item/stamp/chameleon/broken/Initialize(mapload)
 	. = ..()
@@ -761,7 +772,7 @@
 /obj/item/clothing/neck/chameleon
 	name = "black tie"
 	desc = "A neosilk clip-on tie."
-	icon_state = "blacktie"
+	icon_state = "detective" //we use this icon_state since the other ones are all generated by GAGS.
 	resistance_flags = NONE
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 50, ACID = 50)
 	w_class = WEIGHT_CLASS_SMALL
@@ -779,6 +790,7 @@
 	chameleon_action.chameleon_blacklist = typecacheof(/obj/item/clothing/neck/cloak/skill_reward)
 	chameleon_action.chameleon_name = "Neck Accessory"
 	chameleon_action.initialize_disguises()
+	add_item_action(chameleon_action)
 
 /obj/item/clothing/neck/chameleon/Destroy()
 	qdel(chameleon_action)
@@ -815,6 +827,7 @@
 	chameleon_action.chameleon_name = "Gun"
 	chameleon_action.chameleon_blacklist = typecacheof(/obj/item/gun/energy/minigun)
 	chameleon_action.initialize_disguises()
+	add_item_action(chameleon_action)
 
 	recharge_newshot()
 	set_chameleon_disguise(/obj/item/gun/energy/laser)

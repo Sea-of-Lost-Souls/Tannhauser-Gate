@@ -82,11 +82,10 @@
 		if(!(I.item_flags & ABSTRACT) && !(I.item_flags & EXAMINE_SKIP))
 			. += "[t_He] [t_is] holding [I.get_examine_string(user)] in [t_his] [get_held_index_name(get_held_index_of_item(I))]."
 
-	var/datum/component/forensics/FR = GetComponent(/datum/component/forensics)
 	//gloves
 	if(gloves && !(obscured & ITEM_SLOT_GLOVES) && !(gloves.item_flags & EXAMINE_SKIP))
 		. += "[t_He] [t_has] [gloves.get_examine_string(user)] on [t_his] hands."
-	else if(FR && length(FR.blood_DNA))
+	else if(GET_ATOM_BLOOD_DNA_LENGTH(src))
 		if(num_hands)
 			. += span_warning("[t_He] [t_has] [num_hands > 1 ? "" : "a"] blood-stained hand[num_hands > 1 ? "s" : ""]!")
 
@@ -134,18 +133,9 @@
 	. += EXAMINE_SECTION_BREAK // SKYRAT EDIT ADDITION - hr sections
 
 	//Status effects
-	var/list/status_examines = status_effect_examines()
+	var/list/status_examines = get_status_effect_examinations()
 	if (length(status_examines))
 		. += status_examines
-
-	//Jitters
-	switch(jitteriness)
-		if(300 to INFINITY)
-			. += span_warning("<B>[t_He] [t_is] convulsing violently!</B>")
-		if(200 to 300)
-			. += span_warning("[t_He] [t_is] extremely jittery.")
-		if(100 to 200)
-			. += span_warning("[t_He] [t_is] twitching ever so slightly.")
 
 	var/appears_dead = FALSE
 	var/just_sleeping = FALSE
@@ -165,7 +155,7 @@
 
 			. += generate_death_examine_text()
 
-	if(get_bodypart(BODY_ZONE_HEAD) && !getorgan(/obj/item/organ/brain))
+	if(get_bodypart(BODY_ZONE_HEAD) && !getorgan(/obj/item/organ/internal/brain))
 		. += span_deadsay("It appears that [t_his] brain is missing...")
 
 	var/list/msg = list()
@@ -252,9 +242,9 @@
 				msg += "<b>[t_He] [t_has] severe cellular damage!</b>\n"
 
 
-	if(fire_stacks > 0)
+	if(has_status_effect(/datum/status_effect/fire_handler/fire_stacks))
 		msg += "[t_He] [t_is] covered in something flammable.\n"
-	if(fire_stacks < 0)
+	if(has_status_effect(/datum/status_effect/fire_handler/wet_stacks))
 		msg += "[t_He] look[p_s()] a little soaked.\n"
 
 
@@ -340,21 +330,6 @@
 		msg += "[t_He] [t_is]n't responding to anything around [t_him] and seem[p_s()] to be asleep.\n"
 
 	if(!appears_dead)
-		if(drunkenness && !skipface) //Drunkenness
-			switch(drunkenness)
-				if(11 to 21)
-					msg += "[t_He] [t_is] slightly flushed.\n"
-				if(21.01 to 41) //.01s are used in case drunkenness ends up to be a small decimal
-					msg += "[t_He] [t_is] flushed.\n"
-				if(41.01 to 51)
-					msg += "[t_He] [t_is] quite flushed and [t_his] breath smells of alcohol.\n"
-				if(51.01 to 61)
-					msg += "[t_He] [t_is] very flushed and [t_his] movements jerky, with breath reeking of alcohol.\n"
-				if(61.01 to 91)
-					msg += "[t_He] look[p_s()] like a drunken mess.\n"
-				if(91.01 to INFINITY)
-					msg += "[t_He] [t_is] a shitfaced, slobbering wreck.\n"
-
 		if(src != user)
 			if(HAS_TRAIT(user, TRAIT_EMPATH))
 				if (combat_mode)
@@ -390,7 +365,7 @@
 			if(CONSCIOUS)
 				if(HAS_TRAIT(src, TRAIT_DUMB))
 					msg += "[t_He] [t_has] a stupid expression on [t_his] face.\n"
-		if(getorgan(/obj/item/organ/brain))
+		if(getorgan(/obj/item/organ/internal/brain))
 			if(ai_controller?.ai_status == AI_STATUS_ON)
 				msg += "[span_deadsay("[t_He] do[t_es]n't appear to be [t_him]self.")]\n"
 			else if(!key)
@@ -425,30 +400,31 @@
 
 	var/perpname = get_face_name(get_id_name(""))
 	if(perpname && (HAS_TRAIT(user, TRAIT_SECURITY_HUD) || HAS_TRAIT(user, TRAIT_MEDICAL_HUD)))
-		var/datum/data/record/R = find_record("name", perpname, GLOB.data_core.general)
-		var/datum/data/record/R_cache = R //SKYRAT EDIT ADDITION - RECORDS
-		if(R)
-			. += "<span class='deptradio'>Rank:</span> [R.fields["rank"]]\n<a href='?src=[REF(src)];hud=1;photo_front=1'>\[Front photo\]</a><a href='?src=[REF(src)];hud=1;photo_side=1'>\[Side photo\]</a>"
+		var/datum/data/record/target_record = find_record("name", perpname, GLOB.data_core.general)
+		var/datum/data/record/record_cache = target_record //SKYRAT EDIT ADDITION - RECORDS
+		if(target_record)
+			. += "<span class='deptradio'>Rank:</span> [target_record.fields["rank"]]\n<a href='?src=[REF(src)];hud=1;photo_front=1;examine_time=[world.time]'>\[Front photo\]</a><a href='?src=[REF(src)];hud=1;photo_side=1;examine_time=[world.time]'>\[Side photo\]</a>"
 		if(HAS_TRAIT(user, TRAIT_MEDICAL_HUD))
 			var/cyberimp_detect
-			for(var/obj/item/organ/cyberimp/CI in internal_organs)
+			for(var/obj/item/organ/internal/cyberimp/CI in internal_organs)
 				if(CI.status == ORGAN_ROBOTIC && !CI.syndicate_implant)
 					cyberimp_detect += "[!cyberimp_detect ? "[CI.get_examine_string(user)]" : ", [CI.get_examine_string(user)]"]"
 			if(cyberimp_detect)
 				. += "<span class='notice ml-1'>Detected cybernetic modifications:</span>"
 				. += "<span class='notice ml-2'>[cyberimp_detect]</span>"
-			if(R)
-				var/health_r = R.fields["p_stat"]
-				. += "<a href='?src=[REF(src)];hud=m;p_stat=1'>\[[health_r]\]</a>"
-				health_r = R.fields["m_stat"]
-				. += "<a href='?src=[REF(src)];hud=m;m_stat=1'>\[[health_r]\]</a>"
-			R = find_record("name", perpname, GLOB.data_core.medical)
-			if(R)
-				. += "<a href='?src=[REF(src)];hud=m;evaluation=1'>\[Medical evaluation\]</a><br>"
-			. += "<a href='?src=[REF(src)];hud=m;quirk=1'>\[See quirks\]</a>"
+
+			if(target_record)
+				var/health_r = target_record.fields["p_stat"]
+				. += "<a href='?src=[REF(src)];hud=m;p_stat=1;examine_time=[world.time]'>\[[health_r]\]</a>"
+				health_r = target_record.fields["m_stat"]
+				. += "<a href='?src=[REF(src)];hud=m;m_stat=1;examine_time=[world.time]'>\[[health_r]\]</a>"
+			target_record = find_record("name", perpname, GLOB.data_core.medical)
+			if(target_record)
+				. += "<a href='?src=[REF(src)];hud=m;evaluation=1;examine_time=[world.time]'>\[Medical evaluation\]</a><br>"
+			. += "<a href='?src=[REF(src)];hud=m;quirk=1;examine_time=[world.time]'>\[See quirks\]</a>"
 			//SKYRAT EDIT ADDITION BEGIN - EXAMINE RECORDS
-			if (R && length(R.fields["past_records"]) > RECORDS_INVISIBLE_THRESHOLD)
-				. += "<a href='?src=[REF(src)];hud=m;medrecords=1'>\[View medical records\]</a>"
+			if(target_record && length(target_record.fields["past_records"]) > RECORDS_INVISIBLE_THRESHOLD)
+				. += "<a href='?src=[REF(src)];hud=m;medrecords=1;examine_time=[world.time]'>\[View medical records\]</a>"
 			//SKYRAT EDIT END
 
 		if(HAS_TRAIT(user, TRAIT_SECURITY_HUD))
@@ -456,33 +432,36 @@
 			//|| !user.canmove || user.restrained()) Fluff: Sechuds have eye-tracking technology and sets 'arrest' to people that the wearer looks and blinks at.
 				var/criminal = "None"
 
-				R = find_record("name", perpname, GLOB.data_core.security)
-				if(R)
-					criminal = R.fields["criminal"]
+				target_record = find_record("name", perpname, GLOB.data_core.security)
+				if(target_record)
+					criminal = target_record.fields["criminal"]
 
-				. += "<span class='deptradio'>Criminal status:</span> <a href='?src=[REF(src)];hud=s;status=1'>\[[criminal]\]</a>"
-				. += jointext(list("<span class='deptradio'>Misc. security record:</span> <a href='?src=[REF(src)];hud=s;view=1'>\[View security records\]</a>", //SKYRAT EDIT CHANGE - EXAMINE RECORDS - Security record > Misc. security record
-					"<a href='?src=[REF(src)];hud=s;add_citation=1'>\[Add citation\]</a>",
-					"<a href='?src=[REF(src)];hud=s;add_crime=1'>\[Add crime\]</a>",
-					"<a href='?src=[REF(src)];hud=s;view_comment=1'>\[View comment log\]</a>",
-					"<a href='?src=[REF(src)];hud=s;add_comment=1'>\[Add comment\]</a>"), "")
+				. += "<span class='deptradio'>Criminal status:</span> <a href='?src=[REF(src)];hud=s;status=1;examine_time=[world.time]'>\[[criminal]\]</a>"
+				. += jointext(list("<span class='deptradio'>Security record:</span> <a href='?src=[REF(src)];hud=s;view=1;examine_time=[world.time]'>\[View\]</a>",
+					"<a href='?src=[REF(src)];hud=s;add_citation=1;examine_time=[world.time]'>\[Add citation\]</a>",
+					"<a href='?src=[REF(src)];hud=s;add_crime=1;examine_time=[world.time]'>\[Add crime\]</a>",
+					"<a href='?src=[REF(src)];hud=s;view_comment=1;examine_time=[world.time]'>\[View comment log\]</a>",
+					"<a href='?src=[REF(src)];hud=s;add_comment=1;examine_time=[world.time]'>\[Add comment\]</a>"), "")
 				// SKYRAT EDIT ADDITION BEGIN - EXAMINE RECORDS
-				if (R && length(R.fields["past_records"]) > RECORDS_INVISIBLE_THRESHOLD)
-					. += "<span class='deptradio'>Security record:</span> <a href='?src=[REF(src)];hud=s;secrecords=1'>\[View security records\]</a>"
+				if(target_record && length(target_record.fields["past_records"]) > RECORDS_INVISIBLE_THRESHOLD)
+					. += "<span class='deptradio'>Security record:</span> <a href='?src=[REF(src)];hud=s;secrecords=1;examine_time=[world.time]'>\[View security records\]</a>"
 
-		if (R_cache && length(R_cache.fields["past_records"]) > RECORDS_INVISIBLE_THRESHOLD)
-			. += "<a href='?src=[REF(src)];hud=[HAS_TRAIT(user, TRAIT_SECURITY_HUD) ? "s" : "m"];genrecords=1'>\[View general records\]</a>"
+		if (record_cache && length(record_cache.fields["past_records"]) > RECORDS_INVISIBLE_THRESHOLD)
+			. += "<a href='?src=[REF(src)];hud=[HAS_TRAIT(user, TRAIT_SECURITY_HUD) ? "s" : "m"];genrecords=1;examine_time=[world.time]'>\[View general records\]</a>"
 		//SKYRAT EDIT ADDITION END
 	else if(isobserver(user))
-		. += "<span class='info'><b>Traits:</b> [get_quirk_string(FALSE, CAT_QUIRK_ALL)]</span>"
+		. += span_info("<b>Traits:</b> [get_quirk_string(FALSE, CAT_QUIRK_ALL)]")
 
 	//SKYRAT EDIT ADDITION BEGIN - EXAMINE RECORDS
-	if (mind?.can_see_exploitables || mind?.has_exploitables_override)
-		var/datum/data/record/target_records = find_record("name", perpname, GLOB.data_core.general) //apparantly golden is okay with offstation roles having no records, FYI
-		var/exploitable_text = target_records.fields["exploitable_records"]
-		if (target_records && ((length(exploitable_text) > RECORDS_INVISIBLE_THRESHOLD) && ((exploitable_text) != EXPLOITABLE_DEFAULT_TEXT)))
-			. += "<a href='?src=[REF(src)];exprecords=1'>\[View exploitable info\]</a>"
-
+	if(isobserver(user) || user.mind?.can_see_exploitables || user.mind?.has_exploitables_override)
+		var/datum/data/record/target_records = find_record("name", perpname, GLOB.data_core.general)
+		if(target_records)
+			var/background_text = target_records.fields["background_records"]
+			var/exploitable_text = target_records.fields["exploitable_records"]
+			if((length(background_text) > RECORDS_INVISIBLE_THRESHOLD))
+				. += "<a href='?src=[REF(src)];bgrecords=1'>\[View background info\]</a>"
+			if((length(exploitable_text) > RECORDS_INVISIBLE_THRESHOLD) && ((exploitable_text) != EXPLOITABLE_DEFAULT_TEXT))
+				. += "<a href='?src=[REF(src)];exprecords=1'>\[View exploitable info\]</a>"
 	//SKYRAT EDIT END
 	//SKYRAT EDIT ADDITION BEGIN - GUNPOINT
 	if(gunpointing)
@@ -525,21 +504,26 @@
 			. += span_notice("<b>They look different than usual:</b> [temporary_flavor_text]")
 		else
 			. += span_notice("<b>They look different than usual:</b> [copytext_char(temporary_flavor_text, 1, 37)]... <a href='?src=[REF(src)];temporary_flavor=1'>More...</a>")
-	//. += "*---------*</span>" SKYRAT EDIT REMOVAL
+	. += "</span>"
 	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, user, .)
 
-/mob/living/proc/status_effect_examines(pronoun_replacement) //You can include this in any mob's examine() to show the examine texts of status effects!
-	var/list/dat = list()
-	if(!pronoun_replacement)
-		pronoun_replacement = p_they(TRUE)
-	for(var/V in status_effects)
-		var/datum/status_effect/E = V
-		if(E.examine_text)
-			var/new_text = replacetext(E.examine_text, "SUBJECTPRONOUN", pronoun_replacement)
-			new_text = replacetext(new_text, "[pronoun_replacement] is", "[pronoun_replacement] [p_are()]") //To make sure something become "They are" or "She is", not "They are" and "She are"
-			dat += "[new_text]\n" //dat.Join("\n") doesn't work here, for some reason
-	if(dat.len)
-		return dat.Join()
+/**
+ * Shows any and all examine text related to any status effects the user has.
+ */
+/mob/living/proc/get_status_effect_examinations()
+	var/list/examine_list = list()
+
+	for(var/datum/status_effect/effect as anything in status_effects)
+		var/effect_text = effect.get_examine_text()
+		if(!effect_text)
+			continue
+
+		examine_list += effect_text
+
+	if(!length(examine_list))
+		return
+
+	return examine_list.Join("\n")
 
 /mob/living/carbon/human/examine_more(mob/user)
 	. = ..()

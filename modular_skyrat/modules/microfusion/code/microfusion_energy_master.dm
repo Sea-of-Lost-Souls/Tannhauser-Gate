@@ -9,11 +9,9 @@
 	icon = 'modular_skyrat/modules/microfusion/icons/microfusion_gun40x32.dmi'
 	icon_state = "mcr01"
 	bayonet_icon = 'modular_skyrat/modules/microfusion/icons/microfusion_gun40x32.dmi'
-	gunlight_icon = 'modular_skyrat/modules/microfusion/icons/microfusion_gun40x32.dmi'
 	lefthand_file = 'modular_skyrat/modules/microfusion/icons/guns_lefthand.dmi'
 	righthand_file = 'modular_skyrat/modules/microfusion/icons/guns_righthand.dmi'
 	has_gun_safety = TRUE
-	can_flashlight = FALSE
 	can_bayonet = FALSE
 	w_class = WEIGHT_CLASS_BULKY
 	obj_flags = UNIQUE_RENAME
@@ -45,9 +43,9 @@
 	/// The microfusion lens used for generating the beams.
 	var/obj/item/ammo_casing/energy/laser/microfusion/microfusion_lens
 	/// The time it takes for someone to (tactically) reload this gun. In deciseconds.
-	var/reload_time = 6 SECONDS
+	var/reload_time = 4 SECONDS
 	/// The time it takes for someone to normally reload this gun. In deciseconds.
-	var/reload_time_slow = 4 SECONDS
+	var/reload_time_slow = 2 SECONDS
 	/// The sound played when you insert a cell.
 	var/sound_cell_insert = 'modular_skyrat/modules/microfusion/sound/mag_insert.ogg'
 	/// Should the insertion sound played vary?
@@ -117,6 +115,9 @@
 
 /obj/item/gun/microfusion/add_weapon_description()
 	AddElement(/datum/element/weapon_description, attached_proc = .proc/add_notes_energy)
+
+/obj/item/gun/microfusion/add_seclight_point()
+	return
 
 /obj/item/gun/microfusion/Destroy()
 	if(microfusion_lens)
@@ -621,7 +622,7 @@
 		if(reload_time && !HAS_TRAIT(user, TRAIT_INSTANT_RELOAD)) //This only happens when you're attempting a tactical reload, e.g. there's a mag already inserted.
 			if(display_message)
 				to_chat(user, span_notice("You start to insert [inserting_cell] into [src]!"))
-			if(!do_after(user, reload_time, src))
+			if(!do_after(user, reload_time, src, IGNORE_USER_LOC_CHANGE))
 				if(display_message)
 					to_chat(user, span_warning("You fail to insert [inserting_cell] into [src]!"))
 				return FALSE
@@ -632,7 +633,7 @@
 	else
 		if(display_message)
 			to_chat(user, span_notice("You start to insert [inserting_cell] into [src]!"))
-		if(!do_after(user, reload_time_slow, src))
+		if(!do_after(user, reload_time_slow, src, IGNORE_USER_LOC_CHANGE))
 			if(display_message)
 				to_chat(user, span_warning("You fail to insert [inserting_cell] into [src]!"))
 			return FALSE

@@ -1,12 +1,12 @@
 /datum/species/snail
 	name = "Snailperson"
 	id = SPECIES_SNAIL
-	default_color = "336600" //vomit green
 	species_traits = list(MUTCOLORS, EYECOLOR, HAS_FLESH, HAS_BONE, HAIR, FACEHAIR) //SKYRAT EDIT - Roundstart Snails - Customization
 	inherent_traits = list(
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CAN_STRIP,
 		TRAIT_NOSLIPALL,
+		TRAIT_LITERATE,
 		TRAIT_WATER_BREATHING, //SKYRAT EDIT - Roundstart Snails
 	)
 	attack_verb = "slap"
@@ -24,10 +24,11 @@
 	sexes = FALSE //snails are hermaphrodites
 	veteran_only = TRUE //SKYRAT EDIT - Roundstart Snails
 
-	mutanteyes = /obj/item/organ/eyes/snail
-	mutanttongue = /obj/item/organ/tongue/snail
-	mutantliver = /obj/item/organ/liver/snail //SKYRAT EDIT - Roundstart Snails
-	//exotic_bloodtype = /datum/reagent/lube //SKYRAT EDIT REMOVAL: Roundstart Snails - No more lube
+	eyes_icon = 'modular_skyrat/master_files/icons/mob/species/snail_eyes.dmi'
+	mutanteyes = /obj/item/organ/internal/eyes/snail
+	mutanttongue = /obj/item/organ/internal/tongue/snail
+	mutantliver = /obj/item/organ/internal/liver/snail //SKYRAT EDIT - Roundstart Snails
+	// exotic_blood = /datum/reagent/lube // SKYRAT EDIT REMOVAL: Roundstart Snails - No more lube
 
 	bodypart_overrides = list(
 		BODY_ZONE_HEAD = /obj/item/bodypart/head/snail,

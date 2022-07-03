@@ -16,22 +16,20 @@
 /obj/item/organ/external/snout
 	mutantpart_key = "snout"
 	mutantpart_info = list(MUTANT_INDEX_NAME = "None", MUTANT_INDEX_COLOR_LIST = list("#FFFFFF", "#FFFFFF", "#FFFFFF"))
+	external_bodytypes = NONE // We don't actually want this to have BODYTYPE_SNOUTED by default, since some of them don't apply that.
+	color_source = ORGAN_COLOR_OVERRIDE
 
 /obj/item/organ/external/snout/Insert(mob/living/carbon/reciever, special, drop_if_replaced)
 	if(sprite_accessory_flags & SPRITE_ACCESSORY_USE_MUZZLED_SPRITE)
-		var/obj/item/bodypart/limb = reciever.get_bodypart(zone)
-
-		if(limb)
-			limb.bodytype |= BODYTYPE_SNOUTED
-			limb.synchronize_bodytypes(reciever)
+		external_bodytypes |= BODYTYPE_SNOUTED
 
 	return ..()
 
+/obj/item/organ/external/snout/override_color(rgb_value)
+	if(mutantpart_key)
+		return mutantpart_info[MUTANT_INDEX_COLOR_LIST][1]
 
-/obj/item/organ/external/snout/Remove(mob/living/carbon/organ_owner, special)
-	if(ownerlimb)
-		ownerlimb.bodytype &= ~BODYTYPE_SNOUTED
-	return ..()
+	return rgb_value
 
 /datum/sprite_accessory/snouts/none
 	name = "None"
@@ -65,6 +63,30 @@
 	name = "Big Beak"
 	icon_state = "bigbeak"
 
+/datum/sprite_accessory/snouts/mammal/bigbeakshort
+	name = "Big Beak Short"
+	icon_state = "bigbeakshort"
+
+/datum/sprite_accessory/snouts/mammal/slimbeak
+	name = "Slim Beak"
+	icon_state = "slimbeak"
+
+/datum/sprite_accessory/snouts/mammal/slimbeakshort
+	name = "Slim Beak Short"
+	icon_state = "slimbeakshort"
+
+/datum/sprite_accessory/snouts/mammal/slimbeakalt
+	name = "Slim Beak Alt"
+	icon_state = "slimbeakalt"
+
+/datum/sprite_accessory/snouts/mammal/hookbeak
+	name = "Hook Beak"
+	icon_state = "hookbeak"
+
+/datum/sprite_accessory/snouts/mammal/hookbeakbig
+	name = "Hook Beak Big"
+	icon_state = "hookbeakbig"
+
 /datum/sprite_accessory/snouts/mammal/corvidbeak
 	name = "Corvid Beak"
 	icon_state = "corvidbeak"
@@ -72,6 +94,7 @@
 /datum/sprite_accessory/snouts/mammal/bug
 	name = "Bug"
 	icon_state = "bug"
+	flags_for_organ = NONE
 	color_src = USE_ONE_COLOR
 	extra2 = TRUE
 	extra2_color_src = MUTCOLORS3
@@ -216,6 +239,7 @@
 /datum/sprite_accessory/snouts/mammal/fbug
 	name = "Bug (Top)"
 	icon_state = "fbug"
+	flags_for_organ = NONE
 	color_src = USE_ONE_COLOR
 	extra2 = TRUE
 	extra2_color_src = MUTCOLORS3

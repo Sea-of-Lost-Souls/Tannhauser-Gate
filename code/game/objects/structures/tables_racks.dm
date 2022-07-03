@@ -60,6 +60,7 @@
 		)
 
 		AddElement(/datum/element/contextual_screentip_tools, tool_behaviors)
+		register_context()
 
 /obj/structure/table/examine(mob/user)
 	. = ..()
@@ -114,10 +115,8 @@
 				user.stop_pulling()
 	return ..()
 
-
 /obj/structure/table/attack_tk(mob/user)
 	return
-
 
 /obj/structure/table/CanAllowThrough(atom/movable/mover, border_dir)
 	. = ..()
@@ -128,7 +127,7 @@
 	if(locate(/obj/structure/table) in get_turf(mover))
 		return TRUE
 
-/obj/structure/table/CanAStarPass(obj/item/card/id/ID, to_dir, atom/movable/caller)
+/obj/structure/table/CanAStarPass(obj/item/card/id/ID, to_dir, atom/movable/caller, no_id = FALSE)
 	. = !density
 	if(caller)
 		. = . || (caller.pass_flags & PASSTABLE)
@@ -215,6 +214,14 @@
 			return
 		// If the tray IS empty, continue on (tray will be placed on the table like other items)
 
+	if(istype(I, /obj/item/toy/cards/deck))
+		var/obj/item/toy/cards/deck/dealer_deck = I
+		if(dealer_deck.wielded) // deal a card facedown on the table
+			var/obj/item/toy/singlecard/card = dealer_deck.draw(user)
+			if(card)
+				attackby(card, user, params)
+			return
+
 	if(istype(I, /obj/item/riding_offhand))
 		var/obj/item/riding_offhand/riding_item = I
 		var/mob/living/carried_mob = riding_item.rider
@@ -251,6 +258,27 @@
 			return TRUE
 	else
 		return ..()
+
+/obj/structure/table/attackby_secondary(obj/item/weapon, mob/user, params)
+	if(istype(weapon, /obj/item/toy/cards/deck))
+		var/obj/item/toy/cards/deck/dealer_deck = weapon
+		if(dealer_deck.wielded) // deal a card faceup on the table
+			var/obj/item/toy/singlecard/card = dealer_deck.draw(user)
+			if(card)
+				card.Flip()
+				attackby(card, user, params)
+			return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+	..()
+	return SECONDARY_ATTACK_CONTINUE_CHAIN
+
+/obj/structure/table/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
+	if(istype(held_item, /obj/item/toy/cards/deck))
+		var/obj/item/toy/cards/deck/dealer_deck = held_item
+		if(dealer_deck.wielded)
+			context[SCREENTIP_CONTEXT_LMB] = "Deal card"
+			context[SCREENTIP_CONTEXT_RMB] = "Deal card faceup"
+			return CONTEXTUAL_SCREENTIP_SET
+	return NONE
 
 /obj/structure/table/proc/AfterPutItemOnTable(obj/item/I, mob/living/user)
 	return
@@ -648,8 +676,8 @@
  */
 
 /obj/structure/table/optable//SKYRAT EDIT - ICON OVERRIDEN BY AESTHETICS - SEE MODULE
-	name = "stasis operating table" // SKYRAT EDIT name = "operating table"
-	desc = "Used for advanced medical procedures. Now comes with built in stasis technology, patented by Cinco: A Family Company!" // SKYRAT EDIT desc = "Used for advanced medical procedures."
+	name = "operating table"
+	desc = "Used for advanced medical procedures."
 	icon = 'icons/obj/surgery.dmi'
 	icon_state = "optable"
 	buildstack = /obj/item/stack/sheet/mineral/silver
@@ -709,26 +737,6 @@
 		return TRUE
 	return FALSE
 
-///SKYRAT EDIT: Operating Tables now provide Stasis
-/obj/structure/table/optable/proc/chill_out(mob/living/target)
-	var/freq = rand(24750, 26550)
-	playsound(src, 'sound/effects/spray.ogg', 5, TRUE, 2, frequency = freq)
-	target.apply_status_effect(/datum/status_effect/grouped/stasis, STASIS_MACHINE_EFFECT)
-	ADD_TRAIT(target, TRAIT_TUMOR_SUPPRESSED, TRAIT_GENERIC)
-	target.extinguish_mob()
-
-/obj/structure/table/optable/proc/thaw_them(mob/living/target)
-	target.remove_status_effect(/datum/status_effect/grouped/stasis, STASIS_MACHINE_EFFECT)
-	REMOVE_TRAIT(target, TRAIT_TUMOR_SUPPRESSED, TRAIT_GENERIC)
-
-/obj/structure/table/optable/post_buckle_mob(mob/living/L)
-	set_patient(L)
-	chill_out(L)
-
-/obj/structure/table/optable/post_unbuckle_mob(mob/living/L)
-	set_patient(null)
-	thaw_them(L)
-///SKYRAT EDIT END
 /*
  * Racks
  */
