@@ -77,10 +77,8 @@
 /area/science/xenobiology)
 "aC" = (
 /obj/structure/cable,
-/obj/machinery/shower{
-	dir = 8;
-	name = "emergency shower";
-	pixel_y = -4
+/obj/machinery/shower/directional/west{
+	name = "emergency shower"
 	},
 /turf/open/floor/engine,
 /area/engineering/gas_mix/starboard)
@@ -1249,8 +1247,7 @@
 /area/maintenance/department/science/xenobiology)
 "hE" = (
 /obj/structure/cable,
-/obj/machinery/shower{
-	dir = 4;
+/obj/machinery/shower/directional/east{
 	name = "emergency shower"
 	},
 /turf/open/floor/engine,
@@ -1539,9 +1536,7 @@
 	},
 /area/engineering/atmos)
 "jr" = (
-/obj/machinery/shower{
-	dir = 4
-	},
+/obj/machinery/shower/directional/east,
 /turf/open/floor/iron,
 /area/medical/medbay)
 "jv" = (
@@ -1742,11 +1737,7 @@
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
 "kQ" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = -12;
-	pixel_y = 2
-	},
+/obj/structure/sink/directional/east,
 /obj/machinery/light_switch{
 	pixel_x = -23
 	},
@@ -3826,10 +3817,7 @@
 /turf/open/floor/engine,
 /area/engineering/main/lower)
 "xZ" = (
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = 11
-	},
+/obj/structure/sink/directional/west,
 /obj/machinery/camera/directional/east{
 	c_tag = "Xenobiology Lab - Central";
 	network = list("ss13","rd")
@@ -4153,9 +4141,8 @@
 /turf/open/floor/engine,
 /area/engineering/supermatter/room/starboard)
 "zU" = (
-/obj/machinery/shower{
-	name = "emergency shower";
-	pixel_y = 14
+/obj/machinery/shower/directional/south{
+	name = "emergency shower"
 	},
 /turf/open/floor/engine,
 /area/engineering/gas_mix/port)
@@ -5186,11 +5173,7 @@
 /turf/open/floor/iron,
 /area/science/xenobiology)
 "Gq" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = -12;
-	pixel_y = 2
-	},
+/obj/structure/sink/directional/east,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -5558,11 +5541,7 @@
 /area/engineering/engine_smes/starboard)
 "IO" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = -12;
-	pixel_y = 2
-	},
+/obj/structure/sink/directional/east,
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
@@ -6623,9 +6602,8 @@
 /turf/open/floor/iron,
 /area/medical/medbay)
 "OZ" = (
-/obj/machinery/shower{
-	name = "emergency shower";
-	pixel_y = 14
+/obj/machinery/shower/directional/south{
+	name = "emergency shower"
 	},
 /turf/open/floor/engine,
 /area/engineering/gas_mix/starboard)
@@ -7194,9 +7172,7 @@
 /area/engineering/supermatter/room/starboard)
 "SI" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/machinery/shower{
-	dir = 4
-	},
+/obj/machinery/shower/directional/east,
 /obj/item/radio/intercom{
 	pixel_x = -29
 	},
@@ -7745,9 +7721,7 @@
 /turf/open/floor/plating,
 /area/engineering/main/lower)
 "Wn" = (
-/obj/structure/sink/kitchen{
-	pixel_y = 28
-	},
+/obj/structure/sink/kitchen/directional/south,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "Wq" = (

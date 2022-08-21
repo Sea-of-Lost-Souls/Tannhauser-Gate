@@ -512,11 +512,9 @@
 	pixel_x = -27;
 	specialfunctions = 4
 	},
-/obj/structure/sink/kitchen{
+/obj/structure/sink/kitchen/directional/east{
 	desc = "A sink used for washing one's hands and face. It looks rusty and home-made";
-	dir = 4;
-	name = "old sink";
-	pixel_x = -12
+	name = "old sink"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 9
@@ -1740,9 +1738,7 @@
 /turf/open/floor/iron,
 /area/hallway/primary/aft)
 "fb" = (
-/obj/machinery/shower{
-	dir = 8
-	},
+/obj/machinery/shower/directional/west,
 /obj/structure/cable,
 /turf/open/floor/iron/freezer,
 /area/commons/toilet)
@@ -2791,7 +2787,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/item/clothing/suit/monkeysuit,
+/obj/item/clothing/suit/costume/monkeysuit,
 /turf/open/floor/iron,
 /area/service/theater)
 "if" = (
@@ -3754,9 +3750,9 @@
 	},
 /obj/effect/turf_decal/tile/red,
 /obj/structure/rack,
-/obj/item/clothing/suit/bomb_suit/security,
-/obj/item/clothing/suit/bomb_suit/security,
-/obj/item/clothing/suit/bomb_suit/security,
+/obj/item/clothing/suit/utility/bomb_suit/security,
+/obj/item/clothing/suit/utility/bomb_suit/security,
+/obj/item/clothing/suit/utility/bomb_suit/security,
 /turf/open/floor/iron,
 /area/security/office)
 "lj" = (
@@ -4673,9 +4669,7 @@
 /area/security/courtroom)
 "nT" = (
 /obj/item/bikehorn/rubberducky,
-/obj/machinery/shower{
-	dir = 1
-	},
+/obj/machinery/shower/directional/north,
 /turf/open/floor/iron/freezer,
 /area/security/prison)
 "nU" = (
@@ -5329,9 +5323,7 @@
 /turf/open/floor/carpet/orange,
 /area/medical/patients_rooms/room_a)
 "qg" = (
-/obj/machinery/shower{
-	dir = 8
-	},
+/obj/machinery/shower/directional/west,
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
@@ -5534,10 +5526,9 @@
 /turf/closed/wall/r_wall,
 /area/command/meeting_room/council)
 "qT" = (
-/obj/structure/sink/kitchen{
+/obj/structure/sink/kitchen/directional/south{
 	desc = "A ferret brand sink used for washing one's hands and face.";
-	name = "ferret sink";
-	pixel_y = 28
+	name = "ferret sink"
 	},
 /turf/open/floor/iron/cafeteria,
 /area/service/kitchen)
@@ -6172,9 +6163,7 @@
 /turf/open/floor/iron,
 /area/security)
 "sL" = (
-/obj/machinery/shower{
-	dir = 8
-	},
+/obj/machinery/shower/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
@@ -6533,7 +6522,7 @@
 /obj/item/clothing/head/helmet/knight/blue,
 /obj/item/clothing/under/trek/command,
 /obj/item/gun/energy/laser/captain,
-/obj/item/clothing/suit/pirate/captain,
+/obj/item/clothing/suit/costume/pirate/captain,
 /obj/item/dragons_blood,
 /turf/open/floor/iron/grimy,
 /area/command/heads_quarters/captain/private)
@@ -6901,9 +6890,7 @@
 /area/command/meeting_room/council)
 "vk" = (
 /obj/item/soap/nanotrasen,
-/obj/machinery/shower{
-	dir = 1
-	},
+/obj/machinery/shower/directional/north,
 /turf/open/floor/iron/freezer,
 /area/security/prison)
 "vl" = (
@@ -7496,9 +7483,9 @@
 /obj/structure/closet{
 	name = "beekeeping wardrobe"
 	},
-/obj/item/clothing/suit/beekeeper_suit,
-/obj/item/clothing/suit/beekeeper_suit,
-/obj/item/clothing/suit/beekeeper_suit,
+/obj/item/clothing/suit/utility/beekeeper_suit,
+/obj/item/clothing/suit/utility/beekeeper_suit,
+/obj/item/clothing/suit/utility/beekeeper_suit,
 /obj/item/clothing/head/beekeeper_head,
 /obj/item/clothing/head/beekeeper_head,
 /obj/item/clothing/head/beekeeper_head,
@@ -7542,7 +7529,7 @@
 "xn" = (
 /obj/structure/bed,
 /obj/item/electropack,
-/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/suit/jacket/straight_jacket,
 /obj/item/clothing/mask/muzzle,
 /turf/open/floor/iron/dark,
 /area/security/execution/transfer)
@@ -7670,7 +7657,7 @@
 /area/service/chapel/monastery)
 "xJ" = (
 /obj/structure/table/wood,
-/obj/item/paicard,
+/obj/item/pai_card,
 /obj/structure/cable,
 /turf/open/floor/carpet,
 /area/commons/dorms)
@@ -8113,11 +8100,7 @@
 /turf/open/floor/iron/dark,
 /area/command/bridge)
 "yN" = (
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = -12;
-	pixel_y = 2
-	},
+/obj/structure/sink/directional/west,
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -8157,9 +8140,7 @@
 /turf/closed/wall/r_wall,
 /area/command/bridge)
 "yW" = (
-/obj/machinery/shower{
-	dir = 4
-	},
+/obj/machinery/shower/directional/east,
 /obj/structure/sign/poster/official/no_erp{
 	pixel_x = -32
 	},
@@ -8942,9 +8923,7 @@
 /area/service/hydroponics)
 "BE" = (
 /obj/structure/cable,
-/obj/machinery/turnstile{
-	dir = 4
-	},
+/obj/machinery/prisongate,
 /turf/open/floor/plating,
 /area/maintenance/department/bridge)
 "BG" = (
@@ -9022,9 +9001,9 @@
 /obj/structure/closet{
 	name = "beekeeping wardrobe"
 	},
-/obj/item/clothing/suit/beekeeper_suit,
-/obj/item/clothing/suit/beekeeper_suit,
-/obj/item/clothing/suit/beekeeper_suit,
+/obj/item/clothing/suit/utility/beekeeper_suit,
+/obj/item/clothing/suit/utility/beekeeper_suit,
+/obj/item/clothing/suit/utility/beekeeper_suit,
 /obj/item/clothing/head/beekeeper_head,
 /obj/item/clothing/head/beekeeper_head,
 /obj/item/clothing/head/beekeeper_head,
@@ -10570,9 +10549,7 @@
 /obj/structure/curtain,
 /obj/item/soap/deluxe,
 /obj/item/bikehorn/rubberducky,
-/obj/machinery/shower{
-	dir = 1
-	},
+/obj/machinery/shower/directional/north,
 /turf/open/floor/iron/freezer,
 /area/command/heads_quarters/captain)
 "GK" = (
@@ -10929,10 +10906,7 @@
 /turf/open/floor/iron,
 /area/security/prison)
 "HB" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 11
-	},
+/obj/structure/sink/directional/east,
 /turf/open/floor/iron,
 /area/service/chapel)
 "HC" = (
@@ -11381,9 +11355,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/obj/machinery/shower{
-	dir = 4
-	},
+/obj/machinery/shower/directional/east,
 /turf/open/floor/iron,
 /area/commons/dorms)
 "Jj" = (
@@ -12024,7 +11996,7 @@
 /obj/item/clothing/suit/chaplainsuit/nun,
 /obj/item/clothing/suit/chaplainsuit/studentuni,
 /obj/item/clothing/suit/chaplainsuit/witchhunter,
-/obj/item/clothing/suit/imperium_monk,
+/obj/item/clothing/suit/costume/imperium_monk,
 /obj/item/dualsaber/toy,
 /obj/item/storage/box/holy_grenades,
 /turf/open/floor/iron/dark,
@@ -12632,9 +12604,7 @@
 /turf/open/floor/plating,
 /area/commons/storage/emergency/starboard)
 "MS" = (
-/obj/machinery/shower{
-	dir = 4
-	},
+/obj/machinery/shower/directional/east,
 /obj/item/soap/nanotrasen,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
@@ -13126,9 +13096,7 @@
 /turf/open/floor/carpet/red,
 /area/service/theater)
 "OB" = (
-/obj/machinery/shower{
-	dir = 4
-	},
+/obj/machinery/shower/directional/east,
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
@@ -13401,11 +13369,7 @@
 /turf/open/floor/iron/dark,
 /area/security/execution/education)
 "Pi" = (
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = 15;
-	pixel_y = 1
-	},
+/obj/structure/sink/directional/west,
 /obj/structure/mirror{
 	pixel_x = 28
 	},
@@ -15681,10 +15645,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = 11
-	},
+/obj/structure/sink/directional/west,
 /turf/open/floor/iron{
 	heat_capacity = 1e+006
 	},
