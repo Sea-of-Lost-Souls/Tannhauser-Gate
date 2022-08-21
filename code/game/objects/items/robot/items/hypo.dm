@@ -216,15 +216,18 @@
 		if(reagent.name == action)
 			selected_reagent = reagent
 			. = TRUE
-			playsound(loc, 'sound/effects/pop.ogg', 50, FALSE)
 
-			var/mob/living/silicon/robot/cyborg = src.loc
+			var/mob/living/silicon/robot/cyborg = loc
+			if(istype(loc, /obj/item/robot_model))
+				var/obj/item/robot_model/container_model = loc
+				cyborg = container_model.robot
+			playsound(cyborg, 'sound/effects/pop.ogg', 50, FALSE)
 			balloon_alert(cyborg, "dispensing [selected_reagent.name]")
 			break
 
 /obj/item/reagent_containers/borghypo/examine(mob/user)
 	. = ..()
-	. += "Currently loaded: [selected_reagent]. [selected_reagent.description]"
+	. += "Currently loaded: [selected_reagent ? "[selected_reagent]. [selected_reagent.description]" : "nothing."]"
 	. += span_notice("<i>Alt+Click</i> to change transfer amount. Currently set to [amount_per_transfer_from_this]u.")
 
 /obj/item/reagent_containers/borghypo/AltClick(mob/living/user)

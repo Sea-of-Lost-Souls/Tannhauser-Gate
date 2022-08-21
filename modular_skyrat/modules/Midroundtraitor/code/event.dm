@@ -22,8 +22,8 @@
 							)
 	required_candidates = 1
 	weight = 4 //Slightly less common than normal midround traitors.
-	cost = 15 //But also slightly more costly.
-	requirements = list(50,40,30,20,10,10,10,10,10,10)
+	cost = 10 //But also slightly more costly.
+	minimum_players = 10
 	var/list/spawn_locs = list()
 
 /datum/dynamic_ruleset/midround/from_ghosts/lone_infiltrator/execute()
@@ -32,7 +32,7 @@
 	if(!spawn_locs.len)
 		message_admins("No valid spawn locations found, aborting...")
 		return MAP_ERROR
-	. = ..()
+	return TRUE
 
 /datum/dynamic_ruleset/midround/from_ghosts/lone_infiltrator/generate_ruleset_body(mob/applicant)
 	var/datum/mind/player_mind = new /datum/mind(applicant.key)
