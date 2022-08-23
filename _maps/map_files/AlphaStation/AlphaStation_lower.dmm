@@ -9207,8 +9207,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/rack,
 /obj/item/paper/fluff{
-	desc = null;
-	info = "Found this odd bottle while perusing this disused medbay, not sure what it is, has a soft taste and makes me feel kind of... fuzzy, maybe i shoudlng ddufn tft";
+	default_raw_text = "Found this odd bottle while perusing this disused medbay, not sure what it is, has a soft taste and makes me feel kind of... fuzzy, maybe i shoudlng ddufn tft";
 	name = "Hastily scribbled note ";
 	pixel_x = 10;
 	pixel_y = 7
@@ -14561,7 +14560,6 @@
 	height = 20;
 	id = "supply_home";
 	name = "Cargo Bay";
-	roundstart_template = null;
 	width = 13
 	},
 /turf/open/space,
