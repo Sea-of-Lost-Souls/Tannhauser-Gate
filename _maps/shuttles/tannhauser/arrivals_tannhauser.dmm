@@ -1,0 +1,466 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ah" = (
+/obj/machinery/door/airlock/silver/glass,
+/obj/effect/turf_decal/trimline/white/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/white/corner,
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 1
+	},
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"ay" = (
+/obj/structure/chair/sofa/corp{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"bf" = (
+/obj/structure/chair/sofa/corp/right{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"fe" = (
+/obj/structure/chair/sofa/corp/left{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"fy" = (
+/obj/machinery/status_display/shuttle{
+	pixel_x = 32;
+	shuttle_id = "arrivals_shuttle"
+	},
+/turf/open/floor/iron/shuttle/arrivals{
+	icon_state = "sign_3"
+	},
+/area/shuttle/arrival)
+"iJ" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/window/arrivals{
+	dir = 1;
+	icon_state = "8,0"
+	},
+/area/shuttle/arrival)
+"iK" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	icon_state = "0,1"
+	},
+/area/shuttle/arrival)
+"jQ" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals,
+/area/shuttle/arrival)
+"jW" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	icon_state = "6,0"
+	},
+/area/shuttle/arrival)
+"kp" = (
+/obj/machinery/door/airlock/silver/glass,
+/obj/effect/turf_decal/trimline/white/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/white/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 4
+	},
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"lw" = (
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"mp" = (
+/obj/effect/turf_decal/trimline/white/arrow_cw,
+/obj/effect/turf_decal/trimline/blue/filled/line,
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"mF" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/window/arrivals{
+	icon_state = "8,0"
+	},
+/area/shuttle/arrival)
+"nd" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	dir = 1;
+	icon_state = "0,0"
+	},
+/area/shuttle/arrival)
+"no" = (
+/obj/machinery/door/airlock/silver/glass,
+/obj/effect/turf_decal/trimline/white/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/white/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"nt" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	icon_state = "12,2"
+	},
+/area/shuttle/arrival)
+"nT" = (
+/obj/machinery/status_display/shuttle{
+	pixel_x = -32;
+	shuttle_id = "arrivals_shuttle"
+	},
+/obj/structure/chair/sofa/corp/right{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"pv" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	dir = 1;
+	icon_state = "0,2"
+	},
+/area/shuttle/arrival)
+"pD" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	icon_state = "12,0"
+	},
+/area/shuttle/arrival)
+"qn" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/window/arrivals{
+	dir = 1;
+	icon_state = "4,0"
+	},
+/area/shuttle/arrival)
+"qp" = (
+/obj/structure/closet/shuttle/emergency/white,
+/turf/open/floor/iron/shuttle/arrivals{
+	icon_state = "sign_1"
+	},
+/area/shuttle/arrival)
+"qy" = (
+/obj/machinery/light/directional/south,
+/obj/effect/turf_decal/trimline/blue/filled/arrow_ccw{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/white/line{
+	dir = 1
+	},
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"qC" = (
+/obj/machinery/computer/shuttle/arrivals{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"qU" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	dir = 1;
+	icon_state = "6,0"
+	},
+/area/shuttle/arrival)
+"qV" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	dir = 1;
+	icon_state = "12,1"
+	},
+/area/shuttle/arrival)
+"sv" = (
+/turf/open/floor/iron/shuttle/arrivals{
+	icon_state = "sign_1"
+	},
+/area/shuttle/arrival)
+"ul" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	dir = 1;
+	icon_state = "11,0"
+	},
+/area/shuttle/arrival)
+"uI" = (
+/obj/docking_port/mobile/arrivals_skyrat,
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	icon_state = "12,1"
+	},
+/area/shuttle/arrival)
+"vB" = (
+/obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/effect/turf_decal/trimline/white/arrow_cw,
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"xM" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	icon_state = "0,0"
+	},
+/area/shuttle/arrival)
+"yj" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/white/arrow_ccw{
+	dir = 1
+	},
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"zu" = (
+/obj/machinery/status_display/shuttle{
+	pixel_x = -32;
+	shuttle_id = "arrivals_shuttle"
+	},
+/obj/structure/chair/sofa/corp/left{
+	dir = 8
+	},
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"EB" = (
+/obj/structure/closet/cardboard,
+/turf/open/floor/iron/shuttle/arrivals{
+	icon_state = "sign_1"
+	},
+/area/shuttle/arrival)
+"GT" = (
+/obj/machinery/light/directional/north,
+/obj/effect/turf_decal/trimline/blue/filled/arrow_cw,
+/obj/effect/turf_decal/trimline/white/line,
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"Hd" = (
+/obj/machinery/light/directional/east,
+/turf/open/floor/iron/shuttle/arrivals{
+	icon_state = "sign_1"
+	},
+/area/shuttle/arrival)
+"HW" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	dir = 1;
+	icon_state = "0,1"
+	},
+/area/shuttle/arrival)
+"KE" = (
+/obj/effect/turf_decal/trimline/blue/filled/arrow_ccw{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/white/line{
+	dir = 1
+	},
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"Qx" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	dir = 4
+	},
+/area/shuttle/arrival)
+"QE" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/window/arrivals{
+	icon_state = "4,0"
+	},
+/area/shuttle/arrival)
+"Rj" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	icon_state = "9,0"
+	},
+/area/shuttle/arrival)
+"Ry" = (
+/obj/effect/turf_decal/caution,
+/obj/effect/turf_decal/trimline/white/warning{
+	dir = 1
+	},
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"RD" = (
+/obj/machinery/door/airlock/external,
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"RX" = (
+/obj/effect/turf_decal/caution{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/white/warning,
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"Sh" = (
+/obj/machinery/door/airlock/silver/glass,
+/obj/effect/turf_decal/trimline/white/corner,
+/obj/effect/turf_decal/trimline/white/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/blue/filled/corner,
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"SA" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	dir = 1;
+	icon_state = "9,0"
+	},
+/area/shuttle/arrival)
+"Tp" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	dir = 1;
+	icon_state = "12,0"
+	},
+/area/shuttle/arrival)
+"US" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	dir = 1;
+	icon_state = "12,2"
+	},
+/area/shuttle/arrival)
+"Vx" = (
+/obj/machinery/computer/shuttle/arrivals{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4;
+	layer = 2.9
+	},
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"WV" = (
+/obj/effect/turf_decal/trimline/blue/filled/arrow_cw,
+/obj/effect/turf_decal/trimline/white/line,
+/turf/open/floor/iron/shuttle/arrivals,
+/area/shuttle/arrival)
+"Xt" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/iron/shuttle/arrivals{
+	icon_state = "sign_1"
+	},
+/area/shuttle/arrival)
+"Xz" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	icon_state = "0,2"
+	},
+/area/shuttle/arrival)
+"YT" = (
+/obj/structure/closet/crate/bin,
+/turf/open/floor/iron/shuttle/arrivals{
+	icon_state = "sign_1"
+	},
+/area/shuttle/arrival)
+"ZP" = (
+/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
+	icon_state = "11,0"
+	},
+/area/shuttle/arrival)
+
+(1,1,1) = {"
+Tp
+qV
+US
+jQ
+Xz
+iK
+xM
+"}
+(2,1,1) = {"
+ul
+qp
+EB
+Xt
+sv
+qp
+Rj
+"}
+(3,1,1) = {"
+RD
+Ry
+lw
+lw
+lw
+RX
+RD
+"}
+(4,1,1) = {"
+SA
+Sh
+Qx
+qC
+Qx
+kp
+ZP
+"}
+(5,1,1) = {"
+iJ
+GT
+nT
+ay
+zu
+qy
+QE
+"}
+(6,1,1) = {"
+qn
+mp
+lw
+lw
+lw
+yj
+mF
+"}
+(7,1,1) = {"
+qU
+WV
+bf
+ay
+fe
+KE
+jW
+"}
+(8,1,1) = {"
+iJ
+vB
+lw
+lw
+lw
+yj
+QE
+"}
+(9,1,1) = {"
+qn
+GT
+fy
+ay
+fy
+qy
+mF
+"}
+(10,1,1) = {"
+ul
+no
+Qx
+Vx
+Qx
+ah
+Rj
+"}
+(11,1,1) = {"
+RD
+Ry
+lw
+lw
+lw
+RX
+RD
+"}
+(12,1,1) = {"
+SA
+qp
+sv
+Hd
+YT
+qp
+ZP
+"}
+(13,1,1) = {"
+nd
+HW
+pv
+jQ
+nt
+uI
+pD
+"}

@@ -291,8 +291,8 @@
 "jP" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters/window{
-	name = "Snack Counter Shutters";
-	id = "cc_snack"
+	id = "cc_snack";
+	name = "Snack Counter Shutters"
 	},
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/evacuation)
@@ -1209,8 +1209,8 @@
 /area/centcom/central_command_areas/evacuation)
 "Qx" = (
 /obj/machinery/button/door/directional/north{
-	name = "Counter Shutter Control";
 	id = "cc_snack";
+	name = "Counter Shutter Control";
 	req_access = list("cent_general")
 	},
 /obj/structure/rack,
@@ -1240,6 +1240,13 @@
 	},
 /obj/machinery/status_display/evac/directional/north,
 /turf/open/floor/iron,
+/area/centcom/central_command_areas/evacuation)
+"Rh" = (
+/obj/structure/flora/bush/lavendergrass,
+/obj/structure/flora/bush/flowers_br/style_random,
+/mob/living/simple_animal/butterfly,
+/mob/living/simple_animal/pet/redpanda/zesty,
+/turf/open/floor/grass,
 /area/centcom/central_command_areas/evacuation)
 "Rm" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -1350,8 +1357,8 @@
 "UV" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters/window{
-	name = "Snack Counter Shutters";
-	id = "cc_snack"
+	id = "cc_snack";
+	name = "Snack Counter Shutters"
 	},
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 4
@@ -1367,8 +1374,8 @@
 	dir = 4
 	},
 /obj/item/kirbyplants/random{
-	pixel_y = 13;
-	pixel_x = -3
+	pixel_x = -3;
+	pixel_y = 13
 	},
 /turf/open/floor/wood/tile,
 /area/centcom/central_command_areas/evacuation)
@@ -1700,7 +1707,7 @@ uz
 VE
 Pn
 BC
-oI
+Rh
 hx
 Za
 eR
