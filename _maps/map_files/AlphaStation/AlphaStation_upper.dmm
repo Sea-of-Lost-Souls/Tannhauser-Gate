@@ -1971,7 +1971,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/structure/disposalpipe/segment{
+/obj/structure/disposalpipe/trunk/multiz/down{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -14331,6 +14331,15 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
+"kzT" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/structure/disposalpipe/junction{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/station/hallway/primary/central/aft)
 "kAk" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
@@ -15897,6 +15906,15 @@
 /obj/effect/turf_decal/tile/yellow/half/contrasted,
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/port)
+"lHE" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/station/hallway/primary/central/aft)
 "lHO" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/sign/warning/vacuum/external,
@@ -16502,6 +16520,9 @@
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 8
 	},
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
 /turf/open/floor/iron/white,
 /area/station/medical/surgery/theatre)
 "mfN" = (
@@ -16866,7 +16887,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/structure/disposalpipe/segment,
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
@@ -25440,12 +25460,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
-"sBH" = (
-/obj/structure/disposalpipe/trunk/multiz/down{
-	dir = 4
-	},
-/turf/closed/wall,
-/area/station/service/theater)
 "sCn" = (
 /obj/machinery/air_sensor/air_tank,
 /turf/open/floor/engine/air,
@@ -33082,6 +33096,13 @@
 "ydW" = (
 /turf/closed/wall,
 /area/station/service/chapel/monastery)
+"ydY" = (
+/obj/effect/spawner/structure/window,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/blue,
+/area/station/medical/surgery/theatre)
 "yen" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -70557,7 +70578,7 @@ uGK
 uGK
 uGK
 uGK
-sBH
+uGK
 uGK
 uGK
 uGK
@@ -71082,7 +71103,7 @@ rTP
 rTP
 rTP
 rTP
-rTP
+kzT
 rTP
 rTP
 rTP
@@ -71339,7 +71360,7 @@ fsi
 odJ
 vRV
 odJ
-odJ
+lHE
 odJ
 ylw
 odJ
@@ -71596,7 +71617,7 @@ lik
 aZK
 pmv
 aZK
-aZK
+ydY
 aZK
 azQ
 aZK

@@ -140,6 +140,12 @@
 /obj/effect/landmark/start/hangover,
 /turf/open/floor/iron,
 /area/station/maintenance/aft)
+"ahm" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/station/engineering/supermatter/room)
 "aht" = (
 /obj/machinery/power/smes{
 	charge = 5e+006
@@ -2567,6 +2573,12 @@
 /obj/machinery/status_display/ai/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai)
+"deQ" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/station/engineering/supermatter/room)
 "dfj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -2718,6 +2730,7 @@
 /area/station/engineering/atmos/project)
 "dpA" = (
 /obj/structure/closet/crate/critter,
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical/central)
 "dqd" = (
@@ -3419,6 +3432,7 @@
 "dZR" = (
 /obj/machinery/power/apc/auto_name/directional/east,
 /obj/machinery/light/directional/east,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
 "eaE" = (
@@ -4324,6 +4338,10 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "garbage"
+	},
 /turf/open/floor/iron/dark,
 /area/station/maintenance/disposal)
 "ffz" = (
@@ -5927,6 +5945,13 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/aisat_interior)
+"hds" = (
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/department/medical/central)
 "hdW" = (
 /obj/structure/chair/office{
 	dir = 1
@@ -8111,6 +8136,13 @@
 /obj/effect/spawner/random/bioluminescent_plant,
 /turf/open/floor/iron,
 /area/station/maintenance/port/central)
+"jIL" = (
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/obj/machinery/disposal/delivery_chute,
+/turf/open/space/basic,
+/area/space)
 "jKb" = (
 /obj/structure/stairs/west,
 /turf/open/floor/iron/white,
@@ -9031,7 +9063,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/machinery/light/directional/south,
+/obj/machinery/light/red/directional/south,
 /turf/open/floor/iron/dark,
 /area/station/engineering/main)
 "kFB" = (
@@ -10549,6 +10581,7 @@
 /area/station/engineering/storage_shared)
 "mDP" = (
 /obj/effect/spawner/random/trash/garbage,
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical/central)
 "mDY" = (
@@ -10798,6 +10831,13 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/computer)
+"mSC" = (
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/department/medical/central)
 "mSE" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -11592,7 +11632,7 @@
 	codes_txt = "patrol;next_patrol=Lower-Aft-Brig";
 	location = "Lower-Mid-Star"
 	},
-/obj/structure/disposalpipe/segment{
+/obj/structure/disposalpipe/junction{
 	dir = 4
 	},
 /turf/open/floor/catwalk_floor/iron,
@@ -15023,6 +15063,7 @@
 /area/station/medical/virology)
 "rEg" = (
 /obj/structure/sign/poster/official/build,
+/obj/structure/disposalpipe/segment,
 /turf/closed/wall,
 /area/station/maintenance/department/medical/central)
 "rEj" = (
@@ -15129,6 +15170,12 @@
 	},
 /turf/closed/wall,
 /area/station/service/cafeteria)
+"rMW" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/department/medical/central)
 "rNd" = (
 /obj/structure/light_construct/directional/north,
 /obj/effect/decal/cleanable/greenglow,
@@ -16178,6 +16225,13 @@
 	},
 /turf/open/floor/iron,
 /area/station/engineering/atmos/project)
+"sPP" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron,
+/area/station/maintenance/aft)
 "sQq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/hydroponics/soil,
@@ -16753,6 +16807,12 @@
 /obj/machinery/camera/emp_proof/directional/south,
 /turf/open/floor/iron,
 /area/station/maintenance/aft)
+"tvy" = (
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/station/maintenance/department/medical/central)
 "tvF" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -19983,7 +20043,6 @@
 /area/station/maintenance/disposal)
 "xfA" = (
 /obj/machinery/airalarm/directional/west,
-/obj/machinery/light/directional/west,
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
 "xfH" = (
@@ -20411,6 +20470,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/engineering/main)
+"xFt" = (
+/obj/structure/disposalpipe/segment,
+/turf/closed/wall,
+/area/station/maintenance/department/medical/central)
 "xFT" = (
 /obj/machinery/atmospherics/pipe/smart/simple/pink/visible/layer2{
 	dir = 5
@@ -51789,7 +51852,7 @@ uTM
 uTM
 uTM
 uTM
-giV
+uTM
 nCp
 ery
 jUI
@@ -55081,7 +55144,7 @@ wrw
 dUv
 qOK
 iso
-iso
+deQ
 iso
 iso
 dUv
@@ -55595,7 +55658,7 @@ nNN
 dUv
 qOK
 iso
-iso
+ahm
 iso
 iso
 dUv
@@ -58979,13 +59042,13 @@ viv
 viv
 viv
 nQZ
-uTm
-qPg
+sPP
+oqo
 dpA
 mDP
 rEg
-eSm
-odV
+mSC
+xRA
 lqV
 iHu
 qpU
@@ -59241,7 +59304,7 @@ qPg
 odV
 odV
 odV
-eSm
+hds
 odV
 lqV
 lqV
@@ -59498,7 +59561,7 @@ odV
 rTw
 xRA
 wEi
-eSm
+hds
 odV
 ezF
 ezF
@@ -59755,7 +59818,7 @@ xRA
 xRA
 xRA
 wEi
-eSm
+hds
 odV
 ezF
 ezF
@@ -60012,7 +60075,7 @@ xRA
 xRA
 xRA
 odV
-eSm
+hds
 odV
 ezF
 ezF
@@ -60269,7 +60332,7 @@ xRA
 xRA
 xRA
 xRA
-eSm
+hds
 odV
 ezF
 ezF
@@ -60526,7 +60589,7 @@ xRA
 xRA
 xRA
 xRA
-eSm
+hds
 odV
 ezF
 ezF
@@ -60783,7 +60846,7 @@ xRA
 odV
 odV
 odV
-eSm
+hds
 odV
 ezF
 ezF
@@ -61040,7 +61103,7 @@ flO
 flO
 wRB
 vLy
-eSm
+hds
 odV
 ezF
 ezF
@@ -61297,7 +61360,7 @@ hRr
 flO
 xRA
 vLy
-xRA
+rMW
 odV
 ezF
 ezF
@@ -61554,9 +61617,9 @@ gaw
 flO
 xRA
 vLy
-xRA
-odV
-ezF
+tvy
+xFt
+jIL
 ezF
 ezF
 ezF
