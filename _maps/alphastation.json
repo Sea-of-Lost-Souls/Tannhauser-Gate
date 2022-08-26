@@ -9,6 +9,7 @@
 	"shuttles": {
                 "cargo": "cargo_tannhauser",
 		"ferry": "ferry_skyrat",
+                "arrivals" "arrivals_tannhauser",
 		"whiteship": "whiteship_meta",
 		"emergency": "emergency_skyrat"
 	},

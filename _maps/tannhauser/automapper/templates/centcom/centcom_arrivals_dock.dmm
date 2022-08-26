@@ -23,15 +23,11 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/interlink)
-"d" = (
-/obj/effect/light_emitter{
-	set_cap = 1;
-	set_luminosity = 4
-	},
+"e" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/turf/open/misc/ironsand,
+/turf/open/floor/plating/cobblestone/dungeon,
 /area/centcom/interlink)
 "f" = (
 /obj/effect/turf_decal/trimline/blue/filled/line,
@@ -46,19 +42,23 @@
 /turf/open/floor/iron,
 /area/centcom/interlink)
 "h" = (
-/obj/structure/table,
-/obj/item/lighter,
-/turf/open/floor/iron,
-/area/centcom/interlink)
-"i" = (
 /obj/machinery/computer/shuttle/arrivals/recall{
 	dir = 4
 	},
+/obj/structure/window/reinforced/spawner/west,
+/turf/open/floor/iron,
+/area/centcom/interlink)
+"i" = (
+/obj/structure/table,
+/obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/iron,
 /area/centcom/interlink)
 "j" = (
 /obj/effect/turf_decal/stripes/line,
-/turf/open/floor/plating/cobblestone,
+/obj/structure/window/reinforced/spawner/west,
+/obj/structure/window/reinforced/spawner/north,
+/obj/item/kirbyplants/random,
+/turf/open/floor/iron,
 /area/centcom/interlink)
 "k" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
@@ -85,7 +85,6 @@
 /turf/open/floor/iron,
 /area/centcom/interlink)
 "o" = (
-/obj/structure/window/reinforced/spawner/west,
 /obj/structure/railing/corner{
 	dir = 4
 	},
@@ -98,6 +97,7 @@
 /area/centcom/interlink)
 "q" = (
 /obj/effect/spawner/random/vending/colavend,
+/obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/iron,
 /area/centcom/interlink)
 "r" = (
@@ -108,7 +108,6 @@
 /turf/open/floor/iron,
 /area/centcom/interlink)
 "s" = (
-/obj/structure/window/reinforced/spawner/west,
 /obj/effect/turf_decal/trimline/blue/filled/corner{
 	dir = 4
 	},
@@ -130,10 +129,21 @@
 "w" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/window/reinforced/spawner/north,
-/obj/structure/window/reinforced/spawner/west,
 /obj/structure/window/reinforced/spawner/east,
-/obj/item/kirbyplants/random,
+/obj/machinery/vending/cigarette,
 /turf/open/floor/iron,
+/area/centcom/interlink)
+"x" = (
+/obj/structure/table,
+/obj/item/lighter,
+/obj/structure/window/reinforced/spawner/west,
+/turf/open/floor/iron,
+/area/centcom/interlink)
+"z" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plating/cobblestone/dungeon,
 /area/centcom/interlink)
 "A" = (
 /obj/machinery/light/directional/south,
@@ -158,33 +168,35 @@
 /area/centcom/interlink)
 "F" = (
 /obj/effect/turf_decal/stripes/line{
-	dir = 4
+	dir = 10
 	},
-/obj/effect/light_emitter{
-	set_cap = 1;
-	set_luminosity = 4
-	},
-/turf/open/misc/ironsand,
-/area/centcom/interlink)
-"G" = (
-/obj/effect/turf_decal/stripes/line,
-/obj/structure/window/reinforced/spawner/north,
-/obj/machinery/vending/snack/blue,
-/turf/open/floor/iron,
+/turf/open/floor/plating/cobblestone/dungeon,
 /area/centcom/interlink)
 "H" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 10
+	},
 /obj/effect/turf_decal/trimline/white/arrow_cw{
 	dir = 10
 	},
 /obj/effect/turf_decal/trimline/white/line,
 /turf/open/floor/iron,
 /area/centcom/interlink)
+"I" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/window/reinforced/spawner/north,
+/obj/structure/statue/bluespace_crystal/zesty,
+/turf/open/floor/iron,
+/area/centcom/interlink)
 "J" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/window/reinforced/spawner/north,
 /obj/structure/window/reinforced/spawner/west,
-/obj/item/kirbyplants/random,
+/obj/machinery/vending/snack/blue,
+/turf/open/floor/iron,
+/area/centcom/interlink)
+"K" = (
+/obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/iron,
 /area/centcom/interlink)
 "L" = (
@@ -203,6 +215,7 @@
 /area/centcom/interlink)
 "N" = (
 /obj/item/kirbyplants/random,
+/obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/iron,
 /area/centcom/interlink)
 "O" = (
@@ -211,33 +224,20 @@
 	dwidth = 1;
 	height = 13;
 	id = "arrivals_shuttle";
+	json_key = "arrivals";
 	name = "tram dock";
-	roundstart_template = /datum/map_template/shuttle/arrivals_skyrat;
+	roundstart_template = /datum/map_template/shuttle/arrivals_tannhauser;
 	width = 7
 	},
 /turf/open/floor/iron/smooth_half,
 /area/centcom/interlink)
-"P" = (
-/obj/effect/turf_decal/stripes/line,
-/obj/structure/window/reinforced/spawner/north,
-/obj/machinery/vending/cigarette,
-/turf/open/floor/iron,
-/area/centcom/interlink)
 "Q" = (
-/turf/open/floor/plating/cobblestone,
+/turf/open/floor/plating/cobblestone/dungeon,
 /area/centcom/interlink)
 "R" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/window/reinforced/spawner/north,
 /turf/open/floor/iron,
-/area/centcom/interlink)
-"U" = (
-/obj/structure/flora/bush/flowers_yw,
-/obj/effect/light_emitter{
-	set_cap = 1;
-	set_luminosity = 4
-	},
-/turf/open/misc/ironsand,
 /area/centcom/interlink)
 "V" = (
 /obj/machinery/status_display/shuttle{
@@ -279,13 +279,13 @@
 
 (1,1,1) = {"
 m
-F
-d
-F
-d
-F
-F
-F
+z
+z
+z
+z
+z
+z
+z
 F
 a
 a
@@ -296,13 +296,13 @@ m
 Q
 C
 Q
-Q
+C
 Q
 C
 Q
 j
-U
-a
+K
+K
 m
 "}
 (3,1,1) = {"
@@ -310,7 +310,7 @@ m
 Q
 p
 Q
-Q
+p
 Q
 p
 Q
@@ -324,7 +324,7 @@ m
 Q
 C
 Q
-Q
+C
 Q
 C
 Q
@@ -338,7 +338,7 @@ m
 Q
 C
 Q
-Q
+C
 Q
 C
 Q
@@ -352,11 +352,11 @@ m
 Q
 C
 Q
-Q
+C
 Q
 C
 Q
-P
+R
 f
 Z
 M
@@ -366,7 +366,7 @@ m
 Q
 C
 Q
-Q
+C
 Q
 C
 Q
@@ -380,11 +380,11 @@ m
 Q
 p
 Q
-Q
+p
 Q
 p
 Q
-W
+I
 f
 k
 m
@@ -394,7 +394,7 @@ m
 Q
 C
 Q
-Q
+C
 Q
 C
 Q
@@ -408,11 +408,11 @@ m
 Q
 C
 Q
-Q
+C
 Q
 C
 Q
-G
+R
 f
 k
 m
@@ -422,7 +422,7 @@ m
 Q
 C
 Q
-Q
+C
 Q
 C
 Q
@@ -436,7 +436,7 @@ m
 Q
 C
 Q
-Q
+C
 Q
 C
 Q
@@ -450,7 +450,7 @@ m
 Q
 p
 Q
-Q
+p
 Q
 p
 Q
@@ -464,24 +464,24 @@ m
 Q
 C
 Q
-Q
+C
 Q
 O
 Q
-R
+W
 f
 k
 m
 "}
 (15,1,1) = {"
 m
-M
-M
-M
-M
-M
-M
-M
+e
+e
+e
+e
+e
+e
+e
 m
 l
 n
@@ -489,14 +489,14 @@ m
 "}
 (16,1,1) = {"
 m
-M
 q
 N
+x
 h
 i
 N
 q
-M
+m
 t
 L
 m
