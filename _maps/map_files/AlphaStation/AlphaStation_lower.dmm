@@ -1005,6 +1005,7 @@
 /obj/structure/cable,
 /obj/machinery/door/firedoor/heavy,
 /obj/effect/mapping_helpers/airlock/access/all,
+/obj/machinery/door/airlock/alarmlock,
 /turf/open/floor/catwalk_floor/iron,
 /area/station/maintenance/port/central)
 "bns" = (
@@ -8182,11 +8183,6 @@
 /obj/effect/turf_decal/tile/bar/diagonal_edge,
 /turf/open/floor/carpet/royalblack,
 /area/station/service/theater)
-"jMo" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
-/turf/open/floor/iron,
-/area/station/security/brig)
 "jMu" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/machinery/conveyor{
@@ -9719,6 +9715,7 @@
 "lxv" = (
 /obj/machinery/door/firedoor/heavy,
 /obj/effect/mapping_helpers/airlock/access/all,
+/obj/machinery/door/airlock/alarmlock,
 /turf/open/floor/iron,
 /area/station/maintenance/port/central)
 "lyI" = (
@@ -10350,10 +10347,10 @@
 /turf/open/floor/wood,
 /area/station/service/abandoned_gambling_den)
 "mko" = (
-/obj/machinery/door/airlock/glass_large,
 /obj/effect/mapping_helpers/airlock/access/all,
 /obj/machinery/door/firedoor/heavy,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/alarmlock,
 /turf/open/floor/iron,
 /area/station/maintenance/port/central)
 "mkv" = (
@@ -12784,7 +12781,6 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/obj/machinery/power/apc/auto_name/directional/west,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/disposal/incinerator)
 "pdW" = (
@@ -16129,9 +16125,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/machinery/door/airlock/glass_large,
 /obj/effect/mapping_helpers/airlock/access/all,
 /obj/machinery/door/firedoor/heavy,
+/obj/machinery/door/airlock/alarmlock,
 /turf/open/floor/catwalk_floor/iron,
 /area/station/maintenance/starboard/central)
 "sHL" = (
@@ -16756,6 +16752,7 @@
 /obj/machinery/door/firedoor/heavy,
 /obj/effect/mapping_helpers/airlock/access/all,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/alarmlock,
 /turf/open/floor/iron,
 /area/station/maintenance/starboard/central)
 "tpJ" = (
@@ -16763,9 +16760,9 @@
 /turf/open/floor/plating,
 /area/station/engineering/engine_smes)
 "tqd" = (
-/obj/machinery/door/airlock/glass_large,
 /obj/effect/mapping_helpers/airlock/access/all,
 /obj/machinery/door/firedoor/heavy,
+/obj/machinery/door/airlock/alarmlock,
 /turf/open/floor/iron,
 /area/station/maintenance/port/central)
 "tqf" = (
@@ -46719,7 +46716,7 @@ ksb
 gIe
 psW
 psW
-jMo
+psW
 bza
 qsz
 qsz
