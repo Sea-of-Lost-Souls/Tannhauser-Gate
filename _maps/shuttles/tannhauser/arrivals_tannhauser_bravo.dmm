@@ -17,18 +17,6 @@
 /obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
 	dir = 1
 	},
-/turf/open/floor/glass,
-/area/shuttle/arrival)
-"bf" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 8
-	},
-/obj/structure/chair/sofa/corp/left{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue/half{
-	dir = 8
-	},
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "bT" = (
@@ -47,7 +35,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/blue/filled/mid_joiner,
-/turf/open/floor/glass,
+/turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "ea" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/ferry{
@@ -65,16 +53,6 @@
 	},
 /obj/effect/turf_decal/trimline/white/corner,
 /turf/open/floor/glass,
-/area/shuttle/arrival)
-"fy" = (
-/obj/machinery/status_display/shuttle{
-	pixel_x = 32;
-	shuttle_id = "arrivals_shuttle"
-	},
-/obj/effect/turf_decal/tile/blue/full,
-/turf/open/floor/iron/shuttle/arrivals{
-	icon_state = "sign_3"
-	},
 /area/shuttle/arrival)
 "fN" = (
 /obj/effect/turf_decal/caution{
@@ -122,11 +100,11 @@
 /area/shuttle/arrival)
 "ky" = (
 /obj/machinery/light/directional/south,
-/obj/structure/chair/sofa/corp/right{
-	dir = 8
+/obj/structure/chair/sofa/corp/left{
+	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/half{
-	dir = 8
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 1
 	},
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
@@ -172,11 +150,11 @@
 	},
 /area/shuttle/arrival)
 "nT" = (
-/obj/structure/chair/sofa/corp/left{
-	dir = 8
+/obj/structure/chair/sofa/corp{
+	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/half{
-	dir = 8
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 1
 	},
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
@@ -193,6 +171,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/delivery/blue,
+/obj/effect/spawner/random/trash/box,
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "pv" = (
@@ -214,7 +193,7 @@
 /obj/effect/turf_decal/trimline/white/corner{
 	dir = 4
 	},
-/obj/structure/chair/sofa/corp{
+/obj/structure/chair/sofa/corp/left{
 	dir = 4
 	},
 /turf/open/floor/iron/shuttle/evac,
@@ -228,18 +207,18 @@
 "qp" = (
 /obj/effect/turf_decal/trimline/blue/filled/corner,
 /obj/effect/turf_decal/trimline/white/corner,
-/obj/structure/chair/sofa/corp{
+/obj/structure/chair/sofa/corp/right{
 	dir = 4
 	},
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "qy" = (
 /obj/machinery/light/directional/south,
-/obj/structure/chair/sofa/corp{
-	dir = 8
+/obj/structure/chair/sofa/corp/corner{
+	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/half{
-	dir = 8
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 1
 	},
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
@@ -260,7 +239,7 @@
 	name = "Cockpit";
 	req_access = list("cent_general")
 	},
-/turf/open/floor/glass,
+/turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "qU" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
@@ -302,15 +281,6 @@
 	icon_state = "2,2"
 	},
 /area/shuttle/arrival)
-"yj" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
-	dir = 4
-	},
-/turf/open/floor/iron/shuttle/evac,
-/area/shuttle/arrival)
 "yx" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/ferry{
 	dir = 1;
@@ -318,13 +288,7 @@
 	},
 /area/shuttle/arrival)
 "zu" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue/half{
-	dir = 8
-	},
-/turf/open/floor/iron/shuttle/evac,
+/turf/open/floor/glass,
 /area/shuttle/arrival)
 "Ao" = (
 /obj/effect/turf_decal/caution,
@@ -364,16 +328,14 @@
 /obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
 	dir = 1
 	},
-/turf/open/floor/glass,
+/turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "GT" = (
 /obj/machinery/light/directional/north,
-/obj/structure/chair/sofa/corp{
-	dir = 8
+/obj/structure/chair/sofa/corp/corner{
+	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/half{
-	dir = 8
-	},
+/obj/effect/turf_decal/trimline/blue/filled/line,
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "Hd" = (
@@ -383,6 +345,14 @@
 	shuttle_id = "arrivals_shuttle"
 	},
 /obj/effect/turf_decal/delivery/blue,
+/obj/structure/closet/crate/bin,
+/turf/open/floor/iron/shuttle/evac,
+/area/shuttle/arrival)
+"HB" = (
+/obj/structure/chair/sofa/corp/right{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue/full,
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "HW" = (
@@ -392,12 +362,15 @@
 	},
 /area/shuttle/arrival)
 "KE" = (
-/obj/structure/chair/sofa/corp{
-	dir = 8
+/obj/structure/chair/sofa/corp,
+/obj/effect/turf_decal/trimline/blue/filled/line,
+/turf/open/floor/iron/shuttle/evac,
+/area/shuttle/arrival)
+"LF" = (
+/obj/structure/chair/sofa/corp/left{
+	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/half{
-	dir = 8
-	},
+/obj/effect/turf_decal/tile/blue/full,
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "Nw" = (
@@ -508,7 +481,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/corner{
 	dir = 1
 	},
-/turf/open/floor/glass,
+/turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "US" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/window/ferry{
@@ -517,15 +490,8 @@
 /area/shuttle/arrival)
 "UU" = (
 /obj/machinery/light/directional/north,
-/obj/structure/chair/sofa/corp{
-	dir = 8
-	},
-/obj/structure/chair/sofa/corp/left{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue/half{
-	dir = 8
-	},
+/obj/structure/chair/sofa/corp/left,
+/obj/effect/turf_decal/trimline/blue/filled/line,
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "Vx" = (
@@ -619,37 +585,37 @@ ZP
 (5,1,1) = {"
 iJ
 GT
-nT
+HB
 ay
-zu
+LF
 qy
 QE
 "}
 (6,1,1) = {"
 qn
-yj
-yj
+KE
+zu
 EH
-yj
-yj
+zu
+nT
 mF
 "}
 (7,1,1) = {"
 qU
 KE
-bf
+zu
 dp
 zu
-KE
+nT
 jW
 "}
 (8,1,1) = {"
 iJ
-yj
-yj
+KE
+zu
 EH
-yj
-yj
+zu
+nT
 QE
 "}
 (9,1,1) = {"
@@ -657,7 +623,7 @@ qn
 UU
 wd
 ay
-fy
+wd
 ky
 mF
 "}
