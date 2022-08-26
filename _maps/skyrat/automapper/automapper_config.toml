@@ -26,13 +26,25 @@ required_map = "builtin"
 coordinates = [128, 79, 1]
 trait_name = "CentCom"
 
-# CC Shuttle Dock - This is so we can fit the larger Cargo shuttle
+#----- Start Tannhauser Edits -----
+
+# CC Shuttle Dock - This is so we can fit the larger Cargo shuttle added by mortisdeum
 [templates.centcom_cargo_dock]
 map_files = ["centcom_cargo_dock.dmm"]
 directory = "_maps/tannhauser/automapper/templates/centcom/"
 required_map = "builtin"
 coordinates = [152, 101, 1]
 trait_name = "CentCom"
+
+# CC Arrivals Dock - This is so we can fit the larger arrivals shuttle added by mortisdeum
+[templates.centcom_arrivals_dock]
+map_files = ["centcom_arrivals_dock.dmm"]
+directory = "_maps/tannhauser/automapper/templates/centcom/"
+required_map = "builtin"
+coordinates = [28, 198, 2]
+trait_name = "CentCom"
+
+#----- End Tannhauser Edits -----
 
 # METASTATION MAP TEMPLATES
 # Metastation Arrivals

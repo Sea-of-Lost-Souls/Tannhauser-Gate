@@ -464,12 +464,6 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai)
-"aEm" = (
-/obj/effect/turf_decal/bot,
-/obj/effect/spawner/random/maintenance,
-/obj/effect/spawner/random/structure/crate,
-/turf/open/floor/iron,
-/area/station/cargo/warehouse)
 "aEx" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -3082,6 +3076,16 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/catwalk_floor/iron,
 /area/station/maintenance/starboard/central)
+"dHI" = (
+/obj/effect/turf_decal/delivery,
+/obj/structure/cable,
+/obj/effect/spawner/random/maintenance/five,
+/obj/effect/spawner/random/maintenance/five,
+/obj/structure/closet/crate{
+	icon_state = "crateopen"
+	},
+/turf/open/floor/iron,
+/area/station/cargo/warehouse)
 "dIn" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/iron/dark/brown,
@@ -3503,6 +3507,7 @@
 	pixel_x = 7;
 	pixel_y = 9
 	},
+/obj/item/instrument/recorder,
 /turf/open/floor/wood,
 /area/station/commons/storage/art)
 "egN" = (
@@ -4138,6 +4143,10 @@
 /obj/structure/cable,
 /turf/open/floor/iron/white,
 /area/station/science/xenobiology)
+"eRY" = (
+/obj/effect/gibspawner/robot,
+/turf/open/floor/plating/elevatorshaft,
+/area/station/cargo/warehouse)
 "eSm" = (
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -5970,11 +5979,6 @@
 /obj/machinery/door/airlock/security/glass,
 /turf/open/floor/iron,
 /area/station/security/brig)
-"hel" = (
-/obj/effect/turf_decal/delivery,
-/obj/effect/spawner/random/structure/crate,
-/turf/open/floor/iron,
-/area/station/cargo/warehouse)
 "heU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -8049,6 +8053,7 @@
 /obj/structure/table/wood,
 /obj/item/clothing/mask/cigarette/pipe,
 /obj/item/clothing/mask/fakemoustache,
+/obj/item/instrument/saxophone,
 /turf/open/floor/wood,
 /area/station/commons/storage/art)
 "jBd" = (
@@ -11652,6 +11657,7 @@
 	id = "cargodisposals"
 	},
 /obj/structure/window/reinforced,
+/obj/effect/spawner/random/trash/soap,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/disposal)
 "nRE" = (
@@ -11659,7 +11665,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/effect/turf_decal/bot,
-/obj/effect/spawner/random/structure/crate,
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "nRT" = (
@@ -12820,6 +12825,14 @@
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/service/kitchen/coldroom)
+"pfX" = (
+/obj/machinery/conveyor{
+	id = "cargodisposals"
+	},
+/obj/effect/spawner/random/trash/garbage,
+/obj/effect/spawner/random/trash/food_packaging,
+/turf/open/floor/iron/dark,
+/area/station/maintenance/disposal)
 "pgb" = (
 /turf/open/floor/iron,
 /area/station/maintenance/port/central)
@@ -13318,6 +13331,7 @@
 "pJI" = (
 /obj/structure/closet/crate/wooden/toy,
 /obj/item/chainsaw,
+/obj/item/instrument/banjo,
 /turf/open/floor/wood,
 /area/station/commons/fitness/recreation/entertainment)
 "pKa" = (
@@ -14409,6 +14423,9 @@
 "qQl" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/spawner/random/maintenance,
+/obj/structure/closet/crate{
+	icon_state = "crateopen"
+	},
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "qQp" = (
@@ -16287,7 +16304,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/bot,
-/obj/effect/spawner/random/structure/crate,
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "sUj" = (
@@ -18293,6 +18309,7 @@
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
 	},
+/obj/effect/spawner/random/maintenance/five,
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "uZM" = (
@@ -19658,11 +19675,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/security/prison)
-"wJA" = (
-/obj/effect/turf_decal/bot,
-/obj/effect/spawner/random/structure/crate,
-/turf/open/floor/iron,
-/area/station/cargo/warehouse)
 "wKH" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -20351,6 +20363,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
+"xxE" = (
+/obj/item/instrument/bilehorn,
+/turf/open/floor/plating,
+/area/station/maintenance/department/security)
 "xyq" = (
 /obj/machinery/atmospherics/pipe/bridge_pipe/dark/visible{
 	dir = 4
@@ -20814,7 +20830,8 @@
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
 	},
-/obj/effect/spawner/random/maintenance,
+/obj/effect/spawner/random/maintenance/five,
+/obj/effect/spawner/random/maintenance/five,
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "yah" = (
@@ -49773,7 +49790,7 @@ wHU
 beE
 ctp
 beE
-beE
+xxE
 jhE
 fRX
 tIh
@@ -53316,7 +53333,7 @@ tPz
 fRO
 uXn
 reF
-nFD
+dHI
 buB
 jwE
 fMy
@@ -54340,8 +54357,8 @@ ezF
 ezF
 dIn
 iVw
-hel
-wJA
+fRO
+uWl
 uWl
 sTS
 fRO
@@ -55118,7 +55135,7 @@ jga
 tdR
 yaf
 tTF
-szN
+eRY
 pbU
 qxj
 pcl
@@ -56397,7 +56414,7 @@ ezF
 dIn
 thh
 urz
-wJA
+uWl
 uWl
 nRE
 fRO
@@ -56914,7 +56931,7 @@ tPz
 fRO
 hmS
 cgP
-hel
+fRO
 xDI
 fpe
 qxj
@@ -57426,7 +57443,7 @@ dIn
 gmD
 tPz
 fRO
-aEm
+qQl
 cgP
 nFD
 ljb
@@ -58737,7 +58754,7 @@ cXm
 qOH
 cGS
 xKe
-eHn
+pfX
 kts
 nbf
 eHn
