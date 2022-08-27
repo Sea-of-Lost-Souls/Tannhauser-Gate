@@ -3733,6 +3733,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
+/obj/effect/landmark/start/engineering_guard,
 /turf/open/floor/iron,
 /area/station/engineering/main)
 "etU" = (
@@ -6448,6 +6449,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
+"hHp" = (
+/obj/effect/landmark/start/engineering_guard,
+/turf/open/floor/iron,
+/area/station/engineering/main)
 "hIN" = (
 /obj/item/storage/toolbox/mechanical{
 	pixel_x = -3;
@@ -57349,7 +57354,7 @@ mXN
 dbh
 ggK
 vlL
-mXN
+hHp
 odb
 uPn
 xHV
