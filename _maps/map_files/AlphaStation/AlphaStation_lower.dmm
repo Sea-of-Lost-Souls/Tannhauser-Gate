@@ -471,7 +471,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	name = "Glass"
+	},
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
 "aDC" = (
@@ -677,7 +679,9 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	name = "Glass"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
@@ -1032,7 +1036,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	name = "Glass"
+	},
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 4
 	},
@@ -2076,7 +2082,9 @@
 /turf/open/floor/carpet/red,
 /area/station/service/theater)
 "cCp" = (
-/obj/machinery/door/airlock/external,
+/obj/machinery/door/airlock/external{
+	name = "External Airlock"
+	},
 /turf/open/floor/iron/dark,
 /area/station/maintenance/disposal/incinerator)
 "cCQ" = (
@@ -2165,7 +2173,9 @@
 "cHH" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/mapping_helpers/airlock/access/any/supply/shipping,
-/obj/machinery/door/airlock/external/glass,
+/obj/machinery/door/airlock/external/glass{
+	name = "External Airlock"
+	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
@@ -2349,7 +2359,9 @@
 /turf/open/space,
 /area/space/nearstation)
 "cVI" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/supply/maintenance,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -2700,9 +2712,11 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/storage_shared)
 "doE" = (
-/obj/machinery/door/puzzle/keycard/yellow_required,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/puzzle/keycard/yellow_required{
+	name = "Blue Airlock"
+	},
 /turf/open/floor/plating,
 /area/station/maintenance/night_club)
 "doJ" = (
@@ -2863,13 +2877,12 @@
 	},
 /area/station/cargo/warehouse)
 "dxm" = (
-/obj/machinery/door/airlock/hydroponics/glass{
-	name = "Hydroponics";
-	req_access_txt = "35"
-	},
 /obj/effect/mapping_helpers/airlock/access/all/service/hydroponics,
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/hydroponics/glass{
+	name = "Glass"
+	},
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
 "dxZ" = (
@@ -3108,7 +3121,9 @@
 /turf/open/floor/iron/white,
 /area/station/medical/virology)
 "dJm" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3226,9 +3241,11 @@
 "dRc" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/mapping_helpers/airlock/access/any/supply/shipping,
-/obj/machinery/door/airlock/external/glass,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/door/airlock/external/glass{
+	name = "External Airlock"
+	},
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "dRm" = (
@@ -4228,7 +4245,9 @@
 	id = "Secure Gate";
 	name = "brig shutters"
 	},
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	name = "Glass"
+	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/security/general,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
@@ -4857,7 +4876,9 @@
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
 "fMy" = (
-/obj/machinery/door/airlock/mining/glass,
+/obj/machinery/door/airlock/mining/glass{
+	name = "Mining Airlock"
+	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/supply/general,
 /turf/open/floor/iron,
@@ -4994,7 +5015,9 @@
 /turf/open/space,
 /area/space/nearstation)
 "fSY" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /turf/open/floor/plating,
 /area/station/construction/mining/aux_base)
@@ -5185,7 +5208,9 @@
 "gjh" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/puzzle/keycard/yellow_required,
+/obj/machinery/door/puzzle/keycard/yellow_required{
+	name = "Blue Airlock"
+	},
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/department/electrical)
@@ -5593,7 +5618,9 @@
 /turf/open/floor/iron/white,
 /area/station/medical/virology)
 "gJI" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -5791,7 +5818,9 @@
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/aisat_interior)
 "gUX" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /turf/open/floor/plating,
 /area/station/maintenance/aft/lesser)
 "gVu" = (
@@ -5912,7 +5941,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	name = "Glass"
+	},
 /turf/open/floor/iron,
 /area/station/security/brig)
 "heU" = (
@@ -6017,7 +6048,9 @@
 /area/station/maintenance/thruster_room/starboard)
 "hmf" = (
 /obj/effect/mapping_helpers/airlock/access/any,
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	name = "Glass"
+	},
 /turf/open/floor/iron,
 /area/station/security/prison/visit)
 "hmp" = (
@@ -6742,7 +6775,9 @@
 /turf/open/floor/iron/dark,
 /area/station/maintenance/solars/port/aft)
 "hYF" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/thruster_room/starboard)
@@ -7215,7 +7250,9 @@
 /turf/open/floor/iron/brown,
 /area/station/engineering/atmos/project)
 "iCF" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/medical/maintenance,
 /obj/effect/mapping_helpers/airlock/abandoned,
 /turf/open/floor/plating,
@@ -8631,7 +8668,9 @@
 /turf/open/floor/plating,
 /area/station/medical/medbay)
 "krH" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -8897,7 +8936,9 @@
 /obj/effect/mapping_helpers/airlock/access/any/supply/mining_station,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/airlock/mining/glass,
+/obj/machinery/door/airlock/mining/glass{
+	name = "Mining Airlock"
+	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
@@ -9099,7 +9140,9 @@
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "kMh" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -9510,9 +9553,11 @@
 "lpj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/any/supply/shipping,
-/obj/machinery/door/airlock/external/glass,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/door/airlock/external/glass{
+	name = "External Airlock"
+	},
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "lpB" = (
@@ -10955,7 +11000,9 @@
 /turf/open/floor/iron/dark,
 /area/station/maintenance/disposal)
 "nbt" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/supply/general,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -11853,7 +11900,9 @@
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "ohm" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -13132,7 +13181,9 @@
 /turf/open/floor/iron/white,
 /area/station/science/cytology)
 "pDS" = (
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	name = "Glass"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/security/general,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -13204,7 +13255,9 @@
 "pIi" = (
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	name = "Glass"
+	},
 /turf/open/floor/iron,
 /area/station/security/prison)
 "pIT" = (
@@ -13257,7 +13310,9 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/science)
 "pLN" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
@@ -13505,7 +13560,9 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/station/maintenance/port/lesser)
@@ -13693,7 +13750,9 @@
 /turf/open/space,
 /area/space/nearstation)
 "qkX" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/thruster_room/port)
@@ -14029,7 +14088,9 @@
 	},
 /area/station/medical/abandoned)
 "qBk" = (
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	name = "Glass"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/security/general,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
 /turf/open/floor/iron,
@@ -14186,7 +14247,9 @@
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "qKg" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -14858,7 +14921,9 @@
 /turf/open/floor/iron/white,
 /area/station/science/xenobiology)
 "rul" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /turf/open/floor/plating,
 /area/station/engineering/atmos/hfr_room)
@@ -15355,7 +15420,9 @@
 	id = "Secure Gate";
 	name = "brig shutters"
 	},
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	name = "Glass"
+	},
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 4
 	},
@@ -16471,7 +16538,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/any/security/maintenance,
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/security/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/department/security)
@@ -16597,7 +16666,9 @@
 /turf/closed/wall,
 /area/station/maintenance/disposal)
 "tlW" = (
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	name = "Glass"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/security/general,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/red,
@@ -17220,7 +17291,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	name = "Glass"
+	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron,
 /area/station/security/warden)
@@ -18235,7 +18308,9 @@
 "vbM" = (
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	name = "Glass"
+	},
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
 "vck" = (
@@ -18536,7 +18611,9 @@
 /turf/open/floor/iron,
 /area/station/ai_monitored/command/storage/eva)
 "vqd" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/aft)
@@ -18776,10 +18853,12 @@
 "vHh" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/any/supply/shipping,
-/obj/machinery/door/airlock/external/glass,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
+	},
+/obj/machinery/door/airlock/external/glass{
+	name = "External Airlock"
 	},
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
@@ -20064,7 +20143,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible/layer4,
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
-/obj/machinery/door/airlock/security/glass,
+/obj/machinery/door/airlock/security/glass{
+	name = "Glass"
+	},
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
 "xhx" = (
@@ -20187,7 +20268,9 @@
 /turf/open/floor/iron,
 /area/station/maintenance/disposal)
 "xsC" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	name = "Maintenance Access"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -20421,7 +20504,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/machinery/door/airlock/mining/glass,
+/obj/machinery/door/airlock/mining/glass{
+	name = "Mining Airlock"
+	},
 /turf/open/floor/iron/dark/brown,
 /area/station/cargo/miningoffice)
 "xEn" = (
