@@ -2777,6 +2777,7 @@
 /obj/machinery/door/airlock/ce,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/mapping_helpers/airlock/access/any/engineering/ce,
 /turf/open/floor/iron,
 /area/station/command/heads_quarters/ce)
 "bQJ" = (
@@ -14563,6 +14564,10 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/door/airlock/medical/glass{
+	name = "Glass"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/medical/general,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
 "jZf" = (
@@ -15176,6 +15181,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+/obj/effect/mapping_helpers/airlock/access/any/engineering/atmos,
 /turf/open/floor/plating/airless,
 /area/station/engineering/atmos/storage/gas)
 "kuO" = (
@@ -15626,6 +15632,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/access/any/engineering,
 /turf/open/floor/iron,
 /area/station/engineering/atmos/upper)
 "kLP" = (
@@ -16452,6 +16459,10 @@
 "lnE" = (
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/medical/glass{
+	name = "Glass"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/medical/general,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
 "lol" = (
@@ -17404,10 +17415,10 @@
 "lTo" = (
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/effect/mapping_helpers/airlock/access/all/medical/general,
-/obj/machinery/door/airlock/multi_tile/glass{
-	dir = 4
-	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/medical/glass{
+	name = "Glass"
+	},
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
 "lTP" = (
@@ -26913,6 +26924,7 @@
 /obj/effect/turf_decal/trimline/darkblue/filled/line{
 	dir = 10
 	},
+/obj/machinery/recharge_station,
 /turf/open/floor/iron/dark,
 /area/station/security/office)
 "smu" = (
@@ -28855,11 +28867,11 @@
 "tIm" = (
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/effect/mapping_helpers/airlock/access/all/medical/general,
-/obj/machinery/door/airlock/multi_tile/glass{
-	dir = 4
-	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable,
+/obj/machinery/door/airlock/medical/glass{
+	name = "Glass"
+	},
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
 "tIq" = (
@@ -29803,6 +29815,7 @@
 /obj/machinery/door/airlock/atmos,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/effect/mapping_helpers/airlock/access/any/engineering/atmos,
 /turf/open/floor/plating/airless,
 /area/station/engineering/atmos/storage/gas)
 "uoy" = (
@@ -32850,6 +32863,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/access/any/engineering,
 /turf/open/floor/iron,
 /area/station/engineering/atmos/upper)
 "wmZ" = (
@@ -35091,6 +35105,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+/obj/effect/mapping_helpers/airlock/access/any/engineering/atmos,
 /turf/open/floor/plating/airless,
 /area/station/engineering/atmos/storage/gas)
 "xQT" = (
