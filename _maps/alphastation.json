@@ -7,7 +7,8 @@
 		"AlphaStation_upper.dmm"
 	],
 	"shuttles": {
-        "cargo": "cargo_tannhauser",
+                "cargo": "cargo_tannhauser",
+                "arrivals": "arrivals_tannhauser",
 		"ferry": "ferry_skyrat",
 		"whiteship": "whiteship_meta",
 		"emergency": "emergency_skyrat"

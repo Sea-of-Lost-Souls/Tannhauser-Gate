@@ -224,6 +224,7 @@
 	dwidth = 1;
 	height = 13;
 	id = "arrivals_shuttle";
+	json_key = "arrivals";
 	name = "tram dock";
 	roundstart_template = /datum/map_template/shuttle/arrivals_skyrat;
 	width = 7
