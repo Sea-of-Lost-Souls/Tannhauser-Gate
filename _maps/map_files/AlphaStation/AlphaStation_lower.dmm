@@ -384,6 +384,11 @@
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/solars/starboard/aft)
+"avc" = (
+/obj/structure/cable,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/station/maintenance/department/science/xenobiology)
 "avd" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -2162,6 +2167,9 @@
 /obj/effect/mapping_helpers/airlock/access/any/supply/shipping,
 /obj/machinery/door/airlock/external/glass,
 /obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "cHV" = (
@@ -3215,6 +3223,14 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/commons/fitness/recreation/entertainment)
+"dRc" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/mapping_helpers/airlock/access/any/supply/shipping,
+/obj/machinery/door/airlock/external/glass,
+/obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/turf/open/floor/iron,
+/area/station/cargo/warehouse)
 "dRm" = (
 /obj/structure/table/reinforced,
 /obj/item/bodypart/chest/robot,
@@ -6111,6 +6127,10 @@
 	},
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
+"hug" = (
+/obj/structure/lattice,
+/turf/closed/wall,
+/area/station/maintenance/abandon_holding_cell)
 "hui" = (
 /obj/structure/cable,
 /obj/structure/chair{
@@ -6408,6 +6428,9 @@
 "hJe" = (
 /obj/effect/mapping_helpers/airlock/access/any/supply/mining_station,
 /obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/station/cargo/miningoffice)
 "hJq" = (
@@ -8567,9 +8590,7 @@
 "koU" = (
 /obj/structure/cable,
 /obj/effect/landmark/navigate_destination/kitchen,
-/turf/open/floor/iron/cafeteria{
-	dir = 5
-	},
+/turf/open/openspace,
 /area/station/service/cafeteria)
 "koZ" = (
 /obj/machinery/firealarm/directional/east,
@@ -8877,6 +8898,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/airlock/mining/glass,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
 "kDu" = (
@@ -9483,6 +9507,14 @@
 /obj/item/storage/fancy/cigarettes/cigpack_uplift,
 /turf/open/floor/iron/white,
 /area/station/medical/abandoned)
+"lpj" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/mapping_helpers/airlock/access/any/supply/shipping,
+/obj/machinery/door/airlock/external/glass,
+/obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/turf/open/floor/iron,
+/area/station/cargo/warehouse)
 "lpB" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -9616,6 +9648,7 @@
 /area/station/science/xenobiology)
 "lAP" = (
 /obj/structure/lattice/catwalk,
+/turf/closed/wall,
 /area/space/nearstation)
 "lAY" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/dark/visible{
@@ -10389,6 +10422,7 @@
 "mqK" = (
 /obj/structure/cable,
 /obj/machinery/power/smes/engineering,
+/obj/structure/cable,
 /obj/machinery/camera/directional/north,
 /turf/open/floor/engine,
 /area/station/engineering/engine_smes)
@@ -12139,6 +12173,7 @@
 /turf/open/floor/iron/dark,
 /area/station/maintenance/disposal)
 "oyR" = (
+/obj/structure/cable,
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -15476,31 +15511,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/all/medical/virology,
 /obj/machinery/door/airlock/virology,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/cable,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/effect/mapping_helpers/airlock/locked,
-/obj/machinery/door_buttons/access_button{
-	idDoor = "virology_airlock_interior";
-	idSelf = "virology_airlock_control";
-	name = "Virology Access Button";
-	pixel_x = 8;
-	pixel_y = -24;
-	req_access_txt = "39"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/mapping_helpers/airlock/access/all/medical/virology,
-/obj/machinery/door/airlock/virology,
 /turf/open/floor/iron/white,
 /area/station/medical/virology)
 "sje" = (
@@ -15813,6 +15823,11 @@
 	dir = 5
 	},
 /area/station/service/cafeteria)
+"swp" = (
+/obj/structure/cable,
+/obj/structure/cable,
+/turf/open/floor/engine,
+/area/station/engineering/supermatter/room)
 "swz" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -16301,27 +16316,6 @@
 	req_access_txt = "39"
 	},
 /obj/structure/cable,
-/obj/effect/mapping_helpers/airlock/access/all/medical/virology,
-/obj/machinery/door/airlock/virology,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/cable,
-/obj/effect/mapping_helpers/airlock/locked,
-/obj/machinery/door_buttons/access_button{
-	dir = 1;
-	idDoor = "virology_airlock_exterior";
-	idSelf = "virology_airlock_control";
-	name = "Virology Access Button";
-	pixel_x = -27;
-	pixel_y = -2;
-	req_access_txt = "39"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
 /obj/effect/mapping_helpers/airlock/access/all/medical/virology,
 /obj/machinery/door/airlock/virology,
 /turf/open/floor/iron/white,
@@ -18784,6 +18778,9 @@
 /obj/effect/mapping_helpers/airlock/access/any/supply/shipping,
 /obj/machinery/door/airlock/external/glass,
 /obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "vHs" = (
@@ -19637,6 +19634,14 @@
 /obj/machinery/power/apc/auto_name/directional/south,
 /turf/open/floor/iron/brown/side,
 /area/station/cargo/warehouse)
+"wNm" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/station/maintenance/department/science/xenobiology)
 "wOi" = (
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 1
@@ -45579,7 +45584,7 @@ dGv
 ezF
 ezF
 ezF
-qtl
+hug
 qtl
 eGR
 eGR
@@ -55057,7 +55062,7 @@ ezF
 ezF
 gww
 rfR
-cHH
+dRc
 uGP
 uhJ
 tBd
@@ -55571,7 +55576,7 @@ ezF
 ezF
 gww
 ezF
-vHh
+lpj
 fsI
 btY
 vMu
@@ -56640,7 +56645,7 @@ tko
 svr
 svr
 eGu
-ifO
+swp
 ifO
 mLa
 ffE
@@ -63588,7 +63593,7 @@ ezF
 ezF
 wFR
 ybM
-jVn
+avc
 jVn
 jVn
 jVn
@@ -63845,7 +63850,7 @@ mOU
 mOU
 wHZ
 yhX
-wiA
+wNm
 weL
 weL
 weL
