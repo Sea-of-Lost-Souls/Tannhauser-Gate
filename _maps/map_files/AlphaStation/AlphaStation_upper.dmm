@@ -6146,7 +6146,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
-/obj/effect/mapping_helpers/airlock/access/any/security,
 /turf/open/floor/iron,
 /area/station/security/brig/upper)
 "egr" = (
@@ -11696,10 +11695,10 @@
 /turf/open/floor/carpet,
 /area/station/medical/psychology)
 "hWL" = (
+/obj/effect/turf_decal/skyrat_decals/enclave/middle/right,
 /obj/effect/turf_decal/plaque{
 	icon_state = "L10"
 	},
-/obj/effect/turf_decal/skyrat_decals/enclave/bottom/right,
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/central/aft)
 "hWS" = (
@@ -18191,7 +18190,6 @@
 	id = "AI"
 	},
 /obj/machinery/door/window/left/directional/east,
-/obj/effect/mapping_helpers/airlock/access/any/command/ai_upload,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai_upload)
 "myc" = (
@@ -18806,7 +18804,6 @@
 /obj/item/ai_module/zeroth/onehuman,
 /obj/item/ai_module/reset/purge,
 /obj/machinery/door/window/left/directional/west,
-/obj/effect/mapping_helpers/airlock/access/any/command/ai_upload,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai_upload)
 "mQi" = (
@@ -19863,10 +19860,10 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos/upper)
 "nEz" = (
+/obj/effect/turf_decal/skyrat_decals/enclave/middle/left,
 /obj/effect/turf_decal/plaque{
 	icon_state = "L6"
 	},
-/obj/effect/turf_decal/skyrat_decals/enclave/bottom/left,
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/central/aft)
 "nES" = (
@@ -20335,6 +20332,11 @@
 "nRt" = (
 /turf/open/floor/iron/airless,
 /area/space/nearstation)
+"nRy" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/line,
+/obj/effect/turf_decal/skyrat_decals/enclave/bottom/middle,
+/turf/open/floor/iron/white,
+/area/station/hallway/primary/central/aft)
 "nRL" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
@@ -24541,7 +24543,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
-/obj/effect/mapping_helpers/airlock/access/any/security,
 /turf/open/floor/iron,
 /area/station/security/brig/upper)
 "qFl" = (
@@ -24588,6 +24589,11 @@
 	dir = 1
 	},
 /area/station/service/chapel/monastery)
+"qIo" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/line,
+/obj/effect/turf_decal/skyrat_decals/enclave/bottom/left,
+/turf/open/floor/iron/white,
+/area/station/hallway/primary/central/aft)
 "qIz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -24658,7 +24664,6 @@
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
-/obj/effect/mapping_helpers/airlock/access/any/security,
 /turf/open/floor/iron,
 /area/station/security/brig/upper)
 "qJO" = (
@@ -25631,6 +25636,11 @@
 /obj/structure/cable,
 /turf/open/floor/carpet/executive,
 /area/station/command/corporate_showroom)
+"rsW" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/line,
+/obj/effect/turf_decal/skyrat_decals/enclave/bottom/right,
+/turf/open/floor/iron/white,
+/area/station/hallway/primary/central/aft)
 "rtY" = (
 /turf/closed/wall,
 /area/station/medical/surgery)
@@ -28892,7 +28902,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
-/obj/effect/mapping_helpers/airlock/access/any/security,
 /turf/open/floor/iron,
 /area/station/security/brig/upper)
 "tJX" = (
@@ -28934,10 +28943,10 @@
 /turf/open/floor/wood/parquet,
 /area/station/service/library/artgallery)
 "tMw" = (
+/obj/effect/turf_decal/skyrat_decals/enclave/top/right,
 /obj/effect/turf_decal/plaque{
 	icon_state = "L9"
 	},
-/obj/effect/turf_decal/skyrat_decals/enclave/top/right,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -29862,10 +29871,10 @@
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/port)
 "upQ" = (
+/obj/effect/turf_decal/skyrat_decals/enclave/top/left,
 /obj/effect/turf_decal/plaque{
 	icon_state = "L5"
 	},
-/obj/effect/turf_decal/skyrat_decals/enclave/top/left,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -30936,7 +30945,6 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/airlock/access/any/command/ai_upload,
 /obj/machinery/door/window/left/directional/south,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai_upload)
@@ -31970,7 +31978,6 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/effect/mapping_helpers/airlock/access/any/command/ai_upload,
 /obj/machinery/door/window/left/directional/south,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai_upload)
@@ -32016,10 +32023,10 @@
 /turf/closed/wall,
 /area/station/commons/dorms/barracks)
 "vMc" = (
+/obj/effect/turf_decal/skyrat_decals/enclave/top/middle,
 /obj/effect/turf_decal/plaque{
 	icon_state = "L7"
 	},
-/obj/effect/turf_decal/skyrat_decals/enclave/top/middle,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -35131,7 +35138,6 @@
 /obj/effect/turf_decal/plaque{
 	icon_state = "L8"
 	},
-/obj/effect/turf_decal/skyrat_decals/enclave/bottom/middle,
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/central/aft)
 "xSK" = (
@@ -69865,7 +69871,7 @@ qAL
 oli
 upQ
 nEz
-dug
+qIo
 uHf
 viw
 kub
@@ -70122,7 +70128,7 @@ bkB
 oli
 vMc
 xSD
-dug
+nRy
 uHf
 lno
 cSG
@@ -70379,7 +70385,7 @@ qAL
 oli
 tMw
 hWL
-dug
+rsW
 uHf
 cSG
 cSG
