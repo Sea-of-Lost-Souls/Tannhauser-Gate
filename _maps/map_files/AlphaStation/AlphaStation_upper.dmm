@@ -20656,7 +20656,6 @@
 "ohD" = (
 /obj/effect/turf_decal/tile/blue/half/contrasted,
 /obj/structure/table/reinforced,
-/obj/structure/table/reinforced,
 /obj/item/toy/plush/skyrat/skreking_vox{
 	desc = "A cute Teshari plushie with a mosaic fur patern! Rumor has it that if you poke it in a particular way, it will show you its skrektual technique.";
 	name = "skreking teshari plushie"
@@ -32917,7 +32916,6 @@
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "wCs" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 4
