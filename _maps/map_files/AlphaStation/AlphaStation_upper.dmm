@@ -20108,7 +20108,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/table,
 /obj/item/paper/crumpled/awaymissions/moonoutpost19/hastey_note{
-	default_raw_text = "<i>19 06 2554</i><br><br><i>I fucking knew it, I could not fix it!! We ran out of time to finish the "Duty free" bar... So if you find this um....<br><br>IOU: 1 Duty Free bar</i><br><br>Bob"
+	default_raw_text = "<i>19 06 2554</i><br><br><i>I fucking knew it, I could not fix it!! We ran out of time to finish the Duty free bar... So if you find this um....<br><br>IOU, 1 Duty Free bar</i><br><br>Bob"
 	},
 /turf/open/floor/plating,
 /area/station/service/bar/backroom)
