@@ -5560,6 +5560,11 @@
 /obj/effect/mapping_helpers/airlock/access/any,
 /turf/open/floor/carpet,
 /area/station/service/chapel/monastery)
+"dPE" = (
+/obj/effect/turf_decal/tile/dark/diagonal_centre,
+/mob/living/carbon/human/species/monkey/punpun,
+/turf/open/floor/carpet/red,
+/area/station/service/theater)
 "dPS" = (
 /turf/open/misc/beach/coastline_t/sandwater_inner,
 /area/station/commons/dorms/barracks)
@@ -70109,7 +70114,7 @@ aAp
 aAp
 vLG
 taK
-bjg
+dPE
 bjg
 taK
 soh
