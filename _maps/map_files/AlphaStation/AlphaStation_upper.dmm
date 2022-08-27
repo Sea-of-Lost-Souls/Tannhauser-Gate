@@ -2160,6 +2160,14 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/range)
+"bxj" = (
+/obj/effect/landmark/start/security_officer,
+/obj/structure/chair/office/tactical{
+	desc = "This is my chair! There are many like it, but tis one is mine! Without it I can not sit!";
+	name = "Shmoop's tactical swivel chair"
+	},
+/turf/open/floor/iron/dark,
+/area/station/security/office)
 "bxH" = (
 /obj/structure/table/glass,
 /obj/item/storage/box/gloves{
@@ -60198,7 +60206,7 @@ gll
 qBF
 oKo
 kts
-cSY
+bxj
 reu
 kts
 cSY
