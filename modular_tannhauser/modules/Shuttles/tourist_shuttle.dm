@@ -8,5 +8,5 @@
 /datum/map_template/shuttle/arrivals_tannhauser
 	name = "Tannhauser Starbug (Arrivals)"
 	prefix = "_maps/shuttles/tannhauser/"
-	port_id = "arrivals"
+	port_id = "ferry"
 	suffix = "tannhauser"

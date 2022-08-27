@@ -559,7 +559,6 @@
 	dir = 1
 	},
 /obj/structure/cable,
-/obj/structure/cable,
 /obj/structure/shuttle/engine/heater,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/supply)

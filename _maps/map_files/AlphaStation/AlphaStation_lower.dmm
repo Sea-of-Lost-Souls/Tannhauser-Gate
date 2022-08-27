@@ -642,14 +642,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/engine,
 /area/station/engineering/engine_smes)
-"aQL" = (
-/obj/structure/cable,
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/station/maintenance/department/science/xenobiology)
 "aQZ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -2928,7 +2920,6 @@
 /area/station/cargo/storage)
 "dzV" = (
 /obj/structure/cable,
-/obj/structure/cable,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
@@ -2963,11 +2954,6 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
-"dBl" = (
-/obj/structure/cable,
-/obj/structure/cable,
-/turf/open/floor/engine,
-/area/station/engineering/supermatter/room)
 "dBt" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -8900,11 +8886,6 @@
 /obj/effect/mapping_helpers/airlock/access/any/engineering/general,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
-"kzW" = (
-/obj/structure/cable,
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/station/maintenance/department/science/xenobiology)
 "kAi" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -11850,10 +11831,6 @@
 /obj/structure/cable,
 /turf/closed/wall/r_wall,
 /area/station/engineering/main)
-"ocl" = (
-/obj/structure/lattice,
-/turf/closed/wall,
-/area/station/maintenance/abandon_holding_cell)
 "ocu" = (
 /obj/machinery/door/airlock/glass,
 /obj/effect/mapping_helpers/airlock/access/any/service/kitchen,
@@ -11912,7 +11889,6 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/all/medical/virology,
 /obj/machinery/door/airlock/virology,
 /turf/open/floor/iron/white,
@@ -15341,8 +15317,6 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/all/medical/virology,
 /obj/machinery/door/airlock/virology,
 /turf/open/floor/iron/white,
@@ -16327,7 +16301,6 @@
 "sVg" = (
 /obj/structure/cable,
 /obj/machinery/power/smes/engineering,
-/obj/structure/cable,
 /obj/machinery/camera/directional/north,
 /turf/open/floor/engine,
 /area/station/engineering/engine_smes)
@@ -18708,7 +18681,6 @@
 /area/station/science/xenobiology)
 "vwJ" = (
 /obj/structure/lattice/catwalk,
-/turf/closed/wall,
 /area/space/nearstation)
 "vxL" = (
 /obj/effect/turf_decal/delivery,
@@ -18950,7 +18922,9 @@
 "vJH" = (
 /obj/structure/cable,
 /obj/effect/landmark/navigate_destination/kitchen,
-/turf/open/openspace,
+/turf/open/floor/iron/cafeteria{
+	dir = 5
+	},
 /area/station/service/cafeteria)
 "vLb" = (
 /obj/effect/decal/cleanable/dirt,
@@ -45638,7 +45612,7 @@ dGv
 ezF
 ezF
 ezF
-ocl
+qtl
 qtl
 eGR
 eGR
@@ -56699,7 +56673,7 @@ tko
 svr
 svr
 eGu
-dBl
+ifO
 ifO
 mLa
 ffE
@@ -63647,7 +63621,7 @@ ezF
 ezF
 wFR
 ybM
-kzW
+jVn
 jVn
 jVn
 jVn
@@ -63904,7 +63878,7 @@ mOU
 mOU
 wHZ
 yhX
-aQL
+wiA
 weL
 weL
 weL
