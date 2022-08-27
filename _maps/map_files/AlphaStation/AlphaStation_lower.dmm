@@ -767,15 +767,6 @@
 /obj/machinery/camera/emp_proof/directional/west,
 /turf/open/floor/iron,
 /area/station/security/prison/visit)
-"aVN" = (
-/obj/machinery/door/airlock/external{
-	name = "Engineering External Access";
-	req_one_access_txt = "10;24"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/obj/effect/mapping_helpers/airlock/access/any/engineering/external,
-/turf/open/floor/engine,
-/area/station/engineering/supermatter/room)
 "aWD" = (
 /turf/open/lava/plasma,
 /area/station/maintenance/thruster_room/starboard)
@@ -1005,7 +996,7 @@
 /obj/structure/cable,
 /obj/machinery/door/firedoor/heavy,
 /obj/effect/mapping_helpers/airlock/access/all,
-/obj/machinery/door/airlock/alarmlock,
+/obj/machinery/door/airlock/public,
 /turf/open/floor/catwalk_floor/iron,
 /area/station/maintenance/port/central)
 "bns" = (
@@ -1192,7 +1183,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/ce,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/iron/dark,
 /area/station/engineering/gravity_generator)
 "byf" = (
@@ -4413,9 +4403,6 @@
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/aisat_interior)
 "fiu" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/airlock/access/any/supply/mining_station,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -4762,9 +4749,6 @@
 	name = "brig shutters"
 	},
 /obj/machinery/door/airlock/security/glass,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 4
 	},
@@ -5234,9 +5218,6 @@
 /area/station/service/hydroponics)
 "gnw" = (
 /obj/structure/cable,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
 /obj/machinery/door/airlock/security/glass,
@@ -5478,13 +5459,6 @@
 /obj/machinery/camera/emp_proof/directional/north,
 /turf/open/floor/iron,
 /area/station/maintenance/starboard/central)
-"gFC" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/obj/structure/cable,
-/obj/effect/mapping_helpers/airlock/access/any/security/brig,
-/obj/machinery/door/airlock/security/glass,
-/turf/open/floor/iron,
-/area/station/security/prison)
 "gFD" = (
 /obj/structure/table,
 /obj/machinery/cell_charger{
@@ -5619,9 +5593,6 @@
 	name = "MiniSat Antechamber";
 	req_access_txt = "16"
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -5664,9 +5635,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/ce,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
 /turf/open/floor/iron,
 /area/station/engineering/main)
 "gNg" = (
@@ -5771,9 +5739,6 @@
 /obj/machinery/door/airlock/hatch{
 	name = "MiniSat Antechamber";
 	req_one_access_txt = "32;19"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
 	},
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -5893,6 +5858,9 @@
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/tcoms,
 /obj/machinery/door/airlock/command/glass,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "tcomms-entrance"
+	},
 /turf/open/floor/iron,
 /area/station/tcommsat/computer)
 "gYC" = (
@@ -6049,9 +6017,6 @@
 	},
 /area/station/cargo/miningoffice)
 "hhY" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
 /obj/machinery/door/airlock/engineering/glass/critical{
 	heat_proof = 1;
 	name = "Supermatter Chamber";
@@ -6082,9 +6047,6 @@
 /obj/machinery/door/airlock/public/glass{
 	id_tag = "permabolt3";
 	name = "Cell 3"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "permashut3"
@@ -7198,6 +7160,9 @@
 /obj/effect/turf_decal/trimline/yellow/filled/line,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/tcoms,
 /obj/machinery/door/airlock/command/glass,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "tcomms-entrance"
+	},
 /turf/open/floor/iron,
 /area/station/tcommsat/computer)
 "izK" = (
@@ -7595,13 +7560,13 @@
 /turf/open/floor/carpet/red,
 /area/station/service/theater)
 "iXZ" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/external,
 /obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
 /turf/open/floor/iron/dark,
 /area/station/maintenance/solars/starboard/aft)
 "iYQ" = (
@@ -8344,12 +8309,12 @@
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "jUI" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/external,
 /obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
 /turf/open/floor/iron/dark,
 /area/station/maintenance/solars/port/aft)
 "jVn" = (
@@ -8495,9 +8460,6 @@
 /obj/machinery/door/airlock/external{
 	name = "Engineering External Access";
 	req_one_access_txt = "10;24"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
 	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/external,
 /turf/open/floor/engine,
@@ -9490,9 +9452,6 @@
 /turf/open/floor/iron/brown/side,
 /area/station/cargo/warehouse)
 "ljc" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
 /obj/machinery/door/airlock/security/glass,
@@ -9548,9 +9507,6 @@
 /obj/machinery/door/airlock/public/glass{
 	id_tag = "permabolt3";
 	name = "Cell 4"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "permashut4"
@@ -9715,7 +9671,7 @@
 "lxv" = (
 /obj/machinery/door/firedoor/heavy,
 /obj/effect/mapping_helpers/airlock/access/all,
-/obj/machinery/door/airlock/alarmlock,
+/obj/machinery/door/airlock/public,
 /turf/open/floor/iron,
 /area/station/maintenance/port/central)
 "lyI" = (
@@ -10337,8 +10293,10 @@
 	name = "Server Room";
 	req_access_txt = "61"
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "tcomms-entrance"
+	},
 /turf/open/floor/engine,
 /area/station/tcommsat/computer)
 "mjG" = (
@@ -10350,7 +10308,7 @@
 /obj/effect/mapping_helpers/airlock/access/all,
 /obj/machinery/door/firedoor/heavy,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/door/airlock/alarmlock,
+/obj/machinery/door/airlock/public,
 /turf/open/floor/iron,
 /area/station/maintenance/port/central)
 "mkv" = (
@@ -11502,9 +11460,6 @@
 	name = "Cell 5"
 	},
 /obj/structure/cable,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
 /obj/machinery/door/poddoor/preopen{
 	id = "permashut5"
 	},
@@ -11824,9 +11779,6 @@
 	name = "Server Room";
 	req_access_txt = "61"
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
 /obj/structure/cable,
 /turf/open/floor/engine/helium,
 /area/station/tcommsat/computer)
@@ -11908,9 +11860,6 @@
 	pixel_x = -27;
 	pixel_y = -2;
 	req_access_txt = "39"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
 	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/all/medical/virology,
@@ -12550,13 +12499,13 @@
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
 "oRd" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/external,
 /obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
 /turf/open/floor/iron/dark,
 /area/station/maintenance/solars/port/aft)
 "oRr" = (
@@ -13868,9 +13817,6 @@
 /turf/open/space/basic,
 /area/station/solars/starboard/aft)
 "qog" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
 /obj/effect/mapping_helpers/airlock/access/any/supply/mining_station,
 /obj/machinery/door/airlock/external,
 /turf/open/floor/plating,
@@ -13922,11 +13868,11 @@
 /turf/open/floor/iron/white,
 /area/station/medical/virology)
 "qpU" = (
+/obj/effect/mapping_helpers/airlock/access/any/engineering/external,
+/obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/obj/effect/mapping_helpers/airlock/access/any/engineering/external,
-/obj/machinery/door/airlock/external,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/solars/starboard/aft)
 "qqx" = (
@@ -14957,9 +14903,6 @@
 /turf/open/floor/iron/dark/brown,
 /area/station/cargo/storage)
 "rwD" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
@@ -15336,9 +15279,6 @@
 	pixel_y = -24;
 	req_access_txt = "39"
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -15390,9 +15330,6 @@
 /obj/machinery/door/airlock/public/glass{
 	id_tag = "permabolt1";
 	name = "Cell 1"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "permashut1"
@@ -15573,9 +15510,6 @@
 /area/station/maintenance/disposal/incinerator)
 "sgV" = (
 /obj/machinery/door/airlock/security/glass,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
 /obj/effect/mapping_helpers/airlock/access/any/security/general,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
 /turf/open/floor/iron,
@@ -16061,9 +15995,6 @@
 /area/station/security/prison)
 "sGl" = (
 /obj/machinery/door/airlock/security/glass,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
 /obj/effect/mapping_helpers/airlock/access/any/security/general,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -16125,7 +16056,7 @@
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/all,
 /obj/machinery/door/firedoor/heavy,
-/obj/machinery/door/airlock/alarmlock,
+/obj/machinery/door/airlock/public,
 /turf/open/floor/catwalk_floor/iron,
 /area/station/maintenance/starboard/central)
 "sHL" = (
@@ -16158,7 +16089,6 @@
 /turf/closed/wall,
 /area/station/service/kitchen/coldroom)
 "sLe" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/machinery/door/airlock/engineering/glass/critical{
 	heat_proof = 1;
 	name = "Supermatter Chamber";
@@ -16514,9 +16444,6 @@
 	name = "brig shutters"
 	},
 /obj/machinery/door/airlock/security/glass,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/security/general,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
@@ -16750,7 +16677,7 @@
 /obj/machinery/door/firedoor/heavy,
 /obj/effect/mapping_helpers/airlock/access/all,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/door/airlock/alarmlock,
+/obj/machinery/door/airlock/public,
 /turf/open/floor/iron,
 /area/station/maintenance/starboard/central)
 "tpJ" = (
@@ -16760,7 +16687,7 @@
 "tqd" = (
 /obj/effect/mapping_helpers/airlock/access/all,
 /obj/machinery/door/firedoor/heavy,
-/obj/machinery/door/airlock/alarmlock,
+/obj/machinery/door/airlock/public,
 /turf/open/floor/iron,
 /area/station/maintenance/port/central)
 "tqf" = (
@@ -17209,9 +17136,6 @@
 /obj/machinery/door/airlock/public/glass{
 	id_tag = "permabolt2";
 	name = "Cell 2"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "permashut2"
@@ -17810,9 +17734,6 @@
 /turf/open/floor/iron,
 /area/station/science/cytology)
 "uuJ" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible/layer4,
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
@@ -20778,9 +20699,6 @@
 /turf/open/floor/iron,
 /area/station/science/xenobiology)
 "xVO" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
 /obj/machinery/door/airlock/security/glass,
@@ -43608,7 +43526,7 @@ iZf
 qHb
 mbA
 rrB
-gFC
+ljc
 eGw
 eGw
 vbE
@@ -57483,7 +57401,7 @@ qRC
 qRC
 qRC
 qRC
-aVN
+kfa
 qRC
 kfa
 eaE
