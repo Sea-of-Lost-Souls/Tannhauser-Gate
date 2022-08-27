@@ -14341,6 +14341,7 @@
 	dir = 4
 	},
 /obj/structure/table/glass,
+/obj/item/toy/redbutton,
 /turf/open/floor/carpet,
 /area/station/command/bridge)
 "jRg" = (
