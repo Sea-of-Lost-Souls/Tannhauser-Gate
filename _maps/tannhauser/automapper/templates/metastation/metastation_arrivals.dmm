@@ -25,6 +25,7 @@
 /obj/item/kirbyplants{
 	icon_state = "plant-21"
 	},
+/obj/structure/window/reinforced/spawner,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
 "aS" = (
@@ -88,12 +89,12 @@
 /turf/closed/wall,
 /area/station/hallway/secondary/entry)
 "cI" = (
-/obj/effect/turf_decal/stripes/corner{
-	dir = 8
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
 "dp" = (
@@ -106,6 +107,7 @@
 "dq" = (
 /obj/machinery/vending/cigarette,
 /obj/effect/turf_decal/delivery,
+/obj/structure/window/reinforced/spawner,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
 "dJ" = (
@@ -365,16 +367,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/hallway/secondary/entry)
-"lB" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
-/obj/machinery/door/airlock/external{
-	name = "Arrival Airlock";
-	space_dir = 2
-	},
-/turf/open/floor/plating,
-/area/station/hallway/secondary/entry)
 "lE" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/cable,
@@ -560,13 +552,6 @@
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/wood,
 /area/station/maintenance/port/aft)
-"re" = (
-/obj/item/kirbyplants/random,
-/obj/effect/turf_decal/stripes/line{
-	dir = 10
-	},
-/turf/open/floor/iron,
-/area/station/hallway/secondary/entry)
 "rs" = (
 /obj/machinery/status_display/ai/directional/east,
 /turf/open/floor/iron,
@@ -692,13 +677,6 @@
 /obj/effect/spawner/random/structure/grille,
 /turf/open/floor/plating,
 /area/station/maintenance/port)
-"uZ" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/obj/machinery/door/airlock/external{
-	name = "Arrival Airlock"
-	},
-/turf/open/floor/plating,
-/area/station/hallway/secondary/entry)
 "vf" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
@@ -957,6 +935,7 @@
 "Cr" = (
 /obj/machinery/vending/coffee,
 /obj/effect/turf_decal/delivery,
+/obj/structure/window/reinforced/spawner,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
 "Ct" = (
@@ -1418,6 +1397,13 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
+"Np" = (
+/obj/structure/closet/emcloset,
+/obj/effect/turf_decal/delivery,
+/obj/effect/landmark/start/hangover/closet,
+/obj/structure/window/reinforced/spawner,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/entry)
 "NI" = (
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
@@ -1624,6 +1610,15 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/port)
+"Ss" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/hallway/secondary/entry)
 "SI" = (
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -1856,8 +1851,7 @@
 /area/station/maintenance/port/aft)
 "Yj" = (
 /obj/structure/sign/warning/vacuum/external/directional/south,
-/obj/effect/turf_decal/stripes/line,
-/turf/open/floor/iron,
+/turf/closed/wall,
 /area/station/hallway/secondary/entry)
 "YI" = (
 /obj/machinery/portable_atmospherics/canister/air,
@@ -2748,7 +2742,6 @@ FF
 ki
 zd
 uw
-uw
 FF
 FF
 FF
@@ -2756,6 +2749,7 @@ FF
 FF
 FF
 FF
+aJ
 aJ
 aJ
 wr
@@ -2789,8 +2783,7 @@ FF
 (22,1,1) = {"
 Fc
 zd
-uZ
-lB
+uw
 FF
 FF
 FF
@@ -2799,6 +2792,7 @@ FF
 FF
 FF
 LV
+bb
 vf
 Ak
 Qs
@@ -2832,14 +2826,14 @@ FF
 sV
 zd
 aJ
+FF
+FF
+FF
+FF
+FF
+FF
+FF
 aJ
-FF
-FF
-FF
-FF
-FF
-FF
-FF
 aJ
 aJ
 sV
@@ -2874,7 +2868,7 @@ FF
 OZ
 zd
 aP
-aJ
+FF
 FF
 FF
 FF
@@ -2915,8 +2909,8 @@ FF
 (25,1,1) = {"
 kC
 zd
-Oy
-aJ
+Np
+FF
 FF
 FF
 FF
@@ -2957,8 +2951,8 @@ FF
 (26,1,1) = {"
 kC
 zd
-Oy
-aJ
+Np
+FF
 FF
 FF
 FF
@@ -3000,7 +2994,7 @@ FF
 NT
 zd
 dq
-aJ
+FF
 FF
 FF
 FF
@@ -3042,7 +3036,7 @@ FF
 Jk
 bA
 Cr
-aJ
+FF
 FF
 FF
 FF
@@ -3084,14 +3078,14 @@ FF
 em
 zd
 aJ
+FF
+FF
+FF
+FF
+FF
+FF
+FF
 aJ
-FF
-FF
-FF
-FF
-FF
-FF
-FF
 aJ
 aJ
 yD
@@ -3125,8 +3119,7 @@ FF
 (30,1,1) = {"
 fx
 zd
-uZ
-lB
+aJ
 FF
 FF
 FF
@@ -3135,6 +3128,7 @@ FF
 FF
 FF
 LV
+bb
 vf
 sV
 KG
@@ -3168,14 +3162,14 @@ FF
 fx
 zd
 aJ
+FF
+FF
+FF
+FF
+FF
+FF
+FF
 aJ
-FF
-FF
-FF
-FF
-FF
-FF
-FF
 aJ
 aJ
 sV
@@ -3208,8 +3202,7 @@ FF
 "}
 (32,1,1) = {"
 VQ
-Yc
-re
+zd
 aJ
 tx
 FF
@@ -3217,6 +3210,7 @@ FF
 FF
 FF
 oN
+FF
 tx
 aJ
 vD
@@ -3250,7 +3244,7 @@ hr
 "}
 (33,1,1) = {"
 Pq
-NO
+zd
 Yj
 bO
 bO
@@ -3292,7 +3286,7 @@ MU
 "}
 (34,1,1) = {"
 mT
-Ct
+Ss
 cI
 QR
 QR
