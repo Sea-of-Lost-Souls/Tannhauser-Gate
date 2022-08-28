@@ -52,7 +52,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/white/corner,
-/turf/open/floor/glass,
+/turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "fN" = (
 /obj/effect/turf_decal/caution{
@@ -98,16 +98,6 @@
 /obj/structure/window/reinforced/spawner/east,
 /turf/open/floor/grass/fairy,
 /area/shuttle/arrival)
-"ky" = (
-/obj/machinery/light/directional/south,
-/obj/structure/chair/sofa/corp/left{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
-	dir = 1
-	},
-/turf/open/floor/iron/shuttle/evac,
-/area/shuttle/arrival)
 "lw" = (
 /obj/effect/turf_decal/trimline/blue/filled/arrow_cw{
 	dir = 4
@@ -150,10 +140,10 @@
 	},
 /area/shuttle/arrival)
 "nT" = (
-/obj/structure/chair/sofa/corp{
+/obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
 /turf/open/floor/iron/shuttle/evac,
@@ -193,7 +183,7 @@
 /obj/effect/turf_decal/trimline/white/corner{
 	dir = 4
 	},
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
 /turf/open/floor/iron/shuttle/evac,
@@ -207,17 +197,17 @@
 "qp" = (
 /obj/effect/turf_decal/trimline/blue/filled/corner,
 /obj/effect/turf_decal/trimline/white/corner,
-/obj/structure/chair/sofa/corp/right{
+/obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "qy" = (
 /obj/machinery/light/directional/south,
-/obj/structure/chair/sofa/corp/corner{
+/obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
 /turf/open/floor/iron/shuttle/evac,
@@ -253,7 +243,7 @@
 	},
 /area/shuttle/arrival)
 "sv" = (
-/obj/structure/chair/sofa/corp/left{
+/obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
 /turf/open/floor/iron/shuttle/evac,
@@ -309,12 +299,6 @@
 	},
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
-"EB" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 4
-	},
-/turf/open/floor/iron/shuttle/evac,
-/area/shuttle/arrival)
 "EH" = (
 /obj/effect/turf_decal/trimline/white/arrow_cw,
 /obj/effect/turf_decal/trimline/blue/filled/line,
@@ -332,10 +316,8 @@
 /area/shuttle/arrival)
 "GT" = (
 /obj/machinery/light/directional/north,
-/obj/structure/chair/sofa/corp/corner{
-	dir = 4
-	},
 /obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/structure/chair/comfy/shuttle,
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "Hd" = (
@@ -348,13 +330,6 @@
 /obj/structure/closet/crate/bin,
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
-"HB" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue/full,
-/turf/open/floor/iron/shuttle/evac,
-/area/shuttle/arrival)
 "HW" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/ferry{
 	dir = 1;
@@ -362,15 +337,8 @@
 	},
 /area/shuttle/arrival)
 "KE" = (
-/obj/structure/chair/sofa/corp,
 /obj/effect/turf_decal/trimline/blue/filled/line,
-/turf/open/floor/iron/shuttle/evac,
-/area/shuttle/arrival)
-"LF" = (
-/obj/structure/chair/sofa/corp/left{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue/full,
+/obj/structure/chair/comfy/shuttle,
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "Nw" = (
@@ -488,12 +456,6 @@
 	icon_state = "2,6"
 	},
 /area/shuttle/arrival)
-"UU" = (
-/obj/machinery/light/directional/north,
-/obj/structure/chair/sofa/corp/left,
-/obj/effect/turf_decal/trimline/blue/filled/line,
-/turf/open/floor/iron/shuttle/evac,
-/area/shuttle/arrival)
 "Vx" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
@@ -558,7 +520,7 @@ xM
 (2,1,1) = {"
 ul
 qj
-EB
+sv
 Xt
 sv
 qp
@@ -585,9 +547,9 @@ ZP
 (5,1,1) = {"
 iJ
 GT
-HB
+wd
 ay
-LF
+wd
 qy
 QE
 "}
@@ -620,11 +582,11 @@ QE
 "}
 (9,1,1) = {"
 qn
-UU
+GT
 wd
 ay
 wd
-ky
+qy
 mF
 "}
 (10,1,1) = {"

@@ -24,3 +24,65 @@ directory = "_maps/tannhauser/automapper/templates/centcom/"
 required_map = "builtin"
 coordinates = [28, 198, 2]
 trait_name = "CentCom"
+
+# METASTATION MAP TEMPLATES
+# Metastation Arrivals
+[templates.metastaton_arrivals]
+map_files = ["metastation_arrivals.dmm"]
+directory = "_maps/tannhauser/automapper/templates/metastation/"
+required_map = "MetaStation.dmm"
+coordinates = [20, 107, 1]
+trait_name = "Station"
+
+# DELTASTATION MAP EDITS
+# Deltastation Arrivals
+[templates.deltastation_arrivals]
+map_files = ["deltastation_arrivals.dmm"]
+directory = "_maps/tannhauser/automapper/templates/deltastation/"
+required_map = "DeltaStation2.dmm"
+coordinates = [126, 195, 1]
+trait_name = "Station"
+
+# Deltastation Cryo
+[templates.deltastation_cryo]
+map_files = ["deltastation_cryo.dmm"]
+directory = "_maps/tannhauser/automapper/templates/deltastation/"
+required_map = "DeltaStation2.dmm"
+coordinates = [209, 93, 1]
+trait_name = "Station"
+
+# Deltastation Armorys
+[templates.deltastation_armory]
+map_files = ["deltastation_armory.dmm"]
+directory = "_maps/tannhauser/automapper/templates/deltastation/"
+required_map = "DeltaStation2.dmm"
+coordinates = [206, 127, 1]
+trait_name = "Station"
+
+# ICEBOX MAP EDITS
+# Icebox Arrivals
+[templates.icebox_arrivals]
+map_files = ["icebox_arrivals.dmm"]
+directory = "_maps/tannhauser/automapper/templates/icebox/"
+required_map = "IceBoxStation.dmm"
+coordinates = [10, 116, 3]
+trait_name = "Station"
+
+# KILOSTATION MAP EDITS
+# Kilostation Arrivals
+[templates.kilostation_arrivals]
+map_files = ["kilostation_arrivals.dmm"]
+directory = "_maps/tannhauser/automapper/templates/kilostation/"
+required_map = "KiloStation.dmm"
+coordinates = [151, 80, 1]
+trait_name = "Station"
+
+
+# TRAMSTATION MAP EDITS
+# Tramstation Arrivals
+[templates.tramstation_arrivals]
+map_files = ["tramstation_arrivals.dmm"]
+directory = "_maps/tannhauser/automapper/templates/tramstation/"
+required_map = "tramstation.dmm"
+coordinates = [14, 96, 2]
+trait_name = "Station"

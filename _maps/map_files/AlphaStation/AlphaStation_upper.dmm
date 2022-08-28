@@ -15051,6 +15051,16 @@
 	},
 /turf/open/floor/wood,
 /area/station/service/library/lounge)
+"kra" = (
+/obj/docking_port/stationary{
+	dwidth = 1;
+	height = 13;
+	id = "arrivals_stationary";
+	name = "arrivals";
+	width = 7
+	},
+/turf/open/space/openspace,
+/area/space)
 "kri" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -34216,17 +34226,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/science/ordnance/storage)
-"xow" = (
-/obj/docking_port/stationary{
-	dir = 2;
-	dwidth = 1;
-	height = 13;
-	id = "arrivals_stationary";
-	name = "arrivals";
-	width = 7
-	},
-/turf/open/space/openspace,
-/area/space)
 "xoH" = (
 /obj/machinery/suit_storage_unit/atmos,
 /obj/effect/turf_decal/stripes/line{
@@ -69660,7 +69659,7 @@ lpk
 xJW
 lpk
 xJW
-lpk
+kra
 lpk
 lpk
 xJW
@@ -70676,7 +70675,7 @@ gBU
 pOE
 trq
 lpk
-xow
+lpk
 xJW
 lpk
 xJW
