@@ -97,8 +97,9 @@
 /turf/open/misc/asteroid/airless,
 /area/space/nearstation)
 "t" = (
-/obj/effect/turf_decal/stripes/line,
-/obj/machinery/light/small/directional/east,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
 "v" = (
@@ -193,6 +194,11 @@
 	name = "EMERGENCY STORAGE"
 	},
 /turf/closed/wall,
+/area/station/hallway/secondary/entry)
+"U" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
 "V" = (
 /obj/effect/turf_decal/delivery,
@@ -333,7 +339,7 @@ a
 i
 W
 t
-G
+F
 a
 a
 a
@@ -342,6 +348,16 @@ a
 (12,1,1) = {"
 f
 q
+U
+G
+a
+a
+a
+a
+"}
+(13,1,1) = {"
+q
+f
 f
 I
 a

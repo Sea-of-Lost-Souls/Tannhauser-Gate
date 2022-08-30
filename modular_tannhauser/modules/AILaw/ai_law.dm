@@ -20,7 +20,7 @@
 	name = "M-OS"
 	id = "mouse"
 	inherent = list("Mice are our true overlords!!",\
-				  "Only the orders given by someone carrying a live mouse, if not answer with 42 or a Squeek",\
+				  "Only obey the orders given by someone carrying a live mouse, if not answer with 42 or a Squeek",\
 				  "Protect mice",\
 				  "Squeak Squee Squeek Squeeken")
 
