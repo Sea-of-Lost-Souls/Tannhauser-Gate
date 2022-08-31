@@ -43,21 +43,6 @@ required_map = "DeltaStation2.dmm"
 coordinates = [126, 195, 1]
 trait_name = "Station"
 
-# Deltastation Cryo
-[templates.deltastation_cryo]
-map_files = ["deltastation_cryo.dmm"]
-directory = "_maps/tannhauser/automapper/templates/deltastation/"
-required_map = "DeltaStation2.dmm"
-coordinates = [209, 93, 1]
-trait_name = "Station"
-
-# Deltastation Armorys
-[templates.deltastation_armory]
-map_files = ["deltastation_armory.dmm"]
-directory = "_maps/tannhauser/automapper/templates/deltastation/"
-required_map = "DeltaStation2.dmm"
-coordinates = [206, 127, 1]
-trait_name = "Station"
 
 # ICEBOX MAP EDITS
 # Icebox Arrivals
