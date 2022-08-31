@@ -27,6 +27,10 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/obj/effect/light_emitter{
+	set_cap = 1;
+	set_luminosity = 4
+	},
 /turf/open/floor/plating/cobblestone/dungeon,
 /area/centcom/interlink)
 "f" = (
@@ -93,6 +97,10 @@
 /turf/open/floor/iron,
 /area/centcom/interlink)
 "p" = (
+/obj/effect/light_emitter{
+	set_cap = 1;
+	set_luminosity = 4
+	},
 /turf/open/floor/iron/dark/small,
 /area/centcom/interlink)
 "q" = (
@@ -143,6 +151,10 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+/obj/effect/light_emitter{
+	set_cap = 1;
+	set_luminosity = 4
+	},
 /turf/open/floor/plating/cobblestone/dungeon,
 /area/centcom/interlink)
 "A" = (
@@ -156,6 +168,10 @@
 /turf/open/floor/iron,
 /area/centcom/interlink)
 "C" = (
+/obj/effect/light_emitter{
+	set_cap = 1;
+	set_luminosity = 4
+	},
 /turf/open/floor/iron/smooth_half,
 /area/centcom/interlink)
 "E" = (
@@ -169,6 +185,10 @@
 "F" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
+	},
+/obj/effect/light_emitter{
+	set_cap = 1;
+	set_luminosity = 4
 	},
 /turf/open/floor/plating/cobblestone/dungeon,
 /area/centcom/interlink)
@@ -228,9 +248,17 @@
 	roundstart_template = /datum/map_template/shuttle/arrivals_tannhauser;
 	width = 7
 	},
+/obj/effect/light_emitter{
+	set_cap = 1;
+	set_luminosity = 4
+	},
 /turf/open/floor/iron/smooth_half,
 /area/centcom/interlink)
 "Q" = (
+/obj/effect/light_emitter{
+	set_cap = 1;
+	set_luminosity = 4
+	},
 /turf/open/floor/plating/cobblestone/dungeon,
 /area/centcom/interlink)
 "R" = (
