@@ -4238,7 +4238,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/dark/visible{
 	dir = 4
 	},
-/turf/open/space/transit/south,
+/turf/open/floor/engine,
 /area/station/maintenance/disposal/incinerator)
 "eXv" = (
 /obj/effect/turf_decal/stripes/line{
@@ -11819,7 +11819,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/dark/visible{
 	dir = 4
 	},
-/turf/open/space/transit/south,
+/turf/open/floor/engine,
 /area/station/maintenance/disposal/incinerator)
 "nNN" = (
 /obj/machinery/computer/atmos_alert{
@@ -47726,7 +47726,7 @@ aJM
 aJM
 aJM
 aJM
-mOU
+aJM
 uEp
 sIh
 sIh
