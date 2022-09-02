@@ -3713,7 +3713,6 @@
 	name = "Secure Storage"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/mapping_helpers/airlock/access/any/engineering/engine_equipment,
 /turf/open/floor/iron/dark,
 /area/station/engineering/main)
 "epy" = (
@@ -11863,7 +11862,6 @@
 	name = "Secure Storage"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/mapping_helpers/airlock/access/any/engineering/engine_equipment,
 /turf/open/floor/iron/dark,
 /area/station/engineering/main)
 "nMe" = (

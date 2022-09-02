@@ -646,14 +646,14 @@
 /area/station/service/bar/backroom)
 "atN" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/security/glass{
-	name = "Labor Camp Shuttle Airlock";
-	req_access_txt = null
-	},
 /obj/effect/turf_decal/tile/red/fourcorners,
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
+/obj/machinery/door/airlock/external{
+	id_tag = "Labor Camp Shuttle Airlock B";
+	name = "Labor Camp Shuttle Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "Labor Camp Shuttle Airlock B"
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/brig/upper)
@@ -12024,12 +12024,13 @@
 "hXc" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/security/glass{
+	id_tag = "Labor Camp Shuttle Airlock";
 	name = "Labor Camp Shuttle Airlock"
 	},
 /obj/effect/turf_decal/tile/red/fourcorners,
 /obj/effect/mapping_helpers/airlock/access/any,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "Labor Camp Shuttle Airlock"
 	},
 /turf/open/floor/iron/dark/side{
 	dir = 1
@@ -17481,12 +17482,13 @@
 /turf/open/floor/wood/large,
 /area/station/command/meeting_room/council)
 "lGj" = (
+/obj/effect/mapping_helpers/airlock/access/any/security/brig,
 /obj/machinery/door/airlock/external{
+	id_tag = "Labor Camp Shuttle Airlock B";
 	name = "Labor Camp Shuttle Airlock"
 	},
-/obj/effect/mapping_helpers/airlock/access/any/security/brig,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "Labor Camp Shuttle Airlock B"
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/brig/upper)
@@ -19935,7 +19937,6 @@
 "nog" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/security/courtroom)
@@ -20713,11 +20714,12 @@
 /area/station/security/checkpoint/customs/aft)
 "nMS" = (
 /obj/machinery/door/airlock/external{
+	id_tag = "Labor Camp Shuttle Airlock";
 	name = "Labor Camp Shuttle Airlock"
 	},
 /obj/effect/mapping_helpers/airlock/access/any,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "Labor Camp Shuttle Airlock"
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/brig/upper)
@@ -22195,7 +22197,7 @@
 /area/station/hallway/primary/starboard)
 "oEy" = (
 /obj/machinery/turretid{
-	control_area = "/area/ai_monitored/turret_protected/ai_upload";
+	control_area = "/area/station/ai_monitored/turret_protected/ai_upload";
 	icon_state = "control_stun";
 	name = "AI Upload turret control";
 	pixel_y = 28
@@ -30037,6 +30039,10 @@
 	pixel_y = 32
 	},
 /obj/effect/turf_decal/siding/brown/corner,
+/obj/structure/sign/painting/library{
+	pixel_x = 16;
+	pixel_y = 32
+	},
 /turf/open/floor/wood/parquet,
 /area/station/service/library/artgallery)
 "tWp" = (
@@ -31211,6 +31217,10 @@
 /obj/item/flashlight/lamp/green{
 	pixel_x = 1;
 	pixel_y = 5
+	},
+/obj/structure/sign/painting/library{
+	pixel_x = 16;
+	pixel_y = 32
 	},
 /turf/open/floor/wood,
 /area/station/service/library/artgallery)
