@@ -605,7 +605,7 @@
 "aLH" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Laser Room";
-	req_one_access_txt = "10;24"
+	req_one_access_txt = "0"
 	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/general,
 /turf/open/floor/engine,
@@ -3329,7 +3329,7 @@
 "dRw" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Laser Room";
-	req_one_access_txt = "10;24"
+	req_one_access_txt = "0"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -4046,7 +4046,7 @@
 "eGu" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Laser Room";
-	req_one_access_txt = "10;24"
+	req_one_access_txt = "0"
 	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/general,
@@ -4448,7 +4448,6 @@
 /obj/structure/cable,
 /obj/effect/turf_decal/box,
 /obj/machinery/power/energy_accumulator/tesla_coil/anchored,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/green/visible,
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible{
 	dir = 9
 	},
@@ -4919,7 +4918,7 @@
 "fNc" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Laser Room";
-	req_one_access_txt = "10;24"
+	req_one_access_txt = "0"
 	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/atmos,
 /turf/open/floor/iron/dark,
@@ -6628,11 +6627,12 @@
 "hNW" = (
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/external,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
 /obj/machinery/door/airlock/external{
+	id_tag = "port aft";
 	name = "External Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "port aft"
 	},
 /turf/open/floor/iron/dark,
 /area/station/maintenance/solars/port/aft)
@@ -9054,7 +9054,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Laser Room";
-	req_one_access_txt = "10;24"
+	req_one_access_txt = "0"
 	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/general,
 /turf/open/floor/engine,
@@ -10100,7 +10100,7 @@
 "lPD" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Laser Room";
-	req_one_access_txt = "10;24"
+	req_one_access_txt = "0"
 	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/general,
 /turf/open/floor/plating,
@@ -12073,11 +12073,12 @@
 /area/station/cargo/miningoffice)
 "nWZ" = (
 /obj/effect/mapping_helpers/airlock/access/any/engineering/external,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
 /obj/machinery/door/airlock/external{
+	id_tag = "star aft";
 	name = "External Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "star aft"
 	},
 /turf/open/floor/iron/dark,
 /area/station/maintenance/solars/starboard/aft)
@@ -12482,7 +12483,7 @@
 "oub" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Laser Room";
-	req_one_access_txt = "10;24"
+	req_one_access_txt = "0"
 	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/general,
 /turf/open/floor/plating,
@@ -12978,7 +12979,7 @@
 "oUQ" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Laser Room";
-	req_one_access_txt = "10;24"
+	req_one_access_txt = "0"
 	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/atmos,
@@ -16297,15 +16298,15 @@
 /turf/open/floor/iron,
 /area/station/engineering/main)
 "svy" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/external,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
 /obj/machinery/door/airlock/external{
+	id_tag = "star aft";
 	name = "External Airlock"
 	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "star aft"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/solars/starboard/aft)
 "svz" = (
@@ -17631,7 +17632,7 @@
 "tNk" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Laser Room";
-	req_one_access_txt = "10;24"
+	req_one_access_txt = "0"
 	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/general,
 /turf/open/floor/engine,
@@ -18547,7 +18548,7 @@
 "uKS" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Laser Room";
-	req_one_access_txt = "10;24"
+	req_one_access_txt = "0"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -18843,10 +18844,11 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/external,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "port aft"
 	},
 /obj/machinery/door/airlock/external{
+	id_tag = "port aft";
 	name = "External Airlock"
 	},
 /turf/open/floor/iron/dark,
@@ -20018,9 +20020,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
 /turf/open/floor/plating,
 /area/station/medical/abandoned)
 "wvl" = (
@@ -20886,7 +20885,7 @@
 "xuz" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Laser Room";
-	req_one_access_txt = "10;24"
+	req_one_access_txt = "0"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/engine,
