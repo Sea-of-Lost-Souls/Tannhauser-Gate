@@ -15648,8 +15648,7 @@
 /area/station/command/heads_quarters/rd)
 "kuL" = (
 /obj/machinery/door/airlock/atmos,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+/obj/machinery/door/window,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
