@@ -16839,7 +16839,6 @@
 /turf/open/floor/holofloor/dark,
 /area/station/science/cytology)
 "sYn" = (
-/obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door_buttons/access_button{
 	dir = 1;
