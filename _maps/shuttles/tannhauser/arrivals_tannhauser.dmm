@@ -19,12 +19,6 @@
 	},
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
-"bT" = (
-/turf/closed/wall/mineral/titanium/shuttle_wall/ferry{
-	dir = 1;
-	icon_state = "12,7"
-	},
-/area/shuttle/arrival)
 "dp" = (
 /obj/effect/turf_decal/trimline/white/line,
 /obj/effect/turf_decal/trimline/blue/filled/arrow_cw,
@@ -36,12 +30,6 @@
 	},
 /obj/effect/turf_decal/trimline/blue/filled/mid_joiner,
 /turf/open/floor/iron/shuttle/evac,
-/area/shuttle/arrival)
-"ea" = (
-/turf/closed/wall/mineral/titanium/shuttle_wall/ferry{
-	dir = 1;
-	icon_state = "12,3"
-	},
 /area/shuttle/arrival)
 "en" = (
 /obj/effect/turf_decal/trimline/blue/filled/corner{
@@ -72,9 +60,9 @@
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "iJ" = (
-/turf/closed/wall/mineral/titanium/shuttle_wall/window/arrivals{
-	dir = 1;
-	icon_state = "8,0"
+/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{
+	dir = 4;
+	icon_state = "1,13"
 	},
 /area/shuttle/arrival)
 "iK" = (
@@ -86,11 +74,6 @@
 /turf/closed/wall/mineral/titanium/shuttle_wall/ferry{
 	dir = 1;
 	icon_state = "14,5"
-	},
-/area/shuttle/arrival)
-"jW" = (
-/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
-	icon_state = "6,0"
 	},
 /area/shuttle/arrival)
 "kp" = (
@@ -121,11 +104,6 @@
 	dir = 4
 	},
 /turf/open/floor/iron/shuttle/evac,
-/area/shuttle/arrival)
-"mF" = (
-/turf/closed/wall/mineral/titanium/shuttle_wall/window/arrivals{
-	icon_state = "8,0"
-	},
 /area/shuttle/arrival)
 "nd" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/ferry{
@@ -188,12 +166,6 @@
 	},
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
-"qn" = (
-/turf/closed/wall/mineral/titanium/shuttle_wall/window/arrivals{
-	dir = 1;
-	icon_state = "4,0"
-	},
-/area/shuttle/arrival)
 "qp" = (
 /obj/effect/turf_decal/trimline/blue/filled/corner,
 /obj/effect/turf_decal/trimline/white/corner,
@@ -230,12 +202,6 @@
 	req_access = list("cent_general")
 	},
 /turf/open/floor/iron/shuttle/evac,
-/area/shuttle/arrival)
-"qU" = (
-/turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
-	dir = 1;
-	icon_state = "6,0"
-	},
 /area/shuttle/arrival)
 "qV" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/ferry{
@@ -380,8 +346,9 @@
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "QE" = (
-/turf/closed/wall/mineral/titanium/shuttle_wall/window/arrivals{
-	icon_state = "4,0"
+/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{
+	dir = 8;
+	icon_state = "1,13"
 	},
 /area/shuttle/arrival)
 "Rj" = (
@@ -427,8 +394,9 @@
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "SA" = (
-/turf/closed/wall/mineral/titanium/shuttle_wall/ferry{
-	icon_state = "12,7"
+/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{
+	dir = 4;
+	icon_state = "1,12"
 	},
 /area/shuttle/arrival)
 "Tp" = (
@@ -503,8 +471,9 @@
 /turf/open/floor/iron/shuttle/evac,
 /area/shuttle/arrival)
 "ZP" = (
-/turf/closed/wall/mineral/titanium/shuttle_wall/ferry{
-	icon_state = "12,3"
+/turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{
+	dir = 8;
+	icon_state = "1,12"
 	},
 /area/shuttle/arrival)
 
@@ -554,49 +523,49 @@ qy
 QE
 "}
 (6,1,1) = {"
-qn
+SA
 KE
 zu
 EH
 zu
 nT
-mF
+ZP
 "}
 (7,1,1) = {"
-qU
+SA
 KE
 zu
 dp
 zu
 nT
-jW
+ZP
 "}
 (8,1,1) = {"
-iJ
+SA
 KE
 zu
 EH
 zu
 nT
-QE
+ZP
 "}
 (9,1,1) = {"
-qn
+iJ
 GT
 wd
 ay
 wd
 qy
-mF
+QE
 "}
 (10,1,1) = {"
-ea
+SA
 ah
 Qx
 Vx
 Qx
 ah
-bT
+ZP
 "}
 (11,1,1) = {"
 oD

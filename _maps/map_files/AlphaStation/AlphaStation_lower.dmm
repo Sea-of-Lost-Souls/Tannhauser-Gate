@@ -1609,10 +1609,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
 /turf/open/floor/iron,
 /area/station/security/prison)
-"bSx" = (
-/obj/machinery/recycler,
-/turf/open/floor/iron,
-/area/station/maintenance/disposal)
 "bTK" = (
 /obj/effect/turf_decal/delivery,
 /obj/item/crowbar/red,
@@ -5195,10 +5191,6 @@
 "gcX" = (
 /turf/closed/wall/r_wall,
 /area/station/tcommsat/computer)
-"ged" = (
-/obj/structure/lattice/catwalk,
-/turf/closed/wall/r_wall,
-/area/station/maintenance/disposal/incinerator)
 "gge" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
@@ -6572,6 +6564,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/cargo/miningoffice)
 "hJq" = (
@@ -9158,6 +9151,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
 "kDu" = (
@@ -15794,8 +15788,9 @@
 	dwidth = 3;
 	height = 5;
 	id = "mining_home";
+	json_key = null;
 	name = "mining shuttle bay";
-	roundstart_template = /datum/map_template/shuttle/mining/box;
+	roundstart_template = /datum/map_template/shuttle/mining/large;
 	width = 7
 	},
 /turf/open/space/basic,
@@ -19266,6 +19261,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
 "vyt" = (
@@ -20330,7 +20326,6 @@
 /turf/open/floor/iron/brown/side,
 /area/station/cargo/warehouse)
 "wNm" = (
-/obj/structure/cable,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -20484,6 +20479,7 @@
 /obj/effect/landmark/start/shaft_miner,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
 "wVG" = (
@@ -46838,7 +46834,7 @@ iSq
 iSq
 iSq
 iSq
-ged
+iSq
 iSq
 iSq
 pZc
@@ -51953,7 +51949,7 @@ ezF
 ezF
 wkj
 gGv
-gle
+fbw
 bZC
 wkj
 ezF
@@ -60459,7 +60455,7 @@ jwi
 okM
 sZc
 aIc
-bSx
+rcR
 cZd
 aNn
 pYu

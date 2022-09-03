@@ -15,12 +15,9 @@
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/supply)
 "bx" = (
-/obj/effect/turf_decal/box,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/turf/open/floor/iron/shuttle/ferry{
-	icon_state = "sign_2"
-	},
+/turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/supply)
 "bW" = (
 /obj/effect/turf_decal/stripes/line{
@@ -42,12 +39,6 @@
 /turf/closed/wall/mineral/titanium/shuttle_wall/window/arrivals{
 	icon_state = "8,4"
 	},
-/area/shuttle/supply)
-"fV" = (
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 8
-	},
-/turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/supply)
 "gd" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/window/arrivals{
@@ -96,14 +87,14 @@
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/supply)
 "iI" = (
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 8
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
 /turf/open/floor/noslip,
 /area/shuttle/supply)
 "iX" = (
@@ -141,9 +132,9 @@
 /turf/open/floor/iron/half,
 /area/shuttle/supply)
 "ly" = (
-/obj/effect/turf_decal/stripes/red/line,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/stripes/red/corner,
 /turf/open/floor/iron/shuttle/ferry{
 	dir = 8;
 	icon_state = "floor"
@@ -156,10 +147,8 @@
 	},
 /area/shuttle/supply)
 "mx" = (
-/obj/effect/turf_decal/stripes/red/corner{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/box,
 /turf/open/floor/iron/shuttle/cargo{
 	icon_state = "floor_mainta"
 	},
@@ -168,6 +157,9 @@
 /obj/effect/decal/cleanable/oil/streak,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 4
+	},
 /turf/open/floor/iron/shuttle/ferry{
 	icon_state = "sign_2"
 	},
@@ -190,21 +182,17 @@
 /turf/open/floor/noslip,
 /area/shuttle/supply)
 "oj" = (
-/obj/effect/turf_decal/box,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/turf/open/floor/iron/shuttle/ferry{
-	icon_state = "sign_2"
-	},
+/turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/supply)
 "on" = (
-/obj/effect/turf_decal/stripes/red/corner{
-	dir = 8
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/effect/turf_decal/stripes/red/corner,
+/obj/effect/turf_decal/stripes/red/line,
 /turf/open/floor/noslip,
 /area/shuttle/supply)
 "ou" = (
@@ -231,6 +219,9 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
+/turf/open/floor/iron/shuttle/cargo,
+/area/shuttle/supply)
+"pK" = (
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/supply)
 "qK" = (
@@ -318,14 +309,13 @@
 /area/shuttle/supply)
 "yb" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/turf_decal/box,
 /turf/open/floor/iron/shuttle/cargo{
 	icon_state = "floor_maintb"
 	},
 /area/shuttle/supply)
 "zt" = (
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 4
-	},
+/obj/effect/turf_decal/box,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/supply)
 "Ah" = (
@@ -429,6 +419,7 @@
 "IX" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/decal/cleanable/vomit,
+/obj/effect/turf_decal/box,
 /turf/open/floor/iron/shuttle/cargo{
 	icon_state = "floor_maintb"
 	},
@@ -477,14 +468,6 @@
 	},
 /turf/open/floor/iron/sepia,
 /area/shuttle/supply)
-"Mb" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/decal/cleanable/blood/footprints,
-/turf/open/floor/iron/shuttle/ferry{
-	dir = 8;
-	icon_state = "floor"
-	},
-/area/shuttle/supply)
 "Nh" = (
 /obj/machinery/conveyor/inverted{
 	id = "cargoload"
@@ -493,7 +476,7 @@
 /turf/open/floor/iron/sepia,
 /area/shuttle/supply)
 "Oh" = (
-/obj/effect/turf_decal/stripes/red/corner,
+/obj/effect/turf_decal/box,
 /turf/open/floor/iron/shuttle/cargo{
 	icon_state = "floor_mainta"
 	},
@@ -529,22 +512,31 @@
 	},
 /area/shuttle/supply)
 "RD" = (
-/obj/effect/turf_decal/stripes/red/corner,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
 /obj/structure/cable,
+/obj/effect/turf_decal/stripes/red/line,
+/obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/noslip,
 /area/shuttle/supply)
 "Sb" = (
-/obj/effect/turf_decal/stripes/red/line,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/blood/tracks,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/stripes/red/corner{
+	dir = 8
+	},
 /turf/open/floor/iron/shuttle/ferry{
 	dir = 8;
 	icon_state = "floor"
 	},
+/area/shuttle/supply)
+"TW" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/noslip,
 /area/shuttle/supply)
 "TY" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
@@ -563,21 +555,24 @@
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/supply)
 "UM" = (
-/obj/effect/turf_decal/stripes/red/line{
-	dir = 4
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+	},
 /turf/open/floor/noslip,
 /area/shuttle/supply)
 "VM" = (
 /obj/effect/decal/cleanable/oil/slippery,
-/obj/effect/decal/cleanable/blood/tracks,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/obj/effect/turf_decal/stripes/red/line{
+	dir = 8
+	},
 /turf/open/floor/iron/shuttle/ferry{
 	icon_state = "sign_2"
 	},
@@ -718,7 +713,7 @@ kI
 Ar
 Ah
 PB
-lO
+pK
 LF
 LF
 "}
@@ -744,7 +739,7 @@ xu
 Lj
 jo
 wh
-wh
+TW
 RD
 UM
 VU
@@ -758,7 +753,7 @@ GA
 Ci
 iX
 jW
-Mb
+iX
 Sb
 VM
 aG
@@ -774,7 +769,7 @@ LF
 Is
 IX
 mx
-fV
+zt
 gg
 KS
 "}
