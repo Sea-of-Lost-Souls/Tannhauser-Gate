@@ -6713,14 +6713,6 @@
 	},
 /turf/open/floor/glass/reinforced,
 /area/station/hallway/primary/port)
-"evI" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/turf_decal/tile/bar/diagonal_centre,
-/obj/structure/chair/stool/bar/directional/south,
-/turf/open/floor/carpet/royalblack,
-/area/station/service/theater)
 "evK" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "detective_shutters";
@@ -72040,7 +72032,7 @@ aAp
 vLG
 qCd
 nNa
-evI
+oHu
 bdb
 dhq
 jgT
@@ -73582,7 +73574,7 @@ hyN
 hyN
 hyN
 xqw
-oJX
+qAb
 bjg
 bjg
 bjg
