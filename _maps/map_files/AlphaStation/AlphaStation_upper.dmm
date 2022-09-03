@@ -12757,13 +12757,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/engine,
 /area/station/science/research)
-"ipj" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/cable,
-/turf/open/floor/iron/white,
-/area/station/hallway/primary/fore)
 "ipk" = (
 /obj/machinery/computer/robotics{
 	dir = 4
@@ -68850,7 +68843,7 @@ wlv
 qZP
 qZP
 qZP
-ipj
+pvM
 qZP
 qZP
 qZP

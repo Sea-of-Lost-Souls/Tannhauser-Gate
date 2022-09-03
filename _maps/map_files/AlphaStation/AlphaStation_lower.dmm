@@ -9937,10 +9937,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/xenobiology)
-"lAP" = (
-/obj/structure/lattice/catwalk,
-/turf/closed/wall,
-/area/space/nearstation)
 "lAY" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/dark/visible{
 	dir = 1
@@ -10827,7 +10823,6 @@
 /area/station/medical/office)
 "mxS" = (
 /obj/item/cortical_cage,
-/mob/living/simple_animal/cortical_borer,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical/central)
 "mzr" = (
@@ -61492,7 +61487,7 @@ aJM
 ezF
 ezF
 ezF
-lAP
+ogx
 cGS
 syW
 tKJ
