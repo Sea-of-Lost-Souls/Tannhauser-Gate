@@ -927,7 +927,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
 	id = "hosprivacy";
-	name = "privacy shutters"
+	name = "Privacy Shutters"
 	},
 /turf/open/floor/plating,
 /area/station/command/heads_quarters/hos)
@@ -6762,7 +6762,7 @@
 "evK" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "detective_shutters";
-	name = "detective's office shutters"
+	name = "Detective's Office Shutters"
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -7420,7 +7420,7 @@
 	},
 /obj/machinery/door/poddoor/preopen{
 	id = "hop";
-	name = "privacy shutters"
+	name = "Privacy Shutters"
 	},
 /obj/structure/cable,
 /obj/structure/desk_bell{
@@ -16327,7 +16327,7 @@
 "kPW" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "detective_shutters";
-	name = "detective's office shutters"
+	name = "Detective's Office Shutters"
 	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/security/detective,
@@ -16349,7 +16349,7 @@
 "kRn" = (
 /obj/machinery/door/poddoor/preopen{
 	id = "hosprivacy";
-	name = "privacy shutters"
+	name = "Privacy Shutters"
 	},
 /obj/machinery/door/airlock/hos/glass,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -17361,7 +17361,6 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/obj/machinery/door/firedoor/heavy,
 /obj/effect/mapping_helpers/airlock/access/any/science/ordnance,
 /obj/machinery/door/airlock/research/glass{
 	name = "Glass"
@@ -19631,7 +19630,6 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/cargo/sorting)
 "mTm" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -22992,10 +22990,6 @@
 /obj/structure/sign/flag/nanotrasen/directional/north,
 /turf/open/floor/iron/white/side,
 /area/station/hallway/secondary/entry)
-"oXi" = (
-/obj/structure/lattice,
-/turf/closed/wall,
-/area/station/hallway/primary/fore)
 "oXo" = (
 /obj/effect/turf_decal/caution,
 /obj/effect/turf_decal/stripes/line{
@@ -26635,7 +26629,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "detective_shutters";
-	name = "detective's office shutters"
+	name = "Detective's Office Shutters"
 	},
 /obj/structure/cable,
 /turf/open/floor/iron/white,
@@ -28693,7 +28687,7 @@
 "sQQ" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "detective_shutters";
-	name = "detective's office shutters"
+	name = "Detective's Office Shutters"
 	},
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
@@ -29504,7 +29498,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
 	id = "hop";
-	name = "privacy shutters"
+	name = "Privacy Shutters"
 	},
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -32228,7 +32222,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
 	id = "hosprivacy";
-	name = "privacy shutters"
+	name = "Privacy Shutters"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -34841,7 +34835,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "detective_shutters";
-	name = "detective's office shutters"
+	name = "Detective's Office Shutters"
 	},
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -36453,7 +36447,7 @@
 /obj/effect/turf_decal/tile/red/fourcorners,
 /obj/machinery/door/poddoor/preopen{
 	id = "prison release";
-	name = "prisoner processing blast door"
+	name = "Prisoner Processing Blast Door"
 	},
 /obj/effect/turf_decal/delivery/red,
 /turf/open/floor/iron/white,
@@ -68306,7 +68300,7 @@ isP
 lpk
 lpk
 lpk
-oXi
+wJW
 sZv
 wJW
 isP
@@ -68563,13 +68557,13 @@ fAX
 isP
 isP
 isP
-oXi
+wJW
 udR
-oXi
+wJW
 fAX
-oXi
+wJW
 nHE
-oXi
+wJW
 fAX
 isP
 ufU
@@ -74219,11 +74213,11 @@ isP
 isP
 wJW
 hpE
-oXi
+wJW
 fAX
-oXi
+wJW
 lEa
-oXi
+wJW
 fAX
 isP
 oss
@@ -74474,7 +74468,7 @@ isP
 lpk
 lpk
 lpk
-oXi
+wJW
 mHH
 wJW
 isP
