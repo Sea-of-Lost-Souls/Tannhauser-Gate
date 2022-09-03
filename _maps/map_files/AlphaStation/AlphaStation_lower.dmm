@@ -6240,10 +6240,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
-"hug" = (
-/obj/structure/lattice,
-/turf/closed/wall/r_wall,
-/area/station/maintenance/abandon_holding_cell)
 "hui" = (
 /obj/structure/cable,
 /obj/structure/chair{
@@ -46324,7 +46320,7 @@ dGv
 ezF
 ezF
 ezF
-hug
+eGR
 eGR
 eGR
 eGR
