@@ -354,7 +354,7 @@
 /obj/machinery/smartfridge/organ,
 /obj/machinery/door/poddoor/preopen{
 	id = "surgeryc";
-	name = "privacy shutter"
+	name = "Privacy Shutter"
 	},
 /turf/open/floor/iron/white,
 /area/station/medical/exam_room)
@@ -466,7 +466,7 @@
 "aof" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "chemistry_shutters";
-	name = "chemistry shutters"
+	name = "Chemistry Shutters"
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
@@ -2240,7 +2240,6 @@
 /turf/open/floor/plastic,
 /area/station/medical/surgery)
 "bxI" = (
-/obj/structure/lattice,
 /turf/closed/wall/r_wall,
 /area/space/nearstation)
 "bxL" = (
@@ -2707,7 +2706,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "chapel_shutters_space";
-	name = "chapel shutters"
+	name = "Chapel Shutters"
 	},
 /turf/open/floor/plating,
 /area/station/service/chapel/monastery)
@@ -7558,6 +7557,16 @@
 	},
 /turf/open/floor/carpet/green,
 /area/command/heads_quarters/captain/private/nt_rep)
+"faI" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/station/hallway/primary/fore)
 "faS" = (
 /obj/machinery/light/directional/east,
 /obj/machinery/airalarm/directional/east,
@@ -7889,7 +7898,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
 	id = "cmoprivacy";
-	name = "privacy shutter"
+	name = "Privacy Shutter"
 	},
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -9184,7 +9193,7 @@
 "gak" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "papersplease";
-	name = "security shutters"
+	name = "Security Shutters"
 	},
 /obj/machinery/door/window/brigdoor/security{
 	dir = 4
@@ -9906,7 +9915,7 @@
 "gvB" = (
 /obj/machinery/button/door/directional/south{
 	id = "main_surgery";
-	name = "privacy shutters control";
+	name = "Privacy Shutters Control";
 	pixel_x = 24;
 	pixel_y = 25
 	},
@@ -10599,7 +10608,7 @@
 "gSs" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "papersplease";
-	name = "security shutters"
+	name = "Security Shutters"
 	},
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
@@ -11272,7 +11281,7 @@
 "htq" = (
 /obj/machinery/button/door/directional/south{
 	id = "chapel_shutters_parlour";
-	name = "chapel shutters control"
+	name = "Chapel Shutters Control"
 	},
 /obj/structure/chair{
 	dir = 1
@@ -11678,7 +11687,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
 	id = "bridge blast";
-	name = "bridge blast door"
+	name = "Bridge Blast Door"
 	},
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -17392,7 +17401,6 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/siding,
-/obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/science/research)
 "lzh" = (
@@ -23792,9 +23800,6 @@
 "pxE" = (
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 4
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -73708,7 +73713,7 @@ lZO
 lZO
 tuv
 lZO
-axn
+faI
 pxE
 axn
 lZO
