@@ -6410,11 +6410,6 @@
 /obj/effect/landmark/navigate_destination/cargo,
 /turf/open/floor/iron,
 /area/station/hallway/primary/fore)
-"eiu" = (
-/obj/effect/turf_decal/tile/dark/diagonal_centre,
-/obj/machinery/roulette,
-/turf/open/floor/carpet/red,
-/area/station/service/theater)
 "eiB" = (
 /obj/structure/table,
 /obj/item/clipboard,
@@ -28714,6 +28709,13 @@
 	},
 /turf/open/floor/iron,
 /area/station/engineering/atmos/upper)
+"sOA" = (
+/obj/effect/turf_decal/tile/dark/diagonal_centre,
+/obj/machinery/roulette{
+	anchored = 1
+	},
+/turf/open/floor/carpet/red,
+/area/station/service/theater)
 "sOE" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -69557,8 +69559,8 @@ uGK
 gVU
 dFv
 hzi
-bjg
 qAb
+bjg
 bjg
 bjg
 cOg
@@ -69813,12 +69815,12 @@ kdY
 uGK
 xno
 xno
-xno
 wZZ
 bZQ
 bjg
 bjg
 bjg
+eUZ
 soh
 aAp
 aAp
@@ -70070,12 +70072,12 @@ auJ
 uGK
 aAp
 aAp
-aAp
 vLG
 vfp
 xnT
 bjg
-bjg
+xnT
+taK
 soh
 aAp
 aAp
@@ -70327,12 +70329,12 @@ czD
 uGK
 aAp
 aAp
-aAp
 vLG
 xlf
 bjg
 bjg
 bjg
+kUT
 soh
 aAp
 aAp
@@ -70584,11 +70586,11 @@ aAp
 aAp
 aAp
 aAp
-aAp
 vLG
 qAb
 bjg
-eiu
+sOA
+bjg
 bjg
 soh
 aAp
@@ -70841,9 +70843,9 @@ aAp
 aAp
 aAp
 aAp
-aAp
 vLG
 aLW
+bjg
 bjg
 bjg
 bjg
@@ -71098,11 +71100,11 @@ aAp
 aAp
 aAp
 aAp
-aAp
 vLG
 bjg
 bjg
 xnT
+bjg
 bjg
 soh
 aAp
@@ -71355,9 +71357,9 @@ aAp
 aAp
 aAp
 aAp
-aAp
 vLG
 eUZ
+bjg
 bjg
 bjg
 eUZ
@@ -71612,10 +71614,10 @@ aAp
 aAp
 aAp
 aAp
-aAp
 vLG
 taK
 dPE
+bjg
 bjg
 taK
 soh
@@ -71869,9 +71871,9 @@ aAp
 aAp
 aAp
 aAp
-aAp
 vLG
 kUT
+bjg
 bjg
 bjg
 kUT
@@ -72126,11 +72128,11 @@ aAp
 aAp
 aAp
 aAp
-aAp
 vLG
 bjg
 bjg
 xnT
+bjg
 bjg
 soh
 aAp
@@ -72383,9 +72385,9 @@ aAp
 aAp
 aAp
 aAp
-aAp
 vLG
 bCm
+bjg
 bjg
 bjg
 bjg
@@ -72640,11 +72642,11 @@ aAp
 aAp
 aAp
 aAp
-aAp
 vLG
 cyJ
 bjg
-eiu
+sOA
+bjg
 bjg
 soh
 aAp
@@ -72897,12 +72899,12 @@ xrC
 uGK
 aAp
 aAp
-aAp
 vLG
 mkt
 bjg
 bjg
 bjg
+eUZ
 soh
 aAp
 aAp
@@ -73154,12 +73156,12 @@ xwz
 uGK
 aAp
 aAp
-aAp
 vLG
 ibk
 xnT
 bjg
-bjg
+xnT
+taK
 soh
 aAp
 aAp
@@ -73411,12 +73413,12 @@ cIz
 uGK
 eDd
 eDd
-eDd
 fVS
 ulf
 bjg
 bjg
 bjg
+kUT
 soh
 aAp
 aAp
@@ -73669,8 +73671,8 @@ uGK
 gVU
 nKX
 hzi
-bjg
 cyJ
+bjg
 bjg
 bjg
 ogH
