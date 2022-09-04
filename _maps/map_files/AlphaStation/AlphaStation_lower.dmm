@@ -3475,6 +3475,9 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron,
 /area/station/maintenance/starboard/central)
+"dZm" = (
+/turf/open/floor/plating/airless,
+/area/space)
 "dZr" = (
 /obj/machinery/restaurant_portal/restaurant,
 /turf/open/floor/wood,
@@ -3739,7 +3742,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/space/nearstation)
 "erq" = (
 /obj/structure/window/reinforced{
@@ -10600,7 +10603,7 @@
 /area/station/engineering/storage_shared)
 "miH" = (
 /obj/structure/cable,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/space/nearstation)
 "mjG" = (
 /obj/structure/table/wood,
@@ -17814,7 +17817,7 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/space/nearstation)
 "tWf" = (
 /obj/effect/landmark/event_spawn,
@@ -18224,7 +18227,7 @@
 	dir = 10
 	},
 /obj/structure/cable,
-/turf/open/floor/plating,
+/turf/open/floor/plating/airless,
 /area/space/nearstation)
 "upf" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -45137,13 +45140,13 @@ bza
 hea
 ccm
 ngj
-ezF
-ezF
-ezF
-ezF
-ezF
-ezF
-ezF
+dZm
+dZm
+dZm
+dZm
+dZm
+dZm
+dZm
 jpl
 jpl
 jpl
@@ -45393,11 +45396,11 @@ nmR
 nmR
 nmR
 ccm
-ezF
-ezF
-ezF
-ezF
-ezF
+dZm
+dZm
+dZm
+dZm
+dZm
 oJT
 oJT
 oJT
@@ -45650,10 +45653,10 @@ xcP
 mEr
 nmR
 ccm
-ezF
-ezF
-ezF
-ezF
+dZm
+dZm
+dZm
+dZm
 jpl
 jpl
 jpl
@@ -51490,10 +51493,10 @@ wkj
 hJe
 wkj
 fnO
-ezF
-ezF
-ezF
-ezF
+dZm
+dZm
+dZm
+dZm
 pOp
 bmm
 bBB
@@ -51747,10 +51750,10 @@ jgA
 vxS
 kQR
 wkj
-ezF
-ezF
-ezF
-ezF
+dZm
+dZm
+dZm
+dZm
 ydZ
 aHD
 xBz
@@ -52004,10 +52007,10 @@ gGv
 fbw
 bZC
 wkj
-ezF
-ezF
-ezF
-ezF
+dZm
+dZm
+dZm
+dZm
 fxk
 fxk
 gjh
@@ -60228,10 +60231,10 @@ mXx
 lIx
 jel
 mTP
-gww
-gww
-gww
-gww
+dZm
+dZm
+dZm
+dZm
 mTP
 msQ
 sUz
@@ -60485,10 +60488,10 @@ diU
 xfi
 gVu
 mTP
-gww
-gww
-gww
-gww
+dZm
+dZm
+dZm
+dZm
 mTP
 hmp
 sUz
@@ -60742,10 +60745,10 @@ mTP
 mTP
 mTP
 mTP
-gww
-gww
-gww
-gww
+dZm
+dZm
+dZm
+dZm
 mTP
 mmd
 msQ
@@ -66724,10 +66727,10 @@ xuq
 xuq
 ncJ
 xqZ
-ezF
-ezF
-ezF
-ezF
+dZm
+dZm
+dZm
+dZm
 iXJ
 iXJ
 iXJ
@@ -66981,11 +66984,11 @@ leB
 xuq
 gay
 xqZ
-ezF
-ezF
-ezF
-ezF
-ezF
+dZm
+dZm
+dZm
+dZm
+dZm
 daz
 daz
 daz
@@ -67238,14 +67241,14 @@ aLN
 aHc
 jNY
 xqZ
-ezF
-ezF
-ezF
-ezF
-ezF
-ezF
-ezF
-ezF
+dZm
+dZm
+dZm
+dZm
+dZm
+dZm
+dZm
+dZm
 iXJ
 iXJ
 iXJ
