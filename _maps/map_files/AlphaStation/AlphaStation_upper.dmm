@@ -469,7 +469,9 @@
 	name = "Chemistry Shutters"
 	},
 /obj/structure/table/reinforced,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/trimline/yellow/filled,
 /turf/open/floor/iron/white,
 /area/station/medical/pharmacy)
@@ -651,7 +653,9 @@
 /turf/open/floor/plating,
 /area/station/service/bar/backroom)
 "atN" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/tile/red/fourcorners,
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
 /obj/machinery/door/airlock/external{
@@ -832,7 +836,9 @@
 	},
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/iron/white,
 /area/station/medical/surgery/theatre)
 "aAp" = (
@@ -2252,7 +2258,9 @@
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/fore)
 "bxT" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/trimline/darkblue/filled/line{
 	dir = 4
 	},
@@ -2356,7 +2364,9 @@
 /turf/open/floor/glass/reinforced,
 /area/station/hallway/secondary/entry)
 "bza" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3234,7 +3244,9 @@
 	},
 /area/station/hallway/secondary/entry)
 "caY" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/airlock/medical/glass{
 	name = "Recovery Ward";
 	req_access_txt = "5"
@@ -3772,7 +3784,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -4023,7 +4037,9 @@
 /turf/open/floor/iron/white,
 /area/station/science/research)
 "cIs" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/trimline/darkblue/filled/line{
 	dir = 8
 	},
@@ -4136,7 +4152,9 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible/layer4,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/iron/white,
 /area/station/medical/paramedic)
 "cKk" = (
@@ -4420,7 +4438,9 @@
 	},
 /obj/effect/turf_decal/tile/purple,
 /obj/structure/table/reinforced,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "rdgene2";
 	name = "Genetics Lab Shutters"
@@ -4497,7 +4517,9 @@
 /area/station/service/theater)
 "cXP" = (
 /obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/delivery/blue,
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
@@ -4795,7 +4817,9 @@
 	id_tag = "Dorm3";
 	name = "Dorm 3"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/mapping_helpers/airlock/access/any,
@@ -5004,7 +5028,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/starboard)
 "dnS" = (
@@ -5190,7 +5216,9 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/cargo/sorting)
 "duB" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/effect/turf_decal/trimline/darkblue/filled/line{
@@ -5339,7 +5367,9 @@
 /turf/open/floor/iron,
 /area/station/medical/chemistry)
 "dAG" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/tile/purple/fourcorners,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -7060,7 +7090,9 @@
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/delivery/blue,
 /obj/structure/cable,
 /turf/open/floor/iron/white,
@@ -7250,7 +7282,9 @@
 	name = "Paramedic Dispatch Room";
 	req_access_txt = "5"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/mapping_helpers/airlock/access/all/medical/general,
 /obj/structure/cable,
 /turf/open/floor/iron/white,
@@ -7413,7 +7447,9 @@
 	name = "Head of Personnel's Desk";
 	req_access_txt = "57"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/window/left/directional/north{
 	dir = 2;
 	name = "Reception Window"
@@ -7764,7 +7800,9 @@
 	id = "jangarage";
 	name = "Custodial Closet Shutters"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/plating,
 /area/station/service/janitor)
 "fmY" = (
@@ -8645,7 +8683,9 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/yellow/half/contrasted,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/port)
 "fMB" = (
@@ -9075,7 +9115,9 @@
 /obj/structure/window/reinforced/spawner/west{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/iron/white,
 /area/station/medical/paramedic)
 "fXx" = (
@@ -9472,7 +9514,9 @@
 	name = "Auxilliary Surgery";
 	req_access_txt = "45"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
@@ -10821,7 +10865,9 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/iron/white,
 /area/station/medical/paramedic)
 "haV" = (
@@ -11430,7 +11476,9 @@
 	req_access_txt = "3"
 	},
 /obj/item/paper,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/cable,
 /obj/machinery/door/window/left/directional/south{
 	dir = 1;
@@ -11883,7 +11931,9 @@
 /turf/open/floor/carpet,
 /area/station/service/library/artgallery)
 "hNL" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/airlock/research/glass{
 	name = "Glass"
 	},
@@ -11948,7 +11998,9 @@
 /turf/open/floor/carpet,
 /area/station/command/heads_quarters/hop)
 "hPl" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/starboard)
@@ -12131,7 +12183,9 @@
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
 "hXc" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/airlock/security/glass{
 	id_tag = "Labor Camp Shuttle Airlock";
 	name = "Labor Camp Shuttle Airlock"
@@ -13273,7 +13327,9 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
 	cycle_id = "holodeck"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/mapping_helpers/airlock/access/any,
 /turf/open/floor/iron,
 /area/station/commons/dorms/barracks)
@@ -13408,7 +13464,9 @@
 /turf/open/floor/iron,
 /area/station/science/ordnance)
 "iNb" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/trimline/darkblue/filled/line{
 	dir = 4
 	},
@@ -13790,7 +13848,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/starboard)
 "jaj" = (
@@ -13912,7 +13972,9 @@
 	},
 /area/station/hallway/primary/central/aft)
 "jeT" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/tile/purple/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -14177,7 +14239,9 @@
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/central/aft)
 "jrf" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/effect/turf_decal/trimline/darkblue/filled/line{
@@ -14263,7 +14327,9 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/bar,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/mapping_helpers/airlock/access/any,
@@ -15113,7 +15179,9 @@
 /area/station/hallway/primary/central/aft)
 "jYN" = (
 /obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -15126,7 +15194,9 @@
 /area/station/medical/medbay/central)
 "jZf" = (
 /obj/machinery/door/airlock/gold/glass,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/any/service/janitor,
@@ -15875,7 +15945,9 @@
 /area/station/hallway/secondary/entry)
 "kzg" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "roboticsprivacy2";
 	name = "Robotics Shutters"
@@ -17082,7 +17154,9 @@
 /area/station/security/checkpoint/customs/aft)
 "lnE" = (
 /obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/airlock/medical/glass{
 	name = "Glass"
 	},
@@ -17747,7 +17821,9 @@
 /area/station/science/research)
 "lKh" = (
 /obj/effect/turf_decal/tile/purple/fourcorners,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -17931,11 +18007,15 @@
 	pixel_y = 2
 	},
 /obj/structure/window/reinforced/spawner/north,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/iron/white,
 /area/station/medical/paramedic)
 "lPO" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
 /turf/open/floor/iron,
@@ -17954,7 +18034,9 @@
 /turf/open/floor/iron/dark,
 /area/station/service/chapel/funeral)
 "lRq" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -18061,7 +18143,9 @@
 "lTo" = (
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/effect/mapping_helpers/airlock/access/all/medical/general,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/airlock/medical/glass{
 	name = "Glass"
 	},
@@ -21076,7 +21160,9 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/mapping_helpers/airlock/access/all/medical/cmo,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
 /turf/open/floor/iron/white,
@@ -21167,7 +21253,9 @@
 /turf/open/floor/iron/white,
 /area/station/science/lobby)
 "nTb" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/trimline/darkblue/filled/line{
 	dir = 4
 	},
@@ -21432,7 +21520,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/all/medical/surgery,
 /obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
 /turf/open/floor/iron/white,
 /area/station/medical/surgery)
@@ -21726,7 +21816,9 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/mapping_helpers/airlock/access/any,
@@ -22552,7 +22644,9 @@
 	name = "Cargo Desk";
 	req_access_txt = "50"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/desk_bell{
 	pixel_x = 6
 	},
@@ -22684,7 +22778,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 1
 	},
@@ -23411,7 +23507,9 @@
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/iron/white,
 /area/station/medical/surgery/theatre)
 "pmQ" = (
@@ -24262,7 +24360,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/trimline/red/filled/line,
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/port)
@@ -24820,7 +24920,9 @@
 /turf/open/floor/iron/dark/airless,
 /area/station/hallway/primary/fore)
 "qlh" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/trimline/darkblue/filled/line{
 	dir = 8
 	},
@@ -25091,7 +25193,9 @@
 	},
 /area/station/commons/dorms/barracks)
 "qux" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/trimline/darkblue/filled/line{
 	dir = 4
@@ -25475,7 +25579,9 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden,
 /obj/effect/mapping_helpers/airlock/access/any/science/research,
 /obj/machinery/door/airlock/command/glass,
@@ -26106,7 +26212,9 @@
 	},
 /obj/effect/mapping_helpers/airlock/access/all/medical/surgery,
 /obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -26723,7 +26831,9 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/mapping_helpers/airlock/access/any,
@@ -26981,7 +27091,9 @@
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
 "rLk" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/trimline/darkblue/filled/line{
 	dir = 4
@@ -27294,7 +27406,9 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/yellow/half/contrasted,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/starboard)
 "rTB" = (
@@ -27605,7 +27719,9 @@
 /obj/item/stack/medical/gauze{
 	pixel_x = 2
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/iron/white,
 /area/station/medical/paramedic)
 "sdQ" = (
@@ -27808,7 +27924,9 @@
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/delivery/blue,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -29126,7 +29244,9 @@
 	},
 /obj/effect/turf_decal/tile/purple,
 /obj/structure/table/reinforced,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "rdgene2";
 	name = "Genetics Lab Shutters"
@@ -29918,7 +30038,9 @@
 "tIm" = (
 /obj/effect/turf_decal/tile/blue/fourcorners,
 /obj/effect/mapping_helpers/airlock/access/all/medical/general,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/cable,
 /obj/machinery/door/airlock/medical/glass{
 	name = "Glass"
@@ -30154,7 +30276,9 @@
 	name = "Glass"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/medical/psychology,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/lobby)
 "tQZ" = (
@@ -30211,7 +30335,9 @@
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/fore)
 "tTT" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -30329,7 +30455,9 @@
 /turf/open/floor/carpet,
 /area/station/service/chapel/funeral)
 "tYx" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/trimline/darkblue/filled/line{
 	dir = 8
 	},
@@ -30611,7 +30739,9 @@
 	},
 /area/station/science/research)
 "ugZ" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/trimline/darkblue/filled/line{
 	dir = 8
 	},
@@ -30997,7 +31127,9 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -31759,7 +31891,9 @@
 /area/station/commons/dorms/laundry)
 "uOG" = (
 /obj/effect/turf_decal/tile/blue/fourcorners,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/delivery/blue,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -31845,7 +31979,9 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -32071,7 +32207,9 @@
 /area/station/science/ordnance)
 "uXl" = (
 /obj/structure/table/reinforced,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "chemistry_shutters";
 	name = "chemistry shutters"
@@ -32528,7 +32666,9 @@
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/command)
 "vmW" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -32927,7 +33067,9 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/north,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -32987,7 +33129,9 @@
 /turf/open/floor/iron/white,
 /area/station/medical/exam_room)
 "vBt" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/tile/purple/fourcorners,
 /turf/open/floor/iron/white,
 /area/station/science/lobby)
@@ -33380,7 +33524,9 @@
 	},
 /area/station/hallway/secondary/entry)
 "vOH" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/tile/purple/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -33555,7 +33701,9 @@
 	dir = 4
 	},
 /obj/machinery/light/directional/north,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/iron/white,
 /area/station/hallway/primary/port)
 "vSQ" = (
@@ -35444,7 +35592,9 @@
 /area/station/security/office)
 "xky" = (
 /obj/machinery/door/airlock/gold,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/service/janitor,
 /turf/open/floor/iron,
 /area/station/service/theater)

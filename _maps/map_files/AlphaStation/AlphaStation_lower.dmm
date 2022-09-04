@@ -439,7 +439,9 @@
 /turf/open/floor/iron/white,
 /area/station/medical/abandoned)
 "aAR" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -2843,7 +2845,9 @@
 /obj/machinery/door/poddoor/preopen{
 	id = "permashut4"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
 /turf/open/floor/iron,
@@ -2916,7 +2920,9 @@
 /area/station/cargo/warehouse)
 "dxm" = (
 /obj/effect/mapping_helpers/airlock/access/all/service/hydroponics,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/hydroponics/glass{
 	name = "Glass"
@@ -3148,7 +3154,9 @@
 /turf/open/floor/iron/dark/brown,
 /area/station/cargo/warehouse)
 "dIS" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/airlock{
 	name = "Kitchen";
 	req_one_access_txt = "25;28"
@@ -3581,7 +3589,9 @@
 /turf/open/floor/iron/dark,
 /area/station/security/execution/education)
 "egV" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -3653,7 +3663,9 @@
 /turf/open/floor/iron/dark,
 /area/station/maintenance/solars/port/aft)
 "eml" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/airlock/highsecurity{
 	name = "MiniSat Chamber";
@@ -4837,7 +4849,9 @@
 /obj/machinery/door/poddoor/preopen{
 	id = "permashut5"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
 "fHN" = (
@@ -4905,7 +4919,9 @@
 /obj/machinery/door/poddoor/preopen{
 	id = "permashut1"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
@@ -5435,7 +5451,9 @@
 	name = "Justice Chamber";
 	req_access_txt = "3"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/poddoor/preopen{
 	id = "executionfireblast"
 	},
@@ -6746,7 +6764,9 @@
 /turf/open/floor/iron,
 /area/station/maintenance/starboard/central)
 "hRp" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/trimline/yellow/filled/line,
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 1
@@ -7159,7 +7179,9 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/gravity_generator)
 "iqT" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/airlock/highsecurity{
 	name = "MiniSat Upload";
 	req_access_txt = "16"
@@ -9141,7 +9163,9 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos/hfr_room)
 "kDo" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/mapping_helpers/airlock/access/any/supply/mining_station,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -9449,7 +9473,9 @@
 	name = "Telecomms Storage";
 	req_access_txt = "61"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/delivery,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -9802,7 +9828,9 @@
 /obj/machinery/door/poddoor/preopen{
 	id = "permashut2"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
 /turf/open/floor/iron,
@@ -10047,7 +10075,9 @@
 /obj/machinery/door/poddoor/preopen{
 	id = "permashut3"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /turf/open/floor/iron,
 /area/station/security/prison/safe)
 "lJo" = (
@@ -12437,7 +12467,9 @@
 /obj/machinery/door/poddoor/preopen{
 	id = "executionfireblast"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/tile/red/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
@@ -12547,7 +12579,9 @@
 /obj/machinery/door/poddoor/preopen{
 	id = "executionfireblast"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/tile/red/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark,
@@ -12751,7 +12785,9 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos/project)
 "oIv" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/poddoor/shutters{
 	id = "evashutter";
 	name = "E.V.A. Storage Shutter"
@@ -12843,7 +12879,9 @@
 	pixel_x = -24;
 	req_access_txt = "55"
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/airlock/research{
 	autoclose = 0;
@@ -13849,7 +13887,9 @@
 /turf/closed/wall,
 /area/station/maintenance/port/central)
 "pVw" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/airlock/research{
 	autoclose = 0;
@@ -14930,7 +14970,9 @@
 /turf/open/floor/iron/white,
 /area/station/science/cytology)
 "qVD" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/airlock/hatch{
 	name = "MiniSat Antechamber";
 	req_one_access_txt = "32;19"
@@ -15249,7 +15291,9 @@
 /turf/open/floor/holofloor/dark,
 /area/station/science/cytology)
 "rlo" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/airlock/command{
 	name = "E.V.A. Storage";
 	req_access_txt = "18"
@@ -15874,7 +15918,7 @@
 "rZQ" = (
 /obj/machinery/door/poddoor/shutters/radiation/preopen{
 	id = "Supermatter";
-	name = "supermatter shielding"
+	name = "Supermatter Shielding"
 	},
 /obj/effect/turf_decal/vg_decals/radiation,
 /turf/open/floor/plating,
@@ -16021,7 +16065,7 @@
 /obj/item/wrench,
 /obj/machinery/door/poddoor/shutters/radiation/preopen{
 	id = "Supermatter";
-	name = "supermatter shielding"
+	name = "Supermatter Shielding"
 	},
 /obj/effect/turf_decal/vg_decals/radiation,
 /turf/open/floor/plating,
@@ -16087,7 +16131,9 @@
 	pixel_x = 25;
 	pixel_y = 7
 	},
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/button/door/directional/east{
 	id = "permashut1";
@@ -16110,7 +16156,7 @@
 "slu" = (
 /obj/machinery/door/poddoor/shutters/radiation/preopen{
 	id = "Supermatter";
-	name = "supermatter shielding"
+	name = "Supermatter Shielding"
 	},
 /obj/effect/turf_decal/vg_decals/radiation,
 /obj/structure/cable,
@@ -16653,7 +16699,9 @@
 /turf/open/floor/holofloor/dark,
 /area/station/science/cytology)
 "sOc" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/poddoor/preopen{
 	id = "brigprison";
 	name = "Prison Blast door"
@@ -17484,7 +17532,9 @@
 	req_access_txt = "3"
 	},
 /obj/item/paper,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/cable,
 /obj/item/storage/fancy/donut_box,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -17780,7 +17830,7 @@
 /obj/effect/landmark/event_spawn,
 /obj/machinery/door/poddoor/shutters/radiation/preopen{
 	id = "Supermatter";
-	name = "supermatter shielding"
+	name = "Supermatter Shielding"
 	},
 /obj/effect/turf_decal/vg_decals/radiation,
 /turf/open/floor/plating,
@@ -17792,7 +17842,9 @@
 /area/station/maintenance/department/science)
 "tWL" = (
 /obj/structure/cable,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
 /obj/effect/mapping_helpers/airlock/access/any/security/brig,
@@ -20390,7 +20442,9 @@
 /turf/open/floor/carpet/red,
 /area/station/maintenance/port/central)
 "wQQ" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "MiniSat Antechamber";
 	req_access_txt = "16"
@@ -20552,7 +20606,9 @@
 /turf/closed/wall/r_wall,
 /area/station/cargo/warehouse)
 "xbn" = (
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/machinery/door/airlock/command{
 	name = "E.V.A. Storage";
 	req_access_txt = "18"
@@ -21044,7 +21100,9 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/delivery,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "XenoPens";
@@ -21287,7 +21345,9 @@
 /area/station/service/cafeteria)
 "xMd" = (
 /obj/effect/turf_decal/delivery,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -21357,7 +21417,9 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/delivery,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor{
+	name = "Emergency Shutter"
+	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
