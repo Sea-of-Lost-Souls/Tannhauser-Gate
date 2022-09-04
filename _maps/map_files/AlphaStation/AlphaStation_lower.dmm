@@ -16378,11 +16378,6 @@
 	dir = 5
 	},
 /area/station/service/cafeteria)
-"swp" = (
-/obj/structure/cable,
-/obj/structure/cable,
-/turf/open/floor/engine,
-/area/station/engineering/supermatter/room)
 "swz" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -57376,7 +57371,7 @@ tko
 fsE
 ezL
 eGu
-swp
+ifO
 ifO
 mLa
 ffE
