@@ -175,7 +175,9 @@
 	name = "Arrival Shuttle Airlock";
 	space_dir = 2
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "kilo arrival"
+	},
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/entry)
 "M" = (
@@ -220,7 +222,9 @@
 	name = "Arrival Shuttle Airlock"
 	},
 /obj/effect/landmark/navigate_destination,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "kilo arrival"
+	},
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/entry)
 "X" = (
