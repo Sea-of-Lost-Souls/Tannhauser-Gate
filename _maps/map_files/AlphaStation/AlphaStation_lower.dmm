@@ -10738,7 +10738,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/science)
 "mqK" = (
-/obj/structure/cable,
 /obj/machinery/power/smes/engineering,
 /obj/structure/cable,
 /obj/machinery/camera/directional/north,
