@@ -19154,7 +19154,7 @@
 /obj/effect/spawner/structure/window,
 /obj/machinery/door/poddoor/preopen{
 	id = "surgeryc";
-	name = "privacy shutter"
+	name = "Privacy Shutter"
 	},
 /turf/open/floor/iron/dark/blue,
 /area/station/medical/exam_room)
@@ -32212,7 +32212,7 @@
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "chemistry_shutters";
-	name = "chemistry shutters"
+	name = "Chemistry Shutters"
 	},
 /obj/item/folder/white,
 /obj/item/pen,
