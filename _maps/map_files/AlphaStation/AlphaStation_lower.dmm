@@ -4095,6 +4095,10 @@
 /obj/machinery/camera/emp_proof/directional/north,
 /turf/open/floor/iron/white,
 /area/station/security/prison)
+"eHI" = (
+/obj/effect/spawner/random/trash/cigbutt,
+/turf/open/floor/plating,
+/area/station/maintenance/abandon_holding_cell)
 "eIo" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
@@ -45345,7 +45349,7 @@ ezF
 ezF
 wuN
 cze
-cze
+eHI
 qwX
 qtl
 ykq
@@ -51750,10 +51754,10 @@ jgA
 vxS
 kQR
 wkj
-dZm
-dZm
-dZm
-dZm
+gww
+gww
+gww
+gww
 ydZ
 aHD
 xBz
@@ -52007,10 +52011,10 @@ gGv
 fbw
 bZC
 wkj
-dZm
-dZm
-dZm
-dZm
+gww
+gww
+gww
+gww
 fxk
 fxk
 gjh
@@ -52514,8 +52518,8 @@ hOf
 hOf
 hOf
 hOf
-ezF
-ezF
+dZm
+dZm
 fnO
 nWU
 wVw
@@ -59196,8 +59200,8 @@ rcy
 gww
 gww
 ryH
-gww
-gww
+ezF
+ezF
 mTP
 nji
 viF
@@ -59453,8 +59457,8 @@ rcy
 gww
 gww
 gww
-gww
-gww
+ezF
+ezF
 mTP
 vLq
 hEd
@@ -59710,8 +59714,8 @@ hQh
 hQh
 hQh
 hQh
-gww
-gww
+dZm
+dZm
 mTP
 luo
 uwH
@@ -60231,10 +60235,10 @@ mXx
 lIx
 jel
 mTP
-dZm
-dZm
-dZm
-dZm
+gww
+gww
+gww
+gww
 mTP
 msQ
 sUz
@@ -60488,10 +60492,10 @@ diU
 xfi
 gVu
 mTP
-dZm
-dZm
-dZm
-dZm
+gww
+gww
+gww
+gww
 mTP
 hmp
 sUz
