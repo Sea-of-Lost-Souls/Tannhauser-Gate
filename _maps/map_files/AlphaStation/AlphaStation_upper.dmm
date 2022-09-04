@@ -7993,11 +7993,11 @@
 /turf/open/floor/iron/white,
 /area/station/medical/surgery/theatre)
 "fuc" = (
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/bridge_pipe/purple/visible,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible{
+	dir = 4
+	},
 /turf/open/floor/iron/green/side{
 	dir = 4
 	},
@@ -17629,11 +17629,8 @@
 /turf/open/floor/carpet,
 /area/station/security/detectives_office)
 "lFp" = (
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 1;
-	name = "Mix to Filter"
-	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/smart/simple/purple/visible,
 /turf/open/floor/iron/green/side{
 	dir = 4
 	},
@@ -27302,9 +27299,9 @@
 	},
 /area/station/service/chapel)
 "rRs" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
 /obj/machinery/light/directional/east,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/smart/simple/purple/visible,
 /turf/open/floor/iron/green/side{
 	dir = 4
 	},
@@ -31396,6 +31393,16 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/security/courtroom)
+"uyn" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 1;
+	name = "Mix to Filter"
+	},
+/turf/open/floor/iron/green/side{
+	dir = 4
+	},
+/area/station/engineering/atmos/upper)
 "uyI" = (
 /obj/structure/sign/warning/secure_area,
 /turf/closed/wall/r_wall,
@@ -68499,8 +68506,8 @@ dIs
 fPs
 fPs
 fPs
-fPs
-fPs
+uyn
+lFp
 rRs
 lFp
 fuc
