@@ -1139,9 +1139,9 @@
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "btY" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/machinery/light/floor,
+/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/hidden,
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "bua" = (
@@ -3209,6 +3209,13 @@
 	},
 /turf/open/floor/iron,
 /area/station/maintenance/starboard/central)
+"dMV" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
+/turf/open/floor/iron/stairs{
+	dir = 1
+	},
+/area/station/cargo/warehouse)
 "dNa" = (
 /obj/structure/railing{
 	dir = 1
@@ -3290,13 +3297,13 @@
 /turf/open/floor/iron/dark,
 /area/station/commons/fitness/recreation/entertainment)
 "dRc" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/mapping_helpers/airlock/access/any/supply/shipping,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/machinery/door/airlock/external/glass{
 	name = "External Airlock"
 	},
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "dRm" = (
@@ -9790,13 +9797,13 @@
 /turf/open/floor/iron/white,
 /area/station/medical/abandoned)
 "lpj" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/mapping_helpers/airlock/access/any/supply/shipping,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/machinery/door/airlock/external/glass{
 	name = "External Airlock"
 	},
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "lpB" = (
@@ -18074,9 +18081,9 @@
 /turf/open/floor/iron/white,
 /area/station/science/xenobiology)
 "uhJ" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/machinery/light/floor,
+/obj/machinery/atmospherics/pipe/layer_manifold/supply/hidden,
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "uhQ" = (
@@ -20932,6 +20939,13 @@
 	},
 /turf/open/floor/iron/solarpanel/airless,
 /area/station/solars/port/aft)
+"xsX" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
+/turf/open/floor/iron/stairs{
+	dir = 1
+	},
+/area/station/cargo/warehouse)
 "xtD" = (
 /turf/open/floor/plating,
 /area/station/maintenance/department/science)
@@ -55833,7 +55847,7 @@ ezF
 gww
 rfR
 dRc
-uGP
+xsX
 uhJ
 tBd
 uGP
@@ -56347,7 +56361,7 @@ ezF
 gww
 ezF
 lpj
-fsI
+dMV
 btY
 vMu
 fsI
