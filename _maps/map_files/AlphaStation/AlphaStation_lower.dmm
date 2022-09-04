@@ -388,11 +388,6 @@
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/solars/starboard/aft)
-"avc" = (
-/obj/structure/cable,
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/station/maintenance/department/science/xenobiology)
 "avd" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -3691,13 +3686,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/engineering/supermatter/room)
-"enK" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/cable,
-/obj/machinery/disposal/delivery_chute,
-/turf/open/floor/catwalk_floor/iron,
-/area/station/maintenance/port/central)
 "enQ" = (
 /obj/structure/sign/plaques/kiddie,
 /turf/closed/wall/r_wall,
@@ -13882,10 +13870,6 @@
 "pVh" = (
 /turf/closed/wall,
 /area/station/science/cytology)
-"pVs" = (
-/obj/machinery/disposal/delivery_chute,
-/turf/closed/wall,
-/area/station/maintenance/port/central)
 "pVw" = (
 /obj/machinery/door/firedoor{
 	name = "Emergency Shutter"
@@ -17053,7 +17037,6 @@
 /obj/machinery/door/airlock/maintenance{
 	name = "Maintenance Access"
 	},
-/obj/effect/mapping_helpers/airlock/access/any/security/maintenance,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/department/security)
@@ -52584,7 +52567,7 @@ mSE
 mSE
 mSE
 mSE
-enK
+mSE
 mSE
 mSE
 mSE
@@ -52840,7 +52823,7 @@ mnl
 mnl
 mnl
 mnl
-pVs
+mnl
 mnl
 mnl
 mnl
@@ -64380,7 +64363,7 @@ ezF
 ezF
 wFR
 ybM
-avc
+jVn
 jVn
 jVn
 jVn
