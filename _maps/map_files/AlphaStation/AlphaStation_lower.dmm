@@ -1140,8 +1140,7 @@
 /area/station/cargo/warehouse)
 "btY" = (
 /obj/structure/cable,
-/obj/machinery/light/floor,
-/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/hidden,
+/obj/machinery/atmospherics/components/binary/pump/on/scrubbers/hidden,
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "bua" = (
@@ -17415,8 +17414,9 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/science)
 "tBd" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
+/obj/machinery/atmospherics/pipe/layer_manifold/supply/hidden,
+/obj/machinery/light/floor,
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "tDQ" = (
@@ -18089,8 +18089,10 @@
 /area/station/science/xenobiology)
 "uhJ" = (
 /obj/structure/cable,
-/obj/machinery/light/floor,
-/obj/machinery/atmospherics/pipe/layer_manifold/supply/hidden,
+/obj/machinery/atmospherics/components/binary/pump/on/supply/hidden{
+	dir = 1;
+	target_pressure = 4000
+	},
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "uhQ" = (
@@ -19577,8 +19579,9 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical/central)
 "vMu" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/hidden,
+/obj/machinery/light/floor,
 /turf/open/floor/iron,
 /area/station/cargo/warehouse)
 "vMw" = (
@@ -21074,7 +21077,6 @@
 /obj/machinery/atmospherics/pipe/bridge_pipe/dark/visible{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/bridge_pipe/orange,
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -21085,6 +21087,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
+/obj/machinery/atmospherics/pipe/bridge_pipe/orange/visible,
 /turf/open/floor/iron/brown,
 /area/station/engineering/atmos/project)
 "xyD" = (
@@ -57736,7 +57739,7 @@ guu
 knl
 bOn
 reU
-nKn
+pbr
 nEI
 nEI
 nEI

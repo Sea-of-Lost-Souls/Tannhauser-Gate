@@ -28477,11 +28477,11 @@
 /turf/open/floor/iron/white,
 /area/station/science/research)
 "shf" = (
-/obj/machinery/portable_atmospherics/canister/nitrous_oxide,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
 	},
 /obj/effect/turf_decal/bot,
+/obj/machinery/portable_atmospherics/canister/anesthetic_mix,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/department/security)
 "shj" = (
