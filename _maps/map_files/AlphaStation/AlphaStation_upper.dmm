@@ -6538,10 +6538,6 @@
 	},
 /area/station/medical/chemistry)
 "efW" = (
-/obj/machinery/door/window/brigdoor/security/cell{
-	id = "Cell 2";
-	name = "Cell 2"
-	},
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -6550,6 +6546,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/machinery/door/window/brigdoor/security/cell{
+	id = "Cell 3";
+	name = "Cell 3"
+	},
 /turf/open/floor/iron/red,
 /area/station/security/brig/upper)
 "egd" = (
@@ -14454,17 +14454,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/medical/coldroom)
-"jnp" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
-/obj/machinery/door_timer{
-	id = "Cell 1";
-	name = "Cell 1";
-	pixel_y = -32
-	},
-/turf/open/floor/iron,
-/area/station/security/brig/upper)
 "jnz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/chapel{
@@ -15580,12 +15569,6 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
-/obj/machinery/door_timer{
-	id = "Cell 4";
-	name = "Cell 4";
-	pixel_x = 32;
-	pixel_y = -32
-	},
 /turf/open/floor/iron,
 /area/station/security/brig/upper)
 "jZI" = (
@@ -21123,17 +21106,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/station/security/brig/upper)
-"nBQ" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
-/obj/machinery/door_timer{
-	id = "Cell 3";
-	name = "Cell 3";
-	pixel_y = -32
-	},
-/turf/open/floor/iron,
-/area/station/security/brig/upper)
 "nCq" = (
 /obj/effect/turf_decal/tile/blue/half/contrasted,
 /obj/machinery/power/apc/auto_name/directional/south,
@@ -26079,10 +26051,6 @@
 	},
 /area/station/engineering/atmos/upper)
 "qFa" = (
-/obj/machinery/door/window/brigdoor/security/cell{
-	id = "Cell 4";
-	name = "Cell 4"
-	},
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -26091,6 +26059,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/machinery/door/window/brigdoor/security/cell{
+	id = "Cell 1";
+	name = "Cell 1"
+	},
 /turf/open/floor/iron/red,
 /area/station/security/brig/upper)
 "qFl" = (
@@ -26203,10 +26175,6 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/port)
 "qJM" = (
-/obj/machinery/door/window/brigdoor/security/cell{
-	id = "Cell 3";
-	name = "Cell 3"
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/trimline/red/filled/line{
@@ -26218,6 +26186,10 @@
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/machinery/door/window/brigdoor/security/cell{
+	id = "Cell 4";
+	name = "Cell 4"
+	},
 /turf/open/floor/iron/red,
 /area/station/security/brig/upper)
 "qJO" = (
@@ -28430,17 +28402,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/medical/break_room)
-"sfw" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
-/obj/machinery/door_timer{
-	id = "Cell 2";
-	name = "Cell 2";
-	pixel_y = -32
-	},
-/turf/open/floor/iron,
-/area/station/security/brig/upper)
 "sfB" = (
 /obj/machinery/space_heater,
 /turf/open/floor/iron/dark,
@@ -30811,10 +30772,6 @@
 /turf/open/floor/iron/white/smooth_large,
 /area/station/medical/chemistry)
 "tIE" = (
-/obj/machinery/door/window/brigdoor/security/cell{
-	id = "Cell 1";
-	name = "Cell 1"
-	},
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -30823,6 +30780,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer4,
+/obj/machinery/door/window/brigdoor/security/cell{
+	id = "Cell 2";
+	name = "Cell 2"
+	},
 /turf/open/floor/iron/red,
 /area/station/security/brig/upper)
 "tJm" = (
@@ -64335,7 +64296,7 @@ woG
 bhi
 imi
 tam
-jnp
+iTl
 knt
 sYF
 sYF
@@ -65106,7 +65067,7 @@ xNI
 lEC
 sdD
 hnZ
-sfw
+iTl
 knt
 sYF
 sYF
@@ -65877,7 +65838,7 @@ sgC
 tcX
 sdD
 hjr
-nBQ
+iTl
 knt
 sYF
 sYF
