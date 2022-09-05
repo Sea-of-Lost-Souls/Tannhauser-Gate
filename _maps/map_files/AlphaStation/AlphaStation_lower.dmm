@@ -3170,7 +3170,7 @@
 /obj/structure/ladder,
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
-/area/space)
+/area/space/nearstation)
 "dJc" = (
 /turf/open/floor/iron/white,
 /area/station/medical/virology)
@@ -3476,7 +3476,7 @@
 /area/station/maintenance/starboard/central)
 "dZm" = (
 /turf/open/floor/plating/airless,
-/area/space)
+/area/space/nearstation)
 "dZr" = (
 /obj/machinery/restaurant_portal/restaurant,
 /turf/open/floor/wood,
@@ -15826,9 +15826,8 @@
 /obj/docking_port/stationary{
 	dir = 8;
 	dwidth = 3;
-	height = 5;
+	height = 10;
 	id = "mining_home";
-	json_key = null;
 	name = "mining shuttle bay";
 	roundstart_template = /datum/map_template/shuttle/mining/large;
 	width = 7
@@ -47391,10 +47390,10 @@ ezF
 ezF
 ezF
 dJa
-keE
-keE
-keE
-keE
+dGv
+dGv
+dGv
+dGv
 hOf
 ezF
 fVi
@@ -64867,10 +64866,10 @@ ezF
 ezF
 ezF
 dJa
-keE
-keE
-keE
-keE
+dGv
+dGv
+dGv
+dGv
 hOf
 ezF
 ezF
