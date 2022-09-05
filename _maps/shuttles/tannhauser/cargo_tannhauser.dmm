@@ -38,12 +38,12 @@
 /turf/closed/wall/mineral/titanium/shuttle_wall/window/arrivals{
 	icon_state = "8,4"
 	},
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "gd" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/window/arrivals{
 	icon_state = "4,4"
 	},
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "gg" = (
 /obj/structure/shuttle/engine/heater,
 /obj/structure/window/reinforced{
@@ -55,12 +55,12 @@
 /turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
 	icon_state = "2,4"
 	},
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "hd" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
 	icon_state = "3,4"
 	},
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "hp" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Supply Shuttle Airlock";
@@ -167,7 +167,7 @@
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/confetti,
 /turf/open/floor/iron/sepia,
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "nP" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
 	icon_state = "12,3"
@@ -202,7 +202,7 @@
 /obj/effect/mapping_helpers/airlock/access/all/cent_com,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/iron/sepia,
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "oS" = (
 /obj/machinery/conveyor/inverted{
 	id = "cargoload"
@@ -227,7 +227,7 @@
 /turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
 	icon_state = "3,3"
 	},
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "qM" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
 	icon_state = "12,2"
@@ -242,7 +242,7 @@
 	dir = 8
 	},
 /turf/open/floor/iron/sepia,
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "rf" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
 	icon_state = "11,4"
@@ -264,20 +264,22 @@
 /turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
 	icon_state = "6,4"
 	},
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "sJ" = (
 /obj/machinery/computer{
 	desc = "This WAS a helmsman's console, before it became a coffee's console."
 	},
 /obj/effect/decal/cleanable/confetti,
 /turf/open/floor/iron/sepia,
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "ux" = (
 /obj/effect/turf_decal/box,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
 	},
-/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/portable_atmospherics/canister/air{
+	anchored = 1
+	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/supply)
 "uR" = (
@@ -288,12 +290,12 @@
 /obj/effect/decal/cleanable/food/tomato_smudge,
 /obj/effect/decal/cleanable/confetti,
 /turf/open/floor/iron/sepia,
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "vP" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
 	icon_state = "9,3"
 	},
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "wc" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
 	icon_state = "11,3"
@@ -308,7 +310,7 @@
 /area/shuttle/supply)
 "xu" = (
 /turf/closed/wall/mineral/titanium/interior,
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "xM" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
 	icon_state = "0,0"
@@ -358,7 +360,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/sepia,
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "Ci" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -372,7 +374,7 @@
 "DW" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
 /turf/open/floor/iron/shuttle/cargo,
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "Fq" = (
 /obj/structure/sign/nanotrasen,
 /turf/closed/wall/mineral/titanium/shuttle_wall/arrivals,
@@ -384,7 +386,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/access/all/cent_com,
 /turf/open/floor/iron/sepia,
-/area/shuttle/supply/cockpit)
+/area/shuttle/supply)
 "GA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
