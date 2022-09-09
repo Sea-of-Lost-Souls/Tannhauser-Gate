@@ -29049,7 +29049,6 @@
 /turf/open/floor/iron/white/smooth_edge,
 /area/station/science/lobby)
 "suR" = (
-/obj/structure/grille,
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
