@@ -3360,7 +3360,6 @@
 /turf/open/floor/iron/white,
 /area/station/commons/dorms/barracks)
 "cbF" = (
-/obj/structure/grille,
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
 /turf/open/floor/iron/green,
@@ -18596,7 +18595,6 @@
 /turf/open/floor/wood/parquet,
 /area/station/service/library/artgallery)
 "lSh" = (
-/obj/structure/grille,
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
 /turf/open/floor/iron/green,
@@ -28228,7 +28226,6 @@
 	},
 /area/space/nearstation)
 "rUx" = (
-/obj/structure/grille,
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
