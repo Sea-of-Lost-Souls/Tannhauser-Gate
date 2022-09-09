@@ -72,3 +72,8 @@ map PubbyStation
 	#disabled
 	#voteweight 0.5
 endmap
+
+map alphastation
+	votable
+	minplayers 10
+endmap
