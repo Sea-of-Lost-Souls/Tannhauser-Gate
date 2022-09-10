@@ -80,7 +80,6 @@ required_map = "KiloStation.dmm"
 coordinates = [151, 80, 1]
 trait_name = "Station"
 
-
 # TRAMSTATION MAP EDITS
 # Tramstation Arrivals
 [templates.tramstation_arrivals]
@@ -89,6 +88,25 @@ directory = "_maps/tannhauser/automapper/templates/tramstation/"
 required_map = "tramstation.dmm"
 coordinates = [14, 96, 2]
 trait_name = "Station"
+
+# BLUESHIFT MAP EDITS
+# BlueShift Arrivals
+[templates.blueshift_arrivals]
+map_files = ["blueshift_arrivals.dmm"]
+directory = "_maps/tannhauser/automapper/templates/blueshift/"
+required_map = "BlueShift_lower.dmm"
+coordinates = [14, 96, 1]
+trait_name = "Station"
+
+# VOIDRAPTOR MAP EDITS
+# VoidRaptor Arrivals
+[templates.voidraptor_arrivals]
+map_files = ["voidraptor_arrivals.dmm"]
+directory = "_maps/tannhauser/automapper/templates/voidraptor/"
+required_map = "VoidRaptor.dmm"
+coordinates = [75, 140, 1]
+trait_name = "Station"
+
 
 
 #----- End Tannhauser Edits -----

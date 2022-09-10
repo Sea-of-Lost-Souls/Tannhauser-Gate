@@ -998,7 +998,7 @@
 	height = 13;
 	id = "arrivals_stationary";
 	name = "arrivals";
-	width = 5
+	width = 7
 	},
 /turf/open/space/basic,
 /area/space)
