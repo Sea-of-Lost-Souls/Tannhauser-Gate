@@ -71,3 +71,13 @@ directory = "_maps/tannhauser/automapper/templates/tramstation/"
 required_map = "tramstation.dmm"
 coordinates = [14, 96, 2]
 trait_name = "Station"
+
+
+# BLUESHIFT MAP EDITS
+# BlueShift Arrivals
+[templates.blueshift_arrivals]
+map_files = ["blueshift_arrivals.dmm"]
+directory = "_maps/tannhauser/automapper/templates/blueshift/"
+required_map = "BlueShift_lower.dmm"
+coordinates = [154, 87, 1]
+trait_name = "Station"
