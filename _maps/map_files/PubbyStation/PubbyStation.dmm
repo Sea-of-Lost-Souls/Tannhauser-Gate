@@ -35442,7 +35442,6 @@
 /area/station/medical/virology)
 "doo" = (
 /obj/structure/table,
-/obj/structure/table,
 /obj/item/storage/box/beakers{
 	pixel_x = 4;
 	pixel_y = 4
