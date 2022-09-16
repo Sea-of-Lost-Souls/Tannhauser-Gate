@@ -4,7 +4,7 @@
 	dir = 8;
 	dwidth = 1;
 	height = 13;
-	id = "arrivals_stationary";
+	shuttle_id = "arrivals_stationary";
 	name = "arrivals";
 	width = 7
 	},

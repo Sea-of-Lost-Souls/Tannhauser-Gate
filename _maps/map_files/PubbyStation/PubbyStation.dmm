@@ -11260,7 +11260,7 @@
 /area/station/service/barber)
 "aMv" = (
 /obj/docking_port/stationary/random{
-	id = "pod_3_lavaland";
+	shuttle_id = "pod_3_lavaland";
 	name = "lavaland"
 	},
 /turf/open/space/basic,
@@ -17116,7 +17116,7 @@
 	dir = 4;
 	dwidth = 3;
 	height = 5;
-	id = "mining_home";
+	shuttle_id = "mining_home";
 	name = "mining shuttle bay";
 	roundstart_template = /datum/map_template/shuttle/mining/delta;
 	width = 7
@@ -20617,7 +20617,7 @@
 	dir = 8;
 	dwidth = 11;
 	height = 18;
-	id = "emergency_home";
+	shuttle_id = "emergency_home";
 	name = "PubbyStation emergency evac bay";
 	width = 30
 	},
@@ -31059,7 +31059,7 @@
 	dir = 8;
 	dwidth = 11;
 	height = 22;
-	id = "whiteship_home";
+	shuttle_id = "whiteship_home";
 	name = "monastery";
 	width = 35
 	},
@@ -35442,7 +35442,6 @@
 /area/station/medical/virology)
 "doo" = (
 /obj/structure/table,
-/obj/structure/table,
 /obj/item/storage/box/beakers{
 	pixel_x = 4;
 	pixel_y = 4
@@ -37678,7 +37677,7 @@
 	dir = 8;
 	dwidth = 1;
 	height = 13;
-	id = "arrivals_stationary";
+	shuttle_id = "arrivals_stationary";
 	name = "pubby arrivals";
 	width = 7
 	},
@@ -38651,7 +38650,7 @@
 /area/station/maintenance/department/crew_quarters/dorms)
 "gcm" = (
 /obj/docking_port/stationary/random{
-	id = "pod_2_lavaland";
+	shuttle_id = "pod_2_lavaland";
 	name = "lavaland"
 	},
 /turf/open/space,
@@ -47570,7 +47569,7 @@
 	dir = 2;
 	dwidth = 8;
 	height = 11;
-	id = "ferry_home";
+	shuttle_id = "ferry_home";
 	name = "Port Bay 2";
 	width = 20
 	},
@@ -53058,7 +53057,7 @@
 	dheight = 4;
 	dwidth = 4;
 	height = 9;
-	id = "aux_base_zone";
+	shuttle_id = "aux_base_zone";
 	name = "aux base zone";
 	roundstart_template = /datum/map_template/shuttle/aux_base/small;
 	width = 9
@@ -56650,7 +56649,7 @@
 	dir = 4;
 	dwidth = 5;
 	height = 7;
-	id = "supply_home";
+	shuttle_id = "supply_home";
 	name = "Cargo Bay";
 	width = 12
 	},
@@ -58073,7 +58072,7 @@
 "vGF" = (
 /obj/docking_port/stationary/random{
 	dir = 8;
-	id = "pod_lavaland";
+	shuttle_id = "pod_lavaland";
 	name = "lavaland"
 	},
 /turf/open/space/basic,

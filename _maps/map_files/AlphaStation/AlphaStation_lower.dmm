@@ -11861,7 +11861,7 @@
 	dheight = 4;
 	dwidth = 4;
 	height = 9;
-	id = "aux_base_zone";
+	shuttle_id = "aux_base_zone";
 	name = "aux base zone";
 	roundstart_template = /datum/map_template/shuttle/aux_base/small;
 	width = 9
@@ -15178,7 +15178,7 @@
 /obj/docking_port/stationary{
 	dwidth = 5;
 	height = 20;
-	id = "supply_home";
+	shuttle_id = "supply_home";
 	name = "Cargo Bay";
 	width = 13
 	},
@@ -15827,7 +15827,7 @@
 	dir = 8;
 	dwidth = 3;
 	height = 10;
-	id = "mining_home";
+	shuttle_id = "mining_home";
 	name = "mining shuttle bay";
 	roundstart_template = /datum/map_template/shuttle/mining/large;
 	width = 7
@@ -20137,7 +20137,7 @@
 	dir = 8;
 	dwidth = 12;
 	height = 17;
-	id = "syndicate_nw";
+	shuttle_id = "syndicate_nw";
 	name = "northwest bellow the station";
 	width = 23
 	},
