@@ -243,7 +243,7 @@
 	dir = 8;
 	dwidth = 1;
 	height = 13;
-	id = "arrivals_shuttle";
+	shuttle_id = "arrivals_shuttle";
 	name = "tram dock";
 	roundstart_template = /datum/map_template/shuttle/arrivals_tannhauser;
 	width = 7
