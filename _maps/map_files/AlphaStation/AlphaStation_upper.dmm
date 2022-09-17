@@ -5226,6 +5226,13 @@
 	},
 /turf/open/floor/carpet,
 /area/station/service/chapel/funeral)
+"doX" = (
+/obj/structure/fluff/tram_rail,
+/obj/structure/fluff/tram_rail{
+	dir = 1
+	},
+/turf/open/space/openspace,
+/area/space)
 "dpi" = (
 /obj/structure/cable,
 /turf/open/floor/engine,
@@ -10158,6 +10165,14 @@
 	},
 /turf/open/floor/carpet/executive,
 /area/command/heads_quarters/captain/private/nt_rep)
+"gss" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/fluff/tram_rail,
+/obj/structure/fluff/tram_rail{
+	dir = 1
+	},
+/turf/open/space/openspace,
+/area/space)
 "gsQ" = (
 /obj/structure/closet/secure_closet/medical1{
 	pixel_x = -3
@@ -11978,8 +11993,8 @@
 	dir = 2;
 	dwidth = 8;
 	height = 11;
-	shuttle_id = "ferry_home";
 	name = "Port Bay 2";
+	shuttle_id = "ferry_home";
 	width = 20
 	},
 /turf/open/space/openspace,
@@ -16165,8 +16180,8 @@
 /obj/docking_port/stationary{
 	dwidth = 1;
 	height = 13;
-	shuttle_id = "arrivals_stationary";
 	name = "arrivals";
+	shuttle_id = "arrivals_stationary";
 	width = 7
 	},
 /turf/open/space/openspace,
@@ -18070,8 +18085,8 @@
 	dir = 4;
 	dwidth = 11;
 	height = 18;
-	shuttle_id = "emergency_home";
 	name = "PubbyStation emergency evac bay";
+	shuttle_id = "emergency_home";
 	width = 30
 	},
 /turf/open/space/openspace,
@@ -29647,7 +29662,7 @@
 	},
 /obj/structure/lattice/catwalk,
 /turf/open/space/openspace,
-/area/space/nearstation)
+/area/space)
 "sSk" = (
 /turf/open/floor/iron/white/smooth_edge{
 	dir = 4
@@ -33141,8 +33156,8 @@
 	dir = 8;
 	dwidth = 12;
 	height = 17;
-	shuttle_id = "syndicate_nw";
 	name = "northwest above the station";
+	shuttle_id = "syndicate_nw";
 	width = 23
 	},
 /turf/open/space/openspace,
@@ -36483,9 +36498,9 @@
 	dir = 8;
 	dwidth = 2;
 	height = 5;
-	shuttle_id = "laborcamp_home";
 	name = "fore bay 1";
 	roundstart_template = /datum/map_template/shuttle/labour/skyrat;
+	shuttle_id = "laborcamp_home";
 	width = 9
 	},
 /turf/open/floor/iron/smooth_large/lowpressure,
@@ -71975,15 +71990,15 @@ fBU
 lpk
 lpk
 lpk
-tPt
+doX
 lpk
 lpk
 lpk
-tPt
+doX
 lpk
 lpk
 lpk
-tPt
+doX
 lpk
 lpk
 lpk
@@ -72232,15 +72247,15 @@ fBU
 lpk
 lpk
 lpk
-xJW
+gss
 lpk
 lpk
 lpk
-xJW
+gss
 lpk
 lpk
 lpk
-xJW
+gss
 lpk
 kra
 lpk
@@ -72489,15 +72504,15 @@ fBU
 lpk
 lpk
 lpk
-tPt
+doX
 lpk
 lpk
 lpk
-tPt
+doX
 lpk
 lpk
 lpk
-tPt
+doX
 lpk
 lpk
 lpk
@@ -73003,15 +73018,15 @@ fBU
 lpk
 lpk
 lpk
-tPt
+doX
 lpk
 lpk
 lpk
-tPt
+doX
 lpk
 lpk
 lpk
-tPt
+doX
 lpk
 lpk
 lpk
@@ -73260,15 +73275,15 @@ fBU
 lpk
 lpk
 lpk
-xJW
+gss
 lpk
 lpk
 lpk
-xJW
+gss
 lpk
 lpk
 lpk
-xJW
+gss
 lpk
 lpk
 lpk
@@ -73517,15 +73532,15 @@ bfc
 lpk
 lpk
 lpk
-tPt
+doX
 lpk
 lpk
 lpk
-tPt
+doX
 lpk
 lpk
 lpk
-tPt
+doX
 lpk
 lpk
 lpk
