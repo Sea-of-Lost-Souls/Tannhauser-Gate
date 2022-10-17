@@ -14,7 +14,6 @@ GLOBAL_LIST_INIT(cme_loot_list, list(
 #define CME_MINIMAL "minimal"
 #define CME_MODERATE "moderate"
 #define CME_EXTREME "extreme"
-#define CME_ARMAGEDDON "armageddon"
 
 //Times are SECONDS, they're devided by 2 because that's how long the controller takes to process. 20 deciseconds = 2 seconds. I know, it's dumb as fuck.
 //NOT ANYMORE, NOW WE MULTIPLY BY A HALF
@@ -52,14 +51,3 @@ GLOBAL_LIST_INIT(cme_loot_list, list(
 #define CME_EXTREME_START_LOWER 60 * 0.5
 #define CME_EXTREME_START_UPPER 120 * 0.5
 #define CME_EXTREME_END 120 * 0.5
-
-#define CME_ARMAGEDDON_LIGHT_RANGE_LOWER 25
-#define CME_ARMAGEDDON_LIGHT_RANGE_UPPER 30
-#define CME_ARMAGEDDON_HEAVY_RANGE_LOWER 20
-#define CME_ARMAGEDDON_HEAVY_RANGE_UPPER 25
-#define CME_ARMAGEDDON_FREQUENCY_LOWER 5 * 0.5
-#define CME_ARMAGEDDON_FREQUENCY_UPPER 7 * 0.5
-#define CME_ARMAGEDDON_BUBBLE_BURST_TIME 10 SECONDS
-#define CME_ARMAGEDDON_START_LOWER 60 * 0.5
-#define CME_ARMAGEDDON_START_UPPER 70 * 0.5
-#define CME_ARMAGEDDON_END 300 * 0.5
