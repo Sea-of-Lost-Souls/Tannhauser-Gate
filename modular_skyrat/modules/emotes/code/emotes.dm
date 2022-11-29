@@ -1,12 +1,4 @@
 
-#define EMOTE_DELAY 5 SECONDS //To prevent spam emotes.
-
-/mob
-	var/nextsoundemote = 1 //Time at which the next emote can be played
-
-/datum/emote
-	cooldown = EMOTE_DELAY
-
 //Disables the custom emote blacklist from TG that normally applies to slimes.
 /datum/emote/living/custom
 	mob_type_blacklist_typecache = list(/mob/living/brain)
