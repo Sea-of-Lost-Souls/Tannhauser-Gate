@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;obj&#x2F;item&#x2F;circuit_component&#x2F;compare&#x2F;remotecam - &#x2F;tg&#x2F; Station 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">&#x2F;tg&#x2F; Station 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="obj/item/circuit_component/compare/remotecam.html#var">Var Details</a> - <a href="obj/item/circuit_component/compare/remotecam.html#proc">Proc Details</a></header>
+<main>
+<h1>Remote Camera Component <aside>/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/circuit_component.html">circuit_component</a>/<a href="obj/item/circuit_component/compare.html">compare</a>/<a href="obj/item/circuit_component/compare/remotecam.html">remotecam</a></aside>
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L9">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 9"/></a></h1>
+
+<p>Attaches a camera for surveillance-on-the-go.</p><table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#var/c_tag_random">c_tag_random</a></th><td>Camera random ID</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#var/camera_range">camera_range</a></th><td>Camera range flag (near/far)</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#var/camera_range_settable">camera_range_settable</a></th><td>Allow camera range to be set or not</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#var/current_camera_name">current_camera_name</a></th><td>Used to store the last string used for the camera name</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#var/current_camera_network">current_camera_network</a></th><td>Used to store the last string used for the camera network</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#var/current_camera_range">current_camera_range</a></th><td>Used to store the current camera range setting (near/far)</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#var/current_camera_state">current_camera_state</a></th><td>Used to store the current process state</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#var/network">network</a></th><td>The network to use</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#var/shell_camera">shell_camera</a></th><td>Camera object</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#var/start">start</a></th><td>Starts the cameraa</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#var/stop">stop</a></th><td>Stops the program.</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#var/updating_camera_loc">updating_camera_loc</a></th><td>Used to store location, in order to force camera sector update</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#proc/close_camera">close_camera</a></th><td>Close the camera state (only if it's already active)</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#proc/init_camera">init_camera</a></th><td>Initializes the camera</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#proc/remove_camera">remove_camera</a></th><td>Remove the camera</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#proc/start_process">start_process</a></th><td>Adds the component to the SSclock_component process list</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#proc/stop_process">stop_process</a></th><td>Removes the component to the SSclock_component process list</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#proc/update_camera">update_camera</a></th><td>Handle the camera updating logic</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#proc/update_camera_name_network">update_camera_name_network</a></th><td>Updates the camera name and network</td></tr>
+            <tr><th><a href="obj/item/circuit_component/compare/remotecam.html#proc/update_camera_range">update_camera_range</a></th><td>Set the camera range</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/c_tag_random"><aside class="declaration">var </aside>c_tag_random
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L32">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 32"/></a></h3>
+        <p>Camera random ID</p><h3 id="var/camera_range"><aside class="declaration">var </aside>camera_range
+            <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/port.html">port</a>/<a href="datum/port/input.html">input</a></aside>
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L22">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 22"/></a></h3>
+        <p>Camera range flag (near/far)</p><h3 id="var/camera_range_settable"><aside class="declaration">var </aside>camera_range_settable
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L27">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 27"/></a></h3>
+        <p>Allow camera range to be set or not</p><h3 id="var/current_camera_name"><aside class="declaration">var </aside>current_camera_name
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L37">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 37"/></a></h3>
+        <p>Used to store the last string used for the camera name</p><h3 id="var/current_camera_network"><aside class="declaration">var </aside>current_camera_network
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L41">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 41"/></a></h3>
+        <p>Used to store the last string used for the camera network</p><h3 id="var/current_camera_range"><aside class="declaration">var </aside>current_camera_range
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L39">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 39"/></a></h3>
+        <p>Used to store the current camera range setting (near/far)</p><h3 id="var/current_camera_state"><aside class="declaration">var </aside>current_camera_state
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L35">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 35"/></a></h3>
+        <p>Used to store the current process state</p><h3 id="var/network"><aside class="declaration">var </aside>network
+            <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/port.html">port</a>/<a href="datum/port/input.html">input</a></aside>
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L24">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 24"/></a></h3>
+        <p>The network to use</p><h3 id="var/shell_camera"><aside class="declaration">var </aside>shell_camera
+            <aside>&ndash; /<a href="obj.html">obj</a>/<a href="obj/machinery.html">machinery</a>/<a href="obj/machinery/camera.html">camera</a></aside>
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L30">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 30"/></a></h3>
+        <p>Camera object</p><h3 id="var/start"><aside class="declaration">var </aside>start
+            <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/port.html">port</a>/<a href="datum/port/input.html">input</a></aside>
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L18">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 18"/></a></h3>
+        <p>Starts the cameraa</p><h3 id="var/stop"><aside class="declaration">var </aside>stop
+            <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/port.html">port</a>/<a href="datum/port/input.html">input</a></aside>
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L20">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 20"/></a></h3>
+        <p>Stops the program.</p><h3 id="var/updating_camera_loc"><aside class="declaration">var </aside>updating_camera_loc
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L44">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 44"/></a></h3>
+        <p>Used to store location, in order to force camera sector update</p><h2 id="proc">Proc Details</h2><h3 id="proc/close_camera"><aside class="declaration">proc </aside>close_camera<aside>() 
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L132">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 132"/></a></aside>
+        </h3>
+        <p>Close the camera state (only if it's already active)</p><h3 id="proc/init_camera"><aside class="declaration">proc </aside>init_camera<aside>(shell_name) 
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L92">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 92"/></a></aside>
+        </h3>
+        <p>Initializes the camera</p><h3 id="proc/remove_camera"><aside class="declaration">proc </aside>remove_camera<aside>() 
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L112">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 112"/></a></aside>
+        </h3>
+        <p>Remove the camera</p><h3 id="proc/start_process"><aside class="declaration">proc </aside>start_process<aside>() 
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L185">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 185"/></a></aside>
+        </h3>
+        <p>Adds the component to the SSclock_component process list</p>
+<p>Starts draining cell per second while camera is active</p><h3 id="proc/stop_process"><aside class="declaration">proc </aside>stop_process<aside>() 
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L193">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 193"/></a></aside>
+        </h3>
+        <p>Removes the component to the SSclock_component process list</p>
+<p>Stops draining cell per second</p><h3 id="proc/update_camera"><aside class="declaration">proc </aside>update_camera<aside>(/<a href="datum.html">datum</a>/<a href="datum/port.html">port</a>/<a href="datum/port/input.html">input</a>/port, shell_name) 
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L119">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 119"/></a></aside>
+        </h3>
+        <p>Handle the camera updating logic</p><h3 id="proc/update_camera_name_network"><aside class="declaration">proc </aside>update_camera_name_network<aside>(shell_name) 
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L145">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 145"/></a></aside>
+        </h3>
+        <p>Updates the camera name and network</p><h3 id="proc/update_camera_range"><aside class="declaration">proc </aside>update_camera_range<aside>() 
+        
+    
+            <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/blob/5cab23824f73c714010d08ad3b3e6af197e05986/modular_skyrat/master_files/code/modules/wiremod/components/sensors/remotecam.dm#L139">
+        <img src="git.png" width="16" height="16" title="modular_skyrat&#x2F;master_files&#x2F;code&#x2F;modules&#x2F;wiremod&#x2F;components&#x2F;sensors&#x2F;remotecam.dm 139"/></a></aside>
+        </h3>
+        <p>Set the camera range</p></main>
+<footer>
+    tgstation.dme
+    <a href="https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/tree/5cab23824f73c714010d08ad3b3e6af197e05986">5cab238</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.8.0</a></footer>
+</body>
+</html>
