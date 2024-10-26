@@ -10052,14 +10052,10 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/port/fore)
 "dau" = (
-/obj/structure/table,
-/obj/item/storage/toolbox/mechanical,
-/obj/item/multitool,
 /obj/machinery/airalarm/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden,
-/obj/item/storage/box/bandages{
-	pixel_x = 4;
-	pixel_y = 5
+/obj/machinery/computer/message_monitor{
+	dir = 1
 	},
 /turf/open/floor/engine,
 /area/station/tcommsat/computer)
@@ -27607,10 +27603,6 @@
 /turf/open/floor/iron/white/small,
 /area/station/common/pool)
 "hYR" = (
-/obj/machinery/computer/telecomms/server{
-	dir = 4;
-	network = "tcommsat"
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/engine,
@@ -31265,6 +31257,12 @@
 "iZs" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/table,
+/obj/item/book/manual/wiki/tcomms,
+/obj/item/clipboard{
+	pixel_x = 4
+	},
+/obj/item/radio,
 /turf/open/floor/engine,
 /area/station/tcommsat/computer)
 "iZx" = (
@@ -55512,14 +55510,12 @@
 /turf/open/floor/iron/grimy,
 /area/station/security/detectives_office)
 "pzK" = (
-/obj/structure/table,
-/obj/item/clipboard{
-	pixel_x = 4
-	},
-/obj/item/book/manual/wiki/tcomms,
-/obj/item/radio,
 /obj/item/radio/intercom/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden,
+/obj/machinery/computer/telecomms/server{
+	dir = 1;
+	network = "tcommsat"
+	},
 /turf/open/floor/engine,
 /area/station/tcommsat/computer)
 "pzL" = (
@@ -58786,6 +58782,13 @@
 	name = "telecomms camera";
 	network = list("ss13","tcomms")
 	},
+/obj/structure/table,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/box/bandages{
+	pixel_x = 4;
+	pixel_y = 5
+	},
+/obj/item/multitool,
 /turf/open/floor/engine,
 /area/station/tcommsat/computer)
 "qso" = (
@@ -61467,11 +61470,11 @@
 	},
 /area/station/hallway/primary/central/aft)
 "rfR" = (
-/obj/machinery/computer/message_monitor{
-	dir = 4
-	},
 /obj/effect/turf_decal/bot,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden,
+/obj/machinery/computer/telecomms/traffic{
+	dir = 4
+	},
 /turf/open/floor/engine,
 /area/station/tcommsat/computer)
 "rfZ" = (

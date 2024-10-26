@@ -3787,6 +3787,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/neutral/anticorner/contrasted,
+/obj/item/kirbyplants{
+	icon_state = "plant-05"
+	},
 /turf/open/floor/iron/dark/corner,
 /area/station/hallway/primary/central/fore)
 "bpn" = (
@@ -3953,7 +3956,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
 "bsc" = (
-/obj/structure/table,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/multitool,
 /obj/machinery/camera/directional/west{
@@ -3971,6 +3973,7 @@
 /obj/effect/mapping_helpers/requests_console/announcement,
 /obj/effect/mapping_helpers/requests_console/assistance,
 /obj/effect/mapping_helpers/requests_console/information,
+/obj/structure/table,
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/computer)
 "bso" = (
@@ -7936,10 +7939,6 @@
 /area/space/nearstation)
 "cJO" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/chair/office{
-	dir = 1
-	},
-/obj/effect/landmark/start/telecomms_specialist,
 /turf/open/floor/engine,
 /area/station/tcommsat/computer)
 "cKd" = (
@@ -12726,9 +12725,6 @@
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
 "epA" = (
-/obj/item/kirbyplants{
-	icon_state = "plant-05"
-	},
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
@@ -12740,7 +12736,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/turf/open/floor/iron,
+/turf/closed/wall/r_wall,
 /area/station/hallway/primary/central/fore)
 "epI" = (
 /obj/effect/landmark/start/scientist,
@@ -29438,15 +29434,15 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "jEd" = (
-/obj/structure/table,
 /obj/machinery/firealarm/directional/west,
+/obj/effect/decal/cleanable/cobweb,
+/obj/effect/turf_decal/tile/neutral,
+/obj/structure/table,
 /obj/item/clipboard{
 	pixel_x = 4
 	},
-/obj/effect/decal/cleanable/cobweb,
 /obj/item/book/manual/wiki/tcomms,
 /obj/item/radio,
-/obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/computer)
 "jEp" = (
@@ -37311,8 +37307,9 @@
 	},
 /obj/machinery/light/small/directional/east,
 /obj/item/radio/intercom/directional/east,
-/obj/machinery/status_display/ai/directional/south,
 /obj/machinery/computer/security/telescreen/tcomms/directional/east,
+/obj/structure/chair/office,
+/obj/effect/landmark/start/telecomms_specialist,
 /turf/open/floor/engine,
 /area/station/tcommsat/computer)
 "mfY" = (
@@ -45190,6 +45187,17 @@
 	},
 /turf/open/floor/plating,
 /area/station/cargo/warehouse)
+"oTj" = (
+/obj/effect/turf_decal/tile/neutral/half/contrasted{
+	dir = 1
+	},
+/obj/effect/turf_decal/bot,
+/obj/machinery/status_display/ai/directional/east,
+/obj/machinery/computer/telecomms/traffic{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/station/tcommsat/computer)
 "oTt" = (
 /obj/structure/sign/painting/library{
 	pixel_x = 32
@@ -105587,7 +105595,7 @@ shk
 orT
 aQB
 mfU
-vqw
+oTj
 vqw
 imo
 tEE

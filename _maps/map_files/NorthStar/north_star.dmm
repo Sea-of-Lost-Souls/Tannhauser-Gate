@@ -13156,14 +13156,13 @@
 /turf/closed/wall,
 /area/station/maintenance/floor1/port/aft)
 "dqB" = (
-/obj/item/clothing/mask/breath{
-	pixel_x = -4
-	},
-/obj/item/clothing/mask/breath,
-/obj/item/clothing/mask/breath{
-	pixel_x = 4
-	},
 /obj/structure/table,
+/obj/item/book/manual/wiki/tcomms,
+/obj/item/storage/toolbox/electrical,
+/obj/item/multitool,
+/obj/item/radio/off{
+	pixel_y = 4
+	},
 /turf/open/floor/iron/smooth,
 /area/station/tcommsat/computer)
 "dqF" = (
@@ -15088,6 +15087,9 @@
 /area/station/hallway/floor1/fore)
 "dRE" = (
 /obj/machinery/holopad,
+/obj/machinery/computer/telecomms/traffic{
+	dir = 1
+	},
 /turf/open/floor/iron/smooth,
 /area/station/tcommsat/computer)
 "dRI" = (
@@ -43535,6 +43537,14 @@
 /area/station/maintenance/floor3/port/aft)
 "llt" = (
 /obj/machinery/firealarm/directional/north,
+/obj/structure/table,
+/obj/item/clothing/mask/breath{
+	pixel_x = -4
+	},
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/mask/breath{
+	pixel_x = 4
+	},
 /turf/open/floor/iron/smooth,
 /area/station/tcommsat/computer)
 "llv" = (
@@ -50994,6 +51004,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
+/obj/effect/landmark/start/telecomms_specialist,
 /turf/open/floor/iron/smooth_large,
 /area/station/tcommsat/computer)
 "nfv" = (
@@ -52597,13 +52608,6 @@
 /obj/effect/turf_decal/tile/red/fourcorners,
 /turf/open/floor/iron/dark,
 /area/station/security/brig)
-"nzb" = (
-/obj/machinery/computer/telecomms/monitor{
-	dir = 4;
-	network = "tcommsat"
-	},
-/turf/open/floor/iron/smooth,
-/area/station/tcommsat/computer)
 "nzd" = (
 /obj/structure/closet/crate/hydroponics,
 /obj/item/wirecutters,
@@ -89206,14 +89210,11 @@
 	},
 /area/station/hallway/secondary/exit/escape_pod)
 "wUB" = (
-/obj/item/book/manual/wiki/tcomms,
-/obj/item/radio/off{
-	pixel_y = 4
-	},
-/obj/structure/table,
-/obj/item/multitool,
-/obj/item/storage/toolbox/electrical,
 /obj/machinery/light/small/directional/east,
+/obj/machinery/computer/telecomms/monitor{
+	dir = 1;
+	network = "tcommsat"
+	},
 /turf/open/floor/iron/smooth,
 /area/station/tcommsat/computer)
 "wUF" = (
@@ -130414,7 +130415,7 @@ jKt
 bMI
 xWl
 nPN
-nzb
+jIG
 mNh
 ngH
 snO
