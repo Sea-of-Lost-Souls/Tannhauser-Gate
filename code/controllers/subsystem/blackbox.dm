@@ -47,7 +47,7 @@ SUBSYSTEM_DEF(blackbox)
 	/* // SKYRAT EDIT CHANGE - MULTISERVER - ORIGINAL:
 	var/datum/db_query/query_record_playercount = SSdbcore.NewQuery({"
 		INSERT INTO [format_table_name("legacy_population")] (playercount, admincount, time, server_ip, server_port, round_id)
-		VALUES (:playercount, :admincount, NOW(), INET_ATON(:server_ip), :server_port, :round_id) 
+		VALUES (:playercount, :admincount, NOW(), INET_ATON(:server_ip), :server_port, :round_id)
 	*/
 	var/datum/db_query/query_record_playercount = SSdbcore.NewQuery({"
 		INSERT INTO [format_table_name("legacy_population")] (playercount, admincount, time, server_name, server_ip, server_port, round_id)
@@ -158,6 +158,8 @@ SUBSYSTEM_DEF(blackbox)
 			record_feedback("tally", "radio_usage", 1, "centcom")
 		if(FREQ_AI_PRIVATE)
 			record_feedback("tally", "radio_usage", 1, "ai private")
+		if(FREQ_ENTERTAINMENT)
+			record_feedback("tally", "radio_usage", 1, "entertainment")
 		if(FREQ_CTF_RED)
 			record_feedback("tally", "radio_usage", 1, "CTF red team")
 		if(FREQ_CTF_BLUE)

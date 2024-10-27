@@ -406,6 +406,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /turf/open/floor/plating,
 /area/ruin/powered/beach)
+"mv" = (
+/obj/effect/spawner/message_in_a_bottle/low_prob,
+/turf/open/misc/beach/coast,
+/area/ruin/powered/beach)
 "mw" = (
 /obj/structure/flora/coconuts,
 /turf/open/misc/beach/sand,
@@ -548,6 +552,14 @@
 /obj/item/toy/beach_ball,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
+"rU" = (
+/obj/item/reagent_containers/condiment/enzyme,
+/obj/item/reagent_containers/cup/beaker{
+	pixel_x = 5
+	},
+/obj/structure/table,
+/turf/open/floor/wood,
+/area/ruin/powered/beach)
 "sa" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/structure/chair/stool/bar/directional/south,
@@ -558,14 +570,6 @@
 	dir = 10
 	},
 /turf/closed/wall/mineral/wood/nonmetal,
-/area/ruin/powered/beach)
-"sz" = (
-/obj/item/reagent_containers/condiment/enzyme,
-/obj/item/reagent_containers/cup/beaker{
-	pixel_x = 5
-	},
-/obj/structure/table,
-/turf/open/floor/wood,
 /area/ruin/powered/beach)
 "sA" = (
 /mob/living/basic/crab{
@@ -869,15 +873,6 @@
 /obj/structure/chair/stool/bar/directional/south,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
-"Fj" = (
-/obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/chair/stool/directional/south,
-/obj/item/storage/backpack/duffelbag,
-/obj/item/clothing/under/shorts/red,
-/obj/item/clothing/glasses/sunglasses,
-/turf/open/floor/wood,
-/area/ruin/powered/beach)
 "Fr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 10
@@ -924,6 +919,15 @@
 "Gf" = (
 /obj/structure/sign/poster/contraband/space_cola/directional/north,
 /turf/open/misc/beach/sand,
+/area/ruin/powered/beach)
+"GA" = (
+/obj/structure/window/reinforced/spawner/directional/east,
+/obj/structure/window/reinforced/spawner/directional/north,
+/obj/structure/chair/stool/directional/south,
+/obj/item/storage/backpack/duffelbag,
+/obj/item/clothing/under/shorts/red,
+/obj/item/clothing/glasses/sunglasses,
+/turf/open/floor/wood,
 /area/ruin/powered/beach)
 "GB" = (
 /obj/structure/table/wood,
@@ -985,6 +989,7 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/south,
+/obj/effect/spawner/message_in_a_bottle/low_prob,
 /turf/open/misc/beach/coast/corner{
 	dir = 8
 	},
@@ -1880,7 +1885,7 @@ hj
 CT
 VI
 tQ
-sz
+rU
 aC
 Ds
 ww
@@ -1990,7 +1995,7 @@ bG
 bL
 VI
 VI
-yT
+mv
 pz
 Eu
 pz
@@ -2017,7 +2022,7 @@ Lm
 Lm
 rv
 VI
-Fj
+GA
 bH
 bM
 VI

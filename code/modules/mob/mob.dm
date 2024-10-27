@@ -83,6 +83,7 @@
 		add_to_dead_mob_list()
 	else
 		add_to_alive_mob_list()
+	update_incapacitated()
 	set_focus(src)
 	prepare_huds()
 	for(var/datum/atom_hud/alternate_appearance/alt_hud as anything in GLOB.active_alternate_appearances)
@@ -443,9 +444,21 @@
 
 	return null
 
-///Is the mob incapacitated
-/mob/proc/incapacitated(flags)
-	return
+/// Called whenever anything that modifes incapacitated is ran, updates it and sends a signal if it changes
+/// Returns TRUE if anything changed, FALSE otherwise
+/mob/proc/update_incapacitated()
+	SIGNAL_HANDLER
+	var/old_incap = incapacitated
+	incapacitated = build_incapacitated()
+	if(old_incap == incapacitated)
+		return FALSE
+
+	SEND_SIGNAL(src, COMSIG_MOB_INCAPACITATE_CHANGED, old_incap, incapacitated)
+	return TRUE
+
+/// Returns an updated incapacitated bitflag. If a flag is set it means we're incapacitated in that case
+/mob/proc/build_incapacitated()
+	return NONE
 
 /**
  * This proc is called whenever someone clicks an inventory ui slot.
@@ -580,7 +593,7 @@
 
 /mob/living/blind_examine_check(atom/examined_thing)
 	//need to be next to something and awake
-	if(!Adjacent(examined_thing) || incapacitated())
+	if(!Adjacent(examined_thing) || incapacitated)
 		to_chat(src, span_warning("Something is there, but you can't see it!"))
 		return FALSE
 
@@ -739,7 +752,7 @@
 	if(ismecha(loc))
 		return
 
-	if(incapacitated())
+	if(incapacitated)
 		return
 
 	var/obj/item/I = get_active_held_item()
@@ -1199,11 +1212,13 @@
 				// Only update if this player is a target
 				if(obj.target && obj.target.current && obj.target.current.real_name == name)
 					obj.update_explanation_text()
-		if(client) // NOVA EDIT ADDITION - Update the mob chat color list, removing the old name
-			GLOB.chat_colors_by_mob_name -= oldname // NOVA EDIT ADDITION
+	// SKYRAT EDIT BEGIN - Update the mob chat color list, removing the old name
+		if(client)
+			GLOB.chat_colors_by_mob_name -= oldname
 
-	if(client) // NOVA EDIT ADDITION - Update the mob chat color list, adding the new name
-		GLOB.chat_colors_by_mob_name[name] = list(chat_color, chat_color_darkened) // NOVA EDIT ADDITION
+	if(client)
+		GLOB.chat_colors_by_mob_name[name] = list(chat_color, chat_color_darkened)
+	// SKYRAT EDIT END
 	log_mob_tag("TAG: [tag] RENAMED: [key_name(src)]")
 
 	return TRUE
@@ -1386,7 +1401,6 @@
 	VV_DROPDOWN_OPTION(VV_HK_OFFER_GHOSTS, "Offer Control to Ghosts")
 	VV_DROPDOWN_OPTION(VV_HK_VIEW_PLANES, "View/Edit Planes")
 
-
 /mob/vv_do_topic(list/href_list)
 	. = ..()
 
@@ -1447,7 +1461,6 @@
 		if(!check_rights(R_DEBUG))
 			return
 		usr.client.edit_plane_masters(src)
-
 /**
  * extra var handling for the logging var
  */

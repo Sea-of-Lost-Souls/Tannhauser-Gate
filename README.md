@@ -3,6 +3,7 @@
 [![CI Suite](https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/actions/workflows/ci_suite.yml/badge.svg)](https://github.com/Sea-of-Lost-Souls/Tannhauser-Gate/actions/workflows/ci_suite.yml)
 
 [![resentment](.github/images/badges/built-with-resentment.svg)](.github/images/comics/131-bug-free.png) [![technical debt](.github/images/badges/contains-technical-debt.svg)](.github/images/comics/106-tech-debt-modified.png) [![forinfinityandbyond](.github/images/badges/made-in-byond.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
+[![resentment](.github/images/badges/built-with-resentment.svg)](.github/images/comics/131-bug-free.png) [![technical debt](.github/images/badges/contains-technical-debt.svg)](.github/images/comics/106-tech-debt-modified.png) [![forinfinityandbyond](.github/images/badges/made-in-byond.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
 
 | Website                   | Link                                           |
 |---------------------------|------------------------------------------------|
@@ -21,7 +22,6 @@ This is Sea of Lost Souls' downstream fork of Skyrat 13 created in byond.
 
 Space Station 13 is a paranoia-laden round-based roleplaying game set against the backdrop of a nonsensical, metal death trap masquerading as a space station, with charming spritework designed to represent the sci-fi setting and its dangerous undertones. Have fun, and survive!
 
-<<<<<<< HEAD
 ## Important note - TEST YOUR PULL REQUESTS
 
 You are responsible for the testing of your content and providing proof of such in your pull request. You should not mark a pull request ready for review until you have actually tested it. If you require a separate client for testing, you can use a guest account by logging out of BYOND and connecting to your test server. Test merges are not for bug finding, they are for stress tests where local testing simply doesn't allow for this.
@@ -31,9 +31,6 @@ You are responsible for the testing of your content and providing proof of such 
 ![image](https://i.imgur.com/aJnE4WT.png)
 
 [Modularisation Guide](./modular_skyrat/readme.md)
-=======
-*All github inquiries (such as moderation actions) may be handled via the /tg/station discord [#coding-general](https://discord.com/channels/326822144233439242/326831214667235328). Simply ping the `@Maintainer` role, following the guide on asking questions located in the channel description, with your issue!*
->>>>>>> 43b48e715e70 (Update README.md to include how to actually get help (#86025))
 
 ## DOWNLOADING
 
@@ -41,6 +38,7 @@ You are responsible for the testing of your content and providing proof of such 
 
 [Running on the server](.github/guides/RUNNING_A_SERVER.md)
 
+[Maps and Away Missions](.github/guides/MAPS_AND_AWAY_MISSIONS.md)
 [Maps and Away Missions](.github/guides/MAPS_AND_AWAY_MISSIONS.md)
 
 ## Compilation
@@ -70,6 +68,7 @@ All code before [commit 333c566b88108de218d882840e61928a9b759d8f on 2014/31/12 a
 
 See LICENSE and GPLv3.txt for more details.
 
+The TGS DMAPI is licensed as a subproject under the MIT license.
 The TGS DMAPI is licensed as a subproject under the MIT license.
 
 See the footer of [code/__DEFINES/tgs.dm](./code/__DEFINES/tgs.dm) and [code/modules/tgs/LICENSE](./code/modules/tgs/LICENSE) for the MIT license.
