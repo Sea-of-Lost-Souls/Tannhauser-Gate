@@ -68,7 +68,7 @@
 		values["role"] = roles
 		sql_roles = ":role"
 
-	var/datum/db_query/query_check_ban = SSdbcore.NewQuery(/* SKYRAT EDIT CHANGE - MULTISERVER */{"
+	var/datum/db_query/query_check_ban = SSdbcore.NewQuery(/* SKYRAT EDIT CHANGE - MULTISERVER - AND [server_check] */{"
 		SELECT 1
 		FROM [format_table_name("ban")]
 		WHERE
@@ -431,9 +431,9 @@
 				ROLE_SYNDICATE,
 				ROLE_TRAITOR,
 				ROLE_WIZARD,
+				ROLE_VOIDWALKER,
 				ROLE_BORER, // SKYRAT EDIT ADDITION
 				ROLE_ASSAULT_OPERATIVE, // SKYRAT EDIT ADDITION
-				ROLE_VOIDWALKER,
 			),
 			"Skyrat Ban Options" = list(
 				BAN_PACIFICATION,

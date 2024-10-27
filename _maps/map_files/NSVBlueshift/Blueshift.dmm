@@ -19429,17 +19429,6 @@
 	dir = 1
 	},
 /area/station/security/checkpoint/science/research)
-"dIj" = (
-/obj/effect/decal/cleanable/dirt{
-	icon_state = "dirt-flat-1"
-	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/item/trash/waffles,
-/obj/machinery/duct,
-/turf/open/floor/plating,
-/area/station/maintenance/department/medical)
 "dIn" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating,
@@ -22781,14 +22770,6 @@
 /obj/effect/landmark/start/hangover,
 /turf/open/floor/iron/kitchen,
 /area/station/service/kitchen/diner)
-"esg" = (
-/obj/item/trash/waffles,
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/mapping_helpers/broken_floor,
-/turf/open/floor/plating,
-/area/station/maintenance/fore/upper)
 "esh" = (
 /obj/structure/window/spawner/directional/west,
 /obj/structure/window/spawner/directional/north,
@@ -27232,6 +27213,16 @@
 /obj/structure/flora/bush/flowers_yw,
 /turf/open/floor/grass,
 /area/station/hallway/primary/port)
+"ffJ" = (
+/obj/machinery/camera{
+	c_tag = "Engineering - Tcomms Controll 2";
+	dir = 10;
+	name = "engineering camera"
+	},
+/obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/turf/open/floor/iron/dark,
+/area/station/tcommsat/computer)
 "ffW" = (
 /obj/effect/decal/cleanable/dirt{
 	icon_state = "dirt-flat-1"
@@ -29426,13 +29417,6 @@
 /obj/effect/spawner/random/trash/garbage,
 /turf/open/floor/plating,
 /area/station/maintenance/department/security/greater)
-"fBZ" = (
-/obj/machinery/computer/telecomms/server{
-	dir = 1;
-	network = "tcommsat"
-	},
-/turf/open/floor/iron/dark,
-/area/station/tcommsat/computer)
 "fCd" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -29544,6 +29528,13 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
+"fDF" = (
+/obj/machinery/computer/telecomms/server{
+	dir = 1;
+	network = "tcommsat"
+	},
+/turf/open/floor/iron/dark,
+/area/station/tcommsat/computer)
 "fDI" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/spawner/directional/north,
@@ -36617,6 +36608,11 @@
 	},
 /turf/open/floor/wood,
 /area/station/commons/dorms/room8)
+"gXt" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/structure/chair/office/light,
+/turf/open/floor/iron/dark,
+/area/station/tcommsat/computer)
 "gXw" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -36776,16 +36772,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/science/ordnance)
-"gZw" = (
-/obj/machinery/camera{
-	c_tag = "Engineering - Tcomms Controll 2";
-	dir = 10;
-	name = "engineering camera"
-	},
-/obj/structure/table/reinforced,
-/obj/item/paper_bin,
-/turf/open/floor/iron/dark,
-/area/station/tcommsat/computer)
 "gZx" = (
 /turf/open/floor/iron/dark,
 /area/station/service/chapel/office)
@@ -40408,6 +40394,12 @@
 /obj/machinery/status_display/ai/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/station/science/robotics/lab)
+"hKL" = (
+/obj/machinery/computer/telecomms/traffic{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/station/tcommsat/computer)
 "hKO" = (
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/plating/airless,
@@ -49004,13 +48996,6 @@
 	dir = 8
 	},
 /area/station/command/gateway)
-"jsT" = (
-/obj/machinery/computer/telecomms/monitor{
-	dir = 1;
-	network = "tcommsat"
-	},
-/turf/open/floor/iron/dark,
-/area/station/tcommsat/computer)
 "jsX" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -81377,11 +81362,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/cargo/lobby)
-"pEp" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/structure/chair/office/light,
-/turf/open/floor/iron/dark,
-/area/station/tcommsat/computer)
 "pEq" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/door/airlock{
@@ -82967,6 +82947,13 @@
 	dir = 8
 	},
 /area/station/command/secure_bunker)
+"pUo" = (
+/obj/structure/chair/office/light,
+/obj/machinery/light/floor,
+/obj/effect/landmark/start/telecomms_specialist,
+/obj/machinery/computer/security/telescreen/tcomms/directional/east,
+/turf/open/floor/iron,
+/area/station/tcommsat/computer)
 "pUq" = (
 /turf/open/floor/iron/dark/side,
 /area/station/security/prison)
@@ -95034,6 +95021,13 @@
 /obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/large,
 /area/station/command/heads_quarters/ce)
+"shC" = (
+/obj/machinery/computer/telecomms/monitor{
+	dir = 1;
+	network = "tcommsat"
+	},
+/turf/open/floor/iron/dark,
+/area/station/tcommsat/computer)
 "shI" = (
 /obj/machinery/door/airlock/maintenance_hatch,
 /obj/structure/cable,
@@ -96820,12 +96814,6 @@
 /obj/structure/fans/tiny/forcefield,
 /turf/open/floor/plating,
 /area/station/cargo/storage)
-"szl" = (
-/obj/machinery/computer/telecomms/traffic{
-	dir = 1
-	},
-/turf/open/floor/iron/dark,
-/area/station/tcommsat/computer)
 "szm" = (
 /turf/closed/wall/r_wall,
 /area/station/science/ordnance/office)
@@ -103362,15 +103350,6 @@
 /obj/structure/cable,
 /turf/open/floor/wood/parquet,
 /area/station/science/breakroom)
-"tLu" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 4
-	},
-/obj/item/kirbyplants/organic/plant21,
-/turf/open/floor/iron/dark/side{
-	dir = 8
-	},
-/area/station/tcommsat/computer)
 "tLz" = (
 /obj/effect/turf_decal/trimline/purple/filled/line,
 /obj/machinery/camera/directional/south{
@@ -112044,6 +112023,15 @@
 /obj/effect/landmark/start/hangover,
 /turf/open/floor/iron,
 /area/station/commons/dorms)
+"vua" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/obj/item/kirbyplants/organic/plant21,
+/turf/open/floor/iron/dark/side{
+	dir = 8
+	},
+/area/station/tcommsat/computer)
 "vuc" = (
 /obj/machinery/door/airlock/external{
 	space_dir = 8
@@ -112728,16 +112716,6 @@
 /obj/machinery/duct,
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
-"vyU" = (
-/obj/effect/turf_decal/stripes{
-	dir = 1
-	},
-/obj/item/trash/waffles,
-/obj/effect/decal/cleanable/dirt{
-	icon_state = "dirt-flat-1"
-	},
-/turf/open/floor/plating/airless,
-/area/station/maintenance/fore/upper)
 "vyY" = (
 /obj/item/kirbyplants/organic/plant21,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
@@ -113273,13 +113251,6 @@
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/cargo/sorting)
-"vEE" = (
-/obj/structure/chair/office/light,
-/obj/machinery/light/floor,
-/obj/effect/landmark/start/telecomms_specialist,
-/obj/machinery/computer/security/telescreen/tcomms/directional/east,
-/turf/open/floor/iron,
-/area/station/tcommsat/computer)
 "vEF" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -152114,16 +152085,16 @@ ofE
 grm
 wim
 wim
-tLu
+vua
 nds
 pFN
 vCy
 nds
 nds
 nds
-gZw
+ffJ
 xdB
-jsT
+shC
 nds
 bNr
 ani
@@ -152379,8 +152350,8 @@ pFN
 pFN
 jas
 pFN
-vEE
-szl
+pUo
+hKL
 nds
 tku
 dbY
@@ -152637,7 +152608,7 @@ nds
 nds
 iBL
 tzO
-fBZ
+fDF
 nds
 aju
 uak
@@ -153398,7 +153369,7 @@ exp
 ofE
 aFb
 tHn
-pEp
+gXt
 pPc
 nds
 llL
@@ -233706,7 +233677,7 @@ hJH
 hJH
 hJH
 hJH
-vyU
+hxE
 jfV
 dgl
 ofy
@@ -234075,7 +234046,7 @@ jhU
 aDi
 lUf
 uBf
-dIj
+uBf
 mlH
 aYj
 cob
@@ -235013,7 +234984,7 @@ bPe
 hJH
 eKf
 rHT
-esg
+rUd
 ugo
 mww
 mww

@@ -44,6 +44,7 @@
 	armor_type = /datum/armor/pirate_armored
 	strip_delay = 40
 	equip_delay_other = 20
+	species_exception = null
 
 /obj/item/clothing/suit/costume/pirate/captain
 	name = "pirate captain coat"
@@ -55,6 +56,7 @@
 	armor_type = /datum/armor/pirate_armored
 	strip_delay = 40
 	equip_delay_other = 20
+	species_exception = null
 
 /obj/item/clothing/suit/costume/cyborg_suit
 	name = "cyborg suit"
@@ -526,6 +528,14 @@
 	name = "bronze suit"
 	desc = "A big and clanky suit made of bronze that offers no protection and looks very unfashionable. Nice."
 	icon_state = "clockwork_cuirass_old"
+	allowed = list(
+		/obj/item/tank/internals/emergency_oxygen,
+		/obj/item/tank/internals/plasmaman,
+		/obj/item/tank/jetpack/oxygen/captain,
+		/obj/item/storage/belt/holster,
+		//new
+		/obj/item/toy/clockwork_watch,
+		)
 	armor_type = /datum/armor/costume_bronze
 
 /obj/item/clothing/suit/hooded/mysticrobe
