@@ -11080,6 +11080,7 @@
 	dir = 5
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/obj/machinery/announcement_system,
 /turf/open/floor/iron,
 /area/station/tcommsat/computer)
 "cNr" = (
@@ -21907,11 +21908,10 @@
 /turf/open/floor/iron/dark,
 /area/station/security/courtroom)
 "gMr" = (
-/obj/machinery/computer/telecomms/server{
-	dir = 1;
-	network = "tcommsat"
-	},
 /obj/effect/turf_decal/trimline/yellow/filled/line{
+	dir = 1
+	},
+/obj/machinery/computer/telecomms/traffic{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -36620,7 +36620,6 @@
 /turf/open/floor/glass/reinforced,
 /area/station/security/brig)
 "lSp" = (
-/obj/structure/filingcabinet/chestdrawer,
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 10
 	},
@@ -48765,6 +48764,7 @@
 	},
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
+/obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/iron,
 /area/station/tcommsat/computer)
 "qjF" = (
@@ -49515,6 +49515,7 @@
 "qxZ" = (
 /obj/structure/chair/office,
 /obj/effect/turf_decal/trimline/yellow/filled/line,
+/obj/effect/landmark/start/telecomms_specialist,
 /turf/open/floor/iron,
 /area/station/tcommsat/computer)
 "qya" = (
@@ -66362,9 +66363,12 @@
 /turf/open/floor/iron,
 /area/station/tcommsat/computer)
 "wnq" = (
-/obj/machinery/announcement_system,
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 1
+	},
+/obj/machinery/computer/telecomms/server{
+	dir = 1;
+	network = "tcommsat"
 	},
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/computer)

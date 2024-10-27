@@ -29427,8 +29427,10 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/security/greater)
 "fBZ" = (
-/obj/structure/table/reinforced,
-/obj/item/paper_bin,
+/obj/machinery/computer/telecomms/server{
+	dir = 1;
+	network = "tcommsat"
+	},
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/computer)
 "fCd" = (
@@ -36775,12 +36777,13 @@
 /turf/open/floor/iron,
 /area/station/science/ordnance)
 "gZw" = (
-/obj/item/kirbyplants/organic/plant21,
 /obj/machinery/camera{
 	c_tag = "Engineering - Tcomms Controll 2";
 	dir = 10;
 	name = "engineering camera"
 	},
+/obj/structure/table/reinforced,
+/obj/item/paper_bin,
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/computer)
 "gZx" = (
@@ -49003,7 +49006,7 @@
 /area/station/command/gateway)
 "jsT" = (
 /obj/machinery/computer/telecomms/monitor{
-	dir = 4;
+	dir = 1;
 	network = "tcommsat"
 	},
 /turf/open/floor/iron/dark,
@@ -81377,7 +81380,6 @@
 "pEp" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/structure/chair/office/light,
-/obj/effect/landmark/start/telecomms_specialist,
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/computer)
 "pEq" = (
@@ -96819,9 +96821,8 @@
 /turf/open/floor/plating,
 /area/station/cargo/storage)
 "szl" = (
-/obj/machinery/computer/telecomms/server{
-	dir = 8;
-	network = "tcommsat"
+/obj/machinery/computer/telecomms/traffic{
+	dir = 1
 	},
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/computer)
@@ -103365,6 +103366,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
+/obj/item/kirbyplants/organic/plant21,
 /turf/open/floor/iron/dark/side{
 	dir = 8
 	},
@@ -113274,7 +113276,8 @@
 "vEE" = (
 /obj/structure/chair/office/light,
 /obj/machinery/light/floor,
-/obj/machinery/computer/security/telescreen/tcomms/directional/south,
+/obj/effect/landmark/start/telecomms_specialist,
+/obj/machinery/computer/security/telescreen/tcomms/directional/east,
 /turf/open/floor/iron,
 /area/station/tcommsat/computer)
 "vEF" = (
@@ -152119,8 +152122,8 @@ nds
 nds
 nds
 gZw
-jsT
 xdB
+jsT
 nds
 bNr
 ani
@@ -152377,7 +152380,7 @@ pFN
 jas
 pFN
 vEE
-tzO
+szl
 nds
 tku
 dbY
@@ -152633,7 +152636,7 @@ nds
 nds
 nds
 iBL
-szl
+tzO
 fBZ
 nds
 aju

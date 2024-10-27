@@ -12420,6 +12420,13 @@
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/plating,
 /area/station/maintenance/solars/port/aft)
+"euo" = (
+/obj/machinery/holopad,
+/obj/machinery/computer/telecomms/traffic{
+	dir = 8
+	},
+/turf/open/floor/circuit/green/telecomms/mainframe,
+/area/station/tcommsat/server)
 "eus" = (
 /obj/structure/stairs/east,
 /obj/structure/railing{
@@ -41242,6 +41249,7 @@
 "oHd" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/structure/cable/layer3,
+/obj/effect/landmark/start/telecomms_specialist,
 /turf/open/floor/iron/dark/telecomms,
 /area/station/tcommsat/server)
 "oHf" = (
@@ -105096,7 +105104,7 @@ dxA
 dPf
 dPf
 ieI
-nDC
+euo
 dPf
 dPf
 dPf

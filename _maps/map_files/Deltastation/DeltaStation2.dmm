@@ -11037,10 +11037,12 @@
 /turf/open/floor/iron/dark,
 /area/station/hallway/secondary/entry)
 "cGR" = (
-/obj/structure/table/wood,
-/obj/item/folder/blue,
-/obj/item/pen,
 /obj/item/radio/intercom/directional/north,
+/obj/structure/table/wood,
+/obj/item/book/manual/wiki/tcomms,
+/obj/item/radio{
+	pixel_y = 5
+	},
 /turf/open/floor/iron/grimy,
 /area/station/tcommsat/computer)
 "cHb" = (
@@ -12281,6 +12283,12 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical/morgue)
+"cYj" = (
+/obj/item/folder/blue,
+/obj/item/pen,
+/obj/structure/table/wood,
+/turf/open/floor/iron/grimy,
+/area/station/tcommsat/computer)
 "cYk" = (
 /obj/structure/closet/l3closet/virology,
 /obj/effect/turf_decal/bot,
@@ -13497,6 +13505,7 @@
 /area/station/medical/chemistry)
 "dol" = (
 /obj/structure/cable,
+/obj/item/kirbyplants/random,
 /turf/open/floor/iron/grimy,
 /area/station/tcommsat/computer)
 "dor" = (
@@ -21463,10 +21472,6 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
-"fnM" = (
-/obj/structure/chair/office,
-/turf/open/floor/iron/grimy,
-/area/station/tcommsat/computer)
 "foh" = (
 /obj/machinery/atmospherics/components/binary/volume_pump{
 	name = "Ports to Distro"
@@ -28195,6 +28200,7 @@
 /obj/structure/chair/office{
 	dir = 4
 	},
+/obj/effect/landmark/start/telecomms_specialist,
 /turf/open/floor/iron/grimy,
 /area/station/tcommsat/computer)
 "gUZ" = (
@@ -30326,9 +30332,10 @@
 /turf/open/floor/iron,
 /area/station/security/execution/transfer)
 "hzA" = (
-/obj/item/kirbyplants/random,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
+/obj/item/paper_bin,
+/obj/structure/table/wood,
 /turf/open/floor/iron/grimy,
 /area/station/tcommsat/computer)
 "hzC" = (
@@ -45566,9 +45573,8 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/department/science/xenobiology)
 "lqj" = (
-/obj/structure/table/wood,
-/obj/item/paper_bin,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/structure/table/wood,
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/computer)
 "lql" = (
@@ -50403,12 +50409,9 @@
 /turf/open/floor/iron,
 /area/station/commons/locker)
 "mCM" = (
-/obj/structure/table/wood,
-/obj/item/book/manual/wiki/tcomms,
-/obj/item/radio{
-	pixel_y = 5
-	},
 /obj/item/radio/intercom/directional/north,
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp,
 /turf/open/floor/iron/grimy,
 /area/station/tcommsat/computer)
 "mCZ" = (
@@ -51370,6 +51373,7 @@
 	network = list("ss13","tcomms")
 	},
 /obj/machinery/light_switch/directional/north,
+/obj/item/kirbyplants/random,
 /turf/open/floor/iron/grimy,
 /area/station/tcommsat/computer)
 "mOo" = (
@@ -81610,10 +81614,11 @@
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/hop)
 "usZ" = (
-/obj/item/flashlight/lamp,
 /obj/machinery/airalarm/directional/east,
-/obj/structure/table/wood,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/machinery/computer/telecomms/monitor{
+	dir = 8
+	},
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/computer)
 "utj" = (
@@ -88748,11 +88753,11 @@
 /turf/open/floor/iron,
 /area/station/maintenance/port)
 "wiw" = (
-/obj/machinery/computer/telecomms/monitor{
-	dir = 8
-	},
 /obj/machinery/status_display/evac/directional/east,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/machinery/computer/telecomms/traffic{
+	dir = 8
+	},
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/computer)
 "wiA" = (
@@ -135404,7 +135409,7 @@ dTp
 hEI
 sxr
 eVl
-xDU
+cYj
 gnA
 jHb
 kgs
@@ -136691,7 +136696,7 @@ ipQ
 eVl
 mCM
 gUW
-fnM
+jHb
 hpv
 lkL
 jDi

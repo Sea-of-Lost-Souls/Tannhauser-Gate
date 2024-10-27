@@ -2675,7 +2675,6 @@
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/server)
 "aVZ" = (
-/obj/structure/chair/office,
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -12430,9 +12429,9 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/lesser)
 "eBz" = (
-/obj/structure/table/wood,
 /obj/machinery/status_display/ai/directional/north,
 /obj/item/flashlight/lamp,
+/obj/structure/table/wood,
 /turf/open/floor/iron/grimy,
 /area/station/tcommsat/computer)
 "eBO" = (
@@ -20251,6 +20250,7 @@
 /obj/structure/chair/office{
 	dir = 4
 	},
+/obj/effect/landmark/start/telecomms_specialist,
 /turf/open/floor/iron/grimy,
 /area/station/tcommsat/computer)
 "hpi" = (
@@ -21878,14 +21878,9 @@
 "hSe" = (
 /obj/machinery/light/small/directional/east,
 /obj/item/radio/intercom/directional/north,
-/obj/structure/table/wood,
-/obj/item/phone{
-	pixel_x = -3;
-	pixel_y = 3
-	},
-/obj/item/cigbutt/cigarbutt{
-	pixel_x = 5;
-	pixel_y = -1
+/obj/machinery/computer/telecomms/monitor{
+	dir = 8;
+	network = "tcommsat"
 	},
 /turf/open/floor/iron/grimy,
 /area/station/tcommsat/computer)
@@ -30820,7 +30815,11 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/starboard)
 "kRk" = (
-/obj/machinery/announcement_system,
+/obj/structure/table/wood,
+/obj/item/cigbutt/cigarbutt{
+	pixel_x = 5;
+	pixel_y = -1
+	},
 /turf/open/floor/iron/grimy,
 /area/station/tcommsat/computer)
 "kRA" = (
@@ -32932,6 +32931,7 @@
 /obj/structure/showcase/cyborg/old{
 	pixel_y = 20
 	},
+/obj/machinery/announcement_system,
 /turf/open/floor/iron/grimy,
 /area/station/tcommsat/computer)
 "lJm" = (
@@ -38723,10 +38723,14 @@
 /area/station/medical/medbay/central)
 "nCu" = (
 /obj/structure/chair/office{
-	dir = 1
+	dir = 8
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
+	},
+/obj/item/phone{
+	pixel_x = -3;
+	pixel_y = 3
 	},
 /turf/open/floor/iron/grimy,
 /area/station/tcommsat/computer)
@@ -40436,9 +40440,8 @@
 /area/station/science/robotics/lab)
 "okp" = (
 /obj/machinery/computer/security/telescreen/tcomms/directional/east,
-/obj/machinery/computer/telecomms/monitor{
-	dir = 8;
-	network = "tcommsat"
+/obj/machinery/computer/telecomms/traffic{
+	dir = 8
 	},
 /turf/open/floor/iron/grimy,
 /area/station/tcommsat/computer)
@@ -44335,12 +44338,11 @@
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "pDe" = (
-/obj/machinery/computer/telecomms/server{
-	dir = 8;
-	network = "tcommsat"
-	},
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/computer/message_monitor{
+	dir = 8
+	},
 /turf/open/floor/iron/grimy,
 /area/station/tcommsat/computer)
 "pDl" = (
@@ -66207,10 +66209,11 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
 "xml" = (
-/obj/machinery/computer/message_monitor{
-	dir = 4
-	},
 /obj/machinery/airalarm/directional/west,
+/obj/machinery/computer/telecomms/server{
+	dir = 4;
+	network = "tcommsat"
+	},
 /turf/open/floor/iron/grimy,
 /area/station/tcommsat/computer)
 "xmD" = (
