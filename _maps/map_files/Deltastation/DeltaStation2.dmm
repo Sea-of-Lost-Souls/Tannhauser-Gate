@@ -52,7 +52,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/camera/directional/north{
 	c_tag = "Library - Fore Starboard";
-	dir = 9;
+	dir = 6;
 	name = "library camera"
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -7243,7 +7243,7 @@
 "bLt" = (
 /obj/machinery/camera/directional/north{
 	c_tag = "Medbay - Central Hallway";
-	dir = 9;
+	dir = 6;
 	name = "medbay camera";
 	network = list("ss13","medbay")
 	},
@@ -14134,7 +14134,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/camera/directional/west{
 	c_tag = "Departures Lounge - Aft Port";
-	dir = 10;
+	dir = 5;
 	name = "departures camera"
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -14879,7 +14879,7 @@
 /obj/machinery/libraryscanner,
 /obj/machinery/camera/directional/north{
 	c_tag = "Library - Desk";
-	dir = 9;
+	dir = 6;
 	name = "library camera"
 	},
 /obj/item/radio/intercom/directional/north,
@@ -14910,7 +14910,7 @@
 /obj/machinery/status_display/ai/directional/south,
 /obj/machinery/camera/directional/south{
 	c_tag = "Service - Cafeteria Aft";
-	dir = 5;
+	dir = 10;
 	name = "service camera"
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -15317,7 +15317,7 @@
 "dMh" = (
 /obj/machinery/camera/directional/south{
 	c_tag = "Atmospherics - Project Room Fore";
-	dir = 5;
+	dir = 10;
 	name = "atmospherics camera"
 	},
 /obj/machinery/status_display/evac/directional/south,
@@ -19116,7 +19116,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/camera/directional/south{
 	c_tag = "Library - Aft Starboard";
-	dir = 5;
+	dir = 10;
 	name = "library camera"
 	},
 /turf/open/floor/iron/grimy,
@@ -24503,7 +24503,7 @@
 /obj/item/radio/intercom/directional/north,
 /obj/machinery/camera/directional/east{
 	c_tag = "Service - Hydroponics Front Fore";
-	dir = 6;
+	dir = 9;
 	name = "service camera"
 	},
 /obj/effect/turf_decal/tile/green/opposingcorners,
@@ -25116,7 +25116,7 @@
 /obj/machinery/airalarm/directional/west,
 /obj/machinery/camera/directional/north{
 	c_tag = "Security Post - Departures Holding Cell";
-	dir = 9
+	dir = 6
 	},
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
 	dir = 1
@@ -32985,7 +32985,7 @@
 	},
 /obj/machinery/camera/directional/east{
 	c_tag = "Science - Genetics";
-	dir = 6;
+	dir = 9;
 	name = "science camera";
 	network = list("ss13","rd")
 	},
@@ -38258,7 +38258,7 @@
 /obj/structure/cable,
 /obj/machinery/camera/directional/east{
 	c_tag = "Dormitories - Laundromat";
-	dir = 6;
+	dir = 9;
 	name = "dormitories camera"
 	},
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
@@ -39450,7 +39450,7 @@
 /obj/item/radio/intercom/directional/east,
 /obj/machinery/camera/directional/east{
 	c_tag = "Departures Lounge - Aft Starboard";
-	dir = 6;
+	dir = 9;
 	name = "departures camera"
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -51562,7 +51562,7 @@
 "mQY" = (
 /obj/machinery/camera/directional/east{
 	c_tag = "Departures Lounge - Fore Starboard";
-	dir = 6;
+	dir = 9;
 	name = "departures camera"
 	},
 /obj/effect/turf_decal/tile/neutral,
@@ -54833,7 +54833,7 @@
 /obj/machinery/computer/security/telescreen/entertainment/directional/north,
 /obj/machinery/camera/directional/north{
 	c_tag = "Security - Head of Security's Office";
-	dir = 9
+	dir = 6
 	},
 /obj/structure/bed/dogbed/lia,
 /obj/item/radio/intercom/directional/west,
@@ -58622,7 +58622,7 @@
 "oLD" = (
 /obj/machinery/camera/directional/north{
 	c_tag = "Science - Central Access";
-	dir = 9;
+	dir = 6;
 	name = "science camera";
 	network = list("ss13","rd")
 	},
@@ -61073,7 +61073,7 @@
 "pru" = (
 /obj/machinery/camera/directional/north{
 	c_tag = "Library - Back Printing Room";
-	dir = 9;
+	dir = 6;
 	name = "library camera"
 	},
 /obj/machinery/computer/security/telescreen/entertainment/directional/north,
@@ -61336,7 +61336,7 @@
 /obj/effect/turf_decal/bot,
 /obj/machinery/camera/directional/west{
 	c_tag = "Service - Hydroponics Back";
-	dir = 10;
+	dir = 5;
 	name = "hallway camera"
 	},
 /obj/effect/turf_decal/tile/blue{
@@ -62292,7 +62292,7 @@
 /obj/item/kirbyplants/random,
 /obj/machinery/camera/directional/north{
 	c_tag = "Arrivals - Starboard Entrance";
-	dir = 9;
+	dir = 6;
 	name = "arrivals camera"
 	},
 /obj/effect/turf_decal/delivery,
@@ -63811,7 +63811,7 @@
 /obj/machinery/firealarm/directional/north,
 /obj/machinery/camera/directional/north{
 	c_tag = "Service - Service Hall";
-	dir = 9;
+	dir = 6;
 	name = "service camera"
 	},
 /turf/open/floor/iron/dark,
@@ -64025,7 +64025,7 @@
 "pYW" = (
 /obj/machinery/camera/directional/west{
 	c_tag = "Security - Armory External";
-	dir = 10
+	dir = 5
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
@@ -64165,7 +64165,7 @@
 /obj/machinery/status_display/ai/directional/south,
 /obj/machinery/camera/directional/south{
 	c_tag = "Service - Bar Aft";
-	dir = 5;
+	dir = 10;
 	name = "service camera"
 	},
 /obj/effect/turf_decal/tile/red/opposingcorners{
@@ -65352,7 +65352,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/camera/directional/north{
 	c_tag = "Security Post - Medsci";
-	dir = 9
+	dir = 6
 	},
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
 	dir = 4
@@ -65703,7 +65703,7 @@
 /obj/effect/mapping_helpers/requests_console/assistance,
 /obj/machinery/camera/directional/east{
 	c_tag = "Science - Research and Development";
-	dir = 6;
+	dir = 9;
 	name = "science camera";
 	network = list("ss13","rd")
 	},
@@ -68472,7 +68472,7 @@
 /obj/item/airlock_painter,
 /obj/machinery/camera/directional/west{
 	c_tag = "Engineering - Center";
-	dir = 10;
+	dir = 5;
 	name = "engineering camera"
 	},
 /obj/effect/turf_decal/tile/yellow/anticorner/contrasted,
@@ -68802,7 +68802,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/camera/directional/south{
 	c_tag = "Library - Aft Port";
-	dir = 5;
+	dir = 10;
 	name = "library camera"
 	},
 /turf/open/floor/iron/grimy,
@@ -70400,7 +70400,7 @@
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/camera/directional/north{
 	c_tag = "Security - Office Fore";
-	dir = 9
+	dir = 6
 	},
 /obj/machinery/airalarm/directional/north,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -73346,7 +73346,7 @@
 /obj/structure/closet/crate/freezer/surplus_limbs,
 /obj/machinery/camera/directional/north{
 	c_tag = "Medbay - Coldroom";
-	dir = 9;
+	dir = 6;
 	name = "medbay camera";
 	network = list("ss13","medbay")
 	},
@@ -76449,7 +76449,7 @@
 /obj/effect/landmark/event_spawn,
 /obj/machinery/camera/directional/east{
 	c_tag = "Dormitories - Library Entrance";
-	dir = 6;
+	dir = 9;
 	name = "dormitories camera"
 	},
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
@@ -78894,7 +78894,7 @@
 	},
 /obj/machinery/camera/directional/north{
 	c_tag = "Security - Transfer Centre";
-	dir = 9
+	dir = 6
 	},
 /turf/open/floor/iron,
 /area/station/security/processing)
@@ -81002,7 +81002,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/directional/north{
 	c_tag = "Arrivals - Garden Access";
-	dir = 9;
+	dir = 6;
 	name = "arrivals camera"
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -86720,7 +86720,7 @@
 /obj/structure/cable,
 /obj/machinery/camera/directional/east{
 	c_tag = "Dormitories - Hall";
-	dir = 6;
+	dir = 9;
 	name = "dormitories camera"
 	},
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
@@ -88849,7 +88849,7 @@
 	},
 /obj/machinery/camera/directional/north{
 	c_tag = "Library - Fore Port";
-	dir = 9;
+	dir = 6;
 	name = "library camera"
 	},
 /obj/structure/chair/comfy/teal,
@@ -90196,7 +90196,7 @@
 /obj/machinery/light/small/directional/north,
 /obj/machinery/camera/directional/north{
 	c_tag = "Service - Janitorial Closet";
-	dir = 9;
+	dir = 6;
 	name = "service camera"
 	},
 /mob/living/basic/lizard/eats_the_roaches,
@@ -91434,7 +91434,7 @@
 	},
 /obj/machinery/camera/directional/north{
 	c_tag = "Medbay - Science Airlock";
-	dir = 9;
+	dir = 6;
 	name = "medbay camera";
 	network = list("ss13","medbay")
 	},
@@ -94184,7 +94184,7 @@
 "xzI" = (
 /obj/machinery/camera/directional/north{
 	c_tag = "Library - Private Study";
-	dir = 9;
+	dir = 6;
 	name = "library camera"
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -95420,7 +95420,7 @@
 /obj/structure/extinguisher_cabinet/directional/west,
 /obj/machinery/camera/directional/west{
 	c_tag = "Service - Kitchen Coldroom";
-	dir = 10;
+	dir = 5;
 	name = "service camera"
 	},
 /turf/open/floor/iron/freezer,

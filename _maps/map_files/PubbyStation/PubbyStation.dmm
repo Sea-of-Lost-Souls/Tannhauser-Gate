@@ -33,7 +33,7 @@
 /obj/effect/turf_decal/siding/purple/corner,
 /obj/machinery/camera{
 	c_tag = "Science - Toxins Hallway 1";
-	dir = 10;
+	dir = 5;
 	name = "science camera";
 	network = list("ss13","rd")
 	},
@@ -1994,7 +1994,7 @@
 	},
 /obj/machinery/camera{
 	c_tag = " Prison - Cafeteria";
-	dir = 5;
+	dir = 10;
 	network = list("ss13","prison")
 	},
 /turf/open/floor/wood,
@@ -40661,7 +40661,7 @@
 	},
 /obj/machinery/camera{
 	c_tag = "Security - Secure Gear Storage";
-	dir = 6
+	dir = 9
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/effect/turf_decal/trimline/dark_blue/line,
@@ -51139,7 +51139,7 @@
 /obj/structure/table,
 /obj/machinery/camera{
 	c_tag = "Dorms Proper - Fore";
-	dir = 5
+	dir = 10
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -59196,7 +59196,7 @@
 	},
 /obj/machinery/camera{
 	c_tag = "Aux Custodial Closet";
-	dir = 5
+	dir = 10
 	},
 /turf/open/floor/iron/dark,
 /area/station/maintenance/department/crew_quarters/dorms)
@@ -63094,7 +63094,7 @@
 /obj/machinery/portable_atmospherics/scrubber/huge,
 /obj/machinery/camera{
 	c_tag = "Science - Toxins Primary Storage";
-	dir = 6;
+	dir = 9;
 	name = "science camera";
 	network = list("ss13","rd")
 	},

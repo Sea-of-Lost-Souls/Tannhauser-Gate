@@ -77165,7 +77165,7 @@
 "wwg" = (
 /obj/machinery/camera{
 	c_tag = "Service - Botany";
-	dir = 9
+	dir = 6
 	},
 /obj/machinery/hydroponics/constructable,
 /obj/effect/turf_decal/trimline/green/filled/line{

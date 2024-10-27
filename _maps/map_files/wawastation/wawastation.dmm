@@ -30580,7 +30580,7 @@
 "kMj" = (
 /obj/item/target/alien/anchored,
 /obj/machinery/camera/preset/ordnance{
-	dir = 6
+	dir = 9
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4

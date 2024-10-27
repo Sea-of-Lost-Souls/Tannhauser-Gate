@@ -32081,7 +32081,7 @@
 	},
 /obj/machinery/camera{
 	c_tag = "Shared Engineering Storage #2";
-	dir = 9;
+	dir = 6;
 	network = list("ss13","engine")
 	},
 /obj/structure/disposalpipe/segment{
@@ -60321,7 +60321,7 @@
 /obj/effect/turf_decal/bot,
 /obj/machinery/camera{
 	c_tag = "Atmospherics Office Cam #1";
-	dir = 6;
+	dir = 9;
 	network = list("ss13","engine")
 	},
 /turf/open/floor/iron,
@@ -66189,7 +66189,7 @@
 /obj/machinery/atmospherics/pipe/layer_manifold/purple/visible,
 /obj/machinery/camera{
 	c_tag = "Atmospherics Cam #6";
-	dir = 5;
+	dir = 10;
 	network = list("ss13","engine")
 	},
 /turf/open/floor/iron,
