@@ -1,4 +1,4 @@
-import { BooleanLike } from 'common/react';
+// import { BooleanLike } from 'common/react'; -- Uncomment when .tsx files dont error
 
 import { useBackend, useLocalState } from '../backend';
 import {
@@ -14,6 +14,7 @@ import {
 import { RADIO_CHANNELS } from '../constants';
 import { Window } from '../layouts';
 
+/* -- Uncomment when .tsx files dont error
 type Data = {
   admin_view: BooleanLike;
   emagged: BooleanLike;
@@ -30,6 +31,7 @@ type Server_Data = {
   server: string;
   server_name: string;
 };
+*/
 
 export const NTSLCoding = (props) => {
   // Make sure we don't start larger than 50%/80% of screen width/height.
@@ -53,7 +55,7 @@ export const NTSLCoding = (props) => {
 };
 
 const ScriptEditor = (props) => {
-  const { act, data } = useBackend<Data>();
+  const { act, data } = useBackend();
   const { stored_code, user_name } = data;
   return (
     <Box width="100%" height="100%">
@@ -80,22 +82,18 @@ const ScriptEditor = (props) => {
 };
 
 const MainMenu = (props) => {
-  const { act, data } = useBackend<Data>();
+  const { act, data } = useBackend();
   const { emagged, user_name, admin_view } = data;
   const [tabIndex, setTabIndex] = useLocalState('tab-index', 1);
   return (
     <>
-      {/* admin_view === 1 ? ( For now commented out, i do not think its good for tannhauser
-        <Button
-          icon="power-off"
-          color="red"
-          onClick={() => act('admin_reset')}
-        >
+      {admin_view === 1 ? (
+        <Button icon="power-off" color="red" onClick={() => act('admin_reset')}>
           !!!(ADMIN) reset code and compile!!!
         </Button>
       ) : (
         ''
-      )*/}
+      )}
       <Section width="240px">
         {user_name ? (
           <Stack>
@@ -144,7 +142,7 @@ const MainMenu = (props) => {
 };
 
 const CompilerOutput = (props) => {
-  const { act, data } = useBackend<Data>();
+  const { act, data } = useBackend();
   const { compiler_output } = data;
   return (
     <>
@@ -166,7 +164,7 @@ const CompilerOutput = (props) => {
 };
 
 const ServerList = (props) => {
-  const { act, data } = useBackend<Data>();
+  const { act, data } = useBackend();
   const { network, server_data } = data;
   return (
     <>
@@ -209,7 +207,7 @@ const ServerList = (props) => {
 };
 
 const LogViewer = (props) => {
-  const { act, data } = useBackend<Data>();
+  const { act, data } = useBackend();
   const { access_log } = data;
   // This is terrible but nothing else will work
   return (

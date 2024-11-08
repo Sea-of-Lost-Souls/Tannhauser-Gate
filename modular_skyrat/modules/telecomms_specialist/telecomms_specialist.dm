@@ -73,6 +73,8 @@
 	pda_slot = ITEM_SLOT_LPOCKET
 	skillchips = list(/obj/item/skillchip/job/engineer)
 
+	l_hand = /obj/item/storage/bag/garment/signal_technician // TANNHAUSER ADDITION -- NTSL
+
 	backpack_contents = list(
 		/obj/item/paper/monitorkey,
 	)
